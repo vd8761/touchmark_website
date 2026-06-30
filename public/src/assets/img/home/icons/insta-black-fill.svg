@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+  <g id="insta-black-fill" transform="translate(-503 -750)">
+    <path id="Path_6140" data-name="Path 6140" d="M21,0A21,21,0,1,1,0,21,21,21,0,0,1,21,0Z" transform="translate(503 750)"/>
+    <g id="Group_5254" data-name="Group 5254" transform="translate(1)">
+      <rect id="Rectangle_1054" data-name="Rectangle 1054" width="15" height="15" rx="3" transform="translate(516 764)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.75"/>
+      <circle id="Ellipse_218" data-name="Ellipse 218" cx="1" cy="1" r="1" transform="translate(527 766)" fill="#fff"/>
+      <path id="Path_6139" data-name="Path 6139" d="M51.75,48a3.75,3.75,0,1,0,3.75,3.75A3.75,3.75,0,0,0,51.75,48Zm0,5.625a1.875,1.875,0,1,1,1.875-1.875A1.875,1.875,0,0,1,51.75,53.625Z" transform="translate(471.582 719.917)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

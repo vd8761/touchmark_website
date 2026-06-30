@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+  <g id="linkedin-blue-fill" transform="translate(-404 -750)">
+    <circle id="Ellipse_222" data-name="Ellipse 222" cx="21" cy="21" r="21" transform="translate(404 750)" fill="#194f97"/>
+    <g id="Group_5253" data-name="Group 5253" transform="translate(403.694 749.694)">
+      <g id="Group_5248" data-name="Group 5248">
+        <circle id="Ellipse_212" data-name="Ellipse 212" cx="1.901" cy="1.901" r="1.901" transform="translate(13.306 13.306)" fill="#fff"/>
+        <rect id="Rectangle_1051" data-name="Rectangle 1051" width="3.802" height="10.455" transform="translate(13.306 18.059)" fill="#fff"/>
+        <path id="Path_6129" data-name="Path 6129" d="M239.723,221.091c-2.851,0-3.193,1.692-3.193,1.692v-1.692h-3.8v10.455h3.8v-5.7s0-1.9,1.616-1.9c.95,0,1.236.846,1.236,1.9v5.7h3.8v-5.7C243.183,222.868,241.89,221.091,239.723,221.091Z" transform="translate(-213.719 -203.032)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

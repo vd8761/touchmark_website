@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'Gellix';
+    src: url('font/Gellix-SemiBold/Gellix-SemiBold.ttf') format('opentype');
+    font-weight: normal;
+    font-style: semibold;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('font/inter/Inter-Medium.ttf') format('truetype');
+  font-weight: 500; /* Corresponds to font-weight: medium; */
+  font-style: medium;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('font/inter/Inter-Regular.ttf') format('truetype');
+  font-weight: 400; /* Corresponds to font-weight: regular; */
+  font-style: regular;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('font/inter/Inter-SemiBold.ttf') format('truetype');
+  font-weight: 600; /* Corresponds to font-weight: semibold; */
+  font-style: semibold;
+}
+
+
+html,
+body {
+    font-family: 'Inter'!important;
+}
+
+
+@layer components {
+    .only-lg {
+      @apply hidden lg:block;
+    }
+  }
+  

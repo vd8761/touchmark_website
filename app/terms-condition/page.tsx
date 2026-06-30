@@ -1,0 +1,1141 @@
+'use client';
+
+import Script from "next/script";
+
+export default function Page() {
+  return (
+    <>
+      <title>Terms, Conditions, Notices and Disclaimers</title>
+      <meta name="description" content="" />
+
+      {/* Page JSX Content */}
+      ﻿
+
+
+
+    
+    
+    
+    <link rel="touchmark-des-icon" sizes="180x180" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
+    
+
+
+
+
+
+
+
+
+    <link rel="Touchmark" href="terms-condition.php.html#" />
+    
+    
+    
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
+    
+    
+    
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+<div id="modelConfirm" className="fixed hidden z-50 inset-0 bg-black/70 overflow-y-auto h-full w-full px-4">
+    <div className="flex justify-center items-center h-full">
+        <div className="relative mx-auto shadow-xl bg-white max-w-[500px]">
+
+            
+            <div className="flex items-end justify-between p-2">
+                <a href="terms-condition.php.html#" id="goBack" className="flex justify-start items-center text-[#194F97] hover:underline text-sm hidden">
+                    <svg id="fi_2985161" height="20" viewBox="0 0 128 128" width="20" xmlns="http://www.w3.org/2000/svg">
+                        <path id="Left_Arrow_4_" d="m84 108c-1.023 0-2.047-.391-2.828-1.172l-40-40c-1.563-1.563-1.563-4.094 0-5.656l40-40c1.563-1.563 4.094-1.563 5.656 0s1.563 4.094 0 5.656l-37.172 37.172 37.172 37.172c1.563 1.563 1.563 4.094 0 5.656-.781.781-1.805 1.172-2.828 1.172z" fill="#194F97"></path>
+                    </svg>
+                    Go Back
+                </a>
+                <button onClick={() => (window as any).closeModal?.('modelConfirm')} type="button" className="text-gray-400 bg-transparent hover:text-gray-900 text-sm p-1.5 ml-auto inline-flex items-center">
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            
+
+            
+            <div id="step1" className="px-5 pb-5 pt-5">
+                <h1 className="2xl:text-2xl xl:text-xl lg:text-xl text-lg font-gellix">Sign in or Create an account</h1>
+                <h3 className="mt-2 text-base">If you have an account, your password will be requested.</h3>
+                <div className="mt-5 space-y-4 text-left">
+                    <div className="grid grid-cols-6 gap-4">
+                        <div className="lg:col-span-6 col-span-6 space-y-2">
+                            <form id="subscribedForm">
+                                <div>
+                                    <input type="email" id="email" className="px-3 py-2 border focus:outline-none focus:border-blue-400 w-full" placeholder="username@email.com" required={true} autoComplete="off" />
+                                    <span className="text-sm text-red-500">
+                                        <div id="emailError" className="pt-2"></div>
+                                    </span>
+                                </div>
+                                <button id="continueButton1" type="submit" className="w-full mt-3">
+                                    <div className="relative overflow-hidden bg-[#194F97] px-3 py-2 inline-flex justify-center items-center group w-full">
+                                        <span className="relative z-10 text-white transition-colors text-sm uppercase">Continue</span>
+                                        <span className="absolute inset-0 bg-blue-700 transition-transform duration-300 transform -translate-x-full group-hover:translate-x-0"></span>
+                                    </div>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="step3" className="p-5 hidden">
+                <h1 className="2xl:text-2xl xl:text-xl lg:text-xl text-lg font-gellix">Enter your Password</h1>
+                <h3 className="mt-2 text-base">If you have an account, your password will be requested.</h3>
+                <div className="mt-5 space-y-4 text-left">
+                    <div className="grid grid-cols-6 gap-4">
+                        <div className="lg:col-span-6 col-span-6 space-y-2 mt-2.5 lg:mt-0">
+                            <form id="loginForm">
+                                <div>
+                                    <h3 className="font-inter font-medium text-sm">Email*</h3>
+                                    <input type="email" id="email-2" className="mt-2 px-3 py-2 border focus:outline-none focus:border-blue-400 w-full" placeholder="username@email.com" required={true} />
+                                </div>
+                                <div className="relative">
+                                            <h3 className="font-inter font-medium text-sm mt-6">Password*</h3>
+                                            <input type="password" id="password" className="py-3 w-full border text-base" placeholder="Enter new password" required={true} />
+                                            <span id="togglePassword" className="absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer" style={{ "paddingLeft": "20px" }}>
+                                                <svg id="eyeIcon" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path d="M10 3C5.673 3 2.034 6.062.38 10c1.654 3.938 5.293 7 9.62 7 4.327 0 7.966-3.062 9.62-7-1.654-3.938-5.293-7-9.62-7zM10 5c3.035 0 5.652 2.051 6.8 5-.088.234-.188.464-.3.682l-.01.018-.003.006-.01.02-.018.035C14.563 13.101 12.426 15 10 15c-2.426 0-4.563-1.9-6.457-4.239l-.019-.036-.01-.02-.003-.006-.01-.018c-.111-.218-.211-.448-.299-.682 1.148-2.949 3.765-5 6.8-5zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zM10 9c.276 0 .5.224.5.5a.5.5 0 01-1 0 .5.5 0 01.5-.5z"></path>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                <div className="flex justify-between items-center mt-4">
+                                    <button id="signInButton" type="submit" className="w-full mt-5">
+                                        <div className="relative overflow-hidden bg-[#194F97] px-3 py-2 inline-flex justify-center items-center group w-full">
+                                            <span className="relative z-10 text-white transition-colors text-sm uppercase">Sign In</span>
+                                            <span className="absolute inset-0 bg-blue-700 transition-transform duration-300 transform -translate-x-full group-hover:translate-x-0"></span>
+                                        </div>
+                                    </button>
+                                    <button id="sendCodeButton" type="button" className="w-full mt-5 ml-4">
+                                        <div className="relative overflow-hidden px-3 py-2 inline-flex justify-center items-center group w-full border border-[#194F97]">
+                                            <span className="relative z-10 text-[#194F97] group-hover:text-white transition-colors text-sm uppercase">Send One-Time Code</span>
+                                            <span className="absolute inset-0 bg-[#194F97] transition-transform duration-300 transform -translate-x-full group-hover:translate-x-0"></span>
+                                        </div>
+                                    </button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id="step4" className="p-5 hidden">
+                <h1 className="2xl:text-2xl xl:text-xl lg:text-xl text-lg font-gellix">Enter your sign-in code</h1>
+                <h3 className="mt-2 text-base">Check your email for your temporary sign-in code and enter it below. It will be valid for 15 minutes.</h3>
+
+                <div id="message-container-2" className="p-5 bg-[#F1FBFF] inline-flex justify-start items-start gap-4 mt-3 hidden">
+                    <div>
+                        <svg version="1.1" width="24" height="24" id="fi_1176" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23.625 23.625" style={{  }} xmlSpace="preserve">
+                            <g>
+                                <path style={{ "fill": "#194F97" }} d="M11.812,0C5.289,0,0,5.289,0,11.812s5.289,11.813,11.812,11.813s11.813-5.29,11.813-11.813 S18.335,0,11.812,0z M14.271,18.307c-0.608,0.24-1.092,0.422-1.455,0.548c-0.362,0.126-0.783,0.189-1.262,0.189 c-0.736,0-1.309-0.18-1.717-0.539s-0.611-0.814-0.611-1.367c0-0.215,0.015-0.435,0.045-0.659c0.031-0.224,0.08-0.476,0.147-0.759 l0.761-2.688c0.067-0.258,0.125-0.503,0.171-0.731c0.046-0.23,0.068-0.441,0.068-0.633c0-0.342-0.071-0.582-0.212-0.717 c-0.143-0.135-0.412-0.201-0.813-0.201c-0.196,0-0.398,0.029-0.605,0.09c-0.205,0.063-0.383,0.12-0.529,0.176l0.201-0.828 c0.498-0.203,0.975-0.377,1.43-0.521c0.455-0.146,0.885-0.218,1.29-0.218c0.731,0,1.295,0.178,1.692,0.53 c0.395,0.353,0.594,0.812,0.594,1.376c0,0.117-0.014,0.323-0.041,0.617c-0.027,0.295-0.078,0.564-0.152,0.811l-0.757,2.68 c-0.062,0.215-0.117,0.461-0.167,0.736c-0.049,0.275-0.073,0.485-0.073,0.626c0,0.356,0.079,0.599,0.239,0.728 c0.158,0.129,0.435,0.194,0.827,0.194c0.185,0,0.392-0.033,0.626-0.097c0.232-0.064,0.4-0.121,0.506-0.17L14.271,18.307z M14.137,7.429c-0.353,0.328-0.778,0.492-1.275,0.492c-0.496,0-0.924-0.164-1.28-0.492c-0.354-0.328-0.533-0.727-0.533-1.193 c0-0.465,0.18-0.865,0.533-1.196c0.356-0.332,0.784-0.497,1.28-0.497c0.497,0,0.923,0.165,1.275,0.497 c0.353,0.331,0.53,0.731,0.53,1.196C14.667,6.703,14.49,7.101,14.137,7.429z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                    <p id="time" className="text-sm font-inter">
+                        A new sign-in code was sent to your email. If you didn’t receive it, you can request a new one after <span id="countdown-2">30</span> seconds.
+                    </p>
+                </div>
+
+                <div className="mt-5 space-y-4 text-left">
+                    <div className="grid grid-cols-6 gap-4">
+                        <div className="lg:col-span-6 col-span-6 space-y-2 mt-2.5 lg:mt-0">
+                            <div>
+                            <form id="verifyCodeForm">
+                                            <div>
+                                                <h3 className="font-inter font-medium text-sm">Email*</h3>
+                                                <input type="email" id="email" defaultValue="" className="mt-2 px-3 py-2 border focus:outline-none focus:border-blue-400 w-full" placeholder="username@email.com" />
+                                            </div>
+                                            <h3 className="font-inter font-medium text-sm mt-6">Sign-in code*</h3>
+                                            <input type="text" id="code" className="mt-2 px-3 py-2 border focus:outline-none focus:border-blue-400 w-full" placeholder="Enter the code here" maxLength={6} inputMode="numeric" pattern="\d{0,6}" onInput={(e) => { e.currentTarget.value = e.currentTarget.value.replace(/[^0-9]/g, ''); }} />
+                                            <span className="text-sm text-red-500">
+                                                <div id="validationMessage" className="pt-2"></div>
+                                            </span>
+                                            <button type="submit" className="w-full mt-4 bg-blue-500 text-white py-2 rounded" style={{ "backgroundColor": "#194F97" }}>Submit</button>
+                                        </form>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div className="containered">
+        <h1 className="heading-term">Terms, Conditions, Notices and Disclaimers</h1>
+
+        <h2 className="heading-terms">Parts of this Agreement</h2>
+        <p className="para-terms">TThis Agreement consists of the following terms and conditions (hereinafter the “General Terms”) and terms and conditions, if any, specific to use of individual Services (hereinafter the “Service Specific Terms”). The General Terms and Service Specific Terms are collectively referred to as the “Terms”. In the event of a conflict between the General Terms and Service Specific Terms, the Service Specific Terms shall prevail.</p>
+
+        <h2 className="heading-terms">Acceptance of the Terms</h2>
+        <p className="para-terms">You must be of legal age to enter into a binding agreement in order to accept the Terms. If you do not agree to the General Terms, do not use any of our Services. If you agree to the General Terms and do not agree to any Service Specific Terms, do not use the corresponding Service. You can accept the Terms by checking a checkbox or clicking on a button indicating your acceptance of the terms or by actually using the Services.</p>
+
+        <h2 className="heading-terms">Description of Service</h2>
+        <p className="para-terms">We provide a service that helps in billing, customer data management and monitoring operations of your business(“Service” or “Services”). You may use the Services for your personal and business use or for internal business purposes in the organization that you represent. You may connect to the Services using any Internet browser supported by the Services. You are responsible for obtaining access to the Internet and the equipment necessary to use the Services. You can create and edit content with your user account and if you choose to do so, you can publish and share such content.</p>
+
+        <h2 className="heading-terms">Subscription to Data Services</h2>
+        <p className="para-terms">We may offer certain Services as closed or open beta services (“Beta Service” or “Beta Services”) for the purpose of testing and evaluation. You agree that we have the sole authority and discretion to determine the period of time for testing and evaluation of Beta Services. We will be the sole judge of the success of such testing and the decision, if any, to offer the Beta Services as commercial services. You will be under no obligation to acquire a subscription to use any paid Service as a result of your subscription to any Beta Service. We reserve the right to fully or partially discontinue, at any time and from time to time, temporarily or permanently, any of the Beta Services with or without notice to you. You agree that Touchmark Descience Pvt Ltd will not be liable to you or to any third party for any harm related to, arising out of, or caused by the modification, suspension or discontinuance of any of the Beta Services for any reason.</p>
+
+        <h2 className="heading-terms">Modification of Terms of Service</h2>
+        <p className="para-terms">We may modify the Terms upon notice to you at any time through a service announcement or by sending email to your primary email address. If we make significant changes to the Terms that affect your rights, you will be provided with at least 30 days advance notice of the changes by email to your primary email address. You may terminate your use of the Services by providing Touchmark Descience Pvt Ltd notice by email within 30 days of being notified of the availability of the modified Terms if the Terms are modified in a manner that substantially affects your rights in connection with use of the Services. In the event of such termination, you will be entitled to prorated refund of the unused portion of any prepaid fees. Your continued use of the Service after the effective date of any change to the Terms will be deemed to be your agreement to the modified Terms.</p>
+
+        <h2 className="heading-terms">User Sign-Up Obligations</h2>
+        <p className="para-terms">You need to sign up for a user account by providing all required information in order to access or use the Services. If you represent an organization and wish to use the Services for corporate internal use, we recommend that you, and all other users from your organization, sign up for user accounts by providing your corporate contact information. In particular, we recommend that you use your corporate email address. You agree to: a) provide true, accurate, current and complete information about yourself as prompted by the sign up process; and b) maintain and promptly update the information provided during sign up to keep it true, accurate, current, and complete. If you provide any information that is untrue, inaccurate, outdated, or incomplete, or if Touchmark Descience Pvt Ltd has reasonable grounds to suspect that such information is untrue, inaccurate, outdated, or incomplete, Touchmark Descience Pvt Ltd may terminate your user account and refuse current or future use of any or all of the Services.</p>
+
+        <h2 className="heading-terms">Organization Accounts and Administrators</h2>
+        <p className="para-terms">When you sign up for an account for your organization you may specify one or more administrators. The administrators will have the right to configure the Services based on your requirements and manage end users in your organization account. If your organization account is created and configured on your behalf by a third party, it is likely that such third party has assumed administrator role for your organization. Make sure that you enter into a suitable agreement with such third party specifying such party’s roles and restrictions as an administrator of your organization account. You are responsible for
+
+            i) ensuring confidentiality of your organization account password,
+            ii) appointing competent individuals as administrators for managing your organization account, and
+            iii) ensuring that all activities that occur in connection with your organization account comply with this Agreement.
+            You understand that Touchmark Descience Pvt Ltd is not responsible for account administration and internal management of the Services for you.
+            You are responsible for taking necessary steps for ensuring that your organization does not lose control of the administrator accounts. You may specify a process to be followed for recovering control in the event of such loss of control of the administrator accounts by sending an email to info@touchmarkdes.com, provided that the process is acceptable to Touchmark Descience Pvt Ltd. In the absence of any specified administrator account recovery process, Touchmark Descience Pvt Ltd may provide control of an administrator account to an individual providing proof satisfactory to Touchmark Descience Pvt Ltd demonstrating authorization to act on behalf of the organization. You agree not to hold Touchmark Descience Pvt Ltd liable for the consequences of any action taken by Touchmark Descience Pvt Ltd in good faith in this regard.</p>
+
+        <h2 className="heading-terms">Personal Information and Privacy</h2>
+        <p className="para-terms">Personal information you provide to Touchmark Descience Pvt Ltd through the Service is governed by Touchmark Descience Pvt Ltd Privacy Policy. Your election to use the Service indicates your acceptance of the terms of the Touchmark Descience Pvt Ltd Privacy Policy. You are responsible for maintaining confidentiality of your username, password and other sensitive information. You are responsible for all activities that occur in your user account and you agree to inform us immediately of any unauthorized use of your user account by email to info@touchmarkdes.com. We are not responsible for any loss or damage to you or to any third party incurred as a result of any unauthorized access and/or use of your user account, or otherwise.</p>
+
+        <h2 className="heading-terms">Communications from Touchmark</h2>
+        <p className="para-terms">The Service may include certain communications from Touchmark Descience Pvt Ltd, such as service announcements, administrative messages and newsletters. You understand that these communications shall be considered part of using the Services. As part of our policy to provide you total privacy, we also provide you the option of opting out from receiving newsletters from us. However, you will not be able to opt-out from receiving service announcements and administrative messages.</p>
+
+        <h2 className="heading-terms">Complaints</h2>
+        <p className="para-terms">If we receive a complaint from any person against you with respect to your activities as part of use of the Services, we will forward the complaint to the primary email address of your user account. You must respond to the complainant directly within 10 days of receiving the complaint forwarded by us and copy Touchmark Descience Pvt Ltd in the communication. If you do not respond to the complainant within 10 days from the date of our email to you, we may disclose your name and contact information to the complainant for enabling the complainant to take legal action against you. You understand that your failure to respond to the forwarded complaint within the 10 days’ time limit will be construed as your consent to disclosure of your name and contact information by Touchmark Descience Pvt Ltd to the complainant.</p>
+
+        <h2 className="heading-terms">Fees and Payments</h2>
+        <p className="para-terms">The Services are available under subscription plans of various durations. Your subscription will be automatically renewed at the end of each subscription period unless you downgrade your paid subscription plan to a free plan or inform us that you do not wish to renew the subscription. At the time of automatic renewal, the subscription fee will be charged to the Credit Card last used by you. We provide you the option of changing the details if you would like the payment for the renewal to be made through a different Credit Card. If you do not wish to renew the subscription, you must inform us at least seven days prior to the renewal date. If you have not downgraded to a free plan and if you have not informed us that you do not wish to renew the subscription, you will be presumed to have authorized Touchmark Descience Pvt Ltd to charge the subscription fee to the Credit Card last used by you. Please click here to know about our Refund Policy.
+            From time to time, we may change the price of any Service or charge for use of Services that are currently available free of charge. Any increase in charges will not apply until the expiry of your then current billing cycle. You will not be charged for using any Service unless you have opted for a paid subscription plan.</p>
+
+        <h2 className="heading-terms">Restrictions on Use</h2>
+        <p className="para-terms">In addition to all other terms and conditions of this Agreement, you shall not:
+
+            (i) transfer the Services or otherwise make it available to any third party;
+            (ii) provide any service based on the Services without prior written permission;
+            (iii) use the third party links to sites without agreeing to their website terms &amp; conditions;
+            (iv) post links to third party sites or use their logo, company name, etc. without their prior written permission;
+            (v) publish any personal or confidential information belonging to any person or entity without obtaining consent from such person or entity;
+            (vi) use the Services in any manner that could damage, disable, overburden, impair or harm any server, network, computer system, resource of Touchmark Descience Pvt Ltd;
+            (vii) violate any applicable local, state, national or international law; and
+            (viii) create a false identity to mislead any person as to the identity or origin of any communication.</p>
+
+        <h2 className="heading-terms">Spamming and Illegal Activities</h2>
+        <p className="para-terms">You agree to be solely responsible for the contents of your transmissions through the Services. You agree not to use the Services for illegal purposes or for the transmission of material that is unlawful, defamatory, harassing, libelous, invasive of another’s privacy, abusive, threatening, harmful, vulgar, pornographic, obscene, or is otherwise objectionable, offends religious sentiments, promotes racism, contains viruses or malicious code, or that which infringes or may infringe intellectual property or other rights of another. You agree not to use the Services for the transmission of “junk mail”, “spam”, “chain letters”, “phishing” or unsolicited mass distribution of email. We reserve the right to terminate your access to the Services if there are reasonable grounds to believe that you have used the Services for any illegal or unauthorized activity.</p>
+
+        <h2 className="heading-terms">Inactive User Account Policy</h2>
+        <p className="para-terms">We reserve the right to terminate unpaid user accounts that are inactive for a continuous period of 120 days. In the event of such termination, all data associated with such a user account will be deleted. The data deletion policy may be implemented with respect to any or all of the Services. Each Service will be considered an independent and separate service for the purpose of calculating the period of inactivity. In other words, activity in one of the Services is not sufficient to keep your user account in another Service active. In case of accounts with more than one user, if at least one of the users is active, the account will not be considered inactive.</p>
+
+        <h2 className="heading-terms">Data Ownership</h2>
+        <p className="para-terms">We respect your right to ownership of content created or stored by you. You own the content created or stored by you. Unless specifically permitted by you, your use of the Services does not grant Touchmark Descience Pvt Ltd the license to use, reproduce, adapt, modify, publish or distribute the content created by you or stored in your user account for Touchmark Descience Pvt Ltd’s commercial, marketing or any similar purpose. But you grant Touchmark Descience Pvt Ltd permission to access, copy, distribute, store, transmit, reformat, publicly display and publicly perform the content of your user account solely as required for the purpose of providing the Services to you.</p>
+
+        <h2 className="heading-terms">User Generated Content</h2>
+        <p className="para-terms">You may transmit or publish content created by you using any of the Services or otherwise. However, you shall be solely responsible for such content and the consequences of its transmission or publication. Any content made public will be publicly accessible through the internet and may be crawled and indexed by search engines. You are responsible for ensuring that you do not accidentally make any private content publicly available. Any content that you may receive from other users of the Services, is provided to you AS IS for your information and personal use only and you agree not to use, copy, reproduce, distribute, transmit, broadcast, display, sell, license or otherwise exploit such content for any purpose, without the express written consent of the person who owns the rights to such content. In the course of using any of the Services, if you come across any content with copyright notice(s) or any copy protection feature(s), you agree not to remove such copyright notice(s) or disable such copy protection feature(s) as the case may be. By making any copyrighted/copyrightable content available on any of the Services you affirm that you have the consent, authorization or permission, as the case may be from every person who may claim any rights in such content to make such content available in such manner. Further, by making any content available in the manner aforementioned, you expressly agree that Touchmark Descience Pvt Ltd will have the right to block access to or remove such content made available by you if Touchmark Descience Pvt Ltd receives complaints concerning any illegality or infringement of third party rights in such content. By using any of the Services and transmitting or publishing any content using such Service, you expressly consent to determination of questions of illegality or infringement of third party rights in such content by the agent designated by Touchmark Descience Pvt Ltd for this purpose.
+            For procedures relating to complaints of illegality or infringement of third party rights in content transmitted or published using the Services, please contact us at info@touchmarkdes.com. If you wish to protest any blocking or removal of content by Touchmark Descience Pvt Ltd, you may do so by contacting us at info@touchmarkdes.com.</p>
+
+        <h2 className="heading-terms">Sample Files and Applications</h2>
+        <p className="para-terms">Touchmark Descience Pvt Ltd may provide sample files and applications for the purpose of demonstrating the possibility of using the Services effectively for specific purposes. The information contained in any such sample files and applications consists of random data. Touchmark Descience Pvt Ltd makes no warranty, either express or implied, as to the accuracy, usefulness, completeness or reliability of the information or the sample files and applications.</p>
+
+        <h2 className="heading-terms">Disclaimer of Warranties</h2>
+        <p className="para-terms">YOU EXPRESSLY UNDERSTAND AND AGREE THAT THE USE OF THE SERVICES IS AT YOUR SOLE RISK. THE SERVICES ARE PROVIDED ON AN AS-IS-AND-AS-AVAILABLE BASIS. Touchmark Descience Pvt Ltd EXPRESSLY DISCLAIMS ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. Touchmark Descience Pvt Ltd MAKES NO WARRANTY THAT THE SERVICES WILL BE UNINTERRUPTED, TIMELY, SECURE, OR ERROR FREE. USE OF ANY MATERIAL DOWNLOADED OR OBTAINED THROUGH THE USE OF THE SERVICES SHALL BE AT YOUR OWN DISCRETION AND RISK AND YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM, MOBILE TELEPHONE, WIRELESS DEVICE OR DATA THAT RESULTS FROM THE USE OF THE SERVICES OR THE DOWNLOAD OF ANY SUCH MATERIAL. NO ADVICE OR INFORMATION, WHETHER WRITTEN OR ORAL, OBTAINED BY YOU FROM Touchmark Descience Pvt Ltd, ITS EMPLOYEES OR REPRESENTATIVES SHALL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THE TERMS.</p>
+
+        <h2 className="heading-terms">Limitation of Liability</h2>
+        <p className="para-terms">YOU AGREE THAT Touchmark Descience Pvt Ltd SHALL, IN NO EVENT, BE LIABLE FOR ANY CONSEQUENTIAL, INCIDENTAL, INDIRECT, SPECIAL, PUNITIVE, OR OTHER LOSS OR DAMAGE WHATSOEVER OR FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, COMPUTER FAILURE, LOSS OF BUSINESS INFORMATION, OR OTHER LOSS ARISING OUT OF OR CAUSED BY YOUR USE OF OR INABILITY TO USE THE SERVICE, EVEN IF Touchmark Descience Pvt Ltd HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. IN NO EVENT SHALL Touchmark Descience Pvt Ltd’S ENTIRE LIABILITY TO YOU IN RESPECT OF ANY SERVICE, WHETHER DIRECT OR INDIRECT, EXCEED THE FEES PAID BY YOU TOWARDS SUCH SERVICE.</p>
+
+        <h2 className="heading-terms">Indemnification</h2>
+        <p className="para-terms">You agree to indemnify and hold harmless Touchmark Descience Pvt Ltd, partners, employees, suppliers, and affiliates, from and against any losses, damages, fines and expenses (including attorney’s fees and costs) arising out of or relating to any claims that you have used the Services in violation of another party’s rights, in violation of any law, in violations of any provisions of the Terms, or any other claim related to your use of the Services, except where such use is authorized by Touchmark Descience Pvt Ltd./p&gt;
+
+        </p><h2 className="heading-terms">Suspension and Termination</h2>
+        <p className="para-terms">We may suspend your user account or temporarily disable access to whole or part of any Service in the event of any suspected illegal activity, extended periods of inactivity or requests by law enforcement or other government agencies. Objections to suspension or disabling of user accounts should be made to info@touchmarkdes.com within thirty days of being notified about the suspension. We may terminate a suspended or disabled user account after thirty days. We will also terminate your user account on your request.
+            In addition, we reserve the right to terminate your user account and deny the Services upon reasonable belief that you have violated the Terms and to terminate your access to any Beta Service in case of unexpected technical issues or discontinuation of the Beta Service. You have the right to terminate your user account if Touchmark Descience Pvt Ltd breaches its obligations under these Terms and in such event, you will be entitled to prorated refund of any prepaid fees. Termination of user account will include denial of access to all Services, deletion of information in your user account such as your email address and password and deletion of all data in your user account.</p>
+
+        <h2 className="heading-terms">END OF TERMS OF SERVICE</h2>
+        <p className="para-terms">If you have any questions or concerns regarding this Agreement, please contact us at info@touchmarkdes.com.</p>
+
+    </div>
+    
+
+
+
+
+
+
+    <link rel="Touchmark" href="terms-condition.php.html#" />
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+      {/* Page Inline Script Initializers */}
+      <Script id="page-script-0" strategy="lazyOnload">{`
+        try {
+          document.addEventListener('DOMContentLoaded', function() {
+        const searchButton = document.getElementById('btn-search');
+        const searchInput = document.getElementById('input-search');
+        const suggestionsDropdown = document.getElementById('suggestions-dropdown');
+        const suggestionsList = document.getElementById('suggestions-list');
+        let isExpanded = false;
+
+        const suggestions = ['Apple', 'Banana', 'Cherry', 'Date', 'Elderberry', 'Fig', 'Grape'];
+
+        function toggleInput() {
+            if (isExpanded) {
+                searchInput.classList.remove('w-72');
+                isExpanded = false;
+                suggestionsDropdown.classList.add('hidden');
+            } else {
+                searchInput.classList.add('w-72');
+                searchInput.focus();
+                isExpanded = true;
+            }
+        }
+
+        searchButton.addEventListener('click', toggleInput);
+
+        searchInput.addEventListener('input', function() {
+            const query = searchInput.value.toLowerCase();
+            if (query.length > 0) {
+                const filteredSuggestions = suggestions.filter(item => item.toLowerCase().includes(query));
+                suggestionsList.innerHTML = filteredSuggestions.map(item => \`<li class="px-4 py-2 hover:bg-gray-200 cursor-pointer">\${item}</li>\`).join('');
+                suggestionsDropdown.classList.remove('hidden');
+            } else {
+                suggestionsDropdown.classList.add('hidden');
+            }
+        });
+
+        searchInput.addEventListener('blur', function() {
+            setTimeout(() => {
+                suggestionsDropdown.classList.add('hidden');
+                searchInput.classList.remove('w-72');
+                isExpanded = false;
+            }, 100);
+        });
+
+        suggestionsList.addEventListener('click', function(e) {
+            if (e.target.tagName === 'LI') {
+                searchInput.value = e.target.textContent;
+                suggestionsDropdown.classList.add('hidden');
+            }
+        });
+    });
+        } catch (e) {
+          // Safe catch for conditional page elements
+        }
+      `}</Script>
+      <Script id="page-script-1" strategy="lazyOnload">{`
+        try {
+          // Function to open the modal and disable body scrolling
+    window.openModal = function(modalId) {
+        document.getElementById(modalId).style.display = 'block';
+        document.getElementsByTagName('body')[0].classList.add('overflow-y-hidden');
+    }
+
+    // Function to close the modal and enable body scrolling
+    window.closeModal = function(modalId) {
+        document.getElementById(modalId).style.display = 'none';
+        document.getElementsByTagName('body')[0].classList.remove('overflow-y-hidden');
+    }
+
+    // Event listener for closing the modal with the "Escape" key
+    document.onkeydown = function(event) {
+        event = event || window.event;
+        if (event.keyCode === 27) { // 27 is the keycode for the Escape key
+            document.getElementsByTagName('body')[0].classList.remove('overflow-y-hidden');
+            let modals = document.getElementsByClassName('modal');
+            Array.prototype.slice.call(modals).forEach(i => {
+                i.style.display = 'none';
+            });
+        }
+    };
+
+    // Event listener for the first "Continue" button (from Step 1 to Step 2)
+    document.getElementById('continueButton1').addEventListener('click', function() {
+        document.getElementById('step1').classList.add('hidden');
+        document.getElementById('step2').classList.remove('hidden');
+        document.getElementById('goBack').classList.remove('hidden'); // Show "Go Back" button
+    });
+
+    // Event listener for the second "Continue" button (from Step 2 to Step 3)
+    document.getElementById('continueButton2').addEventListener('click', function() {
+        document.getElementById('step2').classList.add('hidden');
+        document.getElementById('step3').classList.remove('hidden');
+    });
+
+    // Event listener for the "Submit" button (from Step 3 to Step 4)
+    document.getElementById('submitButton').addEventListener('click', function() {
+        document.getElementById('step3').classList.add('hidden');
+        document.getElementById('step4').classList.remove('hidden');
+    });
+
+    // Event listener for the "Go Back" button
+    document.getElementById('goBack').addEventListener('click', function(event) {
+        event.preventDefault();
+        if (!document.getElementById('step2').classList.contains('hidden')) {
+            // If step 2 is visible, go back to step 1
+            document.getElementById('step2').classList.add('hidden');
+            document.getElementById('step1').classList.remove('hidden');
+            document.getElementById('goBack').classList.add('hidden'); // Hide "Go Back" button
+        } else if (!document.getElementById('step3').classList.contains('hidden')) {
+            // If step 3 is visible, go back to step 2
+            document.getElementById('step3').classList.add('hidden');
+            document.getElementById('step2').classList.remove('hidden');
+        } else if (!document.getElementById('step4').classList.contains('hidden')) {
+            // If step 4 is visible, go back to step 3
+            document.getElementById('step4').classList.add('hidden');
+            document.getElementById('step3').classList.remove('hidden');
+        }
+    });
+        } catch (e) {
+          // Safe catch for conditional page elements
+        }
+      `}</Script>
+      <Script id="page-script-2" strategy="lazyOnload">{`
+        try {
+          document.addEventListener("DOMContentLoaded", function() {
+        fetch('./components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    });
+        } catch (e) {
+          // Safe catch for conditional page elements
+        }
+      `}</Script>
+      <Script id="page-script-3" strategy="lazyOnload">{`
+        try {
+          document.getElementById('resend-button').addEventListener('click', function() {
+        var messageContainer = document.getElementById('message-container');
+        var countdownElement = document.getElementById('countdown');
+        var resendButton = document.getElementById('resend-button');
+        var countdown = 30;
+
+        // Show the hidden message
+        messageContainer.classList.remove('hidden');
+
+        // Disable the resend button, change its color, and set cursor to not-allowed
+        resendButton.disabled = true;
+        resendButton.classList.add('text-[#CECECE]');
+        resendButton.classList.remove('text-[#194f97]');
+        resendButton.style.cursor = 'not-allowed';
+
+        // Start the countdown
+        var interval = setInterval(function() {
+            countdown--;
+            countdownElement.textContent = countdown;
+
+            if (countdown <= 0) {
+                clearInterval(interval);
+                // Enable the resend button, revert color, and reset cursor
+                resendButton.disabled = false;
+                resendButton.classList.remove('text-[#CECECE]');
+                resendButton.classList.add('text-[#194f97]');
+                resendButton.style.cursor = 'pointer';
+            }
+        }, 1000);
+    });
+        } catch (e) {
+          // Safe catch for conditional page elements
+        }
+      `}</Script>
+      <Script id="page-script-4" strategy="lazyOnload">{`
+        try {
+          document.getElementById('resend-button-2').addEventListener('click', function() {
+        var messageContainer = document.getElementById('message-container-2');
+        var countdownElement = document.getElementById('countdown-2');
+        var resendButton = document.getElementById('resend-button-2');
+        var countdown = 30;
+
+        // Show the hidden message
+        messageContainer.classList.remove('hidden');
+
+        // Disable the resend button, change its color, and set cursor to not-allowed
+        resendButton.disabled = true;
+        resendButton.classList.add('text-[#CECECE]');
+        resendButton.classList.remove('text-[#194f97]');
+        resendButton.style.cursor = 'not-allowed';
+
+        // Start the countdown
+        var interval = setInterval(function() {
+            countdown--;
+            countdownElement.textContent = countdown;
+
+            if (countdown <= 0) {
+                clearInterval(interval);
+                // Enable the resend button, revert color, and reset cursor
+                resendButton.disabled = false;
+                resendButton.classList.remove('text-[#CECECE]');
+                resendButton.classList.add('text-[#194f97]');
+                resendButton.style.cursor = 'pointer';
+            }
+        }, 1000);
+    });
+        } catch (e) {
+          // Safe catch for conditional page elements
+        }
+      `}</Script>
+      <Script id="page-script-5" strategy="lazyOnload">{`
+        try {
+          document.getElementById('continueButton1').addEventListener('click', function(event) {
+        var emailInput = document.getElementById('email');
+        var warningMessage = document.getElementById('email-warning');
+
+        if (!emailInput.validity.valid) {
+            // Show the warning message if email is invalid
+            warningMessage.classList.remove('hidden');
+        } else {
+            // Hide the warning message if the email is valid
+            warningMessage.classList.add('hidden');
+            // Proceed with form submission or other actions
+        }
+    });
+        } catch (e) {
+          // Safe catch for conditional page elements
+        }
+      `}</Script>
+      <Script id="page-script-6" strategy="lazyOnload">{`
+        try {
+          document.getElementById('submitButton').addEventListener('click', function(event) {
+        var emailInput = document.getElementById('email-2');
+        var warningMessage = document.querySelector('[x-text="validation.email.message"]');
+
+        if (emailInput.value === '' || !emailInput.checkValidity()) {
+            // Show the warning message if email is invalid
+            warningMessage.classList.remove('hidden');
+        } else {
+            // Hide the warning message if the email is valid
+            warningMessage.classList.add('hidden');
+            // Proceed with form submission or other actions
+        }
+    });
+        } catch (e) {
+          // Safe catch for conditional page elements
+        }
+      `}</Script>
+      <Script id="page-script-7" strategy="lazyOnload">{`
+        try {
+          function emailValidation() {
+        return {
+            email: '',
+            validation: {
+                email: {
+                    message: ''
+                }
+            },
+            showStep2: false,
+            validateEmail() {
+                const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}\$/;
+                if (this.email === '') {
+                    this.validation.email.message = 'Email is required.';
+                } else if (!emailPattern.test(this.email)) {
+                    this.validation.email.message = 'Please enter a valid email address.';
+                } else {
+                    this.validation.email.message = '';
+                }
+            },
+            submitEmail() {
+                this.validateEmail();
+                console.log("Validation message: ", this.validation.email.message); // Debug line
+                if (this.validation.email.message === '') {
+                    console.log("Making AJAX request..."); // Debug line
+                    // Make an AJAX request to send the code to the email
+                    \$.ajax({
+                        url: 'send_code.php',
+                        method: 'POST',
+                        contentType: 'application/json',
+                        data: JSON.stringify({
+                            email: this.email
+                        }),
+                        success: (data) => {
+                            console.log("AJAX success: ", data); // Debug line
+                            const response = JSON.parse(data);
+                            if (response.success) {
+                                this.showStep2 = true;
+                                document.getElementById("step1").style.display = "none";
+                                document.getElementById("step2").style.display = "block";
+                            } else {
+                                this.validation.email.message = response.message;
+                            }
+                        },
+                        error: (error) => {
+                            console.error('AJAX error:', error);
+                        }
+                    });
+                }
+            }
+        }
+    }
+
+    function codeValidation() {
+        return {
+            code: '',
+            validation: {
+                code: {
+                    message: ''
+                }
+            },
+            validateCode() {
+                const codePattern = /^\\d{6}\$/;
+                if (this.code === '') {
+                    this.validation.code.message = 'Please enter a valid 6-digit code.';
+                } else if (!codePattern.test(this.code)) {
+                    this.validation.code.message = 'Please enter a valid 6-digit code.';
+                } else {
+                    this.validation.code.message = '';
+                }
+            },
+            submitCode() {
+                this.validateCode();
+                console.log("Validation message: ", this.validation.code.message); // Debug line
+                if (this.validation.code.message === '') {
+                    console.log("Making AJAX request..."); // Debug line
+                    // Make an AJAX request to verify the code
+                    \$.ajax({
+                        url: 'verify_code.php',
+                        method: 'POST',
+                        contentType: 'application/json',
+                        data: JSON.stringify({
+                            code: this.code
+                        }),
+                        success: (data) => {
+                            console.log("AJAX success: ", data); // Debug line
+                            const response = JSON.parse(data);
+                            if (response.success) {
+                                alert('Code verified successfully!');
+                            } else {
+                                this.validation.code.message = response.message;
+                            }
+                        },
+                        error: (error) => {
+                            console.error('AJAX error:', error);
+                        }
+                    });
+                }
+            }
+        }
+    }
+        } catch (e) {
+          // Safe catch for conditional page elements
+        }
+      `}</Script>
+      <Script id="page-script-8" strategy="lazyOnload">{`
+        try {
+          document.getElementById('subscribedForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        var form = event.target;
+        var formData = new FormData(form);
+
+        fetch(form.action, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert(data.message); // Show response message
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    });
+        } catch (e) {
+          // Safe catch for conditional page elements
+        }
+      `}</Script>
+      <Script id="page-script-9" strategy="lazyOnload">{`
+        try {
+          document.getElementById('subscribedForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const email = document.getElementById('email').value;
+        const emailError = document.getElementById('emailError');
+
+        // Clear any previous error message
+        emailError.textContent = '';
+
+        fetch('check-email.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: new URLSearchParams({
+                    'reg_email': email
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.exists) {
+                    // If email exists, show password entry form
+                    document.getElementById('step1').classList.add('hidden');
+                    document.getElementById('step3').classList.remove('hidden');
+                    document.getElementById('emailInStep3').value = email; // Prefill the email in step 3
+                } else {
+                    // Redirect to registration page if email is new
+                    window.location.href = 'registration.php?email=' + encodeURIComponent(email);
+                }
+            })
+            .catch(error => {
+                emailError.textContent = 'An error occurred. Please try again later.';
+                console.error('Error:', error);
+            });
+    });
+        } catch (e) {
+          // Safe catch for conditional page elements
+        }
+      `}</Script>
+      <Script id="page-script-10" strategy="lazyOnload">{`
+        try {
+          document.getElementById('loginForm').addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevent the default form submission
+
+        const email = document.getElementById('email-2').value.trim();
+        const password = document.getElementById('password').value.trim();
+
+        if (!email || !password) {
+            alert('Please enter both email and password.');
+            return;
+        }
+
+        fetch('check-login.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: new URLSearchParams({
+                    'reg_email': email,
+                    'reg_password': password
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    displaySuccessAlert('Login successful!');
+                    document.getElementById('step3').classList.add('hidden'); // Close the popup
+                    setTimeout(() => {
+                        window.location.reload(); // Refresh the page after 1 second
+                    }, 1000);
+                } else {
+                    alert(data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    });
+
+    function displaySuccessAlert(message) {
+        // Remove any existing success alert
+        const existingAlert = document.getElementById('success-alert');
+        if (existingAlert) {
+            existingAlert.remove();
+        }
+
+        // Create a new success alert element
+        const alertDiv = document.createElement('div');
+        alertDiv.id = 'success-alert';
+        alertDiv.className = 'fixed top-4 right-4 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded';
+        alertDiv.role = 'alert';
+        alertDiv.innerHTML = \`
+            <strong class="font-bold">Success!</strong>
+            <span class="block sm:inline">\${message}</span>
+        \`;
+
+        // Append the alert to the body
+        document.body.appendChild(alertDiv);
+
+        // Automatically remove the alert after 3 seconds
+        setTimeout(() => {
+            alertDiv.remove();
+        }, 3000);
+    }
+
+    document.getElementById('sendCodeButton').addEventListener('click', function() {
+        // Handle the "Send One-Time Code" button click here
+        // You may need to implement \`sendCode\` function to handle this action
+    });
+        } catch (e) {
+          // Safe catch for conditional page elements
+        }
+      `}</Script>
+      <Script id="page-script-11" strategy="lazyOnload">{`
+        try {
+          document.getElementById('sendCodeButton').addEventListener('click', function() {
+        // Immediately switch forms for testing purposes
+        document.getElementById('step3').classList.add('hidden');
+        document.getElementById('step4').classList.remove('hidden');
+
+        // Continue with AJAX request
+        const email = document.getElementById('email-2').value;
+        if (email) {
+            \$.ajax({
+                url: 'send-code.php',
+                type: 'POST',
+                data: {
+                    email: email
+                },
+                success: function(response) {
+                    const data = JSON.parse(response);
+                    if (data.success) {
+                        console.log("Email sent successfully.");
+                    } else {
+                        alert(data.message);
+                    }
+                },
+                error: function() {
+                    alert('Failed to send code. Please try again.');
+                }
+            });
+        } else {
+            alert('Please enter your email.');
+        }
+    });
+        } catch (e) {
+          // Safe catch for conditional page elements
+        }
+      `}</Script>
+      <Script id="page-script-12" strategy="lazyOnload">{`
+        try {
+          document.getElementById('verifyCodeForm').addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevent the default form submission
+
+        const email = document.getElementById('email').value.trim();
+        const code = document.getElementById('code').value.trim();
+        const validationMessage = document.getElementById('validationMessage');
+
+        // Clear any previous validation message
+        validationMessage.textContent = '';
+
+        if (!email || !code) {
+            validationMessage.textContent = 'Please enter both email and code.';
+            return;
+        }
+
+        fetch('verify-code.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: new URLSearchParams({
+                    'email': email,
+                    'code': code
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    displaySuccessAlert('Code verified successfully!');
+                    updateSignInButton(); // Change the sign-in button to profile icon
+
+                    // Reload the page after updating the button
+                    setTimeout(() => {
+                        window.location.reload();
+                    }, 1000); // Adjust the timeout as needed
+
+                } else {
+                    validationMessage.textContent = data.message;
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                validationMessage.textContent = 'An error occurred. Please try again later.';
+            });
+    });
+
+    function updateSignInButton() {
+        const signInButton = document.getElementById('signInButton');
+
+        // Update button to show profile icon
+        signInButton.innerHTML = \`
+            <div class="relative overflow-hidden bg-gray-500 px-3 py-2 inline-flex justify-center items-center group w-full">
+                <span class="relative z-10 text-white transition-colors text-sm uppercase">Profile</span>
+                <span class="absolute inset-0 bg-gray-700 transition-transform duration-300 transform -translate-x-full group-hover:translate-x-0"></span>
+            </div>
+        \`;
+    }
+
+    function displaySuccessAlert(message) {
+        // Remove any existing success alert
+        const existingAlert = document.getElementById('success-alert');
+        if (existingAlert) {
+            existingAlert.remove();
+        }
+
+        // Create a new success alert element
+        const alertDiv = document.createElement('div');
+        alertDiv.id = 'success-alert';
+        alertDiv.className = 'fixed top-4 right-4 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded';
+        alertDiv.role = 'alert';
+        alertDiv.innerHTML = \`
+            <strong class="font-bold">Success!</strong>
+            <span class="block sm:inline">\${message}</span>
+        \`;
+
+        // Append the alert to the body
+        document.body.appendChild(alertDiv);
+
+        // Automatically remove the alert after 3 seconds
+        setTimeout(() => {
+            alertDiv.remove();
+        }, 3000);
+    }
+        } catch (e) {
+          // Safe catch for conditional page elements
+        }
+      `}</Script>
+      <Script id="page-script-13" strategy="lazyOnload">{`
+        try {
+          document.getElementById('resend-button-2').addEventListener('click', function() {
+        const email = document.getElementById('email-2').value; // Assuming email field ID in step 3 is 'email-2'
+
+        if (email) {
+            fetch('resend-code.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    },
+                    body: new URLSearchParams({
+                        'email': email
+                    })
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.success) {
+                        // Handle success response
+                        document.getElementById('message-container-2').classList.remove('hidden');
+                        startCountdown();
+                    } else {
+                        // Handle error response
+                        alert(data.message);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('An error occurred. Please try again later.');
+                });
+        } else {
+            alert('Please enter your email address.');
+        }
+    });
+
+    // Function to start a countdown timer (example)
+    function startCountdown() {
+        let countdownElement = document.getElementById('countdown-2');
+        let timeLeft = 30; // Time in seconds
+        let countdown;
+
+        // Clear any existing countdown interval
+        if (countdown) {
+            clearInterval(countdown);
+        }
+
+        countdown = setInterval(function() {
+            if (timeLeft <= 0) {
+                clearInterval(countdown);
+                countdownElement.textContent = '30'; // Reset the countdown text
+            } else {
+                countdownElement.textContent = timeLeft;
+                timeLeft--;
+            }
+        }, 1000);
+    }
+        } catch (e) {
+          // Safe catch for conditional page elements
+        }
+      `}</Script>
+      <Script id="page-script-14" strategy="lazyOnload">{`
+        try {
+          document.addEventListener('DOMContentLoaded', () => {
+        // Assuming you have a way to check if the user is signed in
+        // Example: check session storage or an API call to set the isSignedIn value
+        let userSignedIn = true; // Set this based on your actual logic
+
+        // Update the Alpine.js data
+        Alpine.store('auth', {
+            isSignedIn: userSignedIn,
+        });
+    });
+    document.getElementById('subscribedForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting
+
+    // Get the email value from the subscribedForm
+    var emailValue = document.getElementById('email').value;
+
+    // Set the email value in the loginForm
+    document.getElementById('email-2').value = emailValue;
+
+    // Optionally, you can now submit the subscribedForm if needed
+    // this.submit();
+});
+const togglePassword = document.querySelector('#togglePassword');
+    const password = document.querySelector('#password');
+    const eyeIcon = document.querySelector('#eyeIcon');
+
+    togglePassword.addEventListener('click', function() {
+        // Toggle the type attribute
+        const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+        password.setAttribute('type', type);
+
+        // Toggle the eye icon
+        eyeIcon.classList.toggle('text-gray-500');
+        eyeIcon.classList.toggle('text-blue-500');
+    });
+        } catch (e) {
+          // Safe catch for conditional page elements
+        }
+      `}</Script>
+      <Script id="page-script-15" strategy="lazyOnload">{`
+        try {
+          window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y8WSH8YVSZ');
+        } catch (e) {
+          // Safe catch for conditional page elements
+        }
+      `}</Script>
+      <Script id="page-script-16" strategy="lazyOnload">{`
+        try {
+          function closeAlert() {
+    \$('#successAlert').addClass('hidden');
+}
+
+\$(document).ready(function() {
+    \$('#nextButton').on('click', function() {
+        // Hide email step and show name step
+        \$('#emailStep').addClass('hidden');
+        \$('#nameStep').removeClass('hidden');
+    });
+
+    \$('#subscribeForm').on('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+        var formData = \$(this).serialize(); // Serialize the form data
+
+        \$.ajax({
+            type: 'POST',
+            url: 'https://touchmarkdes.com/head/engine/ajax/__ajax_subscribe_form.php', // Replace with your server URL
+            data: formData,
+            success: function(response) {
+                // Hide the form and show the success message
+                \$('#subscribeForm').addClass('hidden');
+                \$('#successAlert').removeClass('hidden');
+            },
+            error: function(xhr, status, error) {
+                // Handle the error response
+                alert('Subscription failed: ' + error);
+            }
+        });
+    });
+});
+        } catch (e) {
+          // Safe catch for conditional page elements
+        }
+      `}</Script>
+    </>
+  );
+}
