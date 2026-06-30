@@ -40,13 +40,13 @@ export default function Navbar() {
           <div className="flex-shrink-0">
             <a href="/" className="lg:block hidden">
               {scrolled || !isHome ? (
-                <img src="/src/assets/img/tds-color-logo.png" className="h-7" alt="Logo" />
+                <img src="/images/tds-color-logo.png" className="h-7" alt="Logo" />
               ) : (
-                <img src="/src/assets/img/touchmark-logowhite.svg" className="h-7" alt="Logo" />
+                <img src="/images/touchmark-logowhite.svg" className="h-7" alt="Logo" />
               )}
             </a>
             <a href="/" className="lg:hidden block">
-              <img src="/src/assets/img/tds-color-logo.png" className="h-7" alt="Logo" />
+              <img src="/images/tds-color-logo.png" className="h-7" alt="Logo" />
             </a>
           </div>
 
@@ -71,7 +71,7 @@ export default function Navbar() {
                 <div className="h-10">
                   <button type="button" className="font-inter font-semibold lg:font-normal sm:p-3 flex justify-between items-center w-full text-lg lg:text-sm">
                     What we do
-                    <svg className="ms-1 flex-shrink-0 size-4 group-hover:-rotate-180 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg className="ms-1 flex-shrink-0 size-4 group-hover:-rotate-180 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="m6 9 6 6 6-6" />
                     </svg>
                   </button>
@@ -86,27 +86,27 @@ export default function Navbar() {
                     </div>
                     <div className="sm:grid sm:grid-cols-4 px-5 lg:px-2 lg:p-7 text-gray-900">
                       <div className="flex flex-col space-y-5 lg:text-sm text-base lg:pt-0 pt-2">
-                        <a className="hover:text-[#0A3B7C]" href="/tc-service">
+                        <a className="hover:text-[#0A3B7C]" href="/technology-consulting-service">
                           <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-[#0A3B7C] after:absolute after:h-0.5 after:w-0 after:bottom-1 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">Technology & Consulting</span>
                         </a>
                         <a className="hover:text-[#0A3B7C]" href="/cloud">
                           <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-[#0A3B7C] after:absolute after:h-0.5 after:w-0 after:bottom-1 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">Cloud</span>
                         </a>
-                        <a className="hover:text-[#0A3B7C]" href="/sc-service">
+                        <a className="hover:text-[#0A3B7C]" href="/sales-commerce-service">
                           <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-[#0A3B7C] after:absolute after:h-0.5 after:w-0 after:bottom-1 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">Sales & Commerce</span>
                         </a>
-                        <a className="hover:text-[#0A3B7C]" href="/mv-service">
+                        <a className="hover:text-[#0A3B7C]" href="/metaverse-service">
                           <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-[#0A3B7C] after:absolute after:h-0.5 after:w-0 after:bottom-1 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">Metaverse</span>
                         </a>
                       </div>
                       <div className="flex flex-col space-y-5 lg:pt-0 pt-5 lg:text-sm text-base">
-                        <a className="hover:text-[#0A3B7C]" href="/da-service">
+                        <a className="hover:text-[#0A3B7C]" href="/data-analytics-service">
                           <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-[#0A3B7C] after:absolute after:h-0.5 after:w-0 after:bottom-1 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">Data & Analytics</span>
                         </a>
                         <a className="hover:text-[#0A3B7C]" href="/ai-ml-service">
                           <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-[#0A3B7C] after:absolute after:h-0.5 after:w-0 after:bottom-1 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">AI & ML</span>
                         </a>
-                        <a className="hover:text-[#0A3B7C]" href="/rpa-service">
+                        <a className="hover:text-[#0A3B7C]" href="/robotic-process-automation-service">
                           <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-[#0A3B7C] after:absolute after:h-0.5 after:w-0 after:bottom-1 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">Robotic Process Automation</span>
                         </a>
                       </div>
@@ -121,7 +121,7 @@ export default function Navbar() {
                         </div>
                       </div>
                       <div className="lg:block hidden p-3">
-                        <img src="/src/assets/img/navbar-img-service.jpg" className="w-64 h-36 object-cover rounded shadow" alt="Featured Services" />
+                        <img src="/images/navbar-img-service.jpg" className="w-64 h-36 object-cover rounded shadow" alt="Featured Services" />
                       </div>
                     </div>
                   </div>
@@ -133,7 +133,7 @@ export default function Navbar() {
                 <div className="h-10">
                   <button type="button" className="font-inter font-semibold lg:font-normal sm:p-3 flex justify-between items-center w-full text-lg lg:text-sm">
                     Industries
-                    <svg className="ms-1 flex-shrink-0 size-4 group-hover:-rotate-180 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg className="ms-1 flex-shrink-0 size-4 group-hover:-rotate-180 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="m6 9 6 6 6-6" />
                     </svg>
                   </button>
@@ -151,10 +151,10 @@ export default function Navbar() {
                         <a className="hover:text-[#0A3B7C]" href="/bfsi-industry">
                           <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-[#0A3B7C] after:absolute after:h-0.5 after:w-0 after:bottom-1 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">BFSI</span>
                         </a>
-                        <a className="hover:text-[#0A3B7C]" href="/areo-industry">
+                        <a className="hover:text-[#0A3B7C]" href="/aerospace-industry">
                           <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-[#0A3B7C] after:absolute after:h-0.5 after:w-0 after:bottom-1 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">Aerospace & Defense</span>
                         </a>
-                        <a className="hover:text-[#0A3B7C]" href="/engg-industry">
+                        <a className="hover:text-[#0A3B7C]" href="/engineering-industry">
                           <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-[#0A3B7C] after:absolute after:h-0.5 after:w-0 after:bottom-1 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">Engineering & R&D</span>
                         </a>
                         <a className="hover:text-[#0A3B7C]" href="/esg-industry">
@@ -165,13 +165,13 @@ export default function Navbar() {
                         <a className="hover:text-[#0A3B7C]" href="/fmcg-industry">
                           <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-[#0A3B7C] after:absolute after:h-0.5 after:w-0 after:bottom-1 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">FMCG & Retail</span>
                         </a>
-                        <a className="hover:text-[#0A3B7C]" href="/gt-industry">
+                        <a className="hover:text-[#0A3B7C]" href="/green-tech-industry">
                           <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-[#0A3B7C] after:absolute after:h-0.5 after:w-0 after:bottom-1 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">Geospatial Tech</span>
                         </a>
-                        <a className="hover:text-[#0A3B7C]" href="/hc-industry">
+                        <a className="hover:text-[#0A3B7C]" href="/healthcare-industry">
                           <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-[#0A3B7C] after:absolute after:h-0.5 after:w-0 after:bottom-1 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">Healthcare & Life Sciences</span>
                         </a>
-                        <a className="hover:text-[#0A3B7C]" href="/me-industry">
+                        <a className="hover:text-[#0A3B7C]" href="/media-entertainment-industry">
                           <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-[#0A3B7C] after:absolute after:h-0.5 after:w-0 after:bottom-1 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">Media & Entertainment</span>
                         </a>
                       </div>
@@ -182,12 +182,12 @@ export default function Navbar() {
                         <a className="hover:text-[#0A3B7C]" href="/real-estate-industry">
                           <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-[#0A3B7C] after:absolute after:h-0.5 after:w-0 after:bottom-1 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">Real Estate</span>
                         </a>
-                        <a className="hover:text-[#0A3B7C]" href="/tt-industry">
+                        <a className="hover:text-[#0A3B7C]" href="/travel-tourism-industry">
                           <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-[#0A3B7C] after:absolute after:h-0.5 after:w-0 after:bottom-1 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">Travel & Tourism</span>
                         </a>
                       </div>
                       <div className="lg:block hidden p-3">
-                        <img src="/src/assets/img/navbar-img-industry.jpg" className="w-64 h-36 object-cover rounded shadow" alt="Featured Industries" />
+                        <img src="/images/navbar-img-industry.jpg" className="w-64 h-36 object-cover rounded shadow" alt="Featured Industries" />
                       </div>
                     </div>
                   </div>
@@ -241,12 +241,12 @@ export default function Navbar() {
               type="button" 
               className="p-2 inline-flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none"
             >
-              <svg className={`hs-collapse-open:hidden ${mobileMenuOpen ? 'hidden' : 'block'} size-4`} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg className={`hs-collapse-open:hidden ${mobileMenuOpen ? 'hidden' : 'block'} size-4`} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <line x1="3" x2="21" y1="6" y2="6" />
                 <line x1="3" x2="21" y1="12" y2="12" />
                 <line x1="3" x2="21" y1="18" y2="18" />
               </svg>
-              <svg className={`hs-collapse-open:block ${mobileMenuOpen ? 'block' : 'hidden'} size-4`} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg className={`hs-collapse-open:block ${mobileMenuOpen ? 'block' : 'hidden'} size-4`} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M18 6 6 18" />
                 <path d="m6 6 12 12" />
               </svg>
@@ -264,29 +264,29 @@ export default function Navbar() {
           <div className="border-t border-gray-100 my-2" />
           <h4 className="text-gray-400 font-semibold text-xs uppercase tracking-wider">What We Do</h4>
           <div className="pl-3 space-y-2">
-            <a href="/tc-service" className="block text-gray-600 hover:text-[#194F97] text-sm py-1">Technology & Consulting</a>
+            <a href="/technology-consulting-service" className="block text-gray-600 hover:text-[#194F97] text-sm py-1">Technology & Consulting</a>
             <a href="/cloud" className="block text-gray-600 hover:text-[#194F97] text-sm py-1">Cloud</a>
-            <a href="/sc-service" className="block text-gray-600 hover:text-[#194F97] text-sm py-1">Sales & Commerce</a>
-            <a href="/mv-service" className="block text-gray-600 hover:text-[#194F97] text-sm py-1">Metaverse</a>
-            <a href="/da-service" className="block text-gray-600 hover:text-[#194F97] text-sm py-1">Data & Analytics</a>
+            <a href="/sales-commerce-service" className="block text-gray-600 hover:text-[#194F97] text-sm py-1">Sales & Commerce</a>
+            <a href="/metaverse-service" className="block text-gray-600 hover:text-[#194F97] text-sm py-1">Metaverse</a>
+            <a href="/data-analytics-service" className="block text-gray-600 hover:text-[#194F97] text-sm py-1">Data & Analytics</a>
             <a href="/ai-ml-service" className="block text-gray-600 hover:text-[#194F97] text-sm py-1">AI & ML</a>
-            <a href="/rpa-service" className="block text-gray-600 hover:text-[#194F97] text-sm py-1">Robotic Process Automation</a>
+            <a href="/robotic-process-automation-service" className="block text-gray-600 hover:text-[#194F97] text-sm py-1">Robotic Process Automation</a>
           </div>
 
           <div className="border-t border-gray-100 my-2" />
           <h4 className="text-gray-400 font-semibold text-xs uppercase tracking-wider">Industries</h4>
           <div className="pl-3 grid grid-cols-2 gap-2 text-sm">
             <a href="/bfsi-industry" className="block text-gray-600 hover:text-[#194F97] py-1">BFSI</a>
-            <a href="/areo-industry" className="block text-gray-600 hover:text-[#194F97] py-1">Aerospace</a>
-            <a href="/engg-industry" className="block text-gray-600 hover:text-[#194F97] py-1">Engineering</a>
+            <a href="/aerospace-industry" className="block text-gray-600 hover:text-[#194F97] py-1">Aerospace</a>
+            <a href="/engineering-industry" className="block text-gray-600 hover:text-[#194F97] py-1">Engineering</a>
             <a href="/esg-industry" className="block text-gray-600 hover:text-[#194F97] py-1">ESG</a>
             <a href="/fmcg-industry" className="block text-gray-600 hover:text-[#194F97] py-1">FMCG & Retail</a>
-            <a href="/gt-industry" className="block text-gray-600 hover:text-[#194F97] py-1">Geospatial</a>
-            <a href="/hc-industry" className="block text-gray-600 hover:text-[#194F97] py-1">Healthcare</a>
-            <a href="/me-industry" className="block text-gray-600 hover:text-[#194F97] py-1">Media & Ent.</a>
+            <a href="/green-tech-industry" className="block text-gray-600 hover:text-[#194F97] py-1">Geospatial</a>
+            <a href="/healthcare-industry" className="block text-gray-600 hover:text-[#194F97] py-1">Healthcare</a>
+            <a href="/media-entertainment-industry" className="block text-gray-600 hover:text-[#194F97] py-1">Media & Ent.</a>
             <a href="/mining-industry" className="block text-gray-600 hover:text-[#194F97] py-1">Mining</a>
             <a href="/real-estate-industry" className="block text-gray-600 hover:text-[#194F97] py-1">Real Estate</a>
-            <a href="/tt-industry" className="block text-gray-600 hover:text-[#194F97] py-1">Travel & Tourism</a>
+            <a href="/travel-tourism-industry" className="block text-gray-600 hover:text-[#194F97] py-1">Travel & Tourism</a>
           </div>
 
           <div className="border-t border-gray-100 my-2" />

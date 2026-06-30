@@ -5,40 +5,10 @@ import Script from "next/script";
 export default function Page() {
   return (
     <>
-      <title>Sales & Commerce</title>
+      <title>Health Care</title>
       <meta name="description" content="" />
 
-      {/* Page JSX Content */}
-      ﻿
-
-
-
-
-    <link rel="Touchmark" href="sc-service.html#" />
-    
-    
-    
-    
-
-
-    
-    <link rel="touchmark-des-icon" sizes="180x180" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-    
-    
-
-    
-    
-
-    
-
-
-
-
-
-
-    <div className="overflow-x-hidden lg:overflow-x-auto">
+      <div className="overflow-x-hidden lg:overflow-x-auto">
 
         
         
@@ -46,7 +16,7 @@ export default function Page() {
 
 
 
-    <link rel="Touchmark" href="sc-service.html#" />
+    <link rel="Touchmark" href="hc-industry.html#" />
     
     
     
@@ -78,7 +48,7 @@ export default function Page() {
 
             
             <div className="flex items-end justify-between p-2">
-                <a href="sc-service.html#" id="goBack" className="flex justify-start items-center text-[#194F97] hover:underline text-sm hidden">
+                <a href="hc-industry.html#" id="goBack" className="flex justify-start items-center text-[#194F97] hover:underline text-sm hidden">
                     <svg id="fi_2985161" height="20" viewBox="0 0 128 128" width="20" xmlns="http://www.w3.org/2000/svg">
                         <path id="Left_Arrow_4_" d="m84 108c-1.023 0-2.047-.391-2.828-1.172l-40-40c-1.563-1.563-1.563-4.094 0-5.656l40-40c1.563-1.563 4.094-1.563 5.656 0s1.563 4.094 0 5.656l-37.172 37.172 37.172 37.172c1.563 1.563 1.563 4.094 0 5.656-.781.781-1.805 1.172-2.828 1.172z" fill="#194F97"></path>
                     </svg>
@@ -269,13 +239,13 @@ export default function Page() {
 
 
         
-                <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('assets/front/home/sc_banner_1721811302.PNG')" }}>
+                <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('assets/front/home/hc_banner_1721887229.PNG')" }}>
             <div className="xl:max-w-screen-2xl 2xl:max-w-screen-2xl lg:max-w-screen-lg px-4 md:px-6 lg:px-8 mx-auto py-10 lg:py-24">
                 <div className="grid grid-cols-12 lg:gap-4">
                     <div className="lg:col-span-7 col-span-12 text-white text-left lg:pt-5">
-                        <p className="text-xs lg:text-sm xl:text-sm 2xl:text-base mt-4 font-inter lg:block hidden">Home / Service / Sales &amp; Commerce                        </p>
+                        <p className="text-xs lg:text-sm xl:text-sm 2xl:text-base mt-4 font-inter lg:block hidden">Home / Industries/ Health Care                        </p>
                         <h1 className="mt-4 text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-gellix">
-                        Transformative E-commerce Strategy &amp; Consulting</h1>
+                        Enhancing patient care with innovative solutions</h1>
                     </div>
                     <div className="col-span-5 lg:block hidden">
                     </div>
@@ -287,55 +257,41 @@ export default function Page() {
 
 
         
-                <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 pt-14 lg:pt-24 xl:pt-24 2xl:pt-32">
+                <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 pt-14 lg:pt-24 xl:pt-24 2xl:pt-32 relative">
             <div className="grid grid-cols-12 lg:gap-4">
-                <div className="lg:col-span-4 2xl:col-span-5 col-span-12">
-                    <h3 className="text-xs lg:text-sm xl:text-sm 2xl:text-base text-[#194F97] font-medium">Our Clients</h3>
-                    <h1 className="mt-1.5 lg:mt-1.5 xl:mt-3 2xl:mt-5 2xl:text-5xl xl:text-4xl lg:text-4xl text-3xl font-gellix">
-                        Elevate your experience with us</h1>
+                <div className="lg:col-span-9 col-span-12">
+                    <h3 className="text-xs lg:text-sm xl:text-sm 2xl:text-base text-[#194F97] font-medium">Overview</h3>
+                    <h2 className="mt-1.5 lg:mt-1.5 xl:mt-3 2xl:mt-5 2xl:text-5xl xl:text-4xl lg:text-4xl text-3xl font-gellix">
+                        Discover personalized healthcare solutions designed for your well-being</h2>
                 </div>
-                <div className="lg:col-span-2 2xl:col-span-1 col-span-0"></div>
-                <div className="lg:col-span-6 2xl:col-span-6 col-span-12 flex justify-start items-end">
-                    <div className="lg:mt-0 mt-3">
-                        <p className="text-[14px] lg:text-sm xl:text-sm 2xl:text-base font-inter">Touchmark Descience may help you improve your job and personal success by providing cutting-edge tools and skilled coaching.                        </p>
-                        <a href="/client-partner" className="lg:block hidden">
-                            <div className="relative overflow-hidden border border-[#194F97] px-3 py-2 inline-flex justify-center items-center group mt-7 lg:mt-8 xl:mt-8 2xl:mt-10">
-                                <span className="relative z-10 text-[#194F97] group-hover:text-white transition-colors duration-300 text-sm uppercase">
-                                    View all</span>
-                                <svg fill="none" height="24" className="relative z-10 ml-2 text-[#194F97] -rotate-90 group-hover:text-white transition-colors" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
-                                    <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
-                                </svg>
-                                <span className="absolute inset-0 bg-[#194F97] transition-transform duration-300 transform -translate-x-full group-hover:translate-x-0"></span>
-                            </div>
+                <div className="lg:col-span-3 lg:block hidden">
+                </div>
+            </div>
+            <div className="grid grid-cols-12 mt-10">
+                <div className="2xl:col-span-5 lg:col-span-5 col-span-12 flex justify-center items-center">
+                    <img src="assets/front/home/hc_overview_1721887284.PNG" className="" />
+                </div>
+                <div className="2xl:col-span-1 xl:col-span-1 lg:block hidden"></div>
+                <div className="lg:col-span-6 col-span-12 flex justify-center items-center lg:mt-0 mt-5">
+                    <div>
+                        <ul className="2xl:text-base xl:text-sm lg:text-sm text-xs space-y-3 lg:space-y-2.5 xl:space-y-2.5 2xl:space-y-5 font-inter">
+                            <ul className="2xl:text-base xl:text-sm lg:text-sm text-xs space-y-3 lg:space-y-2.5 xl:space-y-2.5 2xl:space-y-5 font-inter" style={{ "boxSizing": "border-box", "listStyle": "none", "margin": "0px", "padding": "0px", "fontSize": "medium", "lineHeight": "1.5rem", "fontFamily": "Inter", "border": "0px solid #e5e7eb" }}>
+<li style={{ "boxSizing": "border-box", "border": "0px solid #e5e7eb", "fontSize": "16px" }}>By putting the needs of the quiet to begin with, our healthcare computer program arrangements utilize advanced advancement to progress the standard of care. We make electronic wellbeing record (EHR) frameworks that encourage secure and intensive quiet information administration, permitting therapeutic experts to act quickly and conclusively. Our telemedicine arrangements increment quiet fulfillment and openness by empowering patients to get restorative meetings from any area, thus extending the reach of healthcare services</li>
+<li style={{ "boxSizing": "border-box", "border": "0px solid #e5e7eb", "marginTop": "calc(1.25rem * calc(1 - var(--tw-space-y-reverse)))", "marginBottom": "calc(1.25rem * var(--tw-space-y-reverse))", "fontSize": "16px" }}>By utilizing AI to offer assistance with the fast and precise elucidation of lab comes about and therapeutic imaging, we can empower early determination and individualized treatment techniques in the field of diagnostics. Prescient analytics is another region of this AI integration that helps in anticipating understanding results and maximizing healing center asset allocation.</li>
+<li style={{ "boxSizing": "border-box", "border": "0px solid #e5e7eb", "marginTop": "calc(1.25rem * calc(1 - var(--tw-space-y-reverse)))", "marginBottom": "calc(1.25rem * var(--tw-space-y-reverse))", "fontSize": "16px" }}>Along with our solid commitment to understanding information security, we moreover make beyond any doubt that all of our healthcare applications are tolerated by universal information security laws and US administrative guidelines like HIPAA and GDPR. We have solid cybersecurity conventions in place to secure private quiet data from hacks and illicit access.</li>
+</ul>                        </ul>
+                        <a href="/" className="relative overflow-hidden border border-[#194F97] px-3 py-2 inline-flex justify-center items-center group mt-3 md:mt-3 lg:mt-8 xl:mt-8 2xl:mt-10">
+                            <span className="relative z-10 text-[#194F97] group-hover:text-white transition-colors duration-300 text-sm uppercase">Learn
+                                More</span>
+                            <svg fill="none" height="24" className="relative z-10 ml-2 text-[#194F97] -rotate-90 group-hover:text-white transition-colors" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
+                            </svg>
+                            <span className="absolute inset-0 bg-[#194F97] transition-transform duration-300 transform -translate-x-full group-hover:translate-x-0"></span>
                         </a>
                     </div>
                 </div>
             </div>
-            
-            <div className="lg:block hidden">
-<div className="grid grid-cols-4 mt-16">
-<div className="flex justify-center items-center border border-t-0 border-l-0 border-r-1 border-b-1 p-5 lg:p-7 xl:p-14 2xl:p-10"><img style={{ "height": "40px" }} src="src/assets/img/home/colcola-icons.svg" /></div>
-<div className="flex justify-center items-center border border-t-0 p-5 lg:p-7 xl:p-14 2xl:p-10"><img style={{ "height": "50px" }} src="src/assets/img/home/sidbi-icons.svg" /></div>
-<div className="flex justify-center items-center border border-t-0 p-5 lg:p-7 xl:p-14 2xl:p-10"><img style={{ "height": "40px" }} src="src/assets/img/home/rupinis-icons.svg" /></div>
-<div className="flex justify-center items-center border border-t-0 border-r-0 border-l-1 border-b-1 p-5 lg:p-7 xl:p-14 2xl:p-10"><img style={{ "height": "45px" }} src="src/assets/img/home/expleo-icon.svg" /></div>
-<div className="flex justify-center items-center border border-b-0 border-l-0 border-r-1 border-t-1 p-5 lg:p-7 xl:p-10 2xl:p-8"><img style={{ "height": "80px" }} src="src/assets/img/home/dvi-icons.svg" /></div>
-<div className="flex justify-center items-center border border-b-0 p-5 lg:p-7 xl:p-14 2xl:p-10"><img style={{ "height": "50px" }} src="src/assets/img/home/rbl-icons.svg" /></div>
-<div className="flex justify-center items-center border border-b-0 p-5 lg:p-7 xl:p-14 2xl:p-10"><img style={{ "height": "50px" }} src="src/assets/img/home/hayakawa-icons.svg" /></div>
-<div className="flex justify-center items-center border border-b-0 border-l-1 border-r-0 border-t-1 p-5 lg:p-7 xl:p-14 2xl:p-10"><img style={{ "height": "50px" }} src="src/assets/img/home/tag-icons.svg" /></div>
-</div>
-</div>
-<div className="lg:hidden block">
-<div className="grid grid-cols-2 pt-5 lg:pt-32 xl:pt-40 2xl:pt-24">
-<div className="flex justify-center items-center border border-t-0 border-l-0 border-r-1 border-b-1 p-7"><img style={{ "height": "35px" }} src="src/assets/img/home/colcola-icons.svg" /></div>
-<div className="flex justify-center items-center border border-t-0 border-r-0 p-7"><img style={{ "height": "35px" }} src="src/assets/img/home/sidbi-icons.svg" /></div>
-<div className="flex justify-center items-center border border-t-0 border-l-0 p-7"><img style={{ "height": "35px" }} src="src/assets/img/home/rupinis-icons.svg" /></div>
-<div className="flex justify-center items-center border border-t-0 border-r-0 border-l-1 border-b-1 p-7"><img style={{ "height": "35px" }} src="src/assets/img/home/expleo-icon.svg" /></div>
-<div className="flex justify-center items-center border border-b-0 border-l-0 border-r-1 border-t-1 p-5"><img style={{ "height": "35px" }} src="src/assets/img/home/dvi-icons.svg" /></div>
-<div className="flex justify-center items-center border border-b-0 border-r-0 p-5"><img style={{ "height": "35px" }} src="src/assets/img/home/rbl-icons.svg" /></div>
-<div className="flex justify-center items-center border border-b-0 border-l-0 p-5"><img style={{ "height": "35px" }} src="src/assets/img/home/hayakawa-icons.svg" /></div>
-<div className="flex justify-center items-center border border-b-0 border-l-1 border-r-0 border-t-1 p-5"><img style={{ "height": "35px" }} src="src/assets/img/home/tag-icons.svg" /></div>
-</div>
-<a className="lg:hidden block relative overflow-hidden border border-[#194F97] px-3 py-2 inline-flex justify-center items-center group mt-7" href="sc-service.html#"> <span className="relative z-10 text-[#194F97] group-hover:text-white transition-colors text-sm uppercase"> View all</span> </a></div>        </section>
+        </section>
                 
 
 
@@ -343,169 +299,281 @@ export default function Page() {
         <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 pt-14 lg:pt-24 xl:pt-24 2xl:pt-32">
             <div className="grid grid-cols-12 lg:gap-4">
                 <div className="lg:col-span-9 col-span-12">
-                    <h3 className="text-xs lg:text-sm xl:text-sm 2xl:text-base text-[#194F97] font-medium">Transform your sales and commerce capabilities</h3>
+                    <h3 className="text-xs lg:text-sm xl:text-sm 2xl:text-base text-[#194F97] font-medium">Utilize AI for accurate diagnostics and predictive analytics</h3>
                     <h2 className="mt-1.5 lg:mt-1.5 xl:mt-3 2xl:mt-5 2xl:text-5xl xl:text-4xl lg:text-4xl text-3xl font-gellix">
-                        Elevate Your Online Presence and Boost Sales</h2>
+                        Enhance patient care with secure EHR systems and telemedicine solutions</h2>
                 </div>
                 <div className="lg:col-span-3 lg:block hidden">
                 </div>
             </div>
-            <div>
-            <div className="2xl:pt-16 xl:pt-12 lg:pt-8 pt-4 relative">
-        
-        <div className="border-b-[1px] border-black/30"></div>
-    </div>
+            <div className="mt-10">
+            <div className="owl-carousel owl-theme" id="is-p">
+                    
+                                        <div className="flex h-full">
+                        <div className="group flex flex-col justify-between h-full">
+                   
+                            <div className="bg-[#D3ECFF] bg-opacity-30 pt-5 pl-5 text-black relative overflow-hidden group-hover:text-white group-hover:bg-[#194F97] h-full flex flex-col">
+                               
+                                <h1 className="pr-5 text-xl lg:text-lg xl:text-xl 2xl:text-2xl font-gellix">
+                                    Patient-Centric Care</h1>
+                                <p className="text-transparent group-hover:text-white pr-5 text-[14px] lg:text-[12px] xl:text-[12px] 2xl:text-[14px] mt-[10px] lg:mt-[10px] xl:mt-[10px] 2xl:mt-[20px] font-inter font-regular flex-grow">
+                                    Increase patient happiness and accessibility for remote consultations by implementing telemedicine solutions and secure EHR systems to improve the quality of care.                                </p>
+                                <div className="flex justify-end items-end mt-auto">
+                                    <div className="group mt-[12px] xl:mt-[0px] 2xl:mt-[20px] xl:h-36 2xl:h-auto">
+                                        
+                                        <div className="block group-hover:hidden">
+                                            <img src="assets/front/home/hc_service_1721887427.PNG" />
+                                        </div>
 
-    <div className="mt-10">
-        
-                    <div id="content-1" role="tabpanel" aria-labelledby="tab-1" className="block">
-                
-            </div>
-                    <div id="content-2" role="tabpanel" aria-labelledby="tab-2" className="hidden">
-                
-            </div>
-                    <div id="content-3" role="tabpanel" aria-labelledby="tab-3" className="hidden">
-                
-            </div>
-                    <div id="content-4" role="tabpanel" aria-labelledby="tab-4" className="hidden">
-                
-            </div>
-            </div>
-            </div>
-        </section>
-        
+                                        
+                                        <div className="hidden group-hover:block">
+                                            <img src="assets/front/home/hc_service_hover_1721887427.PNG" />
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                            </div>
+                          
+                        </div>
+                    </div>
+                                        <div className="flex h-full">
+                        <div className="group flex flex-col justify-between h-full">
+                   
+                            <div className="bg-[#D3ECFF] bg-opacity-30 pt-5 pl-5 text-black relative overflow-hidden group-hover:text-white group-hover:bg-[#194F97] h-full flex flex-col">
+                               
+                                <h1 className="pr-5 text-xl lg:text-lg xl:text-xl 2xl:text-2xl font-gellix">
+                                    AI Diagnostics</h1>
+                                <p className="text-transparent group-hover:text-white pr-5 text-[14px] lg:text-[12px] xl:text-[12px] 2xl:text-[14px] mt-[10px] lg:mt-[10px] xl:mt-[10px] 2xl:mt-[20px] font-inter font-regular flex-grow">
+                                    Use AI to accurately interpret radiological and laboratory data to enable early detection and individualized treatment plans. AI can also be used to optimize resource allocation through predictive analytics.                                </p>
+                                <div className="flex justify-end items-end mt-auto">
+                                    <div className="group mt-[12px] xl:mt-[0px] 2xl:mt-[20px] xl:h-36 2xl:h-auto">
+                                        
+                                        <div className="block group-hover:hidden">
+                                            <img src="assets/front/home/hc_service_1721887449.PNG" />
+                                        </div>
 
+                                        
+                                        <div className="hidden group-hover:block">
+                                            <img src="assets/front/home/hc_service_hover_1721887449.PNG" />
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                            </div>
+                          
+                        </div>
+                    </div>
+                                        <div className="flex h-full">
+                        <div className="group flex flex-col justify-between h-full">
+                   
+                            <div className="bg-[#D3ECFF] bg-opacity-30 pt-5 pl-5 text-black relative overflow-hidden group-hover:text-white group-hover:bg-[#194F97] h-full flex flex-col">
+                               
+                                <h1 className="pr-5 text-xl lg:text-lg xl:text-xl 2xl:text-2xl font-gellix">
+                                    Data Security</h1>
+                                <p className="text-transparent group-hover:text-white pr-5 text-[14px] lg:text-[12px] xl:text-[12px] 2xl:text-[14px] mt-[10px] lg:mt-[10px] xl:mt-[10px] 2xl:mt-[20px] font-inter font-regular flex-grow">
+                                    Maintain trust and confidentiality by adhering to HIPAA and GDPR standards and putting strict cybersecurity measures in place to protect patient data from unauthorized access and breaches.                                </p>
+                                <div className="flex justify-end items-end mt-auto">
+                                    <div className="group mt-[12px] xl:mt-[0px] 2xl:mt-[20px] xl:h-36 2xl:h-auto">
+                                        
+                                        <div className="block group-hover:hidden">
+                                            <img src="assets/front/home/hc_service_1721887476.PNG" />
+                                        </div>
 
-        
-        <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 py-14 lg:py-24 xl:py-24 2xl:py-32">
-    <div className="relative">
-        <div className="grid grid-cols-12 gap-4 lg:gap-0">
-            <div className="lg:col-span-4 col-span-12">
-                <div>
-                    <h3 className="text-xs lg:text-sm xl:text-sm 2xl:text-base text-[#194F97] font-medium">Projects
-                    </h3>
-                    <h1 className="mt-1.5 lg:mt-1.5 xl:mt-3 2xl:mt-5 2xl:text-5xl xl:text-4xl lg:text-4xl text-3xl font-gellix">
-                        Check out Our Case Studies</h1>
+                                        
+                                        <div className="hidden group-hover:block">
+                                            <img src="assets/front/home/hc_service_hover_1721887476.PNG" />
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                            </div>
+                          
+                        </div>
+                    </div>
+                                        <div className="flex h-full">
+                        <div className="group flex flex-col justify-between h-full">
+                   
+                            <div className="bg-[#D3ECFF] bg-opacity-30 pt-5 pl-5 text-black relative overflow-hidden group-hover:text-white group-hover:bg-[#194F97] h-full flex flex-col">
+                               
+                                <h1 className="pr-5 text-xl lg:text-lg xl:text-xl 2xl:text-2xl font-gellix">
+                                    Integrated Services</h1>
+                                <p className="text-transparent group-hover:text-white pr-5 text-[14px] lg:text-[12px] xl:text-[12px] 2xl:text-[14px] mt-[10px] lg:mt-[10px] xl:mt-[10px] 2xl:mt-[20px] font-inter font-regular flex-grow">
+                                    Manage administrative workflows and patient care across many healthcare systems and providers more efficiently by streamlining healthcare service coordination with all-inclusive scheduling and interoperability solutions.                                </p>
+                                <div className="flex justify-end items-end mt-auto">
+                                    <div className="group mt-[12px] xl:mt-[0px] 2xl:mt-[20px] xl:h-36 2xl:h-auto">
+                                        
+                                        <div className="block group-hover:hidden">
+                                            <img src="assets/front/home/hc_service_1721887523.PNG" />
+                                        </div>
+
+                                        
+                                        <div className="hidden group-hover:block">
+                                            <img src="assets/front/home/hc_service_hover_1721887523.PNG" />
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                            </div>
+                          
+                        </div>
+                    </div>
+                                        
                 </div>
             </div>
-            <div className="col-span-9 lg:block hidden"></div>
-        </div>
-
-        <div className="grid grid-cols-12 gap-4 mt-5 lg:mt-10">
-                    <div className="lg:col-span-4 col-span-12">
-                <a href="/case-study%3Fid=1" className="relative overflow-hidden group block cursor-pointer">
-                    <img src="assets/front/home/tc_project_1722505852.PNG" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
-                    <div className="absolute top-0 right-0">
-                        <div className="inline-flex justify-start items-center space-x-3 p-5">
-                            <h3 className="bg-white px-3 py-1 rounded-3xl text-black text-xs uppercase">BEAUTY</h3>
-                            <h3 className="bg-white px-3 py-1 rounded-3xl text-black text-xs uppercase">SALOON</h3>
-                        </div>
-                    </div>
-                    <div className="absolute inset-0 flex justify-end items-end">
-                        <div className="w-full bg-gradient-to-t from-[#9152a8b6] to-transparent p-5 transition-opacity duration-300 group-hover:from-[#9152A8] group-hover:to-transparent">
-                            <p className="2xl:text-base xl:text-base lg:text-xs text-base text-white font-inter">
-                            RUPINIS</p>
-                            <div className="flex justify-start items-end">
-                                <h1 className="text-xl lg:text-xl xl:text-xl 2xl:text-2xl text-white font-gellix pt-2">
-                                 Revolutionizing Customer Relationship Management...                                </h1>
-                                <svg fill="none" height="40" className="-rotate-90 text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="40" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
-                                    <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-                        <div className="lg:col-span-4 col-span-12">
-                <a href="/case-study%3Fid=2" className="relative overflow-hidden group block cursor-pointer">
-                    <img src="assets/front/home/tc_project_1722505900.PNG" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
-                    <div className="absolute top-0 right-0">
-                        <div className="inline-flex justify-start items-center space-x-3 p-5">
-                            <h3 className="bg-white px-3 py-1 rounded-3xl text-black text-xs uppercase">SCHOOL</h3>
-                            <h3 className="bg-white px-3 py-1 rounded-3xl text-black text-xs uppercase">ACADAMIC</h3>
-                        </div>
-                    </div>
-                    <div className="absolute inset-0 flex justify-end items-end">
-                        <div className="w-full bg-gradient-to-t from-[#9152a8b6] to-transparent p-5 transition-opacity duration-300 group-hover:from-[#9152A8] group-hover:to-transparent">
-                            <p className="2xl:text-base xl:text-base lg:text-xs text-base text-white font-inter">
-                            School Management System</p>
-                            <div className="flex justify-start items-end">
-                                <h1 className="text-xl lg:text-xl xl:text-xl 2xl:text-2xl text-white font-gellix pt-2">
-                                A Comprehensive School Management System                                </h1>
-                                <svg fill="none" height="40" className="-rotate-90 text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="40" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
-                                    <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-                        <div className="lg:col-span-4 col-span-12">
-                <a href="/case-study%3Fid=3" className="relative overflow-hidden group block cursor-pointer">
-                    <img src="assets/front/home/tc_project_1722505935.PNG" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
-                    <div className="absolute top-0 right-0">
-                        <div className="inline-flex justify-start items-center space-x-3 p-5">
-                            <h3 className="bg-white px-3 py-1 rounded-3xl text-black text-xs uppercase">BANKING</h3>
-                            <h3 className="bg-white px-3 py-1 rounded-3xl text-black text-xs uppercase">FINANCE</h3>
-                        </div>
-                    </div>
-                    <div className="absolute inset-0 flex justify-end items-end">
-                        <div className="w-full bg-gradient-to-t from-[#9152a8b6] to-transparent p-5 transition-opacity duration-300 group-hover:from-[#9152A8] group-hover:to-transparent">
-                            <p className="2xl:text-base xl:text-base lg:text-xs text-base text-white font-inter">
-                            SIDBI</p>
-                            <div className="flex justify-start items-end">
-                                <h1 className="text-xl lg:text-xl xl:text-xl 2xl:text-2xl text-white font-gellix pt-2">
-                                SIDBI's Digital Transformation: Boosting User Engagement, Operational Efficiency, and Customer Satisfaction                                </h1>
-                                <svg fill="none" height="40" className="-rotate-90 text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="40" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
-                                    <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-                    </div>
+            </section></div>
         
+        
+
+ 
+ <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 py-14 lg:py-24 xl:py-24 2xl:py-32">
+    <div className="grid grid-cols-12">
+        <div className="lg:col-span-4 xl:col-span-5 2xl:col-span-6 col-span-12">
+            <h3 className="text-xs lg:text-sm xl:text-sm 2xl:text-base text-[#194F97] font-inter font-medium">
+                Descience Blogs</h3>
+            <h1 className="mt-1.5 lg:mt-1.5 xl:mt-3 2xl:mt-5 2xl:text-5xl xl:text-4xl lg:text-4xl text-3xl font-gellix">
+                Read Touchmark Descience Blogs</h1>
+        </div>
+        <div className="lg:col-span-8 xl:col-span-7 2xl:col-span-6 col-span-12 lg:block hidden">
+            
+        </div>
     </div>
+    <div className="grid grid-cols-12 gap-4 mt-10">
+                
+                                    <div className="lg:col-span-3 col-span-12 relative overflow-hidden group">
+
+                        <img src="assets/front/home/Blog%201.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" alt="Responsive image" />
+                        <div className="absolute inset-0 flex justify-end items-end">
+                            <div className="bg-gradient-to-t from-black/45 to-transparent p-5 transition-opacity duration-300 group-hover:from-black/90 group-hover:to-black/0 w-full">
+                                <div className="flex justify-between items-end">
+                                    <div>
+                                        <a href="/blog/articles/a-360-view-of-business-process-management-system">
+                                            <h1 className="text-lg lg:text-xl xl:text-xl 2xl:text-2xl text-white font-gellix pt-2">
+                                                A 360* View Of Business Process Management System</h1>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="hc-industry.html#">
+                                            <svg fill="none" height="28" className="-rotate-90 rounded-full text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                                <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                                    <div className="lg:col-span-3 col-span-12 relative overflow-hidden group">
+
+                        <img src="assets/front/home/Blog%202.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" alt="Responsive image" />
+                        <div className="absolute inset-0 flex justify-end items-end">
+                            <div className="bg-gradient-to-t from-black/45 to-transparent p-5 transition-opacity duration-300 group-hover:from-black/90 group-hover:to-black/0 w-full">
+                                <div className="flex justify-between items-end">
+                                    <div>
+                                        <a href="/blog/articles/key-factors-why-business-process-management-systems-are-successful">
+                                            <h1 className="text-lg lg:text-xl xl:text-xl 2xl:text-2xl text-white font-gellix pt-2">
+                                                Key Factors Why Business Process Management Systems Are Successful</h1>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="hc-industry.html#">
+                                            <svg fill="none" height="28" className="-rotate-90 rounded-full text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                                <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                                    <div className="lg:col-span-3 col-span-12 relative overflow-hidden group">
+
+                        <img src="assets/front/home/blog%203.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" alt="Responsive image" />
+                        <div className="absolute inset-0 flex justify-end items-end">
+                            <div className="bg-gradient-to-t from-black/45 to-transparent p-5 transition-opacity duration-300 group-hover:from-black/90 group-hover:to-black/0 w-full">
+                                <div className="flex justify-between items-end">
+                                    <div>
+                                        <a href="/blog/articles/increasing-your-productivity-using-business-process-management-system">
+                                            <h1 className="text-lg lg:text-xl xl:text-xl 2xl:text-2xl text-white font-gellix pt-2">
+                                                Increasing Your Productivity Using Business Process Management System</h1>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="hc-industry.html#">
+                                            <svg fill="none" height="28" className="-rotate-90 rounded-full text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                                <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                                    <div className="lg:col-span-3 col-span-12 relative overflow-hidden group">
+
+                        <img src="assets/front/home/blog%204.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" alt="Responsive image" />
+                        <div className="absolute inset-0 flex justify-end items-end">
+                            <div className="bg-gradient-to-t from-black/45 to-transparent p-5 transition-opacity duration-300 group-hover:from-black/90 group-hover:to-black/0 w-full">
+                                <div className="flex justify-between items-end">
+                                    <div>
+                                        <a href="/blog/articles/real-time-iot-applications-in-the-retail-industry">
+                                            <h1 className="text-lg lg:text-xl xl:text-xl 2xl:text-2xl text-white font-gellix pt-2">
+                                                Real-time IoT Applications In The Retail Industry</h1>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="hc-industry.html#">
+                                            <svg fill="none" height="28" className="-rotate-90 rounded-full text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                                <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                            </div>
 </section>
         
 
 
-        
-        
-
-
-
-
-
-
-    <link rel="Touchmark" href="sc-service.html#" />
-    
-    
-    
-    
-    
-    
-
-
-
-
-
-
-
-
-
-
 
         
         
-    </div>
 
 
 
 
 
 
+    <link rel="Touchmark" href="hc-industry.html#" />
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
 
 
 
@@ -1316,8 +1384,8 @@ const togglePassword = document.querySelector('#togglePassword');
           window.addEventListener('scroll', function () {
         var header = document.querySelector('#navbar');
         var logo = document.querySelector('#logo');
-        var desktopLogo = 'https://touchmarkdes.com/src/assets/img/tds-color-logo.png';
-        var mobileLogo = 'https://touchmarkdes.com/src/assets/img/tds-color-logo.png';
+        var desktopLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
+        var mobileLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
 
         if (header) {
             header.classList.toggle('bg-scroll-white', window.scrollY > 0);
@@ -1359,16 +1427,17 @@ const togglePassword = document.querySelector('#togglePassword');
         try {
           \$(document).ready(function () {
         var owlOptions = {
-            loop: true,
+            loop: false,
             nav: false,
             margin: 20,
-            autoplay: true,
-            autoplayTimeout: 2000,
-            autoplayHoverPause: true,
             responsive: {
                 0: {
                     items: 1.25,
-                    margin: 20  // No margin on mobile devices
+                    margin: 20,  // No margin on mobile devices
+                    loop: true,
+                    autoplay: true,
+                    autoplayTimeout: 2000,
+                    autoplayHoverPause: true
                 },
                 600: {
                     items: 1.5,
@@ -1376,7 +1445,11 @@ const togglePassword = document.querySelector('#togglePassword');
                 },
                 1000: {
                     items: 4,
-                    margin: 20  // Margin for devices with width 1000px and above
+                    margin: 20,  // Margin for devices with width 1000px and above
+                    loop: false,
+                    autoplay: false,
+                    autoplayTimeout: 2000,
+                    autoplayHoverPause: false
                 }
             }
         };
@@ -1387,7 +1460,7 @@ const togglePassword = document.querySelector('#togglePassword');
             owlOptions.dots = false;
         }
 
-        \$("#cc-a").owlCarousel(owlOptions);
+        \$("#is-p").owlCarousel(owlOptions);
 
         \$(window).resize(function () {
             var newOwlOptions = owlOptions;
@@ -1396,8 +1469,8 @@ const togglePassword = document.querySelector('#togglePassword');
             } else {
                 newOwlOptions.dots = false;
             }
-            \$('#cc-a').trigger('destroy.owl.carousel');
-            \$('#cc-a').owlCarousel(newOwlOptions);
+            \$('#is-p').trigger('destroy.owl.carousel');
+            \$('#is-p').owlCarousel(newOwlOptions);
         });
     });
         } catch (e) {
@@ -1406,202 +1479,13 @@ const togglePassword = document.querySelector('#togglePassword');
       `}</Script>
       <Script id="page-script-19" strategy="lazyOnload">{`
         try {
-          \$(document).ready(function () {
-        var owlOptions = {
-            loop: true,
-            nav: false,
-            margin: 20,
-            autoplay: true,
-            autoplayTimeout: 2000,
-            autoplayHoverPause: true,
-            responsive: {
-                0: {
-                    items: 1.25,
-                    margin: 20  // No margin on mobile devices
-                },
-                600: {
-                    items: 1.5,
-                    margin: 20  // Margin for devices with width 600px and above
-                },
-                1000: {
-                    items: 4,
-                    margin: 20  // Margin for devices with width 1000px and above
-                }
-            }
-        };
-
-        if (window.innerWidth <= 767) {
-            owlOptions.dots = true;
-        } else {
-            owlOptions.dots = false;
-        }
-
-        \$("#ci-e").owlCarousel(owlOptions);
-
-        \$(window).resize(function () {
-            var newOwlOptions = owlOptions;
-            if (window.innerWidth <= 767) {
-                newOwlOptions.dots = true;
-            } else {
-                newOwlOptions.dots = false;
-            }
-            \$('#ci-e').trigger('destroy.owl.carousel');
-            \$('#ci-e').owlCarousel(newOwlOptions);
-        });
-    });
-        } catch (e) {
-          // Safe catch for conditional page elements
-        }
-      `}</Script>
-      <Script id="page-script-20" strategy="lazyOnload">{`
-        try {
-          \$(document).ready(function () {
-        var owlOptions = {
-            loop: true,
-            nav: false,
-            margin: 20,
-            autoplay: true,
-            autoplayTimeout: 2000,
-            autoplayHoverPause: true,
-            responsive: {
-                0: {
-                    items: 1.25,
-                    margin: 20  // No margin on mobile devices
-                },
-                600: {
-                    items: 1.5,
-                    margin: 20  // Margin for devices with width 600px and above
-                },
-                1000: {
-                    items: 4,
-                    margin: 20  // Margin for devices with width 1000px and above
-                }
-            }
-        };
-
-        if (window.innerWidth <= 767) {
-            owlOptions.dots = true;
-        } else {
-            owlOptions.dots = false;
-        }
-
-        \$("#cl-a").owlCarousel(owlOptions);
-
-        \$(window).resize(function () {
-            var newOwlOptions = owlOptions;
-            if (window.innerWidth <= 767) {
-                newOwlOptions.dots = true;
-            } else {
-                newOwlOptions.dots = false;
-            }
-            \$('#cl-a').trigger('destroy.owl.carousel');
-            \$('#cl-a').owlCarousel(newOwlOptions);
-        });
-    });
-        } catch (e) {
-          // Safe catch for conditional page elements
-        }
-      `}</Script>
-      <Script id="page-script-21" strategy="lazyOnload">{`
-        try {
-          \$(document).ready(function () {
-        var owlOptions = {
-            loop: true,
-            nav: false,
-            margin: 20,
-            autoplay: true,
-            autoplayTimeout: 2000,
-            autoplayHoverPause: true,
-            responsive: {
-                0: {
-                    items: 1.25,
-                    margin: 20  // No margin on mobile devices
-                },
-                600: {
-                    items: 1.5,
-                    margin: 20  // Margin for devices with width 600px and above
-                },
-                1000: {
-                    items: 4,
-                    margin: 20  // Margin for devices with width 1000px and above
-                }
-            }
-        };
-
-        if (window.innerWidth <= 767) {
-            owlOptions.dots = true;
-        } else {
-            owlOptions.dots = false;
-        }
-
-        \$("#ms").owlCarousel(owlOptions);
-
-        \$(window).resize(function () {
-            var newOwlOptions = owlOptions;
-            if (window.innerWidth <= 767) {
-                newOwlOptions.dots = true;
-            } else {
-                newOwlOptions.dots = false;
-            }
-            \$('#ms').trigger('destroy.owl.carousel');
-            \$('#ms').owlCarousel(newOwlOptions);
-        });
-    });
-        } catch (e) {
-          // Safe catch for conditional page elements
-        }
-      `}</Script>
-      <Script id="page-script-22" strategy="lazyOnload">{`
-        try {
-          document.addEventListener('DOMContentLoaded', function () {
-    const tabButtons = document.querySelectorAll('[role="tab"]');
-    const tabContents = document.querySelectorAll('[role="tabpanel"]');
-
-    function showTab(tabId) {
-        tabButtons.forEach(btn => btn.classList.remove('active'));
-        tabContents.forEach(content => content.classList.add('hidden'));
-
-        document.querySelector(\`#tab-\${tabId}\`).classList.add('active');
-        document.querySelector(\`#content-\${tabId}\`).classList.remove('hidden');
-
-        fetchTabContent(tabId);
-    }
-
-    function fetchTabContent(tabId) {
-        const contentContainer = document.querySelector(\`#content-\${tabId}\`);
-        fetch('head/engine/ajax/__ajax_sc_fetch_tab_content.php', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
-            },
-            body: \`tab_id=\${tabId}\`
-        })
+          document.addEventListener("DOMContentLoaded", function() {
+      fetch('./components/industryblog.html')
         .then(response => response.text())
         .then(data => {
-            contentContainer.innerHTML = data;
-
-            \$(contentContainer).find('.owl-carousel').owlCarousel({
-                loop: true,
-                margin: 10,
-                nav: true,
-                items: 1
-            });
-        })
-        .catch(error => {
-            console.error('Error fetching tab content:', error);
-        });
-    }
-
-    const defaultTabId = 1;
-    showTab(defaultTabId);
-
-    tabButtons.forEach(button => {
-        button.addEventListener('click', function () {
-            const tabId = this.getAttribute('data-hs-tab').replace('#content-', '');
-            showTab(tabId);
+          document.getElementById('industryblog').innerHTML = data;
         });
     });
-});
         } catch (e) {
           // Safe catch for conditional page elements
         }

@@ -5,47 +5,18 @@ import Script from "next/script";
 export default function Page() {
   return (
     <>
-      <title>Aerospace & Defence</title>
+      <title>Technology & Consulting</title>
       <meta name="description" content="" />
 
-      {/* Page JSX Content */}
-      ﻿
-
-
-
-
-    <link rel="Touchmark" href="areo-industry.html#" />
-    
-    
-    
-    
-
-
-    
-    <link rel="touchmark-des-icon" sizes="180x180" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-    
-    
-
-    
-    
-
-    
-
-
-
-
-
-    <div className="overflow-x-hidden lg:overflow-x-auto">
+      <div className="overflow-x-hidden lg:overflow-x-auto">
 
         
-        
+      
 
 
 
 
-    <link rel="Touchmark" href="areo-industry.html#" />
+    <link rel="Touchmark" href="tc-service.html#" />
     
     
     
@@ -77,7 +48,7 @@ export default function Page() {
 
             
             <div className="flex items-end justify-between p-2">
-                <a href="areo-industry.html#" id="goBack" className="flex justify-start items-center text-[#194F97] hover:underline text-sm hidden">
+                <a href="tc-service.html#" id="goBack" className="flex justify-start items-center text-[#194F97] hover:underline text-sm hidden">
                     <svg id="fi_2985161" height="20" viewBox="0 0 128 128" width="20" xmlns="http://www.w3.org/2000/svg">
                         <path id="Left_Arrow_4_" d="m84 108c-1.023 0-2.047-.391-2.828-1.172l-40-40c-1.563-1.563-1.563-4.094 0-5.656l40-40c1.563-1.563 4.094-1.563 5.656 0s1.563 4.094 0 5.656l-37.172 37.172 37.172 37.172c1.563 1.563 1.563 4.094 0 5.656-.781.781-1.805 1.172-2.828 1.172z" fill="#194F97"></path>
                     </svg>
@@ -268,58 +239,73 @@ export default function Page() {
 
 
         
-                    <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('assets/front/home/ad_banner_1722179435.PNG')" }}>
-                <div className="xl:max-w-screen-2xl 2xl:max-w-screen-2xl lg:max-w-screen-lg px-4 md:px-6 lg:px-8 mx-auto py-10 lg:py-24">
-                    <div className="grid grid-cols-12 lg:gap-4">
-                        <div className="lg:col-span-7 col-span-12 text-white text-left lg:pt-5">
-                            <p className="text-xs lg:text-sm xl:text-sm 2xl:text-base mt-4 font-inter lg:block hidden">Home / Industries/ Aerospace &amp; Defence                            </p>
-                            <h1 className="mt-4 text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-gellix">
-                                Advancing technology for aerospace innovation and global defense solutions</h1>
-                        </div>
-                        <div className="col-span-5 lg:block hidden">
-                        </div>
+                <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('assets/front/home/tc_banner_1721809284.PNG')" }}>
+            <div className="xl:max-w-screen-2xl 2xl:max-w-screen-2xl lg:max-w-screen-lg px-4 md:px-6 lg:px-8 mx-auto py-10 lg:py-24">
+                <div className="grid grid-cols-12 lg:gap-4">
+                    <div className="lg:col-span-7 col-span-12 text-white text-left lg:pt-5">
+                        <p className="text-xs lg:text-sm xl:text-sm 2xl:text-base mt-4 font-inter lg:block hidden">Home / Service / Technology &amp; Consulting                        </p>
+                        <h1 className="mt-4 text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-gellix">
+                        Partner with us to leverage technology and consulting expertise and driving innovation</h1>
+                    </div>
+                    <div className="col-span-5 lg:block hidden">
                     </div>
                 </div>
-            </section>
-                
+            </div>
+        </section>
+         
+        
 
 
         
-                    <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 pt-14 lg:pt-24 xl:pt-24 2xl:pt-32 relative">
-                <div className="grid grid-cols-12 lg:gap-4">
-                    <div className="lg:col-span-9 col-span-12">
-                        <h3 className="text-xs lg:text-sm xl:text-sm 2xl:text-base text-[#194F97] font-medium">Overview</h3>
-                        <h2 className="mt-1.5 lg:mt-1.5 xl:mt-3 2xl:mt-5 2xl:text-5xl xl:text-4xl lg:text-4xl text-3xl font-gellix">
-                            Aviation applications in the energetic industry of Aviation &amp; Guard</h2>
-                    </div>
-                    <div className="lg:col-span-3 lg:block hidden">
-                    </div>
+                <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 pt-14 lg:pt-24 xl:pt-24 2xl:pt-32">
+            <div className="grid grid-cols-12 lg:gap-4">
+                <div className="lg:col-span-4 2xl:col-span-5 col-span-12">
+                    <h3 className="text-xs lg:text-sm xl:text-sm 2xl:text-base text-[#194F97] font-medium">Our Clients</h3>
+                    <h1 className="mt-1.5 lg:mt-1.5 xl:mt-3 2xl:mt-5 2xl:text-5xl xl:text-4xl lg:text-4xl text-3xl font-gellix">
+                        Elevate your experience with us</h1>
                 </div>
-                <div className="grid grid-cols-12 mt-10">
-                    <div className="2xl:col-span-5 lg:col-span-5 col-span-12 flex justify-center items-center">
-                        <img src="assets/front/home/ad_overview_1721881470.PNG" className="" />
-                    </div>
-                    <div className="2xl:col-span-1 xl:col-span-1 lg:block hidden"></div>
-                    <div className="lg:col-span-6 col-span-12 flex justify-center items-center lg:mt-0 mt-5">
-                        <div>
-                            <ul className="2xl:text-base xl:text-sm lg:text-sm text-xs space-y-3 lg:space-y-2.5 xl:space-y-2.5 2xl:space-y-5 font-inter">
-                                <ul className="2xl:text-base xl:text-sm lg:text-sm text-xs space-y-3 lg:space-y-2.5 xl:space-y-2.5 2xl:space-y-5 font-inter" style={{ "boxSizing": "border-box", "listStyle": "none", "margin": "0px", "padding": "0px", "fontSize": "medium", "lineHeight": "1.5rem", "fontFamily": "Inter", "border": "0px solid #e5e7eb" }}>
-<li style={{ "boxSizing": "border-box", "border": "0px solid #e5e7eb" }}><span style={{ "fontSize": "16px" }}>Our region of skill is making advances that move forward national defense capabilities, speed up generation methods, and progress aeronautical plans. Mission-critical frameworks, secure communication systems, and cutting-edge recreation innovations that mirror real circumstances for testing a</span><span style={{ "fontSize": "16px" }}>nd preparing are a few of our offerings.</span></li>
-<li style={{ "boxSizing": "border-box", "marginTop": "calc(1.25rem * calc(1 - var(--tw-space-y-reverse)))", "marginBottom": "calc(1.25rem * var(--tw-space-y-reverse))", "border": "0px solid #e5e7eb" }}><span style={{ "fontSize": "16px" }}>In order to guarantee tall accessibility and constancy of crucial resources, our ability too incorporates joining IoT and AI to optimize air ship support plans and expect framework flaws some time recently. In order to expand the life expectancy of aeronautical components, this proactive upkeep procedure definitely brings down working costs and unscheduled downtime.</span></li>
-<li style={{ "boxSizing": "border-box", "marginTop": "calc(1.25rem * calc(1 - var(--tw-space-y-reverse)))", "marginBottom": "calc(1.25rem * var(--tw-space-y-reverse))", "border": "0px solid #e5e7eb" }}><span style={{ "fontSize": "16px" }}>Our cybersecurity arrangements are planning to guard basic aviation and military information from progressively complex cyberattacks. To secure information over all stages and ensure adherence to the most noteworthy security prerequisites, we send solid encryption, interruption location frameworks, and secure information administration procedures.</span></li>
-</ul>                            </ul>
-                            <a href="/" className="relative overflow-hidden border border-[#194F97] px-3 py-2 inline-flex justify-center items-center group mt-3 md:mt-3 lg:mt-8 xl:mt-8 2xl:mt-10">
-                                <span className="relative z-10 text-[#194F97] group-hover:text-white transition-colors duration-300 text-sm uppercase">Learn
-                                    More</span>
+                <div className="lg:col-span-2 2xl:col-span-1 col-span-0"></div>
+                <div className="lg:col-span-6 2xl:col-span-6 col-span-12 flex justify-start items-end">
+                    <div className="lg:mt-0 mt-3">
+                        <p className="text-[14px] lg:text-sm xl:text-sm 2xl:text-base font-inter">Touchmark Descience may help you improve your job and personal success by providing cutting-edge tools and skilled coaching.                        </p>
+                        <a href="/client-partner" className="lg:block hidden">
+                            <div className="relative overflow-hidden border border-[#194F97] px-3 py-2 inline-flex justify-center items-center group mt-7 lg:mt-8 xl:mt-8 2xl:mt-10">
+                                <span className="relative z-10 text-[#194F97] group-hover:text-white transition-colors duration-300 text-sm uppercase">
+                                    View all</span>
                                 <svg fill="none" height="24" className="relative z-10 ml-2 text-[#194F97] -rotate-90 group-hover:text-white transition-colors" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
                                     <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
                                 </svg>
                                 <span className="absolute inset-0 bg-[#194F97] transition-transform duration-300 transform -translate-x-full group-hover:translate-x-0"></span>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
-            </section>
+            </div>
+            
+            <div className="lg:block hidden">
+<div className="grid grid-cols-4 mt-16">
+<div className="flex justify-center items-center border border-t-0 border-l-0 border-r-1 border-b-1 p-5 lg:p-7 xl:p-14 2xl:p-10"><img style={{ "height": "40px" }} src="/images/home/colcola-icons.svg" /></div>
+<div className="flex justify-center items-center border border-t-0 p-5 lg:p-7 xl:p-14 2xl:p-10"><img style={{ "height": "50px" }} src="/images/home/sidbi-icons.svg" /></div>
+<div className="flex justify-center items-center border border-t-0 p-5 lg:p-7 xl:p-14 2xl:p-10"><img style={{ "height": "40px" }} src="/images/home/rupinis-icons.svg" /></div>
+<div className="flex justify-center items-center border border-t-0 border-r-0 border-l-1 border-b-1 p-5 lg:p-7 xl:p-14 2xl:p-10"><img style={{ "height": "45px" }} src="/images/home/expleo-icon.svg" /></div>
+<div className="flex justify-center items-center border border-b-0 border-l-0 border-r-1 border-t-1 p-5 lg:p-7 xl:p-10 2xl:p-8"><img style={{ "height": "80px" }} src="/images/home/dvi-icons.svg" /></div>
+<div className="flex justify-center items-center border border-b-0 p-5 lg:p-7 xl:p-14 2xl:p-10"><img style={{ "height": "50px" }} src="/images/home/rbl-icons.svg" /></div>
+<div className="flex justify-center items-center border border-b-0 p-5 lg:p-7 xl:p-14 2xl:p-10"><img style={{ "height": "50px" }} src="/images/home/hayakawa-icons.svg" /></div>
+<div className="flex justify-center items-center border border-b-0 border-l-1 border-r-0 border-t-1 p-5 lg:p-7 xl:p-14 2xl:p-10"><img style={{ "height": "50px" }} src="/images/home/tag-icons.svg" /></div>
+</div>
+</div>
+<div className="lg:hidden block">
+<div className="grid grid-cols-2 pt-5 lg:pt-32 xl:pt-40 2xl:pt-24">
+<div className="flex justify-center items-center border border-t-0 border-l-0 border-r-1 border-b-1 p-7"><img style={{ "height": "35px" }} src="/images/home/colcola-icons.svg" /></div>
+<div className="flex justify-center items-center border border-t-0 border-r-0 p-7"><img style={{ "height": "35px" }} src="/images/home/sidbi-icons.svg" /></div>
+<div className="flex justify-center items-center border border-t-0 border-l-0 p-7"><img style={{ "height": "35px" }} src="/images/home/rupinis-icons.svg" /></div>
+<div className="flex justify-center items-center border border-t-0 border-r-0 border-l-1 border-b-1 p-7"><img style={{ "height": "35px" }} src="/images/home/expleo-icon.svg" /></div>
+<div className="flex justify-center items-center border border-b-0 border-l-0 border-r-1 border-t-1 p-5"><img style={{ "height": "35px" }} src="/images/home/dvi-icons.svg" /></div>
+<div className="flex justify-center items-center border border-b-0 border-r-0 p-5"><img style={{ "height": "35px" }} src="/images/home/rbl-icons.svg" /></div>
+<div className="flex justify-center items-center border border-b-0 border-l-0 p-5"><img style={{ "height": "35px" }} src="/images/home/hayakawa-icons.svg" /></div>
+<div className="flex justify-center items-center border border-b-0 border-l-1 border-r-0 border-t-1 p-5"><img style={{ "height": "35px" }} src="/images/home/tag-icons.svg" /></div>
+</div>
+<a className="lg:hidden block relative overflow-hidden border border-[#194F97] px-3 py-2 inline-flex justify-center items-center group mt-7" href="/client-partner"> <span className="relative z-10 text-[#194F97] group-hover:text-white transition-colors text-sm uppercase"> View all</span> </a></div>        </section>
                 
 
 
@@ -327,126 +313,37 @@ export default function Page() {
         <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 pt-14 lg:pt-24 xl:pt-24 2xl:pt-32">
             <div className="grid grid-cols-12 lg:gap-4">
                 <div className="lg:col-span-9 col-span-12">
-                    <h3 className="text-xs lg:text-sm xl:text-sm 2xl:text-base text-[#194F97] font-medium">Our robust systems enhance defense capabilities and aeronautical designs</h3>
+                    <h3 className="text-xs lg:text-sm xl:text-sm 2xl:text-base text-[#194F97] font-medium">Empower your business with strategic technology consulting and innovative solutions</h3>
                     <h2 className="mt-1.5 lg:mt-1.5 xl:mt-3 2xl:mt-5 2xl:text-5xl xl:text-4xl lg:text-4xl text-3xl font-gellix">
-                        Optimize aircraft maintenance using IOT and AI to reduce costs and downtime</h2>
+                        Driving innovation and achieving your business objectives through tailored solutions</h2>
                 </div>
                 <div className="lg:col-span-3 lg:block hidden">
                 </div>
             </div>
-            <div className="mt-10">
-                <div className="owl-carousel owl-theme" id="is-p">
-                    
-                                            <div className="flex h-full">
-                            <div className="group flex flex-col justify-between h-full">
+            <div>
+         
+                
+                <div className="2xl:pt-16 xl:pt-12 lg:pt-8 pt-4 relative">
+        
+        <div className="border-b-[1px] border-black/30"></div>
+    </div>
 
-                                <div className="bg-[#D3ECFF] bg-opacity-30 pt-5 pl-5 text-black relative overflow-hidden group-hover:text-white group-hover:bg-[#194F97] h-full flex flex-col">
+    <div className="mt-10">
+        
+                    <div id="content-1" role="tabpanel" aria-labelledby="tab-1" className="block">
+                
+            </div>
+                    <div id="content-2" role="tabpanel" aria-labelledby="tab-2" className="hidden">
+                
+            </div>
+                    <div id="content-3" role="tabpanel" aria-labelledby="tab-3" className="hidden">
+                
+            </div>
+                    <div id="content-4" role="tabpanel" aria-labelledby="tab-4" className="hidden">
+                
+            </div>
+            </div>
 
-                                    <h1 className="pr-5 text-xl lg:text-lg xl:text-xl 2xl:text-2xl font-gellix">
-                                        Maintenance Optimization</h1>
-                                    <p className="text-transparent group-hover:text-white pr-5 text-[14px] lg:text-[12px] xl:text-[12px] 2xl:text-[14px] mt-[10px] lg:mt-[10px] xl:mt-[10px] 2xl:mt-[20px] font-inter font-regular flex-grow">
-                                        Using IoT and AI, we optimize aircraft maintenance schedules, predict system failures, and extend component lifespan, reducing costs and downtime.                                    </p>
-                                    <div className="flex justify-end items-end mt-auto">
-                                        <div className="group mt-[12px] xl:mt-[0px] 2xl:mt-[20px] xl:h-36 2xl:h-auto">
-                                            
-                                            <div className="block group-hover:hidden">
-                                                <img src="assets/front/home/ad_service_1721882595.PNG" />
-                                            </div>
-
-                                            
-                                            <div className="hidden group-hover:block">
-                                                <img src="assets/front/home/ad_service_hov_1721882595.PNG" />
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
-                                            <div className="flex h-full">
-                            <div className="group flex flex-col justify-between h-full">
-
-                                <div className="bg-[#D3ECFF] bg-opacity-30 pt-5 pl-5 text-black relative overflow-hidden group-hover:text-white group-hover:bg-[#194F97] h-full flex flex-col">
-
-                                    <h1 className="pr-5 text-xl lg:text-lg xl:text-xl 2xl:text-2xl font-gellix">
-                                        Cybersecurity Solutions</h1>
-                                    <p className="text-transparent group-hover:text-white pr-5 text-[14px] lg:text-[12px] xl:text-[12px] 2xl:text-[14px] mt-[10px] lg:mt-[10px] xl:mt-[10px] 2xl:mt-[20px] font-inter font-regular flex-grow">
-                                        Implementing robust encryption, intrusion detection, and secure data management to protect critical aviation and military data, ensuring top security compliance.                                    </p>
-                                    <div className="flex justify-end items-end mt-auto">
-                                        <div className="group mt-[12px] xl:mt-[0px] 2xl:mt-[20px] xl:h-36 2xl:h-auto">
-                                            
-                                            <div className="block group-hover:hidden">
-                                                <img src="assets/front/home/ad_service_1721882638.PNG" />
-                                            </div>
-
-                                            
-                                            <div className="hidden group-hover:block">
-                                                <img src="assets/front/home/ad_service_hov_1721882638.PNG" />
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
-                                            <div className="flex h-full">
-                            <div className="group flex flex-col justify-between h-full">
-
-                                <div className="bg-[#D3ECFF] bg-opacity-30 pt-5 pl-5 text-black relative overflow-hidden group-hover:text-white group-hover:bg-[#194F97] h-full flex flex-col">
-
-                                    <h1 className="pr-5 text-xl lg:text-lg xl:text-xl 2xl:text-2xl font-gellix">
-                                        Simulation Training</h1>
-                                    <p className="text-transparent group-hover:text-white pr-5 text-[14px] lg:text-[12px] xl:text-[12px] 2xl:text-[14px] mt-[10px] lg:mt-[10px] xl:mt-[10px] 2xl:mt-[20px] font-inter font-regular flex-grow">
-                                        Advanced simulation technologies provide realistic training environments for pilots and defense personnel, enhancing readiness and operational effectiveness.                                    </p>
-                                    <div className="flex justify-end items-end mt-auto">
-                                        <div className="group mt-[12px] xl:mt-[0px] 2xl:mt-[20px] xl:h-36 2xl:h-auto">
-                                            
-                                            <div className="block group-hover:hidden">
-                                                <img src="assets/front/home/ad_service_1721882668.PNG" />
-                                            </div>
-
-                                            
-                                            <div className="hidden group-hover:block">
-                                                <img src="assets/front/home/ad_service_hov_1721882668.PNG" />
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
-                                            <div className="flex h-full">
-                            <div className="group flex flex-col justify-between h-full">
-
-                                <div className="bg-[#D3ECFF] bg-opacity-30 pt-5 pl-5 text-black relative overflow-hidden group-hover:text-white group-hover:bg-[#194F97] h-full flex flex-col">
-
-                                    <h1 className="pr-5 text-xl lg:text-lg xl:text-xl 2xl:text-2xl font-gellix">
-                                        Supply Chain Management</h1>
-                                    <p className="text-transparent group-hover:text-white pr-5 text-[14px] lg:text-[12px] xl:text-[12px] 2xl:text-[14px] mt-[10px] lg:mt-[10px] xl:mt-[10px] 2xl:mt-[20px] font-inter font-regular flex-grow">
-                                        Our software automates inventory control and procurement processes, improving supply chain efficiency and enabling quick responses to demands.                                    </p>
-                                    <div className="flex justify-end items-end mt-auto">
-                                        <div className="group mt-[12px] xl:mt-[0px] 2xl:mt-[20px] xl:h-36 2xl:h-auto">
-                                            
-                                            <div className="block group-hover:hidden">
-                                                <img src="assets/front/home/ad_service_1721882700.PNG" />
-                                            </div>
-
-                                            
-                                            <div className="hidden group-hover:block">
-                                                <img src="assets/front/home/ad_service_hov_1721882700.PNG" />
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
-                                        
-                </div>
             </div>
         </section>
         
@@ -454,170 +351,136 @@ export default function Page() {
 
         
         <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 py-14 lg:py-24 xl:py-24 2xl:py-32">
-            <div className="grid grid-cols-12">
-                <div className="lg:col-span-4 xl:col-span-5 2xl:col-span-6 col-span-12">
-                    <h3 className="text-xs lg:text-sm xl:text-sm 2xl:text-base text-[#194F97] font-inter font-medium">
-                        Descience Blogs</h3>
+    <div className="relative">
+        <div className="grid grid-cols-12 gap-4 lg:gap-0">
+            <div className="lg:col-span-4 col-span-12">
+                <div>
+                    <h3 className="text-xs lg:text-sm xl:text-sm 2xl:text-base text-[#194F97] font-medium">Projects
+                    </h3>
                     <h1 className="mt-1.5 lg:mt-1.5 xl:mt-3 2xl:mt-5 2xl:text-5xl xl:text-4xl lg:text-4xl text-3xl font-gellix">
-                        Read Touchmark Descience Blogs</h1>
-                </div>
-                <div className="lg:col-span-8 xl:col-span-7 2xl:col-span-6 col-span-12 lg:block hidden">
-                    
+                        Check out Our Case Studies</h1>
                 </div>
             </div>
-            <div className="grid grid-cols-12 gap-4 mt-10">
-                
-                    
-                                    <div className="lg:col-span-3 col-span-12 relative overflow-hidden group h-[300px] lg:h-[350px] xl:h-[400px]">
-                        <a href="/blog/articles/a-360-view-of-business-process-management-system">
-                            <img src="https://touchmarkdes.com/assets/front/home/Blog 1.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full h-full object-cover" />
-                            <div className="absolute top-0 right-0">
-                                <div className="inline-flex justify-start items-center space-x-3 p-5"></div>
-                            </div>
-                            </a><div className="absolute inset-0 flex justify-end items-end"><a href="/blog/articles/a-360-view-of-business-process-management-system">
-                                </a><div className="bg-gradient-to-t from-black/45 to-transparent p-5 transition-opacity duration-300 group-hover:from-black/90 group-hover:to-black/0 w-full"><a href="/blog/articles/a-360-view-of-business-process-management-system">
-                                    </a><div className="flex justify-between items-end"><a href="/blog/articles/a-360-view-of-business-process-management-system">
-                                        <div>
-                                            <h1 className="text-lg lg:text-xl xl:text-xl 2xl:text-2xl text-white font-gellix pt-2">
-                                                A 360* View Of Business Process..
-                                            </h1>
-                                        </div>
-                                        </a><div><a href="/blog/articles/a-360-view-of-business-process-management-system">
-                                            </a><a href="areo-industry.html#">
-                                                <svg fill="none" height="28" className="-rotate-90 rounded-full text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
-                                                    <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        
+            <div className="col-span-9 lg:block hidden"></div>
+        </div>
+
+        <div className="grid grid-cols-12 gap-4 mt-5 lg:mt-10">
+                    <div className="lg:col-span-4 col-span-12">
+                <a href="/case-study%3Fid=1" className="relative overflow-hidden group block cursor-pointer">
+                    <img src="assets/front/home/tc_project_1722505852.PNG" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
+                    <div className="absolute top-0 right-0">
+                        <div className="inline-flex justify-start items-center space-x-3 p-5">
+                            <h3 className="bg-white px-3 py-1 rounded-3xl text-black text-xs uppercase">BEAUTY</h3>
+                            <h3 className="bg-white px-3 py-1 rounded-3xl text-black text-xs uppercase">SALOON</h3>
+                        </div>
                     </div>
-
-
-
-                                    <div className="lg:col-span-3 col-span-12 relative overflow-hidden group h-[300px] lg:h-[350px] xl:h-[400px]">
-                        <a href="/blog/articles/key-factors-why-business-process-management-systems-are-successful">
-                            <img src="https://touchmarkdes.com/assets/front/home/Blog 2.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full h-full object-cover" />
-                            <div className="absolute top-0 right-0">
-                                <div className="inline-flex justify-start items-center space-x-3 p-5"></div>
+                    <div className="absolute inset-0 flex justify-end items-end">
+                        <div className="w-full bg-gradient-to-t from-[#9152a8b6] to-transparent p-5 transition-opacity duration-300 group-hover:from-[#9152A8] group-hover:to-transparent">
+                            <p className="2xl:text-base xl:text-base lg:text-xs text-base text-white font-inter">
+                            RUPINIS</p>
+                            <div className="flex justify-start items-end">
+                                <h1 className="text-xl lg:text-xl xl:text-xl 2xl:text-2xl text-white font-gellix pt-2">
+                                 Revolutionizing Customer Relationship Management...                                </h1>
+                                <svg fill="none" height="40" className="-rotate-90 text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="40" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                    <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
+                                </svg>
                             </div>
-                            </a><div className="absolute inset-0 flex justify-end items-end"><a href="/blog/articles/key-factors-why-business-process-management-systems-are-successful">
-                                </a><div className="bg-gradient-to-t from-black/45 to-transparent p-5 transition-opacity duration-300 group-hover:from-black/90 group-hover:to-black/0 w-full"><a href="/blog/articles/key-factors-why-business-process-management-systems-are-successful">
-                                    </a><div className="flex justify-between items-end"><a href="/blog/articles/key-factors-why-business-process-management-systems-are-successful">
-                                        <div>
-                                            <h1 className="text-lg lg:text-xl xl:text-xl 2xl:text-2xl text-white font-gellix pt-2">
-                                                Key Factors Why Business Process Management..
-                                            </h1>
-                                        </div>
-                                        </a><div><a href="/blog/articles/key-factors-why-business-process-management-systems-are-successful">
-                                            </a><a href="areo-industry.html#">
-                                                <svg fill="none" height="28" className="-rotate-90 rounded-full text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
-                                                    <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        
+                        </div>
                     </div>
-
-
-
-                                    <div className="lg:col-span-3 col-span-12 relative overflow-hidden group h-[300px] lg:h-[350px] xl:h-[400px]">
-                        <a href="/blog/articles/increasing-your-productivity-using-business-process-management-system">
-                            <img src="https://touchmarkdes.com/assets/front/home/blog 3.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full h-full object-cover" />
-                            <div className="absolute top-0 right-0">
-                                <div className="inline-flex justify-start items-center space-x-3 p-5"></div>
-                            </div>
-                            </a><div className="absolute inset-0 flex justify-end items-end"><a href="/blog/articles/increasing-your-productivity-using-business-process-management-system">
-                                </a><div className="bg-gradient-to-t from-black/45 to-transparent p-5 transition-opacity duration-300 group-hover:from-black/90 group-hover:to-black/0 w-full"><a href="/blog/articles/increasing-your-productivity-using-business-process-management-system">
-                                    </a><div className="flex justify-between items-end"><a href="/blog/articles/increasing-your-productivity-using-business-process-management-system">
-                                        <div>
-                                            <h1 className="text-lg lg:text-xl xl:text-xl 2xl:text-2xl text-white font-gellix pt-2">
-                                                Increasing Your Productivity Using Business Process..
-                                            </h1>
-                                        </div>
-                                        </a><div><a href="/blog/articles/increasing-your-productivity-using-business-process-management-system">
-                                            </a><a href="areo-industry.html#">
-                                                <svg fill="none" height="28" className="-rotate-90 rounded-full text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
-                                                    <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                    </div>
-
-
-
-                                    <div className="lg:col-span-3 col-span-12 relative overflow-hidden group h-[300px] lg:h-[350px] xl:h-[400px]">
-                        <a href="/blog/articles/real-time-iot-applications-in-the-retail-industry">
-                            <img src="https://touchmarkdes.com/assets/front/home/blog 4.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full h-full object-cover" />
-                            <div className="absolute top-0 right-0">
-                                <div className="inline-flex justify-start items-center space-x-3 p-5"></div>
-                            </div>
-                            </a><div className="absolute inset-0 flex justify-end items-end"><a href="/blog/articles/real-time-iot-applications-in-the-retail-industry">
-                                </a><div className="bg-gradient-to-t from-black/45 to-transparent p-5 transition-opacity duration-300 group-hover:from-black/90 group-hover:to-black/0 w-full"><a href="/blog/articles/real-time-iot-applications-in-the-retail-industry">
-                                    </a><div className="flex justify-between items-end"><a href="/blog/articles/real-time-iot-applications-in-the-retail-industry">
-                                        <div>
-                                            <h1 className="text-lg lg:text-xl xl:text-xl 2xl:text-2xl text-white font-gellix pt-2">
-                                                Real-time IoT Applications In The Retail..
-                                            </h1>
-                                        </div>
-                                        </a><div><a href="/blog/articles/real-time-iot-applications-in-the-retail-industry">
-                                            </a><a href="areo-industry.html#">
-                                                <svg fill="none" height="28" className="-rotate-90 rounded-full text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
-                                                    <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                    </div>
-
-
-
-                
+                </a>
             </div>
-        </section>
+                        <div className="lg:col-span-4 col-span-12">
+                <a href="/case-study%3Fid=2" className="relative overflow-hidden group block cursor-pointer">
+                    <img src="assets/front/home/tc_project_1722505900.PNG" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
+                    <div className="absolute top-0 right-0">
+                        <div className="inline-flex justify-start items-center space-x-3 p-5">
+                            <h3 className="bg-white px-3 py-1 rounded-3xl text-black text-xs uppercase">SCHOOL</h3>
+                            <h3 className="bg-white px-3 py-1 rounded-3xl text-black text-xs uppercase">ACADAMIC</h3>
+                        </div>
+                    </div>
+                    <div className="absolute inset-0 flex justify-end items-end">
+                        <div className="w-full bg-gradient-to-t from-[#9152a8b6] to-transparent p-5 transition-opacity duration-300 group-hover:from-[#9152A8] group-hover:to-transparent">
+                            <p className="2xl:text-base xl:text-base lg:text-xs text-base text-white font-inter">
+                            School Management System</p>
+                            <div className="flex justify-start items-end">
+                                <h1 className="text-xl lg:text-xl xl:text-xl 2xl:text-2xl text-white font-gellix pt-2">
+                                A Comprehensive School Management System                                </h1>
+                                <svg fill="none" height="40" className="-rotate-90 text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="40" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                    <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+                        <div className="lg:col-span-4 col-span-12">
+                <a href="/case-study%3Fid=3" className="relative overflow-hidden group block cursor-pointer">
+                    <img src="assets/front/home/tc_project_1722505935.PNG" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
+                    <div className="absolute top-0 right-0">
+                        <div className="inline-flex justify-start items-center space-x-3 p-5">
+                            <h3 className="bg-white px-3 py-1 rounded-3xl text-black text-xs uppercase">BANKING</h3>
+                            <h3 className="bg-white px-3 py-1 rounded-3xl text-black text-xs uppercase">FINANCE</h3>
+                        </div>
+                    </div>
+                    <div className="absolute inset-0 flex justify-end items-end">
+                        <div className="w-full bg-gradient-to-t from-[#9152a8b6] to-transparent p-5 transition-opacity duration-300 group-hover:from-[#9152A8] group-hover:to-transparent">
+                            <p className="2xl:text-base xl:text-base lg:text-xs text-base text-white font-inter">
+                            SIDBI</p>
+                            <div className="flex justify-start items-end">
+                                <h1 className="text-xl lg:text-xl xl:text-xl 2xl:text-2xl text-white font-gellix pt-2">
+                                SIDBI's Digital Transformation: Boosting User Engagement, Operational Efficiency, and Customer Satisfaction                                </h1>
+                                <svg fill="none" height="40" className="-rotate-90 text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="40" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                    <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+                    </div>
         
-
-        
-        
-
-
-
-
-
-
-    <link rel="Touchmark" href="areo-industry.html#" />
-    
-    
-    
-    
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-        
-
     </div>
+</section>
+        
+
+
+        
+        
+
+
+
+
+
+
+    <link rel="Touchmark" href="tc-service.html#" />
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+    </div>
+
+
+
+
+
+
+
+
 
 
 
@@ -1416,11 +1279,11 @@ const togglePassword = document.querySelector('#togglePassword');
       `}</Script>
       <Script id="page-script-17" strategy="lazyOnload">{`
         try {
-          window.addEventListener('scroll', function() {
+          window.addEventListener('scroll', function () {
         var header = document.querySelector('#navbar');
         var logo = document.querySelector('#logo');
-        var desktopLogo = 'https://touchmarkdes.com/src/assets/img/tds-color-logo.png';
-        var mobileLogo = 'https://touchmarkdes.com/src/assets/img/tds-color-logo.png';
+        var desktopLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
+        var mobileLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
 
         if (header) {
             header.classList.toggle('bg-scroll-white', window.scrollY > 0);
@@ -1435,7 +1298,7 @@ const togglePassword = document.querySelector('#togglePassword');
         }
 
         var navLinks = document.querySelectorAll('#navbar-collapse-columns .hs-dropdown button');
-        navLinks.forEach(function(link) {
+        navLinks.forEach(function (link) {
             link.classList.remove('text-white');
             link.classList.add('text-black');
         });
@@ -1460,31 +1323,26 @@ const togglePassword = document.querySelector('#togglePassword');
       `}</Script>
       <Script id="page-script-18" strategy="lazyOnload">{`
         try {
-          \$(document).ready(function() {
+          \$(document).ready(function () {
         var owlOptions = {
-            loop: false,
+            loop: true,
             nav: false,
             margin: 20,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
             responsive: {
                 0: {
                     items: 1.25,
-                    margin: 20, // No margin on mobile devices
-                    loop: true,
-                    autoplay: true,
-                    autoplayTimeout: 2000,
-                    autoplayHoverPause: true
+                    margin: 20  // No margin on mobile devices
                 },
                 600: {
                     items: 1.5,
-                    margin: 20 // Margin for devices with width 600px and above
+                    margin: 20  // Margin for devices with width 600px and above
                 },
                 1000: {
                     items: 4,
-                    margin: 20, // Margin for devices with width 1000px and above
-                    loop: false,
-                    autoplay: false,
-                    autoplayTimeout: 2000,
-                    autoplayHoverPause: false
+                    margin: 20  // Margin for devices with width 1000px and above
                 }
             }
         };
@@ -1497,7 +1355,7 @@ const togglePassword = document.querySelector('#togglePassword');
 
         \$("#is-p").owlCarousel(owlOptions);
 
-        \$(window).resize(function() {
+        \$(window).resize(function () {
             var newOwlOptions = owlOptions;
             if (window.innerWidth <= 767) {
                 newOwlOptions.dots = true;
@@ -1508,6 +1366,208 @@ const togglePassword = document.querySelector('#togglePassword');
             \$('#is-p').owlCarousel(newOwlOptions);
         });
     });
+        } catch (e) {
+          // Safe catch for conditional page elements
+        }
+      `}</Script>
+      <Script id="page-script-19" strategy="lazyOnload">{`
+        try {
+          \$(document).ready(function () {
+        var owlOptions = {
+            loop: true,
+            nav: false,
+            margin: 20,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1.25,
+                    margin: 20  // No margin on mobile devices
+                },
+                600: {
+                    items: 1.5,
+                    margin: 20  // Margin for devices with width 600px and above
+                },
+                1000: {
+                    items: 4,
+                    margin: 20  // Margin for devices with width 1000px and above
+                }
+            }
+        };
+
+        if (window.innerWidth <= 767) {
+            owlOptions.dots = true;
+        } else {
+            owlOptions.dots = false;
+        }
+
+        \$("#dtc").owlCarousel(owlOptions);
+
+        \$(window).resize(function () {
+            var newOwlOptions = owlOptions;
+            if (window.innerWidth <= 767) {
+                newOwlOptions.dots = true;
+            } else {
+                newOwlOptions.dots = false;
+            }
+            \$('#dtc').trigger('destroy.owl.carousel');
+            \$('#dtc').owlCarousel(newOwlOptions);
+        });
+    });
+        } catch (e) {
+          // Safe catch for conditional page elements
+        }
+      `}</Script>
+      <Script id="page-script-20" strategy="lazyOnload">{`
+        try {
+          \$(document).ready(function () {
+        var owlOptions = {
+            loop: true,
+            nav: false,
+            margin: 20,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1.25,
+                    margin: 20  // No margin on mobile devices
+                },
+                600: {
+                    items: 1.5,
+                    margin: 20  // Margin for devices with width 600px and above
+                },
+                1000: {
+                    items: 4,
+                    margin: 20  // Margin for devices with width 1000px and above
+                }
+            }
+        };
+
+        if (window.innerWidth <= 767) {
+            owlOptions.dots = true;
+        } else {
+            owlOptions.dots = false;
+        }
+
+        \$("#bpo").owlCarousel(owlOptions);
+
+        \$(window).resize(function () {
+            var newOwlOptions = owlOptions;
+            if (window.innerWidth <= 767) {
+                newOwlOptions.dots = true;
+            } else {
+                newOwlOptions.dots = false;
+            }
+            \$('#bpo').trigger('destroy.owl.carousel');
+            \$('#bpo').owlCarousel(newOwlOptions);
+        });
+    });
+        } catch (e) {
+          // Safe catch for conditional page elements
+        }
+      `}</Script>
+      <Script id="page-script-21" strategy="lazyOnload">{`
+        try {
+          \$(document).ready(function () {
+        var owlOptions = {
+            loop: true,
+            nav: false,
+            margin: 20,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1.25,
+                    margin: 20  // No margin on mobile devices
+                },
+                600: {
+                    items: 1.5,
+                    margin: 20  // Margin for devices with width 600px and above
+                },
+                1000: {
+                    items: 4,
+                    margin: 20  // Margin for devices with width 1000px and above
+                }
+            }
+        };
+
+        if (window.innerWidth <= 767) {
+            owlOptions.dots = true;
+        } else {
+            owlOptions.dots = false;
+        }
+
+        \$("#ti-i").owlCarousel(owlOptions);
+
+        \$(window).resize(function () {
+            var newOwlOptions = owlOptions;
+            if (window.innerWidth <= 767) {
+                newOwlOptions.dots = true;
+            } else {
+                newOwlOptions.dots = false;
+            }
+            \$('#ti-i').trigger('destroy.owl.carousel');
+            \$('#ti-i').owlCarousel(newOwlOptions);
+        });
+    });
+        } catch (e) {
+          // Safe catch for conditional page elements
+        }
+      `}</Script>
+      <Script id="page-script-22" strategy="lazyOnload">{`
+        try {
+          document.addEventListener('DOMContentLoaded', function () {
+    const tabButtons = document.querySelectorAll('[role="tab"]');
+    const tabContents = document.querySelectorAll('[role="tabpanel"]');
+
+    function showTab(tabId) {
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+        tabContents.forEach(content => content.classList.add('hidden'));
+
+        document.querySelector(\`#tab-\${tabId}\`).classList.add('active');
+        document.querySelector(\`#content-\${tabId}\`).classList.remove('hidden');
+
+        fetchTabContent(tabId);
+    }
+
+    function fetchTabContent(tabId) {
+        const contentContainer = document.querySelector(\`#content-\${tabId}\`);
+        fetch('head/engine/ajax/__ajax_tc_fetch_tab_content.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: \`tab_id=\${tabId}\`
+        })
+        .then(response => response.text())
+        .then(data => {
+            contentContainer.innerHTML = data;
+
+            \$(contentContainer).find('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                items: 1
+            });
+        })
+        .catch(error => {
+            console.error('Error fetching tab content:', error);
+        });
+    }
+
+    const defaultTabId = 1;
+    showTab(defaultTabId);
+
+    tabButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const tabId = this.getAttribute('data-hs-tab').replace('#content-', '');
+            showTab(tabId);
+        });
+    });
+});
         } catch (e) {
           // Safe catch for conditional page elements
         }

@@ -8,36 +8,7 @@ export default function Page() {
       <title>Touchmark Descience</title>
       <meta name="description" content="" />
 
-      {/* Page JSX Content */}
-      ﻿
-
-
-
-    
-    
-    
-
-    
-    <link rel="touchmark-des-icon" sizes="180x180" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-    
-    
-    
-    
-
-    
-    
-
-
-
-    
-
-
-
-
-
-    <div className="overflow-x-hidden lg:overflow-x-auto">
+      <div className="overflow-x-hidden lg:overflow-x-auto">
 
 
         
@@ -191,13 +162,13 @@ export default function Page() {
         <section className="swiper-container relative">
             <div className="swiper-wrapper">
                 
-                <div className="swiper-slide bg-no-repeat bg-cover" style={{ "backgroundImage": "url('src/assets/img/home/hero-banner-bg-img.png')" }}>
+                <div className="swiper-slide bg-no-repeat bg-cover" style={{ "backgroundImage": "url('/images/home/hero-banner-bg-img.png')" }}>
                     <div className="grid grid-cols-12 2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 lg:h-auto h-[760px]">
                         <div className="lg:col-span-5 col-span-12 flex justify-center items-center lg:mt-0 mt-10">
                             <div>
                                 <h1 className="font-gellix text-white text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
                                     Offering travel experiences, from exotic destinations to cultural adventures</h1>
-                                <a href="/tt-industry" className="relative overflow-hidden border border-gray-100 px-3 py-2 inline-flex justify-center items-center group mt-7 lg:mt-8 xl:mt-8 2xl:mt-10">
+                                <a href="/travel-tourism-industry" className="relative overflow-hidden border border-gray-100 px-3 py-2 inline-flex justify-center items-center group mt-7 lg:mt-8 xl:mt-8 2xl:mt-10">
                                     <span className="relative z-10 text-white group-hover:text-black transition-colors duration-300 text-sm uppercase">Learn
                                         More</span>
                                     <svg fill="none" height="24" className="relative z-10 ml-2 text-white -rotate-90 group-hover:text-black transition-colors duration-300" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
@@ -209,19 +180,19 @@ export default function Page() {
                         </div>
                         <div className="lg:col-span-7 col-span-12">
                             <div className="flex justify-center lg:mt-0 -mt-12 h-full items-end lg:h-screen">
-                                <img src="src/assets/img/home/hero-banner-vector-01.png" className="" />
+                                <img src="/images/home/hero-banner-vector-01.png" className="" />
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <div className="swiper-slide bg-no-repeat bg-cover" style={{ "backgroundImage": "url('src/assets/img/home/hero-banner-bg-img.png')" }}>
+                <div className="swiper-slide bg-no-repeat bg-cover" style={{ "backgroundImage": "url('/images/home/hero-banner-bg-img.png')" }}>
                     <div className="grid grid-cols-12 2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 lg:h-auto h-[760px]">
                         <div className="lg:col-span-5 col-span-12 flex justify-center items-center lg:mt-0 mt-10">
                             <div>
                                 <h1 className="font-gellix text-white text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
                                     Immersive AR and VR Experiences Await You</h1>
-                                <a href="/mv-service" className="relative overflow-hidden border border-gray-100 px-3 py-2 inline-flex justify-center items-center group mt-7 lg:mt-8 xl:mt-8 2xl:mt-10">
+                                <a href="/metaverse-service" className="relative overflow-hidden border border-gray-100 px-3 py-2 inline-flex justify-center items-center group mt-7 lg:mt-8 xl:mt-8 2xl:mt-10">
                                     <span className="relative z-10 text-white group-hover:text-black transition-colors duration-300 text-sm uppercase">Learn
                                         More</span>
                                     <svg fill="none" height="24" className="relative z-10 ml-2 text-white -rotate-90 group-hover:text-black transition-colors duration-300" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
@@ -233,19 +204,19 @@ export default function Page() {
                         </div>
                         <div className="lg:col-span-7 col-span-12">
                             <div className="flex justify-center lg:mt-0 -mt-12 h-full items-end lg:h-screen">
-                                <img src="src/assets/img/home/hero-banner-vector-02.png" className="" />
+                                <img src="/images/home/hero-banner-vector-02.png" className="" />
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <div className="swiper-slide bg-no-repeat bg-cover" style={{ "backgroundImage": "url('src/assets/img/home/hero-banner-bg-img.png')" }}>
+                <div className="swiper-slide bg-no-repeat bg-cover" style={{ "backgroundImage": "url('/images/home/hero-banner-bg-img.png')" }}>
                     <div className="grid grid-cols-12 2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 lg:h-auto h-[760px]">
                         <div className="lg:col-span-5 col-span-12 flex justify-center items-center lg:mt-0 mt-10">
                             <div>
                                 <h1 className="font-gellix text-white text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
                                     Enhance Your Health and Happiness</h1>
-                                <a href="/hc-industry" className="relative overflow-hidden border border-gray-100 px-3 py-2 inline-flex justify-center items-center group mt-7 lg:mt-8 xl:mt-8 2xl:mt-10">
+                                <a href="/healthcare-industry" className="relative overflow-hidden border border-gray-100 px-3 py-2 inline-flex justify-center items-center group mt-7 lg:mt-8 xl:mt-8 2xl:mt-10">
                                     <span className="relative z-10 text-white group-hover:text-black transition-colors duration-300 text-sm uppercase">Learn
                                         More</span>
                                     <svg fill="none" height="24" className="relative z-10 ml-2 text-white -rotate-90 group-hover:text-black transition-colors duration-300" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
@@ -257,7 +228,7 @@ export default function Page() {
                         </div>
                         <div className="lg:col-span-7 col-span-12">
                             <div className="flex justify-center lg:mt-0 -mt-12 h-full items-end lg:h-screen">
-                                <img src="src/assets/img/home/hero-banner-vector-03.png" className="" />
+                                <img src="/images/home/hero-banner-vector-03.png" className="" />
                             </div>
                         </div>
                     </div>
@@ -287,7 +258,7 @@ export default function Page() {
         
         <section>
             
-            <div className="hidden md:block lg:block relative w-full  bg-cover bg-center" style={{ "backgroundImage": "url('src/assets/img/home/about-section-background-desktop.svg')" }}>
+            <div className="hidden md:block lg:block relative w-full  bg-cover bg-center" style={{ "backgroundImage": "url('/images/home/about-section-background-desktop.svg')" }}>
                 <div className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] mx-auto">
                     <div className="grid grid-cols-12 gap-4 w-full">
                         <div className="bg-[#F1FBFF] col-span-12 lg:col-span-6 md:col-span-6">
@@ -315,9 +286,9 @@ export default function Page() {
                         </div>
                         <div className="bg-[#194F97] col-span-12 lg:col-span-6 md:col-span-6 flex justify-center items-center">
                             <div className="2xl:py-16 xl:py-8 lg:py-8 md:px-8 md:py-8  2xl:p-0 xl:p-7 lg:p-7 relative">
-                                <img src="src/assets/img/home/about-us-15+year-image.png" className="lg:block hidden sm:hidden md:block" />
+                                <img src="/images/home/about-us-15+year-image.png" className="lg:block hidden sm:hidden md:block" />
                             </div>
-                            <img src="src/assets/img/home/ripple-white-img.png" className="absolute top-0 right-0" />
+                            <img src="/images/home/ripple-white-img.png" className="absolute top-0 right-0" />
                         </div>
                     </div>
                 </div>
@@ -351,7 +322,7 @@ export default function Page() {
                         </div>
                     </div>
                     <div className="col-span-12 bg-[#194F97] flex justify-center items-center w-full">
-                        <img src="src/assets/img/home/about-us-15+year-image-blue-mobile.png" className="w-full" />
+                        <img src="/images/home/about-us-15+year-image-blue-mobile.png" className="w-full" />
                     </div>
                 </div>
             </div>
@@ -388,28 +359,28 @@ export default function Page() {
             <div className="lg:block hidden">
                 <div className="grid grid-cols-4 mt-16">
                     <div className="flex justify-center items-center border border-t-0 border-l-0 border-r-1 border-b-1 p-5 lg:p-7 xl:p-14 2xl:p-10">
-                        <img src="src/assets/img/home/colcola-icons.svg" style={{ "height": "40px" }} />
+                        <img src="/images/home/colcola-icons.svg" style={{ "height": "40px" }} />
                     </div>
                     <div className="flex justify-center items-center border border-t-0 p-5 lg:p-7 xl:p-14 2xl:p-10">
-                        <img src="src/assets/img/home/sidbi-icons.svg" style={{ "height": "50px" }} />
+                        <img src="/images/home/sidbi-icons.svg" style={{ "height": "50px" }} />
                     </div>
                     <div className="flex justify-center items-center border border-t-0 p-5 lg:p-7 xl:p-14 2xl:p-10">
-                        <img src="src/assets/img/home/rupinis-icons.svg" style={{ "height": "40px" }} />
+                        <img src="/images/home/rupinis-icons.svg" style={{ "height": "40px" }} />
                     </div>
                     <div className="flex justify-center items-center border border-t-0 border-r-0 border-l-1 border-b-1 p-5 lg:p-7 xl:p-14 2xl:p-10">
-                        <img src="src/assets/img/home/expleo-icon.svg" style={{ "height": "45px" }} />
+                        <img src="/images/home/expleo-icon.svg" style={{ "height": "45px" }} />
                     </div>
                     <div className="flex justify-center items-center border border-b-0 border-l-0 border-r-1 border-t-1 p-5 lg:p-7 xl:p-10 2xl:p-8">
-                        <img src="src/assets/img/home/dvi-icons.svg" style={{ "height": "80px" }} />
+                        <img src="/images/home/dvi-icons.svg" style={{ "height": "80px" }} />
                     </div>
                     <div className="flex justify-center items-center border border-b-0 p-5 lg:p-7 xl:p-14 2xl:p-10">
-                        <img src="src/assets/img/home/rbl-icons.svg" style={{ "height": "50px" }} />
+                        <img src="/images/home/rbl-icons.svg" style={{ "height": "50px" }} />
                     </div>
                     <div className="flex justify-center items-center border border-b-0 p-5 lg:p-7 xl:p-14 2xl:p-10">
-                        <img src="src/assets/img/home/hayakawa-icons.svg" style={{ "height": "50px" }} />
+                        <img src="/images/home/hayakawa-icons.svg" style={{ "height": "50px" }} />
                     </div>
                     <div className="flex justify-center items-center border border-b-0 border-l-1 border-r-0 border-t-1 p-5 lg:p-7 xl:p-14 2xl:p-10">
-                        <img src="src/assets/img/home/tag-icons.svg" style={{ "height": "50px" }} />
+                        <img src="/images/home/tag-icons.svg" style={{ "height": "50px" }} />
                     </div>
                 </div>
             </div>
@@ -417,29 +388,29 @@ export default function Page() {
             <div className="lg:hidden block">
                 <div className="grid grid-cols-2 pt-5 lg:pt-32 xl:pt-40 2xl:pt-24">
                     <div className="flex justify-center items-center border border-t-0 border-l-0 border-r-1 border-b-1 p-7">
-                        <img src="src/assets/img/home/colcola-icons.svg" style={{ "height": "35px" }} />
+                        <img src="/images/home/colcola-icons.svg" style={{ "height": "35px" }} />
                     </div>
                     <div className="flex justify-center items-center border border-t-0 border-r-0 p-7">
-                        <img src="src/assets/img/home/sidbi-icons.svg" style={{ "height": "35px" }} />
+                        <img src="/images/home/sidbi-icons.svg" style={{ "height": "35px" }} />
                     </div>
                     <div className="flex justify-center items-center border border-t-0 border-l-0 p-7">
-                        <img src="src/assets/img/home/rupinis-icons.svg" style={{ "height": "35px" }} />
+                        <img src="/images/home/rupinis-icons.svg" style={{ "height": "35px" }} />
                     </div>
                     <div className="flex justify-center items-center border border-t-0 border-r-0 border-l-1 border-b-1 p-7">
-                        <img src="src/assets/img/home/expleo-icon.svg" style={{ "height": "35px" }} />
+                        <img src="/images/home/expleo-icon.svg" style={{ "height": "35px" }} />
                     </div>
 
                     <div className="flex justify-center items-center border border-b-0 border-l-0 border-r-1 border-t-1 p-5">
-                        <img src="src/assets/img/home/dvi-icons.svg" style={{ "height": "35px" }} />
+                        <img src="/images/home/dvi-icons.svg" style={{ "height": "35px" }} />
                     </div>
                     <div className="flex justify-center items-center border border-b-0 border-r-0 p-5">
-                        <img src="src/assets/img/home/rbl-icons.svg" style={{ "height": "35px" }} />
+                        <img src="/images/home/rbl-icons.svg" style={{ "height": "35px" }} />
                     </div>
                     <div className="flex justify-center items-center border border-b-0 border-l-0 p-5">
-                        <img src="src/assets/img/home/hayakawa-icons.svg" style={{ "height": "35px" }} />
+                        <img src="/images/home/hayakawa-icons.svg" style={{ "height": "35px" }} />
                     </div>
                     <div className="flex justify-center items-center border border-b-0 border-l-1 border-r-0 border-t-1 p-5">
-                        <img src="src/assets/img/home/tag-icons.svg" style={{ "height": "35px" }} />
+                        <img src="/images/home/tag-icons.svg" style={{ "height": "35px" }} />
                     </div>
 
                 </div>
@@ -653,18 +624,18 @@ export default function Page() {
                     <div className="border bg-[#F1F2FF] grid grid-cols-6 gap-10 lg:p-7 p-5">
                         <div className="lg:col-span-2 col-span-6">
                             <div className="hidden lg:block flex flex-col justify-between items-center h-full lg:space-y-5 space-y-3">
-                                <img src="src/assets/img/home/hayakawa-icon-testimonial.png" className="mb-auto" />
-                                <img src="src/assets/img/home/hayakawa-icon-testimonial-02.png" className="mt-auto" />
+                                <img src="/images/home/hayakawa-icon-testimonial.png" className="mb-auto" />
+                                <img src="/images/home/hayakawa-icon-testimonial-02.png" className="mt-auto" />
                             </div>
                             <div className="block lg:hidden">
-                                <img src="src/assets/img/home/hayakawa-icon-testimonial-02-mob.png" />
+                                <img src="/images/home/hayakawa-icon-testimonial-02-mob.png" />
                             </div>
                         </div>
                         <div className="lg:col-span-4 col-span-6 flex justify-start items-center relative">
                             <div className="flex flex-col justify-between items-center h-full">
                                 <div className="relative">
                                     <div className="absolute left-0 ml-0 lg:-ml-8 -mt-5 lg:-mt-0 h-4 w-5 lg:h-7 lg:w-5">
-                                        <img src="src/assets/img/home/qutation-black-testimonial.png" className="h-4 w-5 lg:h-5 lg:w-7" />
+                                        <img src="/images/home/qutation-black-testimonial.png" className="h-4 w-5 lg:h-5 lg:w-7" />
                                     </div>
                                     <h1 className="font-gellix text-lg lg:text-xl xl:text-xl 2xl:text-2xl">
                                         I have been travelling with them for so long, happy to see their growth.
@@ -689,7 +660,7 @@ export default function Page() {
                                             </p>
                                         </div>
                                         <div className="absolute right-0 -mt-16">
-                                            <img src="src/assets/img/home/qutation-testimonial.png" />
+                                            <img src="/images/home/qutation-testimonial.png" />
                                         </div>
                                     </div>
                                 </div>
@@ -700,18 +671,18 @@ export default function Page() {
                     <div className="border bg-[#FFF6F7] grid grid-cols-6 gap-10 lg:p-7 p-5">
                         <div className="lg:col-span-2 col-span-6">
                             <div className="hidden lg:block flex flex-col justify-between items-center h-full lg:space-y-5 space-y-3">
-                                <img src="src/assets/img/home/alpha-icon-testimonial.png" className="mb-auto" />
-                                <img src="src/assets/img/home/alpha-icon-testimonial-02.png" className="mt-auto" />
+                                <img src="/images/home/alpha-icon-testimonial.png" className="mb-auto" />
+                                <img src="/images/home/alpha-icon-testimonial-02.png" className="mt-auto" />
                             </div>
                             <div className="block lg:hidden">
-                                <img src="src/assets/img/home/alpha-icon-testimonial-02-mob.png" className="" />
+                                <img src="/images/home/alpha-icon-testimonial-02-mob.png" className="" />
                             </div>
                         </div>
                         <div className="lg:col-span-4 col-span-6 flex justify-start items-center relative">
                             <div className="flex flex-col justify-between items-center h-full">
                                 <div className="relative">
                                     <div className="absolute left-0 ml-0 lg:-ml-8 -mt-5 lg:-mt-0 h-4 w-5 lg:h-7 lg:w-5">
-                                        <img src="src/assets/img/home/qutation-black-testimonial.png" className="h-4 w-5 lg:h-5 lg:w-7" />
+                                        <img src="/images/home/qutation-black-testimonial.png" className="h-4 w-5 lg:h-5 lg:w-7" />
                                     </div>
                                     <h1 className="font-gellix text-lg lg:text-xl xl:text-xl 2xl:text-2xl">
                                         The team at Touchmark Descience is the best that I have worked with
@@ -738,7 +709,7 @@ export default function Page() {
                                             </p>
                                         </div>
                                         <div className="absolute right-0 -mt-16">
-                                            <img src="src/assets/img/home/qutation-testimonial.png" />
+                                            <img src="/images/home/qutation-testimonial.png" />
                                         </div>
                                     </div>
                                 </div>
@@ -749,18 +720,18 @@ export default function Page() {
                     <div className="border bg-[#F8F9FF] grid grid-cols-6 gap-10 lg:p-7 p-5">
                         <div className="lg:col-span-2 col-span-6">
                             <div className="lg:block hidden flex flex-col justify-between items-center h-full lg:space-y-5 space-y-3">
-                                <img src="src/assets/img/home/tantra-icon-testimonial.png" className="mb-auto" />
-                                <img src="src/assets/img/home/tantra-icon-testimonial-02.png" className="mt-auto" />
+                                <img src="/images/home/tantra-icon-testimonial.png" className="mb-auto" />
+                                <img src="/images/home/tantra-icon-testimonial-02.png" className="mt-auto" />
                             </div>
                             <div className="lg:hidden block">
-                                <img src="src/assets/img/home/tantra-icon-testimonial-02-mob.png" className="" />
+                                <img src="/images/home/tantra-icon-testimonial-02-mob.png" className="" />
                             </div>
                         </div>
                         <div className="lg:col-span-4 col-span-6 flex justify-start items-center relative">
                             <div className="flex flex-col justify-between items-center h-full">
                                 <div className="relative">
                                     <div className="w-5 h-7 absolute left-0 lg:-ml-8 ml-0 lg:-mt-0 -mt-5">
-                                        <img src="src/assets/img/home/qutation-black-testimonial.png" className="h-5 w-7" />
+                                        <img src="/images/home/qutation-black-testimonial.png" className="h-5 w-7" />
                                     </div>
                                     <h1 className="font-gellix text-lg lg:text-xl xl:text-xl 2xl:text-2xl">
                                         I have been travelling with them for so long, happy to see their growth.&nbsp;</h1>
@@ -782,7 +753,7 @@ export default function Page() {
                                                 Chairman &amp; Founder, Tantra Inc - Group of Companies, Singapore</p>
                                         </div>
                                         <div className="absolute right-0 -mt-16">
-                                            <img src="src/assets/img/home/qutation-testimonial.png" />
+                                            <img src="/images/home/qutation-testimonial.png" />
                                         </div>
                                     </div>
                                 </div>
@@ -793,18 +764,18 @@ export default function Page() {
                     <div className="border bg-[#F4FFFE] grid grid-cols-6 gap-10 lg:p-7 p-5">
                         <div className="lg:col-span-2 col-span-6">
                             <div className="hidden lg:block flex flex-col justify-between items-center h-full lg:space-y-5 space-y-3">
-                                <img src="src/assets/img/home/armtech-icon-testimonial.png" className="mb-auto" />
-                                <img src="src/assets/img/home/armtech-icon-testimonial-02.png" className="mt-auto" />
+                                <img src="/images/home/armtech-icon-testimonial.png" className="mb-auto" />
+                                <img src="/images/home/armtech-icon-testimonial-02.png" className="mt-auto" />
                             </div>
                             <div className="lg:hidden block">
-                                <img src="src/assets/img/home/armtech-icon-testimonial-02-mob.png" className="" />
+                                <img src="/images/home/armtech-icon-testimonial-02-mob.png" className="" />
                             </div>
                         </div>
                         <div className="lg:col-span-4 col-span-6 flex justify-start items-center relative">
                             <div className="flex flex-col justify-between items-center h-full">
                                 <div className="relative">
                                     <div className="absolute left-0 ml-0 lg:-ml-8 -mt-5 lg:-mt-0 h-4 w-5 lg:h-7 lg:w-5">
-                                        <img src="src/assets/img/home/qutation-black-testimonial.png" className="h-4 w-5 lg:h-5 lg:w-7" />
+                                        <img src="/images/home/qutation-black-testimonial.png" className="h-4 w-5 lg:h-5 lg:w-7" />
                                     </div>
                                     <h1 className="font-gellix text-lg lg:text-xl xl:text-xl 2xl:text-2xl">
                                         The product helped us to increase our productivity as well as a business&nbsp;
@@ -830,7 +801,7 @@ export default function Page() {
                                                 CEO, Armtech Computer Services Pvt Ltd</p>
                                         </div>
                                         <div className="absolute right-0 -mt-16">
-                                            <img src="src/assets/img/home/qutation-testimonial.png" />
+                                            <img src="/images/home/qutation-testimonial.png" />
                                         </div>
                                     </div>
                                 </div>
@@ -859,7 +830,7 @@ export default function Page() {
 
                 <div className="lg:col-span-6 col-span-12 relative overflow-hidden group">
                     <a href="/blog/articles/a-360-view-of-business-process-management-system" target="_blank">
-                        <img src="src/assets/img/shadow_1.png" className="transition-transform group-hover:scale-110 duration-500 lg:w-auto w-full" />
+                        <img src="/images/shadow_1.png" className="transition-transform group-hover:scale-110 duration-500 lg:w-auto w-full" />
 
                         <div className="absolute top-0 right-0">
                             <div className="inline-flex justify-start items-center space-x-3 p-5">
@@ -902,7 +873,7 @@ export default function Page() {
 
                         <div className="lg:col-span-1 col-span-2 relative overflow-hidden group">
                             <a href="https://touchmarkdes.com/blog/articles/blog/articles/key-factors-why-business-process-management-systems-are-successful" target="_blank">
-                                <img src="src/assets/img/shadow_2.png" className="transition-transform group-hover:scale-125 duration-500 h-full lg:w-auto w-full" />
+                                <img src="/images/shadow_2.png" className="transition-transform group-hover:scale-125 duration-500 h-full lg:w-auto w-full" />
                                 <div className="absolute top-0 right-0">
                                     <div className="inline-flex justify-start items-center space-x-3 p-5">
                                         <h3 className="bg-[#194F97] px-3 py-1 rounded-3xl text-white text-xs">
@@ -932,7 +903,7 @@ export default function Page() {
 
                         <div className="lg:col-span-1 col-span-2 relative overflow-hidden group">
                             <a href="/blog/articles/increasing-your-productivity-using-business-process-management-system" target="_blank">
-                                <img src="src/assets/img/shadow_3.png" className="transition-transform group-hover:scale-125 duration-500 h-full lg:w-auto w-full" />
+                                <img src="/images/shadow_3.png" className="transition-transform group-hover:scale-125 duration-500 h-full lg:w-auto w-full" />
                                 <div className="absolute top-0 right-0">
                                     <div className="inline-flex justify-start items-center space-x-3 p-5">
                                         <h3 className="bg-[#194F97] px-3 py-1 rounded-3xl text-white text-xs">
@@ -964,7 +935,7 @@ export default function Page() {
 
                     <div className="lg:block hidden lg:row-span-1 row-span-2 relative overflow-hidden group">
                         <a href="/blog/articles/real-time-iot-applications-in-the-retail-industry" target="_blank">
-                            <img src="src/assets/img/shadow_4.png" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
+                            <img src="/images/shadow_4.png" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
                             <div className="absolute top-0 right-0">
                                 <div className="inline-flex justify-start items-center space-x-3 p-5">
                                     <h3 className="bg-[#194F97] px-3 py-1 rounded-3xl text-white text-xs">
@@ -998,7 +969,7 @@ export default function Page() {
                     <div className="lg:hidden block row-span-1 grid grid-cols-2 lg:gap-4">
                         <div className="lg:col-span-1 col-span-2 relative overflow-hidden group">
                             <a href="/blog/articles/why-internet-of-things" target="_blank">
-                                <img src="src/assets/img/shadow_5.png" className="transition-transform group-hover:scale-125 duration-500 h-full lg:w-auto w-full" />
+                                <img src="/images/shadow_5.png" className="transition-transform group-hover:scale-125 duration-500 h-full lg:w-auto w-full" />
                                 <div className="absolute top-0 right-0">
                                     <div className="inline-flex justify-start items-center space-x-3 p-5">
                                         <h3 className="bg-[#194F97] px-3 py-1 rounded-3xl text-white text-xs">
@@ -1031,7 +1002,7 @@ export default function Page() {
 
                 <div className="lg:block hidden lg:col-span-3 col-span-12 relative overflow-hidden group">
                     <a href="/blog/articles/why-internet-of-things" target="_blank">
-                        <img src="src/assets/img/shadow_5.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" />
+                        <img src="/images/shadow_5.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" />
                         <div className="absolute top-0 right-0">
                             <div className="inline-flex justify-start items-center space-x-3 p-5">
                                 <h3 className="bg-[#194F97] px-3 py-1 rounded-3xl text-white text-xs">
@@ -1061,7 +1032,7 @@ export default function Page() {
 
                 <div className="lg:block hidden lg:col-span-3 col-span-12 relative overflow-hidden group">
                     <a href="/blog/articles/how-does-iot-benefit-the-supply-chain" target="_blank">
-                        <img src="src/assets/img/shadow_6.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" />
+                        <img src="/images/shadow_6.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" />
                         <div className="absolute top-0 right-0">
                             <div className="inline-flex justify-start items-center space-x-3 p-5">
                                 <h3 className="bg-[#194F97] px-3 py-1 rounded-3xl text-white text-xs">
@@ -1091,7 +1062,7 @@ export default function Page() {
 
                 <div className="lg:block hidden lg:col-span-3 col-span-12 relative overflow-hidden group">
                     <a href="/blog/articles/key-benefits-in-hiring-a-dedicated-software-development-team" target="_blank">
-                        <img src="src/assets/img/shadow_7.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" />
+                        <img src="/images/shadow_7.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" />
                         <div className="absolute top-0 right-0">
                             <div className="inline-flex justify-start items-center space-x-3 p-5">
                                 <h3 className="bg-[#194F97] px-3 py-1 rounded-3xl text-white text-xs">
@@ -1122,7 +1093,7 @@ export default function Page() {
 
                 <div className="lg:block hidden lg:col-span-3 col-span-12 relative overflow-hidden group">
                     <a href="/blog/articles/the-value-of-big-data-analysis-in-the-retail-industry" target="_blank">
-                        <img src="src/assets/img/shadow_8.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" />
+                        <img src="/images/shadow_8.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" />
                         <div className="absolute top-0 right-0">
                             <div className="inline-flex justify-start items-center space-x-3 p-5">
                                 <h3 className="bg-[#194F97] px-3 py-1 rounded-3xl text-white text-xs">
@@ -1318,8 +1289,8 @@ export default function Page() {
           window.addEventListener('scroll', function() {
         var header = document.querySelector('#navbar');
         var logo = document.querySelector('#logo');
-        var desktopLogo = 'https://touchmarkdes.com/src/assets/img/touchmark-logowhite.svg';
-        var mobileLogo = 'https://touchmarkdes.com/src/assets/img/tds-color-logo.png';
+        var desktopLogo = 'https://touchmarkdes.com/images/touchmark-logowhite.svg';
+        var mobileLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
 
         if (header) {
             header.classList.toggle('bg-scroll-white', window.scrollY > 0);
@@ -1347,8 +1318,8 @@ export default function Page() {
 
     window.addEventListener('resize', function() {
         var logo = document.querySelector('#logo');
-        var mobileLogo = 'https://touchmarkdes.com/src/assets/img/tds-color-logo.png';
-        var desktopLogo = 'https://touchmarkdes.com/src/assets/img/touchmark-logowhite.svg';
+        var mobileLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
+        var desktopLogo = 'https://touchmarkdes.com/images/touchmark-logowhite.svg';
 
         if (window.innerWidth <= 768) {
             logo.src = mobileLogo;

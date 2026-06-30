@@ -239,12 +239,12 @@ input[type="search"]::-webkit-search-cancel-button {
         }
 
 .save-icon.default {
-            background-image: url('https://touchmarkdes.com/src/assets/img/bookmark\\ \\(1\\).png');
+            background-image: url('https://touchmarkdes.com/images/bookmark\\ \\(1\\).png');
             /* Replace with your default image path */
         }
 
 .save-icon.filled {
-            background-image: url('/src/assets/img/save-instagram.png');
+            background-image: url('/images/save-instagram.png');
             /* Replace with your filled image path */
         }
 

@@ -18,7 +18,7 @@ export default function Page({ searchParams }: PageProps) {
         <>
           {/* Ebook 1 Styles */}
           {/* Ebook 1 Content */}
-          ﻿
+          
 
 
 
@@ -279,7 +279,7 @@ export default function Page({ searchParams }: PageProps) {
         
 
                 
-        <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('src/assets/img/ebooks/hero-banner-img-e-book.png')" }}>
+        <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('/images/ebooks/hero-banner-img-e-book.png')" }}>
             <div className="xl:max-w-screen-2xl 2xl:max-w-screen-2xl lg:max-w-screen-lg px-4 md:px-6 lg:px-8 mx-auto py-10 lg:py-24">
                 <div className="grid grid-cols-12 lg:gap-4">
                     <div className="lg:col-span-7 col-span-12 text-white text-left lg:pt-5">
@@ -1253,8 +1253,8 @@ const togglePassword = document.querySelector('#togglePassword');
           window.addEventListener('scroll', function () {
         var header = document.querySelector('#navbar');
         var logo = document.querySelector('#logo');
-        var desktopLogo = 'https://touchmarkdes.com/src/assets/img/tds-color-logo.png';
-        var mobileLogo = 'https://touchmarkdes.com/src/assets/img/tds-color-logo.png';
+        var desktopLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
+        var mobileLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
 
         if (header) {
             header.classList.toggle('bg-scroll-white', window.scrollY > 0);
@@ -1315,7 +1315,7 @@ const togglePassword = document.querySelector('#togglePassword');
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: './src/assets/img/ebooks/succcess-animation.json' // the path to the animation json
+        path: './images/ebooks/succcess-animation.json' // the path to the animation json
       });
     });
         } catch (e) {
@@ -1476,7 +1476,7 @@ const togglePassword = document.querySelector('#togglePassword');
         <>
           {/* Ebook 2 Styles */}
           {/* Ebook 2 Content */}
-          ﻿
+          
 
 
 
@@ -1737,7 +1737,7 @@ const togglePassword = document.querySelector('#togglePassword');
         
 
                 
-        <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('src/assets/img/ebooks/hero-banner-img-e-book.png')" }}>
+        <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('/images/ebooks/hero-banner-img-e-book.png')" }}>
             <div className="xl:max-w-screen-2xl 2xl:max-w-screen-2xl lg:max-w-screen-lg px-4 md:px-6 lg:px-8 mx-auto py-10 lg:py-24">
                 <div className="grid grid-cols-12 lg:gap-4">
                     <div className="lg:col-span-7 col-span-12 text-white text-left lg:pt-5">
@@ -2710,8 +2710,8 @@ const togglePassword = document.querySelector('#togglePassword');
           window.addEventListener('scroll', function () {
         var header = document.querySelector('#navbar');
         var logo = document.querySelector('#logo');
-        var desktopLogo = 'https://touchmarkdes.com/src/assets/img/tds-color-logo.png';
-        var mobileLogo = 'https://touchmarkdes.com/src/assets/img/tds-color-logo.png';
+        var desktopLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
+        var mobileLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
 
         if (header) {
             header.classList.toggle('bg-scroll-white', window.scrollY > 0);
@@ -2772,7 +2772,7 @@ const togglePassword = document.querySelector('#togglePassword');
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: './src/assets/img/ebooks/succcess-animation.json' // the path to the animation json
+        path: './images/ebooks/succcess-animation.json' // the path to the animation json
       });
     });
         } catch (e) {
@@ -2933,7 +2933,7 @@ const togglePassword = document.querySelector('#togglePassword');
         <>
           {/* Ebook 3 Styles */}
           {/* Ebook 3 Content */}
-          ﻿
+          
 
 
 
@@ -3194,7 +3194,7 @@ const togglePassword = document.querySelector('#togglePassword');
         
 
                 
-        <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('src/assets/img/ebooks/hero-banner-img-e-book.png')" }}>
+        <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('/images/ebooks/hero-banner-img-e-book.png')" }}>
             <div className="xl:max-w-screen-2xl 2xl:max-w-screen-2xl lg:max-w-screen-lg px-4 md:px-6 lg:px-8 mx-auto py-10 lg:py-24">
                 <div className="grid grid-cols-12 lg:gap-4">
                     <div className="lg:col-span-7 col-span-12 text-white text-left lg:pt-5">
@@ -4167,8 +4167,8 @@ const togglePassword = document.querySelector('#togglePassword');
           window.addEventListener('scroll', function () {
         var header = document.querySelector('#navbar');
         var logo = document.querySelector('#logo');
-        var desktopLogo = 'https://touchmarkdes.com/src/assets/img/tds-color-logo.png';
-        var mobileLogo = 'https://touchmarkdes.com/src/assets/img/tds-color-logo.png';
+        var desktopLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
+        var mobileLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
 
         if (header) {
             header.classList.toggle('bg-scroll-white', window.scrollY > 0);
@@ -4229,7 +4229,7 @@ const togglePassword = document.querySelector('#togglePassword');
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: './src/assets/img/ebooks/succcess-animation.json' // the path to the animation json
+        path: './images/ebooks/succcess-animation.json' // the path to the animation json
       });
     });
         } catch (e) {

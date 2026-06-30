@@ -38,13 +38,13 @@ export default function Footer() {
               </h1>
               <div className="flex justify-start lg:justify-center items-center space-x-2 lg:mt-0 mt-4">
                 <a href="https://in.linkedin.com/company/touchmarkdes" target="_blank" rel="noopener noreferrer">
-                  <img src="/src/assets/img/home/icons/linkedin-icon.svg" className="h-10" alt="LinkedIn" />
+                  <img src="/images/home/icons/linkedin-icon.svg" className="h-10" alt="LinkedIn" />
                 </a>
                 <a href="https://www.instagram.com/touchmarkdes/" target="_blank" rel="noopener noreferrer">
-                  <img src="/src/assets/img/home/icons/instagram-icon.svg" className="h-10" alt="Instagram" />
+                  <img src="/images/home/icons/instagram-icon.svg" className="h-10" alt="Instagram" />
                 </a>
                 <a href="https://www.facebook.com/touchmarkdes/" target="_blank" rel="noopener noreferrer">
-                  <img src="/src/assets/img/home/icons/fb-icon.svg" className="h-10" alt="Facebook" />
+                  <img src="/images/home/icons/fb-icon.svg" className="h-10" alt="Facebook" />
                 </a>
               </div>
             </div>
@@ -137,17 +137,17 @@ export default function Footer() {
           {/* About Column */}
           <div className="text-white w-full col-span-2">
             <a href="/">
-              <img src="/src/assets/img/touchmark-logowhite.svg" className="h-10" alt="Touchmark" />
+              <img src="/images/touchmark-logowhite.svg" className="h-10" alt="Touchmark" />
             </a>
             <p className="mt-7 lg:mt-10 xl:mt-10 2xl:mt-10 text-sm lg:text-[14px] xl:text-[14px] 2xl:text-base text-white/80 font-inter leading-relaxed">
               Innovative Solutions Connecting Brands and Customers. We provide full-service IT consulting, digital marketing, and software development. Our objective is to use automation and rich media to close the gap that exists between brands and consumers.
             </p>
             <div className="mt-7 lg:mt-10 flex items-center space-x-3">
-              <img src="/src/assets/img/home/icons/phone-icon.svg" alt="Phone" />
+              <img src="/images/home/icons/phone-icon.svg" alt="Phone" />
               <h3 className="font-semibold text-sm">+91 44 4065 2648</h3>
             </div>
             <div className="mt-5 flex items-center space-x-3">
-              <img src="/src/assets/img/home/icons/mail-icon.svg" alt="Mail" />
+              <img src="/images/home/icons/mail-icon.svg" alt="Mail" />
               <h3 className="font-semibold text-sm">info@touchmarkdes.com</h3>
             </div>
           </div>
@@ -161,7 +161,7 @@ export default function Footer() {
                 <p className="font-semibold font-gellix text-white text-lg xl:text-xl">Quick Links</p>
                 <ul className="mt-5 space-y-3 text-sm text-white/80">
                   <li><a href="/about-us" className="hover:text-white transition">Who we are</a></li>
-                  <li><a href="/tc-service" className="hover:text-white transition">What we do</a></li>
+                  <li><a href="/technology-consulting-service" className="hover:text-white transition">What we do</a></li>
                   <li><a href="/case-study?id=1" className="hover:text-white transition">Case Studies</a></li>
                   <li><a href="/blog" className="hover:text-white transition">Blogs</a></li>
                   <li><a href="/#ebook" className="hover:text-white transition">E-Books</a></li>
@@ -176,13 +176,13 @@ export default function Footer() {
               <div>
                 <p className="font-semibold font-gellix text-white text-lg xl:text-xl">Services</p>
                 <ul className="mt-5 space-y-3 text-sm text-white/80">
-                  <li><a href="/tc-service" className="hover:text-white transition">Technology Consulting</a></li>
+                  <li><a href="/technology-consulting-service" className="hover:text-white transition">Technology Consulting</a></li>
                   <li><a href="/cloud" className="hover:text-white transition">Cloud</a></li>
-                  <li><a href="/sc-service" className="hover:text-white transition">Sales & Commerce</a></li>
-                  <li><a href="/mv-service" className="hover:text-white transition">Metaverse</a></li>
-                  <li><a href="/da-service" className="hover:text-white transition">Data & Analytics</a></li>
+                  <li><a href="/sales-commerce-service" className="hover:text-white transition">Sales & Commerce</a></li>
+                  <li><a href="/metaverse-service" className="hover:text-white transition">Metaverse</a></li>
+                  <li><a href="/data-analytics-service" className="hover:text-white transition">Data & Analytics</a></li>
                   <li><a href="/ai-ml-service" className="hover:text-white transition">AI & ML</a></li>
-                  <li><a href="/rpa-service" className="hover:text-white transition">Robotic Process Automation</a></li>
+                  <li><a href="/robotic-process-automation-service" className="hover:text-white transition">Robotic Process Automation</a></li>
                 </ul>
               </div>
             </div>
@@ -192,16 +192,16 @@ export default function Footer() {
               <div>
                 <p className="font-semibold font-gellix text-white text-lg xl:text-xl">Industries</p>
                 <ul className="mt-5 space-y-3 text-sm text-white/80">
-                  <li><a href="/areo-industry" className="hover:text-white transition">Aerospace & Defence</a></li>
+                  <li><a href="/aerospace-industry" className="hover:text-white transition">Aerospace & Defence</a></li>
                   <li><a href="/bfsi-industry" className="hover:text-white transition">BFSI</a></li>
                   <li><a href="/esg-industry" className="hover:text-white transition">Environmental, social, & governance</a></li>
                   <li><a href="/fmcg-industry" className="hover:text-white transition">Fast-Moving Consumer Goods</a></li>
-                  <li><a href="/hc-industry" className="hover:text-white transition">Healthcare</a></li>
+                  <li><a href="/healthcare-industry" className="hover:text-white transition">Healthcare</a></li>
                   <li><a href="/mining-industry" className="hover:text-white transition">Mining</a></li>
-                  <li><a href="/gt-industry" className="hover:text-white transition">Geospatial Tech</a></li>
-                  <li><a href="/me-industry" className="hover:text-white transition">Media and Entertainment</a></li>
+                  <li><a href="/green-tech-industry" className="hover:text-white transition">Geospatial Tech</a></li>
+                  <li><a href="/media-entertainment-industry" className="hover:text-white transition">Media and Entertainment</a></li>
                   <li><a href="/real-estate-industry" className="hover:text-white transition">Real Estate</a></li>
-                  <li><a href="/tt-industry" className="hover:text-white transition">Travel and Tourism</a></li>
+                  <li><a href="/travel-tourism-industry" className="hover:text-white transition">Travel and Tourism</a></li>
                 </ul>
               </div>
             </div>

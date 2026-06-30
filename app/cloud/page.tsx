@@ -8,38 +8,7 @@ export default function Page() {
       <title>Cloud</title>
       <meta name="description" content="" />
 
-      {/* Page JSX Content */}
-      ﻿
-
-
-
-
-    <link rel="Touchmark" href="cloud.html#" />
-    
-    
-    
-    
-
-
-    
-    <link rel="touchmark-des-icon" sizes="180x180" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-    
-    
-
-    
-    
-
-
-    
-
-
-
-
-
-
-    <div className="overflow-x-hidden lg:overflow-x-auto">
+      <div className="overflow-x-hidden lg:overflow-x-auto">
 
         
         
@@ -315,26 +284,26 @@ export default function Page() {
             
             <div className="lg:block hidden">
 <div className="grid grid-cols-4 mt-16">
-<div className="flex justify-center items-center border border-t-0 border-l-0 border-r-1 border-b-1 p-5 lg:p-7 xl:p-14 2xl:p-10"><img style={{ "height": "40px" }} src="src/assets/img/home/colcola-icons.svg" /></div>
-<div className="flex justify-center items-center border border-t-0 p-5 lg:p-7 xl:p-14 2xl:p-10"><img style={{ "height": "50px" }} src="src/assets/img/home/sidbi-icons.svg" /></div>
-<div className="flex justify-center items-center border border-t-0 p-5 lg:p-7 xl:p-14 2xl:p-10"><img style={{ "height": "40px" }} src="src/assets/img/home/rupinis-icons.svg" /></div>
-<div className="flex justify-center items-center border border-t-0 border-r-0 border-l-1 border-b-1 p-5 lg:p-7 xl:p-14 2xl:p-10"><img style={{ "height": "45px" }} src="src/assets/img/home/expleo-icon.svg" /></div>
-<div className="flex justify-center items-center border border-b-0 border-l-0 border-r-1 border-t-1 p-5 lg:p-7 xl:p-10 2xl:p-8"><img style={{ "height": "80px" }} src="src/assets/img/home/dvi-icons.svg" /></div>
-<div className="flex justify-center items-center border border-b-0 p-5 lg:p-7 xl:p-14 2xl:p-10"><img style={{ "height": "50px" }} src="src/assets/img/home/rbl-icons.svg" /></div>
-<div className="flex justify-center items-center border border-b-0 p-5 lg:p-7 xl:p-14 2xl:p-10"><img style={{ "height": "50px" }} src="src/assets/img/home/hayakawa-icons.svg" /></div>
-<div className="flex justify-center items-center border border-b-0 border-l-1 border-r-0 border-t-1 p-5 lg:p-7 xl:p-14 2xl:p-10"><img style={{ "height": "50px" }} src="src/assets/img/home/tag-icons.svg" /></div>
+<div className="flex justify-center items-center border border-t-0 border-l-0 border-r-1 border-b-1 p-5 lg:p-7 xl:p-14 2xl:p-10"><img style={{ "height": "40px" }} src="/images/home/colcola-icons.svg" /></div>
+<div className="flex justify-center items-center border border-t-0 p-5 lg:p-7 xl:p-14 2xl:p-10"><img style={{ "height": "50px" }} src="/images/home/sidbi-icons.svg" /></div>
+<div className="flex justify-center items-center border border-t-0 p-5 lg:p-7 xl:p-14 2xl:p-10"><img style={{ "height": "40px" }} src="/images/home/rupinis-icons.svg" /></div>
+<div className="flex justify-center items-center border border-t-0 border-r-0 border-l-1 border-b-1 p-5 lg:p-7 xl:p-14 2xl:p-10"><img style={{ "height": "45px" }} src="/images/home/expleo-icon.svg" /></div>
+<div className="flex justify-center items-center border border-b-0 border-l-0 border-r-1 border-t-1 p-5 lg:p-7 xl:p-10 2xl:p-8"><img style={{ "height": "80px" }} src="/images/home/dvi-icons.svg" /></div>
+<div className="flex justify-center items-center border border-b-0 p-5 lg:p-7 xl:p-14 2xl:p-10"><img style={{ "height": "50px" }} src="/images/home/rbl-icons.svg" /></div>
+<div className="flex justify-center items-center border border-b-0 p-5 lg:p-7 xl:p-14 2xl:p-10"><img style={{ "height": "50px" }} src="/images/home/hayakawa-icons.svg" /></div>
+<div className="flex justify-center items-center border border-b-0 border-l-1 border-r-0 border-t-1 p-5 lg:p-7 xl:p-14 2xl:p-10"><img style={{ "height": "50px" }} src="/images/home/tag-icons.svg" /></div>
 </div>
 </div>
 <div className="lg:hidden block">
 <div className="grid grid-cols-2 pt-5 lg:pt-32 xl:pt-40 2xl:pt-24">
-<div className="flex justify-center items-center border border-t-0 border-l-0 border-r-1 border-b-1 p-7"><img style={{ "height": "35px" }} src="src/assets/img/home/colcola-icons.svg" /></div>
-<div className="flex justify-center items-center border border-t-0 border-r-0 p-7"><img style={{ "height": "35px" }} src="src/assets/img/home/sidbi-icons.svg" /></div>
-<div className="flex justify-center items-center border border-t-0 border-l-0 p-7"><img style={{ "height": "35px" }} src="src/assets/img/home/rupinis-icons.svg" /></div>
-<div className="flex justify-center items-center border border-t-0 border-r-0 border-l-1 border-b-1 p-7"><img style={{ "height": "35px" }} src="src/assets/img/home/expleo-icon.svg" /></div>
-<div className="flex justify-center items-center border border-b-0 border-l-0 border-r-1 border-t-1 p-5"><img style={{ "height": "35px" }} src="src/assets/img/home/dvi-icons.svg" /></div>
-<div className="flex justify-center items-center border border-b-0 border-r-0 p-5"><img style={{ "height": "35px" }} src="src/assets/img/home/rbl-icons.svg" /></div>
-<div className="flex justify-center items-center border border-b-0 border-l-0 p-5"><img style={{ "height": "35px" }} src="src/assets/img/home/hayakawa-icons.svg" /></div>
-<div className="flex justify-center items-center border border-b-0 border-l-1 border-r-0 border-t-1 p-5"><img style={{ "height": "35px" }} src="src/assets/img/home/tag-icons.svg" /></div>
+<div className="flex justify-center items-center border border-t-0 border-l-0 border-r-1 border-b-1 p-7"><img style={{ "height": "35px" }} src="/images/home/colcola-icons.svg" /></div>
+<div className="flex justify-center items-center border border-t-0 border-r-0 p-7"><img style={{ "height": "35px" }} src="/images/home/sidbi-icons.svg" /></div>
+<div className="flex justify-center items-center border border-t-0 border-l-0 p-7"><img style={{ "height": "35px" }} src="/images/home/rupinis-icons.svg" /></div>
+<div className="flex justify-center items-center border border-t-0 border-r-0 border-l-1 border-b-1 p-7"><img style={{ "height": "35px" }} src="/images/home/expleo-icon.svg" /></div>
+<div className="flex justify-center items-center border border-b-0 border-l-0 border-r-1 border-t-1 p-5"><img style={{ "height": "35px" }} src="/images/home/dvi-icons.svg" /></div>
+<div className="flex justify-center items-center border border-b-0 border-r-0 p-5"><img style={{ "height": "35px" }} src="/images/home/rbl-icons.svg" /></div>
+<div className="flex justify-center items-center border border-b-0 border-l-0 p-5"><img style={{ "height": "35px" }} src="/images/home/hayakawa-icons.svg" /></div>
+<div className="flex justify-center items-center border border-b-0 border-l-1 border-r-0 border-t-1 p-5"><img style={{ "height": "35px" }} src="/images/home/tag-icons.svg" /></div>
 </div>
 <a className="lg:hidden block relative overflow-hidden border border-[#194F97] px-3 py-2 inline-flex justify-center items-center group mt-7" href="cloud.html#"> <span className="relative z-10 text-[#194F97] group-hover:text-white transition-colors text-sm uppercase"> View all</span> </a></div>        </section>
                 
@@ -1316,8 +1285,8 @@ const togglePassword = document.querySelector('#togglePassword');
           window.addEventListener('scroll', function () {
         var header = document.querySelector('#navbar');
         var logo = document.querySelector('#logo');
-        var desktopLogo = 'https://touchmarkdes.com/src/assets/img/tds-color-logo.png';
-        var mobileLogo = 'https://touchmarkdes.com/src/assets/img/tds-color-logo.png';
+        var desktopLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
+        var mobileLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
 
         if (header) {
             header.classList.toggle('bg-scroll-white', window.scrollY > 0);

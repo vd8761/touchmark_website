@@ -8,36 +8,7 @@ export default function Page() {
       <title>About Us</title>
       <meta name="description" content="" />
 
-      {/* Page JSX Content */}
-      ﻿
-
-
-
-
-    <link rel="Touchmark" href="about-us.html#" />
-    
-    
-    
-    
-
-
-    
-    <link rel="touchmark-des-icon" sizes="180x180" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-    
-    
-
-    
-    
-
-    
-
-
-
-
-
-    <div className="overflow-x-hidden-mobile">
+      <div className="overflow-x-hidden-mobile">
 
         
         
@@ -268,7 +239,7 @@ export default function Page() {
 
 
         
-        <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('src/assets/img/about/about-hero-banner.png')" }}>
+        <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('/images/about/about-hero-banner.png')" }}>
             <div className="xl:max-w-screen-2xl 2xl:max-w-screen-2xl lg:max-w-screen-lg px-4 md:px-6 lg:px-8 mx-auto py-10 lg:py-24">
                 <div className="grid grid-cols-12 lg:gap-4">
                     <div className="lg:col-span-7 col-span-12 text-white text-left lg:pt-5">
@@ -367,9 +338,9 @@ export default function Page() {
                             </div>
                         </div>
                         <div className="lg:col-span-2 flex justify-center items-center relative overflow-hidden w-full h-full lg:block hidden">
-                            <img src="src/assets/img/about/vision-img.svg" className="top-0 ml-12 w-full h-full" />
+                            <img src="/images/about/vision-img.svg" className="top-0 ml-12 w-full h-full" />
                         </div>
-                        <img src="src/assets/img/about/vision-img.svg" className="absolute top-0 right-0 lg:hidden block opacity-30" />
+                        <img src="/images/about/vision-img.svg" className="absolute top-0 right-0 lg:hidden block opacity-30" />
                     </div>
                 </div>
                 <div className="lg:col-span-6 col-span-12 h-full group">
@@ -384,9 +355,9 @@ export default function Page() {
                             </div>
                         </div>
                         <div className="col-span-2 flex justify-center items-center relative overflow-hidden w-full h-full lg:block hidden">
-                            <img src="src/assets/img/about/mission-img.svg" className="top-0 ml-12 w-full h-full" />
+                            <img src="/images/about/mission-img.svg" className="top-0 ml-12 w-full h-full" />
                         </div>
-                        <img src="src/assets/img/about/mission-img.svg" className="absolute top-0 right-0 lg:hidden block opacity-30" />
+                        <img src="/images/about/mission-img.svg" className="absolute top-0 right-0 lg:hidden block opacity-30" />
                     </div>
                 </div>
             </div>
@@ -430,9 +401,9 @@ export default function Page() {
                                     </h3>
                                 </div>
                                 <div className="flex justify-start lg:justify-center items-center space-x-3 lg:mt-0 mt-5">
-                                    <img src="src/assets/img/about/linkedin-icons.svg" />
-                                    <img src="src/assets/img/about/twitter-icons.svg" />
-                                    <img src="src/assets/img/about/facebook-icons.svg" />
+                                    <img src="/images/about/linkedin-icons.svg" />
+                                    <img src="/images/about/twitter-icons.svg" />
+                                    <img src="/images/about/facebook-icons.svg" />
                                 </div>
                             </div>
                         </div>
@@ -441,7 +412,7 @@ export default function Page() {
 
                 <div className="lg:col-span-6 col-span-12 flex justify-end items-center order-1 lg:order-2 lg:mt-0 mt-2.5">
                     <div className="flex justify-end items-end">
-                        <img src="src/assets/img/about/bharathiraja-ceo-img.png" />
+                        <img src="/images/about/bharathiraja-ceo-img.png" />
                     </div>
                 </div>
             </div>
@@ -461,7 +432,7 @@ export default function Page() {
             </div>
             <div className="grid grid-cols-12 lg:gap-8">
                 <div className="lg:col-span-6 col-span-12 flex justify-center items-end lg:mt-0 mt-2.5">
-                    <img src="src/assets/img/about/mohanraaj-cto-img.png" className="" />
+                    <img src="/images/about/mohanraaj-cto-img.png" className="" />
                 </div>
                 <div className="lg:col-span-6 col-span-12 flex justify-start items-center">
                     <div>
@@ -490,9 +461,9 @@ export default function Page() {
                                     </h3>
                                 </div>
                                 <div className="flex justify-start lg:justify-center items-center space-x-3 lg:mt-0 mt-5">
-                                    <img src="src/assets/img/about/linkedin-icons.svg" />
-                                    <img src="src/assets/img/about/twitter-icons.svg" />
-                                    <img src="src/assets/img/about/facebook-icons.svg" />
+                                    <img src="/images/about/linkedin-icons.svg" />
+                                    <img src="/images/about/twitter-icons.svg" />
+                                    <img src="/images/about/facebook-icons.svg" />
                                 </div>
                             </div>
                         </div>
@@ -520,10 +491,10 @@ export default function Page() {
                 <div className="lg:col-span-6 2xl:col-span-6 xl:col-span-6 col-span-12 lg:flex justify-between items-end lg:mt-0 mt-10">
                     <div className="lg:flex justify-between items-center">
                         <div className="border border-t-0 border-r-0 p-10">
-                            <img src="src/assets/img/clients/top-client-001.svg" className="lg:pt-0 pt-6" />
+                            <img src="/images/clients/top-client-001.svg" className="lg:pt-0 pt-6" />
                         </div>
                         <div className="border border-t-0 p-10">
-                            <img src="src/assets/img/clients/top-client-002.svg" className="" />
+                            <img src="/images/clients/top-client-002.svg" className="" />
                         </div>
                     </div>
                 </div>
@@ -548,7 +519,7 @@ export default function Page() {
                 
                 <div className="grid grid-cols-12 ">
                     <div className="lg:col-span-12 col-span-12 flex justify-center items-end lg:order-1 order-3 lg:pt-0 pt-5">
-                        <img src="src/assets/img/group1.jpg" className="" />
+                        <img src="/images/group1.jpg" className="" />
                     </div>
                     
                 </div>
@@ -568,7 +539,7 @@ export default function Page() {
 
         
         <section>
-            <div className="relative lg:h-[686px] h-full lg:w-full flex items-center justify-center text-center bg-cover bg-center" style={{ "backgroundImage": "url('src/assets/img/about/bg-scroll-logo.png')" }}>
+            <div className="relative lg:h-[686px] h-full lg:w-full flex items-center justify-center text-center bg-cover bg-center" style={{ "backgroundImage": "url('/images/about/bg-scroll-logo.png')" }}>
                 <div className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 py-14 lg:py-16 xl:py-16 2xl:py-24">
                     <div className="grid grid-cols-12 lg:gap-8 lg:mt-0 mt-4">
                         <div className="lg:col-span-5 col-span-12 text-white text-left flex justify-start items-center">
@@ -592,44 +563,44 @@ export default function Page() {
 
                                     <div className="scroll-container col-span-2 space-y-2">
                                         <div className="scroll-content">
-                                            <img src="src/assets/img/about/coca-cola-logo.png" className="mt-3" />
-                                            <img src="src/assets/img/about/tag-logo.png" className="mt-3" />
-                                            <img src="src/assets/img/about/sidbi-logo.png" className="mt-3" />
-                                            <img src="src/assets/img/about/rupinis-logo.png" className="mt-3" />
-                                            <img src="src/assets/img/about/rare-logo.png" className="mt-3" />
-                                            <img src="src/assets/img/about/expleo-logo.png" className="mt-3" />
-                                            <img src="src/assets/img/about/rbl-bank-logo.png" className="mt-3" />
-                                            <img src="src/assets/img/about/coii-logo.png" className="mt-3" />
-                                            <img src="src/assets/img/about/switch-barath-logo.png" className="mt-3" />
+                                            <img src="/images/about/coca-cola-logo.png" className="mt-3" />
+                                            <img src="/images/about/tag-logo.png" className="mt-3" />
+                                            <img src="/images/about/sidbi-logo.png" className="mt-3" />
+                                            <img src="/images/about/rupinis-logo.png" className="mt-3" />
+                                            <img src="/images/about/rare-logo.png" className="mt-3" />
+                                            <img src="/images/about/expleo-logo.png" className="mt-3" />
+                                            <img src="/images/about/rbl-bank-logo.png" className="mt-3" />
+                                            <img src="/images/about/coii-logo.png" className="mt-3" />
+                                            <img src="/images/about/switch-barath-logo.png" className="mt-3" />
                                         </div>
                                     </div>
 
                                     <div className="col-span-2 space-y-2 scroll-container-rev">
                                         <div className="scroll-content-rev" id="scrollContentRev">
-                                            <img src="src/assets/img/about/tag-logo.png" className="mt-3" />
-                                            <img src="src/assets/img/about/coii-logo.png" className="mt-3" />
-                                            <img src="src/assets/img/about/expleo-logo.png" className="mt-3" />
-                                            <img src="src/assets/img/about/sidbi-logo.png" className="mt-3" />
-                                            <img src="src/assets/img/about/switch-barath-logo.png" className="mt-3" />
-                                            <img src="src/assets/img/about/rare-logo.png" className="mt-3" />
-                                            <img src="src/assets/img/about/rbl-bank-logo.png" className="mt-3" />
-                                            <img src="src/assets/img/about/rupinis-logo.png" className="mt-3" />
-                                            <img src="src/assets/img/about/coca-cola-logo.png" className="mt-3" />
+                                            <img src="/images/about/tag-logo.png" className="mt-3" />
+                                            <img src="/images/about/coii-logo.png" className="mt-3" />
+                                            <img src="/images/about/expleo-logo.png" className="mt-3" />
+                                            <img src="/images/about/sidbi-logo.png" className="mt-3" />
+                                            <img src="/images/about/switch-barath-logo.png" className="mt-3" />
+                                            <img src="/images/about/rare-logo.png" className="mt-3" />
+                                            <img src="/images/about/rbl-bank-logo.png" className="mt-3" />
+                                            <img src="/images/about/rupinis-logo.png" className="mt-3" />
+                                            <img src="/images/about/coca-cola-logo.png" className="mt-3" />
 
                                         </div>
                                     </div>
 
                                     <div className="scroll-container-2 col-span-2 space-y-2">
                                         <div className="scroll-content-2">
-                                            <img src="src/assets/img/about/coca-cola-logo.png" className="mt-3" />
-                                            <img src="src/assets/img/about/tag-logo.png" className="mt-3" />
-                                            <img src="src/assets/img/about/switch-barath-logo.png" className="mt-3" />
-                                            <img src="src/assets/img/about/rupinis-logo.png" className="mt-3" />
-                                            <img src="src/assets/img/about/expleo-logo.png" className="mt-3" />
-                                            <img src="src/assets/img/about/rare-logo.png" className="mt-3" />
-                                            <img src="src/assets/img/about/rbl-bank-logo.png" className="mt-3" />
-                                            <img src="src/assets/img/about/sidbi-logo.png" className="mt-3" />
-                                            <img src="src/assets/img/about/coii-logo.png" className="mt-3" />
+                                            <img src="/images/about/coca-cola-logo.png" className="mt-3" />
+                                            <img src="/images/about/tag-logo.png" className="mt-3" />
+                                            <img src="/images/about/switch-barath-logo.png" className="mt-3" />
+                                            <img src="/images/about/rupinis-logo.png" className="mt-3" />
+                                            <img src="/images/about/expleo-logo.png" className="mt-3" />
+                                            <img src="/images/about/rare-logo.png" className="mt-3" />
+                                            <img src="/images/about/rbl-bank-logo.png" className="mt-3" />
+                                            <img src="/images/about/sidbi-logo.png" className="mt-3" />
+                                            <img src="/images/about/coii-logo.png" className="mt-3" />
                                         </div>
                                     </div>
 
@@ -681,8 +652,8 @@ export default function Page() {
                 <div className="lg:col-span-1 xl:col-span-1 2xl:col-span-1 lg:block hidden"></div>
                 <div className="lg:col-span-6 col-span-12 flex justify-center items-center lg:mt-0  mt-10">
                     <div>
-                        <img src="src/assets/img/about/descience-launch-event.svg" className="lg:block hidden" />
-                        <img src="src/assets/img/about/descience-launch-event.png" className="lg:hidden block" />
+                        <img src="/images/about/descience-launch-event.svg" className="lg:block hidden" />
+                        <img src="/images/about/descience-launch-event.png" className="lg:hidden block" />
                     </div>
                 </div>
             </div>
@@ -1546,8 +1517,8 @@ const togglePassword = document.querySelector('#togglePassword');
           window.addEventListener('scroll', function () {
         var header = document.querySelector('#navbar');
         var logo = document.querySelector('#logo');
-        var desktopLogo = './src/assets/img/tds-color-logo.png';
-        var mobileLogo = './src/assets/img/tds-color-logo.png';
+        var desktopLogo = './images/tds-color-logo.png';
+        var mobileLogo = './images/tds-color-logo.png';
 
         if (header) {
             header.classList.toggle('bg-scroll-white', window.scrollY > 0);

@@ -8,40 +8,7 @@ export default function Page() {
       <title>Touchmark Blog</title>
       <meta name="description" content="" />
 
-      {/* Page JSX Content */}
-      ﻿
-
-
-
-
-    <link rel="Touchmark" href="blog.php.html#" />
-    
-    
-    
-    
-
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-    
-    
-
-
-    
-
-
-    
-
-
-
-
-
-    
-
-    
-
-  <div className="overflow-x-hidden lg:overflow-x-auto">
+      <div className="overflow-x-hidden lg:overflow-x-auto">
 
         
         
@@ -303,16 +270,16 @@ export default function Page() {
                 <div className="lg:space-y-6">
                     <div className="flex justify-start items-center space-x-2">
                         <a href="https://in.linkedin.com/company/touchmarkdes" className="group" target="_blank">
-                            <img src="src/assets/img/home/icons/linkedin-black-fill.svg" className="h-8 group-hover:hidden" />
-                            <img src="src/assets/img/home/icons/linkedin-blue-fill.svg" className="h-8 hidden group-hover:block" />
+                            <img src="/images/home/icons/linkedin-black-fill.svg" className="h-8 group-hover:hidden" />
+                            <img src="/images/home/icons/linkedin-blue-fill.svg" className="h-8 hidden group-hover:block" />
                         </a>
                         <a href="https://www.facebook.com/touchmarkdes/" className="group" target="_blank">
-                            <img src="src/assets/img/home/icons/facebook-black-fill.svg" className="h-8 group-hover:hidden" />
-                            <img src="src/assets/img/home/icons/facebook-blue-fill.svg" className="h-8 hidden group-hover:block" />
+                            <img src="/images/home/icons/facebook-black-fill.svg" className="h-8 group-hover:hidden" />
+                            <img src="/images/home/icons/facebook-blue-fill.svg" className="h-8 hidden group-hover:block" />
                         </a>
                         <a href="https://www.instagram.com/touchmarkdes/" className="group" target="_blank">
-                            <img src="src/assets/img/home/icons/insta-black-fill.svg" className="h-8 group-hover:hidden" />
-                            <img src="src/assets/img/home/icons/insta-blue-fill.svg" className="h-8 hidden group-hover:block" />
+                            <img src="/images/home/icons/insta-black-fill.svg" className="h-8 group-hover:hidden" />
+                            <img src="/images/home/icons/insta-blue-fill.svg" className="h-8 hidden group-hover:block" />
                         </a>
                         
                     </div>

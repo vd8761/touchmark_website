@@ -8,34 +8,7 @@ export default function Page() {
       <title>Clients & Partner</title>
       <meta name="description" content="" />
 
-      {/* Page JSX Content */}
-      ﻿
-
-
-<link rel="Touchmark" href="client-partner.html#" />
-
-
-
-
-
-
-
-<link rel="touchmark-des-icon" sizes="180x180" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-<link rel="icon" type="image/png" sizes="32x32" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-<link rel="icon" type="image/png" sizes="16x16" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-
-
-
-
-
-
-
-
-
-
-
-
-    <div className="overflow-x-hidden lg:overflow-x-auto">
+      <div className="overflow-x-hidden lg:overflow-x-auto">
 
         
         
@@ -266,7 +239,7 @@ export default function Page() {
 
 
         
-        <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('src/assets/img/clients/Client-hero-banner-img.png')" }}>
+        <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('/images/clients/Client-hero-banner-img.png')" }}>
             <div className="xl:max-w-screen-2xl 2xl:max-w-screen-2xl lg:max-w-screen-lg px-4 md:px-6 lg:px-8 mx-auto py-10 lg:py-24">
                 <div className="grid grid-cols-12 lg:gap-4">
                     <div className="lg:col-span-7 col-span-12 text-white text-left lg:pt-5">
@@ -309,55 +282,55 @@ export default function Page() {
             <div className="grid grid-cols-2 lg:grid-cols-4 pt-14 lg:pt-20 xl:pt-20 2xl:pt-32">
                 
                 <div className="flex justify-center items-center border border-t-0 border-l-0 border-r-1 border-b-1 p-10">
-                    <img src="src/assets/img/clients/client-01.svg" className="h-10" />
+                    <img src="/images/clients/client-01.svg" className="h-10" />
                 </div>
                 <div className="flex justify-center items-center border border-t-0 p-10">
-                    <img src="src/assets/img/clients/client-02.svg" className="h-11" />
+                    <img src="/images/clients/client-02.svg" className="h-11" />
                 </div>
                 <div className="flex justify-center items-center border border-t-0 p-10">
-                    <img src="src/assets/img/clients/client-03.svg" className="h-10" />
+                    <img src="/images/clients/client-03.svg" className="h-10" />
                 </div>
                 <div className="flex justify-center items-center border border-t-0 border-r-0 border-l-1 border-b-1 p-10">
-                    <img src="src/assets/img/clients/client-04.svg" className="h-8" />
+                    <img src="/images/clients/client-04.svg" className="h-8" />
                 </div>
                 
                 <div className="flex justify-center items-center border border-b-0 border-l-0 border-r-1 border-t-1 p-5">
-                    <img src="src/assets/img/clients/client-05.svg" className="h-20" />
+                    <img src="/images/clients/client-05.svg" className="h-20" />
                 </div>
                 <div className="flex justify-center items-center border border-b-0 p-5">
-                    <img src="src/assets/img/clients/client-06.svg" className="h-10" />
+                    <img src="/images/clients/client-06.svg" className="h-10" />
                 </div>
                 <div className="flex justify-center items-center border border-b-0 p-5">
-                    <img src="src/assets/img/clients/client-07.svg" className="h-10" />
+                    <img src="/images/clients/client-07.svg" className="h-10" />
                 </div>
                 <div className="flex justify-center items-center border border-b-0 border-l-1 border-r-0 border-t-1 p-8">
-                    <img src="src/assets/img/clients/client-08.svg" className="h-10" />
+                    <img src="/images/clients/client-08.svg" className="h-10" />
                 </div>
                 
                 <div className="flex justify-center items-center border border-b-0 border-l-0 border-r-1 border-t-1 p-10">
-                    <img src="src/assets/img/clients/client-09.svg" className="h-5" />
+                    <img src="/images/clients/client-09.svg" className="h-5" />
                 </div>
                 <div className="flex justify-center items-center border border-b-0 p-10">
-                    <img src="src/assets/img/clients/client-10.svg" className="h-10" />
+                    <img src="/images/clients/client-10.svg" className="h-10" />
                 </div>
                 <div className="flex justify-center items-center border border-b-0 p-10">
-                    <img src="src/assets/img/clients/client-11.svg" className="h-12" />
+                    <img src="/images/clients/client-11.svg" className="h-12" />
                 </div>
                 <div className="flex justify-center items-center border border-b-0 border-l-1 border-r-0 border-t-1 p-10">
-                    <img src="src/assets/img/clients/client-12.svg" className="h-14" />
+                    <img src="/images/clients/client-12.svg" className="h-14" />
                 </div>
                 
                 <div className="flex justify-center items-center border border-b-0 border-l-0 border-r-1 border-t-1 p-10">
-                    <img src="src/assets/img/clients/client-13.svg" className="h-12" />
+                    <img src="/images/clients/client-13.svg" className="h-12" />
                 </div>
                 <div className="flex justify-center items-center border border-b-0 p-10">
-                    <img src="src/assets/img/clients/client-14.svg" className="h-20" />
+                    <img src="/images/clients/client-14.svg" className="h-20" />
                 </div>
                 <div className="flex justify-center items-center border border-b-0 p-10">
-                    <img src="src/assets/img/clients/client-15.svg" className="h-14" />
+                    <img src="/images/clients/client-15.svg" className="h-14" />
                 </div>
                 <div className="flex justify-center items-center border border-b-0 border-l-1 border-r-0 border-t-1 p-10">
-                    <img src="src/assets/img/clients/client-16.svg" className="h-12" />
+                    <img src="/images/clients/client-16.svg" className="h-12" />
                 </div>
 
             </div>
@@ -381,10 +354,10 @@ export default function Page() {
                 <div className="lg:col-span-6 2xl:col-span-6 xl:col-span-6 col-span-12 lg:flex justify-between items-center">
                     <div className="flex justify-between items-center">
                         <div className="border border-t-0 border-r-0 p-10">
-                            <img src="src/assets/img/clients/top-client-001.svg" className="h-12" />
+                            <img src="/images/clients/top-client-001.svg" className="h-12" />
                         </div>
                         <div className="border border-t-0 p-10">
-                            <img src="src/assets/img/clients/top-client-002.svg" className="h-12" />
+                            <img src="/images/clients/top-client-002.svg" className="h-12" />
                         </div>
                     </div>
                 </div>
@@ -1219,8 +1192,8 @@ const togglePassword = document.querySelector('#togglePassword');
           window.addEventListener('scroll', function () {
         var header = document.querySelector('#navbar');
         var logo = document.querySelector('#logo');
-        var desktopLogo = './src/assets/img/tds-color-logo.png';
-        var mobileLogo = './src/assets/img/tds-color-logo.png';
+        var desktopLogo = './images/tds-color-logo.png';
+        var mobileLogo = './images/tds-color-logo.png';
 
         if (header) {
             header.classList.toggle('bg-scroll-white', window.scrollY > 0);

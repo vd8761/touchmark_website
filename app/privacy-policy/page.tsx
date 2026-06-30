@@ -8,53 +8,7 @@ export default function Page() {
       <title>Privacy Policy</title>
       <meta name="description" content="" />
 
-      {/* Page JSX Content */}
-      ﻿
-
-
-
-    
-    
-    
-    <link rel="touchmark-des-icon" sizes="180x180" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-    
-
-
-
-    
-
-
-
-
-    <link rel="Touchmark" href="privacy-policy.php.html#" />
-    
-    
-    
-    
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-    
-    
-    
-    
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-<div id="modelConfirm" className="fixed hidden z-50 inset-0 bg-black/70 overflow-y-auto h-full w-full px-4">
+      <div id="modelConfirm" className="fixed hidden z-50 inset-0 bg-black/70 overflow-y-auto h-full w-full px-4">
     <div className="flex justify-center items-center h-full">
         <div className="relative mx-auto shadow-xl bg-white max-w-[500px]">
 

@@ -8,40 +8,7 @@ export default function Page() {
       <title>The Role Of AI In Cybersecurity And How  Protecting Data In A Hyperconnected World</title>
       <meta name="description" content="" />
 
-      {/* Page JSX Content */}
-      ﻿
-
-
-
-            
-        
-        
-        
-        
-        
-        
-        <link rel="Touchmark" href="the-role-of-ai-in-cybersecurity-and-how-protecting-data-in-a-hyperconnected-world.html#" />
-        
-        
-        
-        
-        
-        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/front/home/website%20imageThe%20Role%20of%20AI%20in%20Cybersecurity.jpg" />
-        <link rel="icon" type="image/png" sizes="32x32" href="../../assets/front/home/website%20imageThe%20Role%20of%20AI%20in%20Cybersecurity.jpg" />
-
-
-        <link rel="icon" type="image/png" sizes="16x16" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-        
-        
-        
-        
-        
-
-
-
-
-
-    <div className="overflow-x-hidden lg:overflow-x-auto">
+      <div className="overflow-x-hidden lg:overflow-x-auto">
 
         
         
@@ -292,16 +259,16 @@ export default function Page() {
                                 The Role Of AI In Cybersecurity And How  Protecting Data In A Hyperconnected World</h1>
                             <div className="flex justify-start items-center space-x-2 mt-10">
                                 <a href="https://www.linkedin.com/share?url=https%3A%2F%2Ftouchmarkdes.com%2Fblog%2Farticles%2Fthe-role-of-ai-in-cybersecurity-and-how-protecting-data-in-a-hyperconnected-world" target="_blank">
-                                    <img src="../../src/assets/img/home/icons/linkedin-black-fill.svg" className="h-8 group-hover:hidden" />
-                                    <img src="../../src/assets/img/home/icons/linkedin-blue-fill.svg" className="h-8 hidden group-hover:block" />
+                                    <img src="../../images/home/icons/linkedin-black-fill.svg" className="h-8 group-hover:hidden" />
+                                    <img src="../../images/home/icons/linkedin-blue-fill.svg" className="h-8 hidden group-hover:block" />
                                 </a>
                                 <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftouchmarkdes.com%2Fblog%2Farticles%2Fthe-role-of-ai-in-cybersecurity-and-how-protecting-data-in-a-hyperconnected-world" target="_blank">
-                                    <img src="../../src/assets/img/home/icons/facebook-black-fill.svg" className="h-8 group-hover:hidden" />
-                                    <img src="../../src/assets/img/home/icons/facebook-blue-fill.svg" className="h-8 hidden group-hover:block" />
+                                    <img src="../../images/home/icons/facebook-black-fill.svg" className="h-8 group-hover:hidden" />
+                                    <img src="../../images/home/icons/facebook-blue-fill.svg" className="h-8 hidden group-hover:block" />
                                 </a>
                                 <a href=" https://twitter.com/share?url=https%3A%2F%2Ftouchmarkdes.com%2Fblog%2Farticles%2Fthe-role-of-ai-in-cybersecurity-and-how-protecting-data-in-a-hyperconnected-world" target="_blank" className="group">
-                                    <img src="../../src/assets/img/home/icons/twitter-black-fill.svg" className="h-8 group-hover:hidden" />
-                                    <img src="../../src/assets/img/home/icons/twitter-blue-fill.svg" className="h-8 hidden group-hover:block" />
+                                    <img src="../../images/home/icons/twitter-black-fill.svg" className="h-8 group-hover:hidden" />
+                                    <img src="../../images/home/icons/twitter-blue-fill.svg" className="h-8 hidden group-hover:block" />
                                 </a>
 
                             </div>
@@ -1391,8 +1358,8 @@ const togglePassword = document.querySelector('#togglePassword');
           window.addEventListener('scroll', function() {
         var header = document.querySelector('#navbar');
         var logo = document.querySelector('#logo');
-        var desktopLogo = 'https://touchmarkdes.com/src/assets/img/tds-color-logo.png';
-        var mobileLogo = 'https://touchmarkdes.com/src/assets/img/tds-color-logo.png';
+        var desktopLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
+        var mobileLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
 
         if (header) {
             header.classList.toggle('bg-scroll-white', window.scrollY > 0);

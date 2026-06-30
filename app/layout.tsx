@@ -23,9 +23,9 @@ export default function RootLayout({
     <html lang="en" className="h-full antialiased">
       <head>
         {/* Swiper & Owl Carousel CSS assets */}
-        <link rel="stylesheet" href="/src/css/swiper-bundle.min.css" />
-        <link rel="stylesheet" href="/src/css/owl.carousel.min.css" />
-        <link rel="stylesheet" href="/src/css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="/css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="/css/owl.theme.default.min.css" />
       </head>
       <body className="min-h-full flex flex-col">
         <Preloader />
@@ -37,7 +37,7 @@ export default function RootLayout({
 
         {/* Third-party JavaScript assets */}
         <Script 
-          src="/src/js/jquery-3.7.1.min.js" 
+          src="/js/jquery-3.7.1.min.js" 
           strategy="beforeInteractive" 
         />
         <Script 
@@ -45,19 +45,19 @@ export default function RootLayout({
           strategy="afterInteractive" 
         />
         <Script 
-          src="/src/js/owl.carousel.min.js" 
+          src="/js/owl.carousel.min.js" 
           strategy="afterInteractive" 
         />
         <Script 
-          src="/src/js/flowbite.js" 
+          src="/js/flowbite.js" 
           strategy="afterInteractive" 
         />
         <Script 
-          src="/src/js/preline.min.js" 
+          src="/js/preline.min.js" 
           strategy="afterInteractive" 
         />
         <Script 
-          src="/src/js/alpine-v2.8.2.js" 
+          src="/js/alpine-v2.8.2.js" 
           strategy="afterInteractive" 
         />
       </body>

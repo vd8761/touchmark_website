@@ -8,41 +8,7 @@ export default function Page() {
       <title>Touchmark Blog</title>
       <meta name="description" content="" />
 
-      {/* Page JSX Content */}
-      ﻿
-
-
-
-
-    <link rel="Touchmark" href="ai-analytics.html#" />
-    
-    
-    
-    
-
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-    
-    
-
-    
-
-    
-
-
-    
-
-
-
-
-
-    
-
-    
-
-    <div className="overflow-x-hidden-mobile hidden" id="content">
+      <div className="overflow-x-hidden-mobile hidden" id="content">
 
         
         
@@ -300,20 +266,20 @@ export default function Page() {
                 <div className="lg:space-y-6">
                     <div className="flex justify-start items-center space-x-2">
                         <a href="ai-analytics.html#" className="group">
-                            <img src="../../src/assets/img/home/icons/linkedin-black-fill.svg" className="h-8 group-hover:hidden" />
-                            <img src="../../src/assets/img/home/icons/linkedin-blue-fill.svg" className="h-8 hidden group-hover:block" />
+                            <img src="../../images/home/icons/linkedin-black-fill.svg" className="h-8 group-hover:hidden" />
+                            <img src="../../images/home/icons/linkedin-blue-fill.svg" className="h-8 hidden group-hover:block" />
                         </a>
                         <a href="ai-analytics.html#" className="group">
-                            <img src="../../src/assets/img/home/icons/facebook-black-fill.svg" className="h-8 group-hover:hidden" />
-                            <img src="../../src/assets/img/home/icons/facebook-blue-fill.svg" className="h-8 hidden group-hover:block" />
+                            <img src="../../images/home/icons/facebook-black-fill.svg" className="h-8 group-hover:hidden" />
+                            <img src="../../images/home/icons/facebook-blue-fill.svg" className="h-8 hidden group-hover:block" />
                         </a>
                         <a href="ai-analytics.html#" className="group">
-                            <img src="../../src/assets/img/home/icons/insta-black-fill.svg" className="h-8 group-hover:hidden" />
-                            <img src="../../src/assets/img/home/icons/insta-blue-fill.svg" className="h-8 hidden group-hover:block" />
+                            <img src="../../images/home/icons/insta-black-fill.svg" className="h-8 group-hover:hidden" />
+                            <img src="../../images/home/icons/insta-blue-fill.svg" className="h-8 hidden group-hover:block" />
                         </a>
                         <a href="ai-analytics.html#" className="group">
-                            <img src="../../src/assets/img/home/icons/twitter-black-fill.svg" className="h-8 group-hover:hidden" />
-                            <img src="../../src/assets/img/home/icons/twitter-blue-fill.svg" className="h-8 hidden group-hover:block" />
+                            <img src="../../images/home/icons/twitter-black-fill.svg" className="h-8 group-hover:hidden" />
+                            <img src="../../images/home/icons/twitter-blue-fill.svg" className="h-8 hidden group-hover:block" />
                         </a>
                     </div>
                     <h3 className="2xl:text-lg xl:text-base lg:text-base text-sm font-inter font-bold mt-5">BROWSE ALL POSTS

@@ -5,39 +5,10 @@ import Script from "next/script";
 export default function Page() {
   return (
     <>
-      <title>Geospatial Tech</title>
+      <title>Aerospace & Defence</title>
       <meta name="description" content="" />
 
-      {/* Page JSX Content */}
-      ﻿
-
-
-
-
-    <link rel="Touchmark" href="gt-industry.html#" />
-    
-    
-    
-    
-
-
-    
-    <link rel="touchmark-des-icon" sizes="180x180" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="https://touchmarkwf.com/timesheet/front_assets/images/logo/logoT.png" />
-    
-    
-
-    
-    
-
-    
-
-
-
-
-
-    <div className="overflow-x-hidden lg:overflow-x-auto">
+      <div className="overflow-x-hidden lg:overflow-x-auto">
 
         
         
@@ -45,7 +16,7 @@ export default function Page() {
 
 
 
-    <link rel="Touchmark" href="gt-industry.html#" />
+    <link rel="Touchmark" href="areo-industry.html#" />
     
     
     
@@ -77,7 +48,7 @@ export default function Page() {
 
             
             <div className="flex items-end justify-between p-2">
-                <a href="gt-industry.html#" id="goBack" className="flex justify-start items-center text-[#194F97] hover:underline text-sm hidden">
+                <a href="areo-industry.html#" id="goBack" className="flex justify-start items-center text-[#194F97] hover:underline text-sm hidden">
                     <svg id="fi_2985161" height="20" viewBox="0 0 128 128" width="20" xmlns="http://www.w3.org/2000/svg">
                         <path id="Left_Arrow_4_" d="m84 108c-1.023 0-2.047-.391-2.828-1.172l-40-40c-1.563-1.563-1.563-4.094 0-5.656l40-40c1.563-1.563 4.094-1.563 5.656 0s1.563 4.094 0 5.656l-37.172 37.172 37.172 37.172c1.563 1.563 1.563 4.094 0 5.656-.781.781-1.805 1.172-2.828 1.172z" fill="#194F97"></path>
                     </svg>
@@ -268,59 +239,58 @@ export default function Page() {
 
 
         
-                <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('assets/front/home/gt_banner_1721888899.PNG')" }}>
-            <div className="xl:max-w-screen-2xl 2xl:max-w-screen-2xl lg:max-w-screen-lg px-4 md:px-6 lg:px-8 mx-auto py-10 lg:py-24">
+                    <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('assets/front/home/ad_banner_1722179435.PNG')" }}>
+                <div className="xl:max-w-screen-2xl 2xl:max-w-screen-2xl lg:max-w-screen-lg px-4 md:px-6 lg:px-8 mx-auto py-10 lg:py-24">
+                    <div className="grid grid-cols-12 lg:gap-4">
+                        <div className="lg:col-span-7 col-span-12 text-white text-left lg:pt-5">
+                            <p className="text-xs lg:text-sm xl:text-sm 2xl:text-base mt-4 font-inter lg:block hidden">Home / Industries/ Aerospace &amp; Defence                            </p>
+                            <h1 className="mt-4 text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-gellix">
+                                Advancing technology for aerospace innovation and global defense solutions</h1>
+                        </div>
+                        <div className="col-span-5 lg:block hidden">
+                        </div>
+                    </div>
+                </div>
+            </section>
+                
+
+
+        
+                    <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 pt-14 lg:pt-24 xl:pt-24 2xl:pt-32 relative">
                 <div className="grid grid-cols-12 lg:gap-4">
-                    <div className="lg:col-span-7 col-span-12 text-white text-left lg:pt-5">
-                        <p className="text-xs lg:text-sm xl:text-sm 2xl:text-base mt-4 font-inter lg:block hidden">Home / Industries/ Geospatial Tech                        </p>
-                        <h1 className="mt-4 text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-gellix">
-                        Mapping, analysis, and decision-making with spatial data</h1>
+                    <div className="lg:col-span-9 col-span-12">
+                        <h3 className="text-xs lg:text-sm xl:text-sm 2xl:text-base text-[#194F97] font-medium">Overview</h3>
+                        <h2 className="mt-1.5 lg:mt-1.5 xl:mt-3 2xl:mt-5 2xl:text-5xl xl:text-4xl lg:text-4xl text-3xl font-gellix">
+                            Aviation applications in the energetic industry of Aviation &amp; Guard</h2>
                     </div>
-                    <div className="col-span-5 lg:block hidden">
-                    </div>
-                </div>
-            </div>
-        </section>
-         
-        
-
-
-        
-                <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 pt-14 lg:pt-24 xl:pt-24 2xl:pt-32 relative">
-            <div className="grid grid-cols-12 lg:gap-4">
-                <div className="lg:col-span-9 col-span-12">
-                    <h3 className="text-xs lg:text-sm xl:text-sm 2xl:text-base text-[#194F97] font-medium">Overview</h3>
-                    <h2 className="mt-1.5 lg:mt-1.5 xl:mt-3 2xl:mt-5 2xl:text-5xl xl:text-4xl lg:text-4xl text-3xl font-gellix">
-                        Empower your projects with accurate spatial data and advanced mapping solutions</h2>
-                </div>
-                <div className="lg:col-span-3 lg:block hidden">
-                </div>
-            </div>
-            <div className="grid grid-cols-12 mt-10">
-                <div className="2xl:col-span-5 lg:col-span-5 col-span-12 flex justify-center items-center">
-                    <img src="assets/front/home/gt_overview_1721889145.PNG" className="" />
-                </div>
-                <div className="2xl:col-span-1 xl:col-span-1 lg:block hidden"></div>
-                <div className="lg:col-span-6 col-span-12 flex justify-center items-center lg:mt-0 mt-5">
-                    <div>
-                        <ul className="2xl:text-base xl:text-sm lg:text-sm text-xs space-y-3 lg:space-y-2.5 xl:space-y-2.5 2xl:space-y-5 font-inter">
-                            <ul className="2xl:text-base xl:text-sm lg:text-sm text-xs space-y-3 lg:space-y-2.5 xl:space-y-2.5 2xl:space-y-5 font-inter" style={{ "boxSizing": "border-box", "listStyle": "none", "margin": "0px", "padding": "0px", "fontSize": "medium", "lineHeight": "1.5rem", "fontFamily": "Inter", "border": "0px solid #e5e7eb" }}>
-<li style={{ "boxSizing": "border-box", "border": "0px solid #e5e7eb" }}>In the field of geospatial innovation, our program arrangements offer solid support for supporting decision-making in an assortment of businesses through mapping and spatial investigation. We make apps that give profound bits of knowledge into spatial and natural information by leveraging GIS, fawning pictures, and ramble data.</li>
-<li style={{ "boxSizing": "border-box", "border": "0px solid #e5e7eb", "marginTop": "calc(1.25rem * calc(1 - var(--tw-space-y-reverse)))", "marginBottom": "calc(1.25rem * var(--tw-space-y-reverse))" }}>We give geospatial devices to offer assistance with catastrophe reaction, natural observing, urban arranging, and rural administration. Through the integration of real-time information sources, clients can get current data for significant decision-making forms, counting, assessing surge dangers, keeping an eye on edit wellbeing, and organizing framework improvements.</li>
-<li style={{ "boxSizing": "border-box", "border": "0px solid #e5e7eb", "marginTop": "calc(1.25rem * calc(1 - var(--tw-space-y-reverse)))", "marginBottom": "calc(1.25rem * var(--tw-space-y-reverse))" }}>Incorporating components like 3D modeling, location-based administrations, and spatial information visualization, we too give specialized apps that are made to meet the one of a kind needs of our clients. Since they do not require a parcel of specialized ability, these arrangements are made to be effectively utilized and open whereas advertising solid explanatory capabilities.</li>
-</ul>                        </ul>
-                        <a href="/" className="relative overflow-hidden border border-[#194F97] px-3 py-2 inline-flex justify-center items-center group mt-3 md:mt-3 lg:mt-8 xl:mt-8 2xl:mt-10">
-                            <span className="relative z-10 text-[#194F97] group-hover:text-white transition-colors duration-300 text-sm uppercase">Learn
-                                More</span>
-                            <svg fill="none" height="24" className="relative z-10 ml-2 text-[#194F97] -rotate-90 group-hover:text-white transition-colors" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
-                                <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
-                            </svg>
-                            <span className="absolute inset-0 bg-[#194F97] transition-transform duration-300 transform -translate-x-full group-hover:translate-x-0"></span>
-                        </a>
+                    <div className="lg:col-span-3 lg:block hidden">
                     </div>
                 </div>
-            </div>
-        </section>
+                <div className="grid grid-cols-12 mt-10">
+                    <div className="2xl:col-span-5 lg:col-span-5 col-span-12 flex justify-center items-center">
+                        <img src="assets/front/home/ad_overview_1721881470.PNG" className="" />
+                    </div>
+                    <div className="2xl:col-span-1 xl:col-span-1 lg:block hidden"></div>
+                    <div className="lg:col-span-6 col-span-12 flex justify-center items-center lg:mt-0 mt-5">
+                        <div>
+                            <ul className="2xl:text-base xl:text-sm lg:text-sm text-xs space-y-3 lg:space-y-2.5 xl:space-y-2.5 2xl:space-y-5 font-inter">
+                                <ul className="2xl:text-base xl:text-sm lg:text-sm text-xs space-y-3 lg:space-y-2.5 xl:space-y-2.5 2xl:space-y-5 font-inter" style={{ "boxSizing": "border-box", "listStyle": "none", "margin": "0px", "padding": "0px", "fontSize": "medium", "lineHeight": "1.5rem", "fontFamily": "Inter", "border": "0px solid #e5e7eb" }}>
+<li style={{ "boxSizing": "border-box", "border": "0px solid #e5e7eb" }}><span style={{ "fontSize": "16px" }}>Our region of skill is making advances that move forward national defense capabilities, speed up generation methods, and progress aeronautical plans. Mission-critical frameworks, secure communication systems, and cutting-edge recreation innovations that mirror real circumstances for testing a</span><span style={{ "fontSize": "16px" }}>nd preparing are a few of our offerings.</span></li>
+<li style={{ "boxSizing": "border-box", "marginTop": "calc(1.25rem * calc(1 - var(--tw-space-y-reverse)))", "marginBottom": "calc(1.25rem * var(--tw-space-y-reverse))", "border": "0px solid #e5e7eb" }}><span style={{ "fontSize": "16px" }}>In order to guarantee tall accessibility and constancy of crucial resources, our ability too incorporates joining IoT and AI to optimize air ship support plans and expect framework flaws some time recently. In order to expand the life expectancy of aeronautical components, this proactive upkeep procedure definitely brings down working costs and unscheduled downtime.</span></li>
+<li style={{ "boxSizing": "border-box", "marginTop": "calc(1.25rem * calc(1 - var(--tw-space-y-reverse)))", "marginBottom": "calc(1.25rem * var(--tw-space-y-reverse))", "border": "0px solid #e5e7eb" }}><span style={{ "fontSize": "16px" }}>Our cybersecurity arrangements are planning to guard basic aviation and military information from progressively complex cyberattacks. To secure information over all stages and ensure adherence to the most noteworthy security prerequisites, we send solid encryption, interruption location frameworks, and secure information administration procedures.</span></li>
+</ul>                            </ul>
+                            <a href="/" className="relative overflow-hidden border border-[#194F97] px-3 py-2 inline-flex justify-center items-center group mt-3 md:mt-3 lg:mt-8 xl:mt-8 2xl:mt-10">
+                                <span className="relative z-10 text-[#194F97] group-hover:text-white transition-colors duration-300 text-sm uppercase">Learn
+                                    More</span>
+                                <svg fill="none" height="24" className="relative z-10 ml-2 text-[#194F97] -rotate-90 group-hover:text-white transition-colors" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                    <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
+                                </svg>
+                                <span className="absolute inset-0 bg-[#194F97] transition-transform duration-300 transform -translate-x-full group-hover:translate-x-0"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
                 
 
 
@@ -328,264 +298,277 @@ export default function Page() {
         <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 pt-14 lg:pt-24 xl:pt-24 2xl:pt-32">
             <div className="grid grid-cols-12 lg:gap-4">
                 <div className="lg:col-span-9 col-span-12">
-                    <h3 className="text-xs lg:text-sm xl:text-sm 2xl:text-base text-[#194F97] font-medium">
-                        Empower your projects with accurate spatial data and advanced mapping solutions
-                        </h3>
+                    <h3 className="text-xs lg:text-sm xl:text-sm 2xl:text-base text-[#194F97] font-medium">Our robust systems enhance defense capabilities and aeronautical designs</h3>
                     <h2 className="mt-1.5 lg:mt-1.5 xl:mt-3 2xl:mt-5 2xl:text-5xl xl:text-4xl lg:text-4xl text-3xl font-gellix">
-                        Support decision-making with geospatial tools, GIS, and drone imagery</h2>
+                        Optimize aircraft maintenance using IOT and AI to reduce costs and downtime</h2>
                 </div>
                 <div className="lg:col-span-3 lg:block hidden">
                 </div>
             </div>
             <div className="mt-10">
-            <div className="owl-carousel owl-theme" id="is-p">
+                <div className="owl-carousel owl-theme" id="is-p">
                     
-                                        <div className="flex h-full">
-                        <div className="group flex flex-col justify-between h-full">
-                   
-                            <div className="bg-[#D3ECFF] bg-opacity-30 pt-5 pl-5 text-black relative overflow-hidden group-hover:text-white group-hover:bg-[#194F97] h-full flex flex-col">
-                               
-                                <h1 className="pr-5 text-xl lg:text-lg xl:text-xl 2xl:text-2xl font-gellix">
-                                    Spatial Analysis</h1>
-                                <p className="text-transparent group-hover:text-white pr-5 text-[14px] lg:text-[12px] xl:text-[12px] 2xl:text-[14px] mt-[10px] lg:mt-[10px] xl:mt-[10px] 2xl:mt-[20px] font-inter font-regular flex-grow">
-                                    Using GIS, satellite imaging, and drone data, provide deep insights into spatial and environmental data to help decision-making in a variety of businesses.                                </p>
-                                <div className="flex justify-end items-end mt-auto">
-                                    <div className="group mt-[12px] xl:mt-[0px] 2xl:mt-[20px] xl:h-36 2xl:h-auto">
-                                        
-                                        <div className="block group-hover:hidden">
-                                            <img src="assets/front/home/gt_service_1721889214.PNG" />
-                                        </div>
+                                            <div className="flex h-full">
+                            <div className="group flex flex-col justify-between h-full">
 
-                                        
-                                        <div className="hidden group-hover:block">
-                                            <img src="assets/front/home/gt_service_hover_1721889214.PNG" />
+                                <div className="bg-[#D3ECFF] bg-opacity-30 pt-5 pl-5 text-black relative overflow-hidden group-hover:text-white group-hover:bg-[#194F97] h-full flex flex-col">
+
+                                    <h1 className="pr-5 text-xl lg:text-lg xl:text-xl 2xl:text-2xl font-gellix">
+                                        Maintenance Optimization</h1>
+                                    <p className="text-transparent group-hover:text-white pr-5 text-[14px] lg:text-[12px] xl:text-[12px] 2xl:text-[14px] mt-[10px] lg:mt-[10px] xl:mt-[10px] 2xl:mt-[20px] font-inter font-regular flex-grow">
+                                        Using IoT and AI, we optimize aircraft maintenance schedules, predict system failures, and extend component lifespan, reducing costs and downtime.                                    </p>
+                                    <div className="flex justify-end items-end mt-auto">
+                                        <div className="group mt-[12px] xl:mt-[0px] 2xl:mt-[20px] xl:h-36 2xl:h-auto">
+                                            
+                                            <div className="block group-hover:hidden">
+                                                <img src="assets/front/home/ad_service_1721882595.PNG" />
+                                            </div>
+
+                                            
+                                            <div className="hidden group-hover:block">
+                                                <img src="assets/front/home/ad_service_hov_1721882595.PNG" />
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                              
-                            </div>
-                          
-                        </div>
-                    </div>
-                                        <div className="flex h-full">
-                        <div className="group flex flex-col justify-between h-full">
-                   
-                            <div className="bg-[#D3ECFF] bg-opacity-30 pt-5 pl-5 text-black relative overflow-hidden group-hover:text-white group-hover:bg-[#194F97] h-full flex flex-col">
-                               
-                                <h1 className="pr-5 text-xl lg:text-lg xl:text-xl 2xl:text-2xl font-gellix">
-                                    Disaster Response</h1>
-                                <p className="text-transparent group-hover:text-white pr-5 text-[14px] lg:text-[12px] xl:text-[12px] 2xl:text-[14px] mt-[10px] lg:mt-[10px] xl:mt-[10px] 2xl:mt-[20px] font-inter font-regular flex-grow">
-                                    Integrate real-time data sources for flood risk assessment, crop health monitoring, and infrastructure prioritization. Provide geospatial tools for disaster response, environmental monitoring, urban planning, and agricultural management.                                </p>
-                                <div className="flex justify-end items-end mt-auto">
-                                    <div className="group mt-[12px] xl:mt-[0px] 2xl:mt-[20px] xl:h-36 2xl:h-auto">
-                                        
-                                        <div className="block group-hover:hidden">
-                                            <img src="assets/front/home/gt_service_1721889241.PNG" />
-                                        </div>
 
-                                        
-                                        <div className="hidden group-hover:block">
-                                            <img src="assets/front/home/gt_service_hover_1721889241.PNG" />
+                                </div>
+
+                            </div>
+                        </div>
+                                            <div className="flex h-full">
+                            <div className="group flex flex-col justify-between h-full">
+
+                                <div className="bg-[#D3ECFF] bg-opacity-30 pt-5 pl-5 text-black relative overflow-hidden group-hover:text-white group-hover:bg-[#194F97] h-full flex flex-col">
+
+                                    <h1 className="pr-5 text-xl lg:text-lg xl:text-xl 2xl:text-2xl font-gellix">
+                                        Cybersecurity Solutions</h1>
+                                    <p className="text-transparent group-hover:text-white pr-5 text-[14px] lg:text-[12px] xl:text-[12px] 2xl:text-[14px] mt-[10px] lg:mt-[10px] xl:mt-[10px] 2xl:mt-[20px] font-inter font-regular flex-grow">
+                                        Implementing robust encryption, intrusion detection, and secure data management to protect critical aviation and military data, ensuring top security compliance.                                    </p>
+                                    <div className="flex justify-end items-end mt-auto">
+                                        <div className="group mt-[12px] xl:mt-[0px] 2xl:mt-[20px] xl:h-36 2xl:h-auto">
+                                            
+                                            <div className="block group-hover:hidden">
+                                                <img src="assets/front/home/ad_service_1721882638.PNG" />
+                                            </div>
+
+                                            
+                                            <div className="hidden group-hover:block">
+                                                <img src="assets/front/home/ad_service_hov_1721882638.PNG" />
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                              
-                            </div>
-                          
-                        </div>
-                    </div>
-                                        <div className="flex h-full">
-                        <div className="group flex flex-col justify-between h-full">
-                   
-                            <div className="bg-[#D3ECFF] bg-opacity-30 pt-5 pl-5 text-black relative overflow-hidden group-hover:text-white group-hover:bg-[#194F97] h-full flex flex-col">
-                               
-                                <h1 className="pr-5 text-xl lg:text-lg xl:text-xl 2xl:text-2xl font-gellix">
-                                    Specialized Applications</h1>
-                                <p className="text-transparent group-hover:text-white pr-5 text-[14px] lg:text-[12px] xl:text-[12px] 2xl:text-[14px] mt-[10px] lg:mt-[10px] xl:mt-[10px] 2xl:mt-[20px] font-inter font-regular flex-grow">
-                                    Create intuitive applications with spatial data visualization, location-based services, and 3D modeling that are suited to particular customer requirements. This will encourage user friendliness and robust analytical powers.                                </p>
-                                <div className="flex justify-end items-end mt-auto">
-                                    <div className="group mt-[12px] xl:mt-[0px] 2xl:mt-[20px] xl:h-36 2xl:h-auto">
-                                        
-                                        <div className="block group-hover:hidden">
-                                            <img src="assets/front/home/gt_service_1721889270.PNG" />
-                                        </div>
 
-                                        
-                                        <div className="hidden group-hover:block">
-                                            <img src="assets/front/home/gt_service_hover_1721889270.PNG" />
+                                </div>
+
+                            </div>
+                        </div>
+                                            <div className="flex h-full">
+                            <div className="group flex flex-col justify-between h-full">
+
+                                <div className="bg-[#D3ECFF] bg-opacity-30 pt-5 pl-5 text-black relative overflow-hidden group-hover:text-white group-hover:bg-[#194F97] h-full flex flex-col">
+
+                                    <h1 className="pr-5 text-xl lg:text-lg xl:text-xl 2xl:text-2xl font-gellix">
+                                        Simulation Training</h1>
+                                    <p className="text-transparent group-hover:text-white pr-5 text-[14px] lg:text-[12px] xl:text-[12px] 2xl:text-[14px] mt-[10px] lg:mt-[10px] xl:mt-[10px] 2xl:mt-[20px] font-inter font-regular flex-grow">
+                                        Advanced simulation technologies provide realistic training environments for pilots and defense personnel, enhancing readiness and operational effectiveness.                                    </p>
+                                    <div className="flex justify-end items-end mt-auto">
+                                        <div className="group mt-[12px] xl:mt-[0px] 2xl:mt-[20px] xl:h-36 2xl:h-auto">
+                                            
+                                            <div className="block group-hover:hidden">
+                                                <img src="assets/front/home/ad_service_1721882668.PNG" />
+                                            </div>
+
+                                            
+                                            <div className="hidden group-hover:block">
+                                                <img src="assets/front/home/ad_service_hov_1721882668.PNG" />
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                              
-                            </div>
-                          
-                        </div>
-                    </div>
-                                        <div className="flex h-full">
-                        <div className="group flex flex-col justify-between h-full">
-                   
-                            <div className="bg-[#D3ECFF] bg-opacity-30 pt-5 pl-5 text-black relative overflow-hidden group-hover:text-white group-hover:bg-[#194F97] h-full flex flex-col">
-                               
-                                <h1 className="pr-5 text-xl lg:text-lg xl:text-xl 2xl:text-2xl font-gellix">
-                                    Field Data gathering</h1>
-                                <p className="text-transparent group-hover:text-white pr-5 text-[14px] lg:text-[12px] xl:text-[12px] 2xl:text-[14px] mt-[10px] lg:mt-[10px] xl:mt-[10px] 2xl:mt-[20px] font-inter font-regular flex-grow">
-                                    Develop mobile and web-based tools that enable field workers to collect and evaluate data while they&amp;#039;re on the go. This will ensure proper data integration into decision-making procedures and increase the effectiveness of data gathering.                                </p>
-                                <div className="flex justify-end items-end mt-auto">
-                                    <div className="group mt-[12px] xl:mt-[0px] 2xl:mt-[20px] xl:h-36 2xl:h-auto">
-                                        
-                                        <div className="block group-hover:hidden">
-                                            <img src="assets/front/home/gt_service_1721889291.PNG" />
-                                        </div>
 
-                                        
-                                        <div className="hidden group-hover:block">
-                                            <img src="assets/front/home/gt_service_hover_1721889291.PNG" />
+                                </div>
+
+                            </div>
+                        </div>
+                                            <div className="flex h-full">
+                            <div className="group flex flex-col justify-between h-full">
+
+                                <div className="bg-[#D3ECFF] bg-opacity-30 pt-5 pl-5 text-black relative overflow-hidden group-hover:text-white group-hover:bg-[#194F97] h-full flex flex-col">
+
+                                    <h1 className="pr-5 text-xl lg:text-lg xl:text-xl 2xl:text-2xl font-gellix">
+                                        Supply Chain Management</h1>
+                                    <p className="text-transparent group-hover:text-white pr-5 text-[14px] lg:text-[12px] xl:text-[12px] 2xl:text-[14px] mt-[10px] lg:mt-[10px] xl:mt-[10px] 2xl:mt-[20px] font-inter font-regular flex-grow">
+                                        Our software automates inventory control and procurement processes, improving supply chain efficiency and enabling quick responses to demands.                                    </p>
+                                    <div className="flex justify-end items-end mt-auto">
+                                        <div className="group mt-[12px] xl:mt-[0px] 2xl:mt-[20px] xl:h-36 2xl:h-auto">
+                                            
+                                            <div className="block group-hover:hidden">
+                                                <img src="assets/front/home/ad_service_1721882700.PNG" />
+                                            </div>
+
+                                            
+                                            <div className="hidden group-hover:block">
+                                                <img src="assets/front/home/ad_service_hov_1721882700.PNG" />
+                                            </div>
                                         </div>
                                     </div>
+
                                 </div>
-                              
+
                             </div>
-                          
                         </div>
-                    </div>
                                         
                 </div>
             </div>
-            </section></div>
-        
+        </section>
         
 
 
         
         <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 py-14 lg:py-24 xl:py-24 2xl:py-32">
-    <div className="grid grid-cols-12">
-        <div className="lg:col-span-4 xl:col-span-5 2xl:col-span-6 col-span-12">
-            <h3 className="text-xs lg:text-sm xl:text-sm 2xl:text-base text-[#194F97] font-inter font-medium">
-                Descience Blogs</h3>
-            <h1 className="mt-1.5 lg:mt-1.5 xl:mt-3 2xl:mt-5 2xl:text-5xl xl:text-4xl lg:text-4xl text-3xl font-gellix">
-                Read Touchmark Descience Blogs</h1>
-        </div>
-        <div className="lg:col-span-8 xl:col-span-7 2xl:col-span-6 col-span-12 lg:block hidden">
-            
-        </div>
-    </div>
-    <div className="grid grid-cols-12 gap-4 mt-10">
+            <div className="grid grid-cols-12">
+                <div className="lg:col-span-4 xl:col-span-5 2xl:col-span-6 col-span-12">
+                    <h3 className="text-xs lg:text-sm xl:text-sm 2xl:text-base text-[#194F97] font-inter font-medium">
+                        Descience Blogs</h3>
+                    <h1 className="mt-1.5 lg:mt-1.5 xl:mt-3 2xl:mt-5 2xl:text-5xl xl:text-4xl lg:text-4xl text-3xl font-gellix">
+                        Read Touchmark Descience Blogs</h1>
+                </div>
+                <div className="lg:col-span-8 xl:col-span-7 2xl:col-span-6 col-span-12 lg:block hidden">
+                    
+                </div>
+            </div>
+            <div className="grid grid-cols-12 gap-4 mt-10">
                 
-                                    <div className="lg:col-span-3 col-span-12 relative overflow-hidden group">
-
-                        <img src="assets/front/home/Blog%201.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" alt="Responsive image" />
-                        <div className="absolute inset-0 flex justify-end items-end">
-                            <div className="bg-gradient-to-t from-black/45 to-transparent p-5 transition-opacity duration-300 group-hover:from-black/90 group-hover:to-black/0 w-full">
-                                <div className="flex justify-between items-end">
-                                    <div>
-                                        <a href="/blog/articles/a-360-view-of-business-process-management-system">
+                    
+                                    <div className="lg:col-span-3 col-span-12 relative overflow-hidden group h-[300px] lg:h-[350px] xl:h-[400px]">
+                        <a href="/blog/articles/a-360-view-of-business-process-management-system">
+                            <img src="https://touchmarkdes.com/assets/front/home/Blog 1.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full h-full object-cover" />
+                            <div className="absolute top-0 right-0">
+                                <div className="inline-flex justify-start items-center space-x-3 p-5"></div>
+                            </div>
+                            </a><div className="absolute inset-0 flex justify-end items-end"><a href="/blog/articles/a-360-view-of-business-process-management-system">
+                                </a><div className="bg-gradient-to-t from-black/45 to-transparent p-5 transition-opacity duration-300 group-hover:from-black/90 group-hover:to-black/0 w-full"><a href="/blog/articles/a-360-view-of-business-process-management-system">
+                                    </a><div className="flex justify-between items-end"><a href="/blog/articles/a-360-view-of-business-process-management-system">
+                                        <div>
                                             <h1 className="text-lg lg:text-xl xl:text-xl 2xl:text-2xl text-white font-gellix pt-2">
-                                                A 360* View Of Business Process Management System</h1>
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <a href="gt-industry.html#">
-                                            <svg fill="none" height="28" className="-rotate-90 rounded-full text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
-                                                <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
-                                            </svg>
-                                        </a>
+                                                A 360* View Of Business Process..
+                                            </h1>
+                                        </div>
+                                        </a><div><a href="/blog/articles/a-360-view-of-business-process-management-system">
+                                            </a><a href="areo-industry.html#">
+                                                <svg fill="none" height="28" className="-rotate-90 rounded-full text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                                    <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-
+                        
                     </div>
-                                    <div className="lg:col-span-3 col-span-12 relative overflow-hidden group">
 
-                        <img src="assets/front/home/Blog%202.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" alt="Responsive image" />
-                        <div className="absolute inset-0 flex justify-end items-end">
-                            <div className="bg-gradient-to-t from-black/45 to-transparent p-5 transition-opacity duration-300 group-hover:from-black/90 group-hover:to-black/0 w-full">
-                                <div className="flex justify-between items-end">
-                                    <div>
-                                        <a href="/blog/articles/key-factors-why-business-process-management-systems-are-successful">
+
+
+                                    <div className="lg:col-span-3 col-span-12 relative overflow-hidden group h-[300px] lg:h-[350px] xl:h-[400px]">
+                        <a href="/blog/articles/key-factors-why-business-process-management-systems-are-successful">
+                            <img src="https://touchmarkdes.com/assets/front/home/Blog 2.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full h-full object-cover" />
+                            <div className="absolute top-0 right-0">
+                                <div className="inline-flex justify-start items-center space-x-3 p-5"></div>
+                            </div>
+                            </a><div className="absolute inset-0 flex justify-end items-end"><a href="/blog/articles/key-factors-why-business-process-management-systems-are-successful">
+                                </a><div className="bg-gradient-to-t from-black/45 to-transparent p-5 transition-opacity duration-300 group-hover:from-black/90 group-hover:to-black/0 w-full"><a href="/blog/articles/key-factors-why-business-process-management-systems-are-successful">
+                                    </a><div className="flex justify-between items-end"><a href="/blog/articles/key-factors-why-business-process-management-systems-are-successful">
+                                        <div>
                                             <h1 className="text-lg lg:text-xl xl:text-xl 2xl:text-2xl text-white font-gellix pt-2">
-                                                Key Factors Why Business Process Management Systems Are Successful</h1>
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <a href="gt-industry.html#">
-                                            <svg fill="none" height="28" className="-rotate-90 rounded-full text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
-                                                <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
-                                            </svg>
-                                        </a>
+                                                Key Factors Why Business Process Management..
+                                            </h1>
+                                        </div>
+                                        </a><div><a href="/blog/articles/key-factors-why-business-process-management-systems-are-successful">
+                                            </a><a href="areo-industry.html#">
+                                                <svg fill="none" height="28" className="-rotate-90 rounded-full text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                                    <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-
+                        
                     </div>
-                                    <div className="lg:col-span-3 col-span-12 relative overflow-hidden group">
 
-                        <img src="assets/front/home/blog%203.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" alt="Responsive image" />
-                        <div className="absolute inset-0 flex justify-end items-end">
-                            <div className="bg-gradient-to-t from-black/45 to-transparent p-5 transition-opacity duration-300 group-hover:from-black/90 group-hover:to-black/0 w-full">
-                                <div className="flex justify-between items-end">
-                                    <div>
-                                        <a href="/blog/articles/increasing-your-productivity-using-business-process-management-system">
+
+
+                                    <div className="lg:col-span-3 col-span-12 relative overflow-hidden group h-[300px] lg:h-[350px] xl:h-[400px]">
+                        <a href="/blog/articles/increasing-your-productivity-using-business-process-management-system">
+                            <img src="https://touchmarkdes.com/assets/front/home/blog 3.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full h-full object-cover" />
+                            <div className="absolute top-0 right-0">
+                                <div className="inline-flex justify-start items-center space-x-3 p-5"></div>
+                            </div>
+                            </a><div className="absolute inset-0 flex justify-end items-end"><a href="/blog/articles/increasing-your-productivity-using-business-process-management-system">
+                                </a><div className="bg-gradient-to-t from-black/45 to-transparent p-5 transition-opacity duration-300 group-hover:from-black/90 group-hover:to-black/0 w-full"><a href="/blog/articles/increasing-your-productivity-using-business-process-management-system">
+                                    </a><div className="flex justify-between items-end"><a href="/blog/articles/increasing-your-productivity-using-business-process-management-system">
+                                        <div>
                                             <h1 className="text-lg lg:text-xl xl:text-xl 2xl:text-2xl text-white font-gellix pt-2">
-                                                Increasing Your Productivity Using Business Process Management System</h1>
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <a href="gt-industry.html#">
-                                            <svg fill="none" height="28" className="-rotate-90 rounded-full text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
-                                                <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
-                                            </svg>
-                                        </a>
+                                                Increasing Your Productivity Using Business Process..
+                                            </h1>
+                                        </div>
+                                        </a><div><a href="/blog/articles/increasing-your-productivity-using-business-process-management-system">
+                                            </a><a href="areo-industry.html#">
+                                                <svg fill="none" height="28" className="-rotate-90 rounded-full text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                                    <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-
+                        
                     </div>
-                                    <div className="lg:col-span-3 col-span-12 relative overflow-hidden group">
 
-                        <img src="assets/front/home/blog%204.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" alt="Responsive image" />
-                        <div className="absolute inset-0 flex justify-end items-end">
-                            <div className="bg-gradient-to-t from-black/45 to-transparent p-5 transition-opacity duration-300 group-hover:from-black/90 group-hover:to-black/0 w-full">
-                                <div className="flex justify-between items-end">
-                                    <div>
-                                        <a href="/blog/articles/real-time-iot-applications-in-the-retail-industry">
+
+
+                                    <div className="lg:col-span-3 col-span-12 relative overflow-hidden group h-[300px] lg:h-[350px] xl:h-[400px]">
+                        <a href="/blog/articles/real-time-iot-applications-in-the-retail-industry">
+                            <img src="https://touchmarkdes.com/assets/front/home/blog 4.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full h-full object-cover" />
+                            <div className="absolute top-0 right-0">
+                                <div className="inline-flex justify-start items-center space-x-3 p-5"></div>
+                            </div>
+                            </a><div className="absolute inset-0 flex justify-end items-end"><a href="/blog/articles/real-time-iot-applications-in-the-retail-industry">
+                                </a><div className="bg-gradient-to-t from-black/45 to-transparent p-5 transition-opacity duration-300 group-hover:from-black/90 group-hover:to-black/0 w-full"><a href="/blog/articles/real-time-iot-applications-in-the-retail-industry">
+                                    </a><div className="flex justify-between items-end"><a href="/blog/articles/real-time-iot-applications-in-the-retail-industry">
+                                        <div>
                                             <h1 className="text-lg lg:text-xl xl:text-xl 2xl:text-2xl text-white font-gellix pt-2">
-                                                Real-time IoT Applications In The Retail Industry</h1>
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <a href="gt-industry.html#">
-                                            <svg fill="none" height="28" className="-rotate-90 rounded-full text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
-                                                <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
-                                            </svg>
-                                        </a>
+                                                Real-time IoT Applications In The Retail..
+                                            </h1>
+                                        </div>
+                                        </a><div><a href="/blog/articles/real-time-iot-applications-in-the-retail-industry">
+                                            </a><a href="areo-industry.html#">
+                                                <svg fill="none" height="28" className="-rotate-90 rounded-full text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                                    <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-
+                        
                     </div>
-                            </div>
-</section>
+
+
+
+                
+            </div>
+        </section>
+        
+
+        
         
 
 
 
-        
-        
 
 
 
-
-
-
-    <link rel="Touchmark" href="gt-industry.html#" />
+    <link rel="Touchmark" href="areo-industry.html#" />
     
     
     
@@ -605,7 +588,7 @@ export default function Page() {
 
         
 
-    
+    </div>
 
 
 
@@ -1404,11 +1387,11 @@ const togglePassword = document.querySelector('#togglePassword');
       `}</Script>
       <Script id="page-script-17" strategy="lazyOnload">{`
         try {
-          window.addEventListener('scroll', function () {
+          window.addEventListener('scroll', function() {
         var header = document.querySelector('#navbar');
         var logo = document.querySelector('#logo');
-        var desktopLogo = 'https://touchmarkdes.com/src/assets/img/tds-color-logo.png';
-        var mobileLogo = 'https://touchmarkdes.com/src/assets/img/tds-color-logo.png';
+        var desktopLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
+        var mobileLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
 
         if (header) {
             header.classList.toggle('bg-scroll-white', window.scrollY > 0);
@@ -1423,7 +1406,7 @@ const togglePassword = document.querySelector('#togglePassword');
         }
 
         var navLinks = document.querySelectorAll('#navbar-collapse-columns .hs-dropdown button');
-        navLinks.forEach(function (link) {
+        navLinks.forEach(function(link) {
             link.classList.remove('text-white');
             link.classList.add('text-black');
         });
@@ -1448,7 +1431,7 @@ const togglePassword = document.querySelector('#togglePassword');
       `}</Script>
       <Script id="page-script-18" strategy="lazyOnload">{`
         try {
-          \$(document).ready(function () {
+          \$(document).ready(function() {
         var owlOptions = {
             loop: false,
             nav: false,
@@ -1456,7 +1439,7 @@ const togglePassword = document.querySelector('#togglePassword');
             responsive: {
                 0: {
                     items: 1.25,
-                    margin: 20,  // No margin on mobile devices
+                    margin: 20, // No margin on mobile devices
                     loop: true,
                     autoplay: true,
                     autoplayTimeout: 2000,
@@ -1464,11 +1447,11 @@ const togglePassword = document.querySelector('#togglePassword');
                 },
                 600: {
                     items: 1.5,
-                    margin: 20  // Margin for devices with width 600px and above
+                    margin: 20 // Margin for devices with width 600px and above
                 },
                 1000: {
                     items: 4,
-                    margin: 20,  // Margin for devices with width 1000px and above
+                    margin: 20, // Margin for devices with width 1000px and above
                     loop: false,
                     autoplay: false,
                     autoplayTimeout: 2000,
@@ -1485,7 +1468,7 @@ const togglePassword = document.querySelector('#togglePassword');
 
         \$("#is-p").owlCarousel(owlOptions);
 
-        \$(window).resize(function () {
+        \$(window).resize(function() {
             var newOwlOptions = owlOptions;
             if (window.innerWidth <= 767) {
                 newOwlOptions.dots = true;

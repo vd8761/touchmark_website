@@ -18,7 +18,7 @@ export default function Page({ searchParams }: PageProps) {
         <>
           {/* Case Study 1 Styles */}
           {/* Case Study 1 Content */}
-          ﻿
+          
 
 
 
@@ -1338,8 +1338,8 @@ const togglePassword = document.querySelector('#togglePassword');
           window.addEventListener('scroll', function () {
         var header = document.querySelector('#navbar');
         var logo = document.querySelector('#logo');
-        var desktopLogo = './src/assets/img/tds-color-logo.png';
-        var mobileLogo = './src/assets/img/tds-color-logo.png';
+        var desktopLogo = './images/tds-color-logo.png';
+        var mobileLogo = './images/tds-color-logo.png';
 
         if (header) {
             header.classList.toggle('bg-scroll-white', window.scrollY > 0);
@@ -1409,7 +1409,7 @@ const togglePassword = document.querySelector('#togglePassword');
         <>
           {/* Case Study 2 Styles */}
           {/* Case Study 2 Content */}
-          ﻿
+          
 
 
 
@@ -2791,8 +2791,8 @@ const togglePassword = document.querySelector('#togglePassword');
           window.addEventListener('scroll', function () {
         var header = document.querySelector('#navbar');
         var logo = document.querySelector('#logo');
-        var desktopLogo = './src/assets/img/tds-color-logo.png';
-        var mobileLogo = './src/assets/img/tds-color-logo.png';
+        var desktopLogo = './images/tds-color-logo.png';
+        var mobileLogo = './images/tds-color-logo.png';
 
         if (header) {
             header.classList.toggle('bg-scroll-white', window.scrollY > 0);
@@ -2862,7 +2862,7 @@ const togglePassword = document.querySelector('#togglePassword');
         <>
           {/* Case Study 3 Styles */}
           {/* Case Study 3 Content */}
-          ﻿
+          
 
 
 
@@ -4189,8 +4189,8 @@ const togglePassword = document.querySelector('#togglePassword');
           window.addEventListener('scroll', function () {
         var header = document.querySelector('#navbar');
         var logo = document.querySelector('#logo');
-        var desktopLogo = './src/assets/img/tds-color-logo.png';
-        var mobileLogo = './src/assets/img/tds-color-logo.png';
+        var desktopLogo = './images/tds-color-logo.png';
+        var mobileLogo = './images/tds-color-logo.png';
 
         if (header) {
             header.classList.toggle('bg-scroll-white', window.scrollY > 0);
