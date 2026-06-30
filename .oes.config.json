@@ -1,0 +1,32 @@
+{
+  "$schema": "./schema.json",
+  "projectType": "web",
+  "rules": {
+    "enforceFolderStructure": true,
+    "enforceNamingConventions": true,
+    "preventDirectAPICalls": true,
+    "enforceFormCAPTCHA": true,
+    "preventHardcodedColors": true,
+    "enforceWebPImages": true,
+    "preventCommittedSecrets": true,
+    "enforceComponentReusability": true
+  },
+  "paths": {
+    "components": [
+      "components",
+      "app/components"
+    ],
+    "services": [
+      "services",
+      "lib/api"
+    ],
+    "utils": [
+      "utils",
+      "lib/utils"
+    ],
+    "hooks": [
+      "hooks",
+      "app/hooks"
+    ]
+  }
+}

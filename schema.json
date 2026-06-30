@@ -1,0 +1,116 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "OES Config Schema",
+  "description": "Configuration file for Open Engineering Standards (OES) AI rules alignment.",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "projectType": {
+      "type": "string",
+      "enum": ["web", "flutter", "generic"],
+      "default": "web",
+      "description": "The target codebase architecture (web, flutter, or generic) used by OES."
+    },
+    "rootFilePatterns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Sensible filename glob-like patterns allowed directly in root folder without triggering folder structure violations."
+    },
+    "rules": {
+      "type": "object",
+      "properties": {
+        "enforceFolderStructure": {
+          "type": "boolean",
+          "description": "Ensure files are organized in standard folders like components, services, and utils.",
+          "default": true
+        },
+        "enforceNamingConventions": {
+          "type": "boolean",
+          "description": "Enforce PascalCase for components, camelCase for hooks (with 'use' prefix) and utilities, UPPER_CASE for constants.",
+          "default": true
+        },
+        "preventDirectAPICalls": {
+          "type": "boolean",
+          "description": "Disallow raw fetch/axios network calls inside frontend view/UI files.",
+          "default": true
+        },
+        "enforceFormCAPTCHA": {
+          "type": "boolean",
+          "description": "Require all public forms to implement CAPTCHA protection.",
+          "default": true
+        },
+        "preventHardcodedColors": {
+          "type": "boolean",
+          "description": "Enforce using CSS custom variables instead of hardcoded hex, rgb, or keyword colors.",
+          "default": true
+        },
+        "enforceWebPImages": {
+          "type": "boolean",
+          "description": "Enforce modern, optimized WebP/AVIF image targets and references instead of raw PNG/JPG.",
+          "default": true
+        },
+        "preventCommittedSecrets": {
+          "type": "boolean",
+          "description": "Prevent hardcoding or committing API keys, tokens, or credentials.",
+          "default": true
+        },
+        "enforceComponentReusability": {
+          "type": "boolean",
+          "description": "Audit components for size thresholds and inline styling abuses to enforce modular design.",
+          "default": true
+        }
+      },
+
+      "required": [
+        "enforceFolderStructure",
+        "enforceNamingConventions",
+        "preventDirectAPICalls",
+        "enforceFormCAPTCHA",
+        "preventHardcodedColors",
+        "enforceWebPImages",
+        "preventCommittedSecrets",
+        "enforceComponentReusability"
+      ]
+    },
+    "paths": {
+      "type": "object",
+      "properties": {
+        "components": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Folders containing UI component files."
+        },
+        "services": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Folders containing business logic / service / API files."
+        },
+        "utils": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Folders containing utility or helper functions."
+        },
+        "hooks": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Folders containing custom React/Vue hooks."
+        }
+      },
+
+      "required": ["components", "services", "utils", "hooks"]
+    }
+  },
+  "required": ["rules", "paths"]
+}
