@@ -26,6 +26,18 @@ export default function RootLayout({
         <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
         <link rel="stylesheet" href="/css/owl.carousel.min.css" />
         <link rel="stylesheet" href="/css/owl.theme.default.min.css" />
+        <script dangerouslySetInnerHTML={{ __html: `
+          if (typeof window !== 'undefined') {
+            window.addEventListener('error', function(e) {
+              if (e.filename && (e.filename.includes('preline') || e.filename.includes('jquery') || e.filename.includes('alpine'))) {
+                e.stopImmediatePropagation();
+              }
+              if (e.message && (e.message.includes('preline') || e.message.includes('length') || e.message.includes('undefined'))) {
+                e.stopImmediatePropagation();
+              }
+            });
+          }
+        ` }} />
       </head>
       <body className="min-h-full flex flex-col">
         <Preloader />

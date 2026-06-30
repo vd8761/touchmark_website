@@ -1321,10 +1321,12 @@ export default function Page() {
         var mobileLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
         var desktopLogo = 'https://touchmarkdes.com/images/touchmark-logowhite.svg';
 
-        if (window.innerWidth <= 768) {
-            logo.src = mobileLogo;
-        } else {
-            logo.src = window.scrollY > 0 ? mobileLogo : desktopLogo;
+        if (logo) {
+            if (window.innerWidth <= 768) {
+                logo.src = mobileLogo;
+            } else {
+                logo.src = window.scrollY > 0 ? mobileLogo : desktopLogo;
+            }
         }
     });
 
