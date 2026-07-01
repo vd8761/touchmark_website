@@ -374,19 +374,19 @@ export default function Page() {
                                         
                                         <div className="lg:col-span-3 col-span-6 space-y-2 mt-2.5 lg:mt-0">
                                             <h3 className="font-inter font-medium">First Name<span className="required-star">*</span></h3>
-                                            <input type="text" name="first_name" id="first_name" className="w-full border border-[#194F97]" placeholder="your first name" autoComplete="off" required={true} />
+                                            <input type="text" name="first_name" id="first_name" className="w-full border border-[#194F97] p-2.5 text-sm" placeholder="your first name" autoComplete="off" required={true} />
                                             <span className="error-message" id="first_name_error"></span>
                                         </div>
                                         
                                         <div className="lg:col-span-3 col-span-6 space-y-2 mt-2.5 lg:mt-0">
                                             <h3 className="font-inter font-medium">Last Name<span className="required-star">*</span></h3>
-                                            <input type="text" name="last_name" id="last_name" className="w-full border border-[#194F97]" placeholder="your last name" autoComplete="off" required={true} />
+                                            <input type="text" name="last_name" id="last_name" className="w-full border border-[#194F97] p-2.5 text-sm" placeholder="your last name" autoComplete="off" required={true} />
                                             <span className="error-message" id="last_name_error"></span>
                                         </div>
                                         
                                         <div className="lg:col-span-3 col-span-6 space-y-2 mt-2.5">
                                             <h3 className="font-inter font-medium">Email<span className="required-star">*</span></h3>
-                                            <input type="email" name="email" id="email" className="w-full border border-[#194F97]" placeholder="your e-mail" autoComplete="off" required={true} />
+                                            <input type="email" name="email" id="email" className="w-full border border-[#194F97] p-2.5 text-sm" placeholder="your e-mail" autoComplete="off" required={true} />
                                             <span className="error-message" id="email_error"></span>
                                         </div>
                                         
@@ -430,19 +430,19 @@ export default function Page() {
                                         
                                         <div className="lg:col-span-3 col-span-6 space-y-2 mt-2.5">
                                             <h3 className="font-inter font-medium">Company Name<span className="required-star">*</span></h3>
-                                            <input type="text" name="company_name" id="company_name" className="w-full border border-[#194F97]" placeholder="your company name" autoComplete="off" required={true} />
+                                            <input type="text" name="company_name" id="company_name" className="w-full border border-[#194F97] p-2.5 text-sm" placeholder="your company name" autoComplete="off" required={true} />
                                             <span className="error-message" id="company_name_error"></span>
                                         </div>
                                         
                                         <div className="lg:col-span-3 col-span-6 space-y-2 mt-2.5">
                                             <h3 className="font-inter font-medium">Location<span className="required-star">*</span></h3>
-                                            <input type="text" name="location" id="location" className="w-full border border-[#194F97]" placeholder="your location" autoComplete="off" required={true} />
+                                            <input type="text" name="location" id="location" className="w-full border border-[#194F97] p-2.5 text-sm" placeholder="your location" autoComplete="off" required={true} />
                                             <span className="error-message" id="location_error"></span>
                                         </div>
                                         
                                         <div className="lg:col-span-3 col-span-6 space-y-2 mt-2.5">
                                             <h3 className="font-inter font-medium">Website (Optional)</h3>
-                                            <input type="text" name="website" id="website" className="w-full border border-[#194F97]" placeholder="your website" autoComplete="off" />
+                                            <input type="text" name="website" id="website" className="w-full border border-[#194F97] p-2.5 text-sm" placeholder="your website" autoComplete="off" />
                                             <span className="error-message" id="website_error"></span>
                                         </div>
                                         
@@ -460,7 +460,7 @@ export default function Page() {
                                         
                                         <div className="col-span-6 space-y-2 mt-2.5">
                                             <h3 className="font-inter font-medium">How can we help?</h3>
-                                            <textarea name="requirements" id="requirements" rows={5} className="w-full border border-[#194F97]" placeholder="write your requirement..." required={true}></textarea>
+                                            <textarea name="requirements" id="requirements" rows={5} className="w-full border border-[#194F97] p-2.5 text-sm" placeholder="write your requirement..." required={true}></textarea>
                                         </div>
                                         
                                         <div className="col-span-6 w-full">
