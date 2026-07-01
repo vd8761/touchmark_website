@@ -171,7 +171,7 @@ export default function Page() {
                                 <a href="/travel-tourism-industry" className="relative overflow-hidden border border-gray-100 px-3 py-2 inline-flex justify-center items-center group mt-7 lg:mt-8 xl:mt-8 2xl:mt-10">
                                     <span className="relative z-10 text-white group-hover:text-black transition-colors duration-300 text-sm uppercase">Learn
                                         More</span>
-                                    <svg fill="none" height="24" className="relative z-10 ml-2 text-white -rotate-90 group-hover:text-black transition-colors duration-300" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                    <svg fill="none" height="24" className="relative z-10 ml-2 text-white -rotate-90 group-hover:text-black group-hover:rotate-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
                                         <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
                                     </svg>
                                     <span className="absolute inset-0 bg-white transition-transform duration-300 transform -translate-x-full group-hover:translate-x-0"></span>
@@ -195,7 +195,7 @@ export default function Page() {
                                 <a href="/metaverse-service" className="relative overflow-hidden border border-gray-100 px-3 py-2 inline-flex justify-center items-center group mt-7 lg:mt-8 xl:mt-8 2xl:mt-10">
                                     <span className="relative z-10 text-white group-hover:text-black transition-colors duration-300 text-sm uppercase">Learn
                                         More</span>
-                                    <svg fill="none" height="24" className="relative z-10 ml-2 text-white -rotate-90 group-hover:text-black transition-colors duration-300" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                    <svg fill="none" height="24" className="relative z-10 ml-2 text-white -rotate-90 group-hover:text-black group-hover:rotate-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
                                         <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
                                     </svg>
                                     <span className="absolute inset-0 bg-white transition-transform duration-300 transform -translate-x-full group-hover:translate-x-0"></span>
@@ -219,7 +219,7 @@ export default function Page() {
                                 <a href="/healthcare-industry" className="relative overflow-hidden border border-gray-100 px-3 py-2 inline-flex justify-center items-center group mt-7 lg:mt-8 xl:mt-8 2xl:mt-10">
                                     <span className="relative z-10 text-white group-hover:text-black transition-colors duration-300 text-sm uppercase">Learn
                                         More</span>
-                                    <svg fill="none" height="24" className="relative z-10 ml-2 text-white -rotate-90 group-hover:text-black transition-colors duration-300" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                    <svg fill="none" height="24" className="relative z-10 ml-2 text-white -rotate-90 group-hover:text-black group-hover:rotate-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
                                         <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
                                     </svg>
                                     <span className="absolute inset-0 bg-white transition-transform duration-300 transform -translate-x-full group-hover:translate-x-0"></span>
@@ -258,10 +258,10 @@ export default function Page() {
         
         <section>
             
-            <div className="hidden md:block lg:block relative w-full  bg-cover bg-center" style={{ "backgroundImage": "url('/images/home/about-section-background-desktop.svg')" }}>
-                <div className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] mx-auto">
-                    <div className="grid grid-cols-12 gap-4 w-full">
-                        <div className="bg-[#F1FBFF] col-span-12 lg:col-span-6 md:col-span-6">
+            <div className="hidden md:block lg:block relative w-full bg-cover bg-center lg:min-h-screen lg:flex lg:items-stretch" style={{ "backgroundImage": "url('/images/home/about-section-background-desktop.svg')" }}>
+                <div className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] mx-auto w-full flex items-stretch">
+                    <div className="grid grid-cols-12 w-full">
+                        <div className="bg-[#F1FBFF] col-span-12 lg:col-span-6 md:col-span-6 flex flex-col justify-center">
                             <div className="2xl:px-7 xl:px-7 lg:px-5 md:px-5 md:py-8 2xl:py-16 xl:py-8 lg:py-8">
                                 <div className="lg:mt-12 xl:mt-14 2xl:mt-6">
                                     <h3 className="text-xs lg:text-sm xl:text-sm 2xl:text-base text-[#194F97] font-medium">
@@ -273,13 +273,13 @@ export default function Page() {
                                     <p className="mt-3 lg:mt-5 xl:mt-7 2xl:mt-10 font-inter 2xl:text-lg xl:text-base lg:text-sm md:text-xs text-xs">
                                         Touchmark is an agency that's forward-thinking, believing in the transformative power of collaboration. We offer full-service IT consulting, digital marketing, and software development services. Our team is passionate about digging into business challenges more profoundly and crafting innovative solutions for success; we believe collaboration unlocks new possibilities and delivers remarkable outcomes.
 </p>
-                                    <a href="about-us.html#about-us" className="relative overflow-hidden border border-[#194F97] px-3 py-2 inline-flex justify-center items-center group mt-3 md:mt-3 lg:mt-8 xl:mt-8 2xl:mt-10">
-                                        <span className="relative z-10 text-[#194F97] group-hover:text-white transition-colors duration-300 text-sm uppercase">Learn
+                                    <a href="about-us.html#about-us" className="relative overflow-hidden border border-primary px-3 py-2 inline-flex justify-center items-center group mt-3 md:mt-3 lg:mt-8 xl:mt-8 2xl:mt-10">
+                                        <span className="relative z-10 text-primary group-hover:text-white transition-colors duration-300 text-sm uppercase">Learn
                                             More</span>
-                                        <svg fill="none" height="24" className="relative z-10 ml-2 text-[#194F97] -rotate-90 group-hover:text-white transition-colors" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                        <svg fill="none" height="24" className="relative z-10 ml-2 text-primary -rotate-90 group-hover:text-white group-hover:rotate-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
                                             <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
                                         </svg>
-                                        <span className="absolute inset-0 bg-[#194F97] transition-transform duration-300 transform -translate-x-full group-hover:translate-x-0"></span>
+                                        <span className="absolute inset-0 bg-primary transition-transform duration-300 transform -translate-x-full group-hover:translate-x-0"></span>
                                     </a>
                                 </div>
                             </div>
@@ -310,13 +310,13 @@ export default function Page() {
                                     development.
                                     Our objective is to use automation and rich media to close the gap that exists
                                     between brands and consumers.</p>
-                                <a href="/about-us" className="relative overflow-hidden border border-[#194F97] px-3 py-2 inline-flex justify-center items-center group mt-3 lg:mt-8 xl:mt-8 2xl:mt-10">
-                                    <span className="relative z-10 text-[#194F97] group-hover:text-white transition-colors text-sm uppercase">Learn
+                                <a href="/about-us" className="relative overflow-hidden border border-primary px-3 py-2 inline-flex justify-center items-center group mt-3 lg:mt-8 xl:mt-8 2xl:mt-10">
+                                    <span className="relative z-10 text-primary group-hover:text-white transition-colors text-sm uppercase">Learn
                                         More</span>
-                                    <svg fill="none" height="24" className="relative z-10 ml-2 text-[#194F97] -rotate-90 group-hover:text-white transition-colors" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                    <svg fill="none" height="24" className="relative z-10 ml-2 text-primary -rotate-90 group-hover:text-white group-hover:rotate-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
                                         <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
                                     </svg>
-                                    <span className="absolute inset-0 bg-[#194F97] transition-transform duration-300 transform -translate-x-full group-hover:translate-x-0"></span>
+                                    <span className="absolute inset-0 bg-primary transition-transform duration-300 transform -translate-x-full group-hover:translate-x-0"></span>
                                 </a>
                             </div>
                         </div>
@@ -330,7 +330,7 @@ export default function Page() {
         
 
         
-        <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 pt-14 lg:pt-24 xl:pt-24 2xl:pt-32">
+        <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 lg:min-h-screen lg:flex lg:flex-col lg:justify-center py-14 lg:py-0">
             <div className="grid grid-cols-12 lg:gap-4">
                 <div className="lg:col-span-4 2xl:col-span-5 col-span-12">
                     <h3 className="text-xs lg:text-sm xl:text-sm 2xl:text-base text-[#194F97] font-medium">Our Clients</h3>
@@ -343,13 +343,13 @@ export default function Page() {
                         <p className="text-[14px] lg:text-sm xl:text-sm 2xl:text-base font-inter">Your Team to Realize Success; in life and at work. We believe in the strength of partnership and are committed to equipping you with the resources you need to realize your full potential.We are here to motivate and inspire people like you to achieve extraordinary results in your professional and personal lives.  
                         </p>
                         <a href="client-partner.html#client-partner" className="lg:block hidden">
-                            <div className="relative overflow-hidden border border-[#194F97] px-3 py-2 inline-flex justify-center items-center group mt-7 lg:mt-8 xl:mt-8 2xl:mt-10">
-                                <span className="relative z-10 text-[#194F97] group-hover:text-white transition-colors duration-300 text-sm uppercase">
+                            <div className="relative overflow-hidden border border-primary px-3 py-2 inline-flex justify-center items-center group mt-7 lg:mt-8 xl:mt-8 2xl:mt-10">
+                                <span className="relative z-10 text-primary group-hover:text-white transition-colors duration-300 text-sm uppercase">
                                     View all</span>
-                                <svg fill="none" height="24" className="relative z-10 ml-2 text-[#194F97] -rotate-90 group-hover:text-white transition-colors" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                <svg fill="none" height="24" className="relative z-10 ml-2 text-primary -rotate-90 group-hover:text-white group-hover:rotate-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
                                     <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
                                 </svg>
-                                <span className="absolute inset-0 bg-[#194F97] transition-transform duration-300 transform -translate-x-full group-hover:translate-x-0"></span>
+                                <span className="absolute inset-0 bg-primary transition-transform duration-300 transform -translate-x-full group-hover:translate-x-0"></span>
                             </div>
                         </a>
                     </div>
@@ -358,69 +358,69 @@ export default function Page() {
             
             <div className="lg:block hidden">
                 <div className="grid grid-cols-4 mt-16">
-                    <div className="flex justify-center items-center border border-t-0 border-l-0 border-r-1 border-b-1 p-5 lg:p-7 xl:p-14 2xl:p-10">
-                        <img src="/images/home/colcola-icons.svg" style={{ "height": "40px" }} />
+                    <div className="flex justify-center items-center border border-t-0 border-l-0 border-r-1 border-b-1 p-5 lg:p-7 xl:p-14 2xl:p-10 group overflow-hidden">
+                        <img src="/images/home/colcola-icons.svg" style={{ "height": "40px" }} className="transition-all duration-500 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" />
                     </div>
-                    <div className="flex justify-center items-center border border-t-0 p-5 lg:p-7 xl:p-14 2xl:p-10">
-                        <img src="/images/home/sidbi-icons.svg" style={{ "height": "50px" }} />
+                    <div className="flex justify-center items-center border border-t-0 p-5 lg:p-7 xl:p-14 2xl:p-10 group overflow-hidden">
+                        <img src="/images/home/sidbi-icons.svg" style={{ "height": "50px" }} className="transition-all duration-500 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" />
                     </div>
-                    <div className="flex justify-center items-center border border-t-0 p-5 lg:p-7 xl:p-14 2xl:p-10">
-                        <img src="/images/home/rupinis-icons.svg" style={{ "height": "40px" }} />
+                    <div className="flex justify-center items-center border border-t-0 p-5 lg:p-7 xl:p-14 2xl:p-10 group overflow-hidden">
+                        <img src="/images/home/rupinis-icons.svg" style={{ "height": "40px" }} className="transition-all duration-500 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" />
                     </div>
-                    <div className="flex justify-center items-center border border-t-0 border-r-0 border-l-1 border-b-1 p-5 lg:p-7 xl:p-14 2xl:p-10">
-                        <img src="/images/home/expleo-icon.svg" style={{ "height": "45px" }} />
+                    <div className="flex justify-center items-center border border-t-0 border-r-0 border-l-1 border-b-1 p-5 lg:p-7 xl:p-14 2xl:p-10 group overflow-hidden">
+                        <img src="/images/home/expleo-icon.svg" style={{ "height": "45px" }} className="transition-all duration-500 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" />
                     </div>
-                    <div className="flex justify-center items-center border border-b-0 border-l-0 border-r-1 border-t-1 p-5 lg:p-7 xl:p-10 2xl:p-8">
-                        <img src="/images/home/dvi-icons.svg" style={{ "height": "80px" }} />
+                    <div className="flex justify-center items-center border border-b-0 border-l-0 border-r-1 border-t-1 p-5 lg:p-7 xl:p-10 2xl:p-8 group overflow-hidden">
+                        <img src="/images/home/dvi-icons.svg" style={{ "height": "80px" }} className="transition-all duration-500 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" />
                     </div>
-                    <div className="flex justify-center items-center border border-b-0 p-5 lg:p-7 xl:p-14 2xl:p-10">
-                        <img src="/images/home/rbl-icons.svg" style={{ "height": "50px" }} />
+                    <div className="flex justify-center items-center border border-b-0 p-5 lg:p-7 xl:p-14 2xl:p-10 group overflow-hidden">
+                        <img src="/images/home/rbl-icons.svg" style={{ "height": "50px" }} className="transition-all duration-500 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" />
                     </div>
-                    <div className="flex justify-center items-center border border-b-0 p-5 lg:p-7 xl:p-14 2xl:p-10">
-                        <img src="/images/home/hayakawa-icons.svg" style={{ "height": "50px" }} />
+                    <div className="flex justify-center items-center border border-b-0 p-5 lg:p-7 xl:p-14 2xl:p-10 group overflow-hidden">
+                        <img src="/images/home/hayakawa-icons.svg" style={{ "height": "50px" }} className="transition-all duration-500 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" />
                     </div>
-                    <div className="flex justify-center items-center border border-b-0 border-l-1 border-r-0 border-t-1 p-5 lg:p-7 xl:p-14 2xl:p-10">
-                        <img src="/images/home/tag-icons.svg" style={{ "height": "50px" }} />
+                    <div className="flex justify-center items-center border border-b-0 border-l-1 border-r-0 border-t-1 p-5 lg:p-7 xl:p-14 2xl:p-10 group overflow-hidden">
+                        <img src="/images/home/tag-icons.svg" style={{ "height": "50px" }} className="transition-all duration-500 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" />
                     </div>
                 </div>
             </div>
             
             <div className="lg:hidden block">
                 <div className="grid grid-cols-2 pt-5 lg:pt-32 xl:pt-40 2xl:pt-24">
-                    <div className="flex justify-center items-center border border-t-0 border-l-0 border-r-1 border-b-1 p-7">
-                        <img src="/images/home/colcola-icons.svg" style={{ "height": "35px" }} />
+                    <div className="flex justify-center items-center border border-t-0 border-l-0 border-r-1 border-b-1 p-7 group overflow-hidden">
+                        <img src="/images/home/colcola-icons.svg" style={{ "height": "35px" }} className="transition-all duration-500 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" />
                     </div>
-                    <div className="flex justify-center items-center border border-t-0 border-r-0 p-7">
-                        <img src="/images/home/sidbi-icons.svg" style={{ "height": "35px" }} />
+                    <div className="flex justify-center items-center border border-t-0 border-r-0 p-7 group overflow-hidden">
+                        <img src="/images/home/sidbi-icons.svg" style={{ "height": "35px" }} className="transition-all duration-500 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" />
                     </div>
-                    <div className="flex justify-center items-center border border-t-0 border-l-0 p-7">
-                        <img src="/images/home/rupinis-icons.svg" style={{ "height": "35px" }} />
+                    <div className="flex justify-center items-center border border-t-0 border-l-0 p-7 group overflow-hidden">
+                        <img src="/images/home/rupinis-icons.svg" style={{ "height": "35px" }} className="transition-all duration-500 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" />
                     </div>
-                    <div className="flex justify-center items-center border border-t-0 border-r-0 border-l-1 border-b-1 p-7">
-                        <img src="/images/home/expleo-icon.svg" style={{ "height": "35px" }} />
+                    <div className="flex justify-center items-center border border-t-0 border-r-0 border-l-1 border-b-1 p-7 group overflow-hidden">
+                        <img src="/images/home/expleo-icon.svg" style={{ "height": "35px" }} className="transition-all duration-500 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" />
                     </div>
 
-                    <div className="flex justify-center items-center border border-b-0 border-l-0 border-r-1 border-t-1 p-5">
-                        <img src="/images/home/dvi-icons.svg" style={{ "height": "35px" }} />
+                    <div className="flex justify-center items-center border border-b-0 border-l-0 border-r-1 border-t-1 p-5 group overflow-hidden">
+                        <img src="/images/home/dvi-icons.svg" style={{ "height": "35px" }} className="transition-all duration-500 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" />
                     </div>
-                    <div className="flex justify-center items-center border border-b-0 border-r-0 p-5">
-                        <img src="/images/home/rbl-icons.svg" style={{ "height": "35px" }} />
+                    <div className="flex justify-center items-center border border-b-0 border-r-0 p-5 group overflow-hidden">
+                        <img src="/images/home/rbl-icons.svg" style={{ "height": "35px" }} className="transition-all duration-500 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" />
                     </div>
-                    <div className="flex justify-center items-center border border-b-0 border-l-0 p-5">
-                        <img src="/images/home/hayakawa-icons.svg" style={{ "height": "35px" }} />
+                    <div className="flex justify-center items-center border border-b-0 border-l-0 p-5 group overflow-hidden">
+                        <img src="/images/home/hayakawa-icons.svg" style={{ "height": "35px" }} className="transition-all duration-500 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" />
                     </div>
-                    <div className="flex justify-center items-center border border-b-0 border-l-1 border-r-0 border-t-1 p-5">
-                        <img src="/images/home/tag-icons.svg" style={{ "height": "35px" }} />
+                    <div className="flex justify-center items-center border border-b-0 border-l-1 border-r-0 border-t-1 p-5 group overflow-hidden">
+                        <img src="/images/home/tag-icons.svg" style={{ "height": "35px" }} className="transition-all duration-500 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" />
                     </div>
 
                 </div>
-                <a href="index.html#" className="lg:hidden block relative overflow-hidden border border-[#194F97] px-3 py-2 inline-flex justify-center items-center group mt-7">
-                    <span className="relative z-10 text-[#194F97] group-hover:text-white transition-colors text-sm uppercase">
+                <a href="index.html#" className="lg:hidden block relative overflow-hidden border border-primary px-3 py-2 inline-flex justify-center items-center group mt-7">
+                    <span className="relative z-10 text-primary group-hover:text-white transition-colors text-sm uppercase">
                         View all</span>
-                    <svg fill="none" height="24" className="relative z-10 ml-2 text-[#194F97] -rotate-90 group-hover:text-white transition-colors" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                    <svg fill="none" height="24" className="relative z-10 ml-2 text-primary -rotate-90 group-hover:text-white group-hover:rotate-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
                         <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
                     </svg>
-                    <span className="absolute inset-0 bg-[#194F97] transition-transform duration-300 transform -translate-x-full group-hover:translate-x-0"></span>
+                    <span className="absolute inset-0 bg-primary transition-transform duration-300 transform -translate-x-full group-hover:translate-x-0"></span>
                 </a>
             </div>
         </section>
@@ -428,7 +428,7 @@ export default function Page() {
 
 
         
-        <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 lg:py-24 xl:py-24 2xl:py-32" style={{ "paddingBottom": "3rem", "paddingTop": "1rem" }}>
+        <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 lg:min-h-screen lg:flex lg:flex-col lg:justify-center py-14 lg:py-0">
             <div className="relative">
                 <div className="grid grid-cols-12 gap-4 lg:gap-0">
 
@@ -460,7 +460,7 @@ export default function Page() {
                                         <div className="flex justify-start items-end">
                                             <h1 className="text-xl lg:text-xl xl:text-xl 2xl:text-2xl text-white font-gellix pt-2">
                                                  Revolutionizing Customer Relationship Management...                                            </h1>
-                                            <svg fill="none" height="40" className="-rotate-90 text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="40" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                            <svg fill="none" height="40" className="-rotate-90 text-white group-hover:rotate-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" viewBox="0 0 24 24" width="40" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
                                                 <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
                                             </svg>
                                         </div>
@@ -484,7 +484,7 @@ export default function Page() {
                                         <div className="flex justify-start items-end">
                                             <h1 className="text-xl lg:text-xl xl:text-xl 2xl:text-2xl text-white font-gellix pt-2">
                                                 A Comprehensive School Management System                                            </h1>
-                                            <svg fill="none" height="40" className="-rotate-90 text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="40" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                            <svg fill="none" height="40" className="-rotate-90 text-white group-hover:rotate-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" viewBox="0 0 24 24" width="40" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
                                                 <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
                                             </svg>
                                         </div>
@@ -508,7 +508,7 @@ export default function Page() {
                                         <div className="flex justify-start items-end">
                                             <h1 className="text-xl lg:text-xl xl:text-xl 2xl:text-2xl text-white font-gellix pt-2">
                                                 SIDBI's Digital Transformation: Boosting User Engagement, Operational Efficiency, and Customer Satisfaction                                            </h1>
-                                            <svg fill="none" height="40" className="-rotate-90 text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="40" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                            <svg fill="none" height="40" className="-rotate-90 text-white group-hover:rotate-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" viewBox="0 0 24 24" width="40" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
                                                 <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
                                             </svg>
                                         </div>
@@ -546,8 +546,8 @@ export default function Page() {
             <div className="flex justify-center items-center">
                 <div className="grid grid-cols-12 gap-4 mt-10">
                                             <div className="col-span-12 lg:col-span-4 md:col-span-4 custom-margin-lg customs-margin-lg-0">
-                            <div className="relative overflow-hidden">
-                                <img src="assets/front/home/ebook_image_1721628330.PNG" className="transition-transform transform-gpu hover:scale-105 duration-300" />
+                            <div className="relative overflow-hidden group">
+                                <img src="assets/front/home/ebook_image_1721628330.PNG" className="transition-transform transform-gpu group-hover:scale-110 duration-500 w-full" />
                                 <div className="absolute top-0">
                                     <div className="p-5 w-64 lg:w-72 xl:w-80 2xl:w-96 h-44 lg:h-48 xl:h-52 2xl:h-56">
                                         <h3 className="text-white font-gellix text-lg lg:text-xl xl:text-xl 2xl:text-2xl">
@@ -555,7 +555,7 @@ export default function Page() {
                                         <a href="/e-book-01.php%3Febook_content_id=1" className="relative overflow-hidden border border-gray-100 px-3 py-2 inline-flex justify-center items-center group mt-7 lg:mt-8 xl:mt-8 2xl:mt-10">
                                             <span className="relative z-10 text-white group-hover:text-black transition-colors duration-300 text-sm uppercase">Learn
                                                 More</span>
-                                            <svg fill="none" height="24" className="relative z-10 ml-2 text-white -rotate-90 group-hover:text-black transition-colors duration-300" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                            <svg fill="none" height="24" className="relative z-10 ml-2 text-white -rotate-90 group-hover:text-black group-hover:rotate-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
                                                 <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
                                             </svg>
                                             <span className="absolute inset-0 bg-white transition-transform duration-300 transform -translate-x-full group-hover:translate-x-0"></span>
@@ -565,8 +565,8 @@ export default function Page() {
                             </div>
                         </div>
                                             <div className="col-span-12 lg:col-span-4 md:col-span-4 custom-margin-lg customs-margin-lg-1">
-                            <div className="relative overflow-hidden">
-                                <img src="assets/front/home/ebook_image_1721628762.PNG" className="transition-transform transform-gpu hover:scale-105 duration-300" />
+                            <div className="relative overflow-hidden group">
+                                <img src="assets/front/home/ebook_image_1721628762.PNG" className="transition-transform transform-gpu group-hover:scale-110 duration-500 w-full" />
                                 <div className="absolute top-0">
                                     <div className="p-5 w-64 lg:w-72 xl:w-80 2xl:w-96 h-44 lg:h-48 xl:h-52 2xl:h-56">
                                         <h3 className="text-white font-gellix text-lg lg:text-xl xl:text-xl 2xl:text-2xl">
@@ -574,7 +574,7 @@ export default function Page() {
                                         <a href="/e-book-01.php%3Febook_content_id=2" className="relative overflow-hidden border border-gray-100 px-3 py-2 inline-flex justify-center items-center group mt-7 lg:mt-8 xl:mt-8 2xl:mt-10">
                                             <span className="relative z-10 text-white group-hover:text-black transition-colors duration-300 text-sm uppercase">Learn
                                                 More</span>
-                                            <svg fill="none" height="24" className="relative z-10 ml-2 text-white -rotate-90 group-hover:text-black transition-colors duration-300" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                            <svg fill="none" height="24" className="relative z-10 ml-2 text-white -rotate-90 group-hover:text-black group-hover:rotate-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
                                                 <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
                                             </svg>
                                             <span className="absolute inset-0 bg-white transition-transform duration-300 transform -translate-x-full group-hover:translate-x-0"></span>
@@ -584,8 +584,8 @@ export default function Page() {
                             </div>
                         </div>
                                             <div className="col-span-12 lg:col-span-4 md:col-span-4 custom-margin-lg customs-margin-lg-2">
-                            <div className="relative overflow-hidden">
-                                <img src="assets/front/home/ebook_image_1721628861.PNG" className="transition-transform transform-gpu hover:scale-105 duration-300" />
+                            <div className="relative overflow-hidden group">
+                                <img src="assets/front/home/ebook_image_1721628861.PNG" className="transition-transform transform-gpu group-hover:scale-110 duration-500 w-full" />
                                 <div className="absolute top-0">
                                     <div className="p-5 w-64 lg:w-72 xl:w-80 2xl:w-96 h-44 lg:h-48 xl:h-52 2xl:h-56">
                                         <h3 className="text-white font-gellix text-lg lg:text-xl xl:text-xl 2xl:text-2xl">
@@ -593,7 +593,7 @@ export default function Page() {
                                         <a href="/e-book-01.php%3Febook_content_id=3" className="relative overflow-hidden border border-gray-100 px-3 py-2 inline-flex justify-center items-center group mt-7 lg:mt-8 xl:mt-8 2xl:mt-10">
                                             <span className="relative z-10 text-white group-hover:text-black transition-colors duration-300 text-sm uppercase">Learn
                                                 More</span>
-                                            <svg fill="none" height="24" className="relative z-10 ml-2 text-white -rotate-90 group-hover:text-black transition-colors duration-300" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                            <svg fill="none" height="24" className="relative z-10 ml-2 text-white -rotate-90 group-hover:text-black group-hover:rotate-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
                                                 <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
                                             </svg>
                                             <span className="absolute inset-0 bg-white transition-transform duration-300 transform -translate-x-full group-hover:translate-x-0"></span>
@@ -608,7 +608,7 @@ export default function Page() {
         </section>
         
         
-        <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto pt-14 lg:pt-24 xl:pt-24 2xl:pt-32">
+        <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto lg:min-h-screen lg:flex lg:flex-col lg:justify-center py-14 lg:py-0">
             <div className="grid grid-cols-12 lg:gap-4 px-4 md:px-6 lg:px-8">
                 <div className="lg:col-span-5 col-span-12">
                     <h3 className="text-xs lg:text-sm xl:text-sm 2xl:text-base text-[#194F97] font-medium">Testimonials</h3>
@@ -621,7 +621,7 @@ export default function Page() {
             <div className="">
                 <div id="one-time" className="owl-carousel owl-theme mt-10 md:px-6 lg:px-8">
                     
-                    <div className="border bg-[#F1F2FF] grid grid-cols-6 gap-10 lg:p-7 p-5">
+                    <div className="border bg-[#F1F2FF] grid grid-cols-6 gap-10 lg:p-7 p-5 hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-300">
                         <div className="lg:col-span-2 col-span-6">
                             <div className="hidden lg:block flex flex-col justify-between items-center h-full lg:space-y-5 space-y-3">
                                 <img src="/images/home/hayakawa-icon-testimonial.png" className="mb-auto" />
@@ -668,7 +668,7 @@ export default function Page() {
                         </div>
                     </div>
                     
-                    <div className="border bg-[#FFF6F7] grid grid-cols-6 gap-10 lg:p-7 p-5">
+                    <div className="border bg-[#FFF6F7] grid grid-cols-6 gap-10 lg:p-7 p-5 hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-300">
                         <div className="lg:col-span-2 col-span-6">
                             <div className="hidden lg:block flex flex-col justify-between items-center h-full lg:space-y-5 space-y-3">
                                 <img src="/images/home/alpha-icon-testimonial.png" className="mb-auto" />
@@ -717,7 +717,7 @@ export default function Page() {
                         </div>
                     </div>
                     
-                    <div className="border bg-[#F8F9FF] grid grid-cols-6 gap-10 lg:p-7 p-5">
+                    <div className="border bg-[#F8F9FF] grid grid-cols-6 gap-10 lg:p-7 p-5 hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-300">
                         <div className="lg:col-span-2 col-span-6">
                             <div className="lg:block hidden flex flex-col justify-between items-center h-full lg:space-y-5 space-y-3">
                                 <img src="/images/home/tantra-icon-testimonial.png" className="mb-auto" />
@@ -761,7 +761,7 @@ export default function Page() {
                         </div>
                     </div>
                     
-                    <div className="border bg-[#F4FFFE] grid grid-cols-6 gap-10 lg:p-7 p-5">
+                    <div className="border bg-[#F4FFFE] grid grid-cols-6 gap-10 lg:p-7 p-5 hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-300">
                         <div className="lg:col-span-2 col-span-6">
                             <div className="hidden lg:block flex flex-col justify-between items-center h-full lg:space-y-5 space-y-3">
                                 <img src="/images/home/armtech-icon-testimonial.png" className="mb-auto" />
@@ -854,7 +854,7 @@ export default function Page() {
 
                                     </a><div><a href="/blog/articles/a-360-view-of-business-process-management-system" target="_blank">
                                         </a><a href="index.html#">
-                                            <svg fill="none" height="28" className="-rotate-90 rounded-full text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                            <svg fill="none" height="28" className="-rotate-90 rounded-full text-white group-hover:rotate-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
                                                 <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
                                             </svg>
                                         </a>
@@ -890,7 +890,7 @@ export default function Page() {
                                             </div>
                                             </a><div><a href="https://touchmarkdes.com/blog/articles/blog/articles/key-factors-why-business-process-management-systems-are-successful" target="_blank">
                                                 </a><a href="index.html#">
-                                                    <svg fill="none" height="28" className="-rotate-90 rounded-full text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                                    <svg fill="none" height="28" className="-rotate-90 rounded-full text-white group-hover:rotate-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
                                                         <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
                                                     </svg>
                                                 </a>
@@ -920,7 +920,7 @@ export default function Page() {
                                             </div>
                                             </a><div><a href="/blog/articles/increasing-your-productivity-using-business-process-management-system" target="_blank">
                                                 </a><a href="index.html#">
-                                                    <svg fill="none" height="28" className="-rotate-90 rounded-full text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                                    <svg fill="none" height="28" className="-rotate-90 rounded-full text-white group-hover:rotate-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
                                                         <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
                                                     </svg>
                                                 </a>
@@ -954,7 +954,7 @@ export default function Page() {
                                         </div>
                                         </a><div><a href="/blog/articles/real-time-iot-applications-in-the-retail-industry" target="_blank">
                                             </a><a href="index.html#">
-                                                <svg fill="none" height="28" className="-rotate-90 rounded-full text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                                <svg fill="none" height="28" className="-rotate-90 rounded-full text-white group-hover:rotate-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
                                                     <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
                                                 </svg>
                                             </a>
@@ -986,7 +986,7 @@ export default function Page() {
                                             </div>
                                             </a><div><a href="/blog/articles/why-internet-of-things" target="_blank">
                                                 </a><a href="index.html#">
-                                                    <svg fill="none" height="28" className="-rotate-90 rounded-full text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                                    <svg fill="none" height="28" className="-rotate-90 rounded-full text-white group-hover:rotate-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
                                                         <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
                                                     </svg>
                                                 </a>
@@ -1019,7 +1019,7 @@ export default function Page() {
                                     </div>
                                     </a><div><a href="/blog/articles/why-internet-of-things" target="_blank">
                                         </a><a href="index.html#">
-                                            <svg fill="none" height="28" className="-rotate-90 rounded-full text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                            <svg fill="none" height="28" className="-rotate-90 rounded-full text-white group-hover:rotate-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
                                                 <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
                                             </svg>
                                         </a>
@@ -1049,7 +1049,7 @@ export default function Page() {
                                     </div>
                                     </a><div><a href="/blog/articles/how-does-iot-benefit-the-supply-chain" target="_blank">
                                         </a><a href="index.html#">
-                                            <svg fill="none" height="28" className="-rotate-90 rounded-full text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                            <svg fill="none" height="28" className="-rotate-90 rounded-full text-white group-hover:rotate-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
                                                 <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
                                             </svg>
                                         </a>
@@ -1080,7 +1080,7 @@ export default function Page() {
                                     </div>
                                     </a><div><a href="/blog/articles/key-benefits-in-hiring-a-dedicated-software-development-team" target="_blank">
                                         </a><a href="index.html#">
-                                            <svg fill="none" height="28" className="-rotate-90 rounded-full text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                            <svg fill="none" height="28" className="-rotate-90 rounded-full text-white group-hover:rotate-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
                                                 <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
                                             </svg>
                                         </a>
@@ -1110,7 +1110,7 @@ export default function Page() {
                                     </div>
                                     </a><div><a href="/blog/articles/the-value-of-big-data-analysis-in-the-retail-industry" target="_blank">
                                         </a><a href="index.html#">
-                                            <svg fill="none" height="28" className="-rotate-90 rounded-full text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
+                                            <svg fill="none" height="28" className="-rotate-90 rounded-full text-white group-hover:rotate-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
                                                 <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
                                             </svg>
                                         </a>

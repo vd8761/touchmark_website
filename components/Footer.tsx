@@ -38,13 +38,13 @@ export default function Footer() {
               </h1>
               <div className="flex justify-start lg:justify-center items-center space-x-2 lg:mt-0 mt-4">
                 <a href="https://in.linkedin.com/company/touchmarkdes" target="_blank" rel="noopener noreferrer">
-                  <img src="/images/home/icons/linkedin-icon.svg" className="h-10" alt="LinkedIn" />
+                  <img src="/images/home/icons/linkedin-icon.svg" className="h-10 transition-all duration-300 hover:scale-110 hover:-translate-y-1" alt="LinkedIn" />
                 </a>
                 <a href="https://www.instagram.com/touchmarkdes/" target="_blank" rel="noopener noreferrer">
-                  <img src="/images/home/icons/instagram-icon.svg" className="h-10" alt="Instagram" />
+                  <img src="/images/home/icons/instagram-icon.svg" className="h-10 transition-all duration-300 hover:scale-110 hover:-translate-y-1" alt="Instagram" />
                 </a>
                 <a href="https://www.facebook.com/touchmarkdes/" target="_blank" rel="noopener noreferrer">
-                  <img src="/images/home/icons/fb-icon.svg" className="h-10" alt="Facebook" />
+                  <img src="/images/home/icons/fb-icon.svg" className="h-10 transition-all duration-300 hover:scale-110 hover:-translate-y-1" alt="Facebook" />
                 </a>
               </div>
             </div>
@@ -79,7 +79,7 @@ export default function Footer() {
                           />
                           <button 
                             type="submit" 
-                            className="absolute top-2 right-2 bg-[#194F97] text-white px-4 h-10 inline-flex items-center justify-center uppercase text-xs font-semibold group hover:bg-blue-800 transition"
+                            className="absolute top-2 right-2 bg-primary text-white px-4 h-10 inline-flex items-center justify-center uppercase text-xs font-semibold group transition-all duration-300 hover:scale-105 active:scale-95 hover:bg-primary/90 hover:shadow-md"
                           >
                             Subscribe
                           </button>
@@ -100,7 +100,7 @@ export default function Footer() {
                           />
                           <button 
                             type="submit" 
-                            className="absolute top-2 right-2 bg-[#194F97] text-white px-4 h-10 inline-flex items-center justify-center uppercase text-xs font-semibold group hover:bg-blue-800 transition"
+                            className="absolute top-2 right-2 bg-primary text-white px-4 h-10 inline-flex items-center justify-center uppercase text-xs font-semibold group transition-all duration-300 hover:scale-105 active:scale-95 hover:bg-primary/90 hover:shadow-md"
                           >
                             Confirm
                           </button>
@@ -160,13 +160,13 @@ export default function Footer() {
               <div>
                 <p className="font-semibold font-gellix text-white text-lg xl:text-xl">Quick Links</p>
                 <ul className="mt-5 space-y-3 text-sm text-white/80">
-                  <li><a href="/about-us" className="hover:text-white transition">Who we are</a></li>
-                  <li><a href="/technology-consulting-service" className="hover:text-white transition">What we do</a></li>
-                  <li><a href="/case-study?id=1" className="hover:text-white transition">Case Studies</a></li>
-                  <li><a href="/blog" className="hover:text-white transition">Blogs</a></li>
-                  <li><a href="/#ebook" className="hover:text-white transition">E-Books</a></li>
-                  <li><a href="/client-partner" className="hover:text-white transition">Clients and Partners</a></li>
-                  <li><a href="/contact-us" className="hover:text-white transition">Contact us</a></li>
+                  <li><a href="/about-us" className="hover:text-white hover:translate-x-1.5 transition-all duration-300 ease-out inline-block">Who we are</a></li>
+                  <li><a href="/technology-consulting-service" className="hover:text-white hover:translate-x-1.5 transition-all duration-300 ease-out inline-block">What we do</a></li>
+                  <li><a href="/case-study?id=1" className="hover:text-white hover:translate-x-1.5 transition-all duration-300 ease-out inline-block">Case Studies</a></li>
+                  <li><a href="/blog" className="hover:text-white hover:translate-x-1.5 transition-all duration-300 ease-out inline-block">Blogs</a></li>
+                  <li><a href="/#ebook" className="hover:text-white hover:translate-x-1.5 transition-all duration-300 ease-out inline-block">E-Books</a></li>
+                  <li><a href="/client-partner" className="hover:text-white hover:translate-x-1.5 transition-all duration-300 ease-out inline-block">Clients and Partners</a></li>
+                  <li><a href="/contact-us" className="hover:text-white hover:translate-x-1.5 transition-all duration-300 ease-out inline-block">Contact us</a></li>
                 </ul>
               </div>
             </div>
@@ -176,13 +176,13 @@ export default function Footer() {
               <div>
                 <p className="font-semibold font-gellix text-white text-lg xl:text-xl">Services</p>
                 <ul className="mt-5 space-y-3 text-sm text-white/80">
-                  <li><a href="/technology-consulting-service" className="hover:text-white transition">Technology Consulting</a></li>
-                  <li><a href="/cloud" className="hover:text-white transition">Cloud</a></li>
-                  <li><a href="/sales-commerce-service" className="hover:text-white transition">Sales & Commerce</a></li>
-                  <li><a href="/metaverse-service" className="hover:text-white transition">Metaverse</a></li>
-                  <li><a href="/data-analytics-service" className="hover:text-white transition">Data & Analytics</a></li>
-                  <li><a href="/ai-ml-service" className="hover:text-white transition">AI & ML</a></li>
-                  <li><a href="/robotic-process-automation-service" className="hover:text-white transition">Robotic Process Automation</a></li>
+                  <li><a href="/technology-consulting-service" className="hover:text-white hover:translate-x-1.5 transition-all duration-300 ease-out inline-block">Technology Consulting</a></li>
+                  <li><a href="/cloud" className="hover:text-white hover:translate-x-1.5 transition-all duration-300 ease-out inline-block">Cloud</a></li>
+                  <li><a href="/sales-commerce-service" className="hover:text-white hover:translate-x-1.5 transition-all duration-300 ease-out inline-block">Sales & Commerce</a></li>
+                  <li><a href="/metaverse-service" className="hover:text-white hover:translate-x-1.5 transition-all duration-300 ease-out inline-block">Metaverse</a></li>
+                  <li><a href="/data-analytics-service" className="hover:text-white hover:translate-x-1.5 transition-all duration-300 ease-out inline-block">Data & Analytics</a></li>
+                  <li><a href="/ai-ml-service" className="hover:text-white hover:translate-x-1.5 transition-all duration-300 ease-out inline-block">AI & ML</a></li>
+                  <li><a href="/robotic-process-automation-service" className="hover:text-white hover:translate-x-1.5 transition-all duration-300 ease-out inline-block">Robotic Process Automation</a></li>
                 </ul>
               </div>
             </div>
@@ -192,16 +192,16 @@ export default function Footer() {
               <div>
                 <p className="font-semibold font-gellix text-white text-lg xl:text-xl">Industries</p>
                 <ul className="mt-5 space-y-3 text-sm text-white/80">
-                  <li><a href="/aerospace-industry" className="hover:text-white transition">Aerospace & Defence</a></li>
-                  <li><a href="/bfsi-industry" className="hover:text-white transition">BFSI</a></li>
-                  <li><a href="/esg-industry" className="hover:text-white transition">Environmental, social, & governance</a></li>
-                  <li><a href="/fmcg-industry" className="hover:text-white transition">Fast-Moving Consumer Goods</a></li>
-                  <li><a href="/healthcare-industry" className="hover:text-white transition">Healthcare</a></li>
-                  <li><a href="/mining-industry" className="hover:text-white transition">Mining</a></li>
-                  <li><a href="/green-tech-industry" className="hover:text-white transition">Geospatial Tech</a></li>
-                  <li><a href="/media-entertainment-industry" className="hover:text-white transition">Media and Entertainment</a></li>
-                  <li><a href="/real-estate-industry" className="hover:text-white transition">Real Estate</a></li>
-                  <li><a href="/travel-tourism-industry" className="hover:text-white transition">Travel and Tourism</a></li>
+                  <li><a href="/aerospace-industry" className="hover:text-white hover:translate-x-1.5 transition-all duration-300 ease-out inline-block">Aerospace & Defence</a></li>
+                  <li><a href="/bfsi-industry" className="hover:text-white hover:translate-x-1.5 transition-all duration-300 ease-out inline-block">BFSI</a></li>
+                  <li><a href="/esg-industry" className="hover:text-white hover:translate-x-1.5 transition-all duration-300 ease-out inline-block">Environmental, social, & governance</a></li>
+                  <li><a href="/fmcg-industry" className="hover:text-white hover:translate-x-1.5 transition-all duration-300 ease-out inline-block">Fast-Moving Consumer Goods</a></li>
+                  <li><a href="/healthcare-industry" className="hover:text-white hover:translate-x-1.5 transition-all duration-300 ease-out inline-block">Healthcare</a></li>
+                  <li><a href="/mining-industry" className="hover:text-white hover:translate-x-1.5 transition-all duration-300 ease-out inline-block">Mining</a></li>
+                  <li><a href="/green-tech-industry" className="hover:text-white hover:translate-x-1.5 transition-all duration-300 ease-out inline-block">Geospatial Tech</a></li>
+                  <li><a href="/media-entertainment-industry" className="hover:text-white hover:translate-x-1.5 transition-all duration-300 ease-out inline-block">Media and Entertainment</a></li>
+                  <li><a href="/real-estate-industry" className="hover:text-white hover:translate-x-1.5 transition-all duration-300 ease-out inline-block">Real Estate</a></li>
+                  <li><a href="/travel-tourism-industry" className="hover:text-white hover:translate-x-1.5 transition-all duration-300 ease-out inline-block">Travel and Tourism</a></li>
                 </ul>
               </div>
             </div>

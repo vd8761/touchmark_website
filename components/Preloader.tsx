@@ -3,19 +3,26 @@ import { useEffect, useState } from 'react';
 
 export default function Preloader() {
   const [visible, setVisible] = useState(true);
+  const [fade, setFade] = useState(false);
 
   useEffect(() => {
     // Hide loader once document is fully loaded
     const handleLoad = () => {
-      setVisible(false);
+      setFade(true);
+      setTimeout(() => setVisible(false), 300);
     };
 
     if (document.readyState === 'complete') {
-      setVisible(false);
+      setFade(true);
+      const timer = setTimeout(() => setVisible(false), 300);
+      return () => clearTimeout(timer);
     } else {
       window.addEventListener('load', handleLoad);
       // Fallback timeout to ensure loader goes away in case load event already fired
-      const timer = setTimeout(() => setVisible(false), 800);
+      const timer = setTimeout(() => {
+        setFade(true);
+        setTimeout(() => setVisible(false), 300);
+      }, 800);
       return () => {
         window.removeEventListener('load', handleLoad);
         clearTimeout(timer);
@@ -26,7 +33,14 @@ export default function Preloader() {
   if (!visible) return null;
 
   return (
-    <div id="loader-wrapper">
+    <div 
+      id="loader-wrapper" 
+      style={{ 
+        opacity: fade ? 0 : 1, 
+        visibility: fade ? 'hidden' : 'visible', 
+        transition: 'opacity 300ms ease-out, visibility 300ms ease-out' 
+      }}
+    >
       <div className="loader"></div>
       <style jsx global>{`
         #loader-wrapper {
@@ -67,3 +81,4 @@ export default function Preloader() {
     </div>
   );
 }
+

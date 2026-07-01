@@ -448,8 +448,8 @@ export default function Page() {
                                         
                                         <div className="lg:col-span-3 col-span-6 space-y-2 mt-2.5">
                                             <h3 className="font-inter font-medium">Type of Project<span className="required-star">*</span></h3>
-                                            <select id="project_type" name="project_type" className="bg-white border border-[#194F97] text-gray-500 text-sm focus:ring-blue-500 block w-full p-2.5 rounded-none">
-                                                <option selected={true} disabled={true} value="">Type of Projects</option>
+                                            <select id="project_type" name="project_type" defaultValue="" className="bg-white border border-[#194F97] text-gray-500 text-sm focus:ring-blue-500 block w-full p-2.5 rounded-none">
+                                                <option disabled={true} value="">Type of Projects</option>
                                                 <option value="Mobile Application">Mobile Application</option>
                                                 <option value="AI Chat BOT">AI Chat BOT</option>
                                                 <option value="Business Solutions">Business Solutions</option>
