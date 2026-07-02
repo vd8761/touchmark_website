@@ -2,6 +2,7 @@
 
 import Script from "next/script";
 import RecentBlogs from "@/components/RecentBlogs";
+import CaseStudiesAccordion from "@/components/CaseStudiesAccordion";
 
 export default function Page() {
   return (
@@ -285,11 +286,11 @@ export default function Page() {
                                 </div>
                             </div>
                         </div>
-                        <div className="bg-[#194F97] col-span-12 lg:col-span-6 md:col-span-6 flex justify-center items-center">
+                        <div className="bg-[#194F97] col-span-12 lg:col-span-6 md:col-span-6 flex justify-center items-center relative">
                             <div className="2xl:py-16 xl:py-8 lg:py-8 md:px-8 md:py-8  2xl:p-0 xl:p-7 lg:p-7 relative">
                                 <img src="/images/home/about-us-15+year-image.png" className="lg:block hidden sm:hidden md:block" />
                             </div>
-                            <img src="/images/home/ripple-white-img.png" className="absolute top-0 right-0" />
+                            <img src="/images/home/ripple-white-img.png" className="absolute bottom-0 right-0" />
                         </div>
                     </div>
                 </div>
@@ -360,28 +361,28 @@ export default function Page() {
             <div className="lg:block hidden">
                 <div className="grid grid-cols-4 mt-16">
                     <div className="flex justify-center items-center border border-t-0 border-l-0 border-r-1 border-b-1 p-5 lg:p-7 xl:p-14 2xl:p-10 group overflow-hidden">
-                        <img src="/images/home/colcola-icons.svg" style={{ "height": "40px" }} className="transition-all duration-500 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" />
+                        <img src="/images/home/colcola-icons.svg" style={{ "height": "40px" }} className="transition-all duration-500 group-hover:scale-110" />
                     </div>
                     <div className="flex justify-center items-center border border-t-0 p-5 lg:p-7 xl:p-14 2xl:p-10 group overflow-hidden">
-                        <img src="/images/home/sidbi-icons.svg" style={{ "height": "50px" }} className="transition-all duration-500 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" />
+                        <img src="/images/home/sidbi-icons.svg" style={{ "height": "50px" }} className="transition-all duration-500 group-hover:scale-110" />
                     </div>
                     <div className="flex justify-center items-center border border-t-0 p-5 lg:p-7 xl:p-14 2xl:p-10 group overflow-hidden">
-                        <img src="/images/home/rupinis-icons.svg" style={{ "height": "40px" }} className="transition-all duration-500 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" />
+                        <img src="/images/home/rupinis-icons.svg" style={{ "height": "40px" }} className="transition-all duration-500 group-hover:scale-110" />
                     </div>
                     <div className="flex justify-center items-center border border-t-0 border-r-0 border-l-1 border-b-1 p-5 lg:p-7 xl:p-14 2xl:p-10 group overflow-hidden">
-                        <img src="/images/home/expleo-icon.svg" style={{ "height": "45px" }} className="transition-all duration-500 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" />
+                        <img src="/images/home/expleo-icon.svg" style={{ "height": "45px" }} className="transition-all duration-500 group-hover:scale-110" />
                     </div>
                     <div className="flex justify-center items-center border border-b-0 border-l-0 border-r-1 border-t-1 p-5 lg:p-7 xl:p-10 2xl:p-8 group overflow-hidden">
-                        <img src="/images/home/dvi-icons.svg" style={{ "height": "80px" }} className="transition-all duration-500 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" />
+                        <img src="/images/home/dvi-icons.svg" style={{ "height": "80px" }} className="transition-all duration-500 group-hover:scale-110" />
                     </div>
                     <div className="flex justify-center items-center border border-b-0 p-5 lg:p-7 xl:p-14 2xl:p-10 group overflow-hidden">
-                        <img src="/images/home/rbl-icons.svg" style={{ "height": "50px" }} className="transition-all duration-500 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" />
+                        <img src="/images/home/rbl-icons.svg" style={{ "height": "50px" }} className="transition-all duration-500 group-hover:scale-110" />
                     </div>
                     <div className="flex justify-center items-center border border-b-0 p-5 lg:p-7 xl:p-14 2xl:p-10 group overflow-hidden">
-                        <img src="/images/home/hayakawa-icons.svg" style={{ "height": "50px" }} className="transition-all duration-500 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" />
+                        <img src="/images/home/hayakawa-icons.svg" style={{ "height": "50px" }} className="transition-all duration-500 group-hover:scale-110" />
                     </div>
                     <div className="flex justify-center items-center border border-b-0 border-l-1 border-r-0 border-t-1 p-5 lg:p-7 xl:p-14 2xl:p-10 group overflow-hidden">
-                        <img src="/images/home/tag-icons.svg" style={{ "height": "50px" }} className="transition-all duration-500 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" />
+                        <img src="/images/home/tag-icons.svg" style={{ "height": "50px" }} className="transition-all duration-500 group-hover:scale-110" />
                     </div>
                 </div>
             </div>
@@ -389,29 +390,29 @@ export default function Page() {
             <div className="lg:hidden block">
                 <div className="grid grid-cols-2 pt-5 lg:pt-32 xl:pt-40 2xl:pt-24">
                     <div className="flex justify-center items-center border border-t-0 border-l-0 border-r-1 border-b-1 p-7 group overflow-hidden">
-                        <img src="/images/home/colcola-icons.svg" style={{ "height": "35px" }} className="transition-all duration-500 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" />
+                        <img src="/images/home/colcola-icons.svg" style={{ "height": "35px" }} className="transition-all duration-500 group-hover:scale-110" />
                     </div>
                     <div className="flex justify-center items-center border border-t-0 border-r-0 p-7 group overflow-hidden">
-                        <img src="/images/home/sidbi-icons.svg" style={{ "height": "35px" }} className="transition-all duration-500 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" />
+                        <img src="/images/home/sidbi-icons.svg" style={{ "height": "35px" }} className="transition-all duration-500 group-hover:scale-110" />
                     </div>
                     <div className="flex justify-center items-center border border-t-0 border-l-0 p-7 group overflow-hidden">
-                        <img src="/images/home/rupinis-icons.svg" style={{ "height": "35px" }} className="transition-all duration-500 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" />
+                        <img src="/images/home/rupinis-icons.svg" style={{ "height": "35px" }} className="transition-all duration-500 group-hover:scale-110" />
                     </div>
                     <div className="flex justify-center items-center border border-t-0 border-r-0 border-l-1 border-b-1 p-7 group overflow-hidden">
-                        <img src="/images/home/expleo-icon.svg" style={{ "height": "35px" }} className="transition-all duration-500 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" />
+                        <img src="/images/home/expleo-icon.svg" style={{ "height": "35px" }} className="transition-all duration-500 group-hover:scale-110" />
                     </div>
 
                     <div className="flex justify-center items-center border border-b-0 border-l-0 border-r-1 border-t-1 p-5 group overflow-hidden">
-                        <img src="/images/home/dvi-icons.svg" style={{ "height": "35px" }} className="transition-all duration-500 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" />
+                        <img src="/images/home/dvi-icons.svg" style={{ "height": "35px" }} className="transition-all duration-500 group-hover:scale-110" />
                     </div>
                     <div className="flex justify-center items-center border border-b-0 border-r-0 p-5 group overflow-hidden">
-                        <img src="/images/home/rbl-icons.svg" style={{ "height": "35px" }} className="transition-all duration-500 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" />
+                        <img src="/images/home/rbl-icons.svg" style={{ "height": "35px" }} className="transition-all duration-500 group-hover:scale-110" />
                     </div>
                     <div className="flex justify-center items-center border border-b-0 border-l-0 p-5 group overflow-hidden">
-                        <img src="/images/home/hayakawa-icons.svg" style={{ "height": "35px" }} className="transition-all duration-500 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" />
+                        <img src="/images/home/hayakawa-icons.svg" style={{ "height": "35px" }} className="transition-all duration-500 group-hover:scale-110" />
                     </div>
                     <div className="flex justify-center items-center border border-b-0 border-l-1 border-r-0 border-t-1 p-5 group overflow-hidden">
-                        <img src="/images/home/tag-icons.svg" style={{ "height": "35px" }} className="transition-all duration-500 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" />
+                        <img src="/images/home/tag-icons.svg" style={{ "height": "35px" }} className="transition-all duration-500 group-hover:scale-110" />
                     </div>
 
                 </div>
@@ -431,94 +432,23 @@ export default function Page() {
         
         <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 lg:min-h-screen lg:flex lg:flex-col lg:justify-center py-14 lg:py-0">
             <div className="relative">
-                <div className="grid grid-cols-12 gap-4 lg:gap-0">
-
-                </div>
-
                 <div className="grid grid-cols-12 gap-4 mt-10 lg:mt-20">
-                    <div className="lg:col-span-4 col-span-12">
+                    <div className="lg:col-span-12 col-span-12">
                         <div>
                             <h3 className="text-xs lg:text-sm xl:text-sm 2xl:text-base text-[#194F97] font-medium">Projects
                             </h3>
-                            <h1 className="mt-1.5 lg:mt-1.5 xl:mt-3 2xl:mt-5 2xl:text-5xl xl:text-4xl lg:text-4xl text-3xl font-gellix">
-                                Check out Our Case Studies</h1>
+                            <div className="flex flex-col lg:flex-row lg:items-end justify-between">
+                                <h1 className="mt-1.5 lg:mt-1.5 xl:mt-3 2xl:mt-5 2xl:text-5xl xl:text-4xl lg:text-4xl text-3xl font-gellix">
+                                    Check out Our<br className="hidden lg:block"/>Case Studies</h1>
+                                <p className="text-[14px] lg:text-sm xl:text-sm 2xl:text-base font-inter max-w-2xl lg:text-right mt-4 lg:mt-0 lg:ml-8">
+                                    Established enterprises and emerging startups need a perfect balance of strategy, technology, analytics, and knowhow to solve everyday business challenges rises and emerging startups need a perfect balance of strategy, technology, analytics, and knowhow to solve everyday business.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div className="col-span-9 lg:block hidden"></div>
-                                            <div className="col-span-12 lg:col-span-4 md:col-span-4 custom-margin-lg custom-margin-lg-0">
-                            <a href="/case-study%3Fid=1" className="relative overflow-hidden group block cursor-pointer">
-                                <img src="assets/front/home/tc_project_1722505852.PNG" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
-                                <div className="absolute top-0 right-0">
-                                    <div className="inline-flex justify-start items-center space-x-3 p-5">
-                                        <h3 className="bg-white px-3 py-1 rounded-3xl text-black text-xs uppercase">BEAUTY</h3>
-                                        <h3 className="bg-white px-3 py-1 rounded-3xl text-black text-xs uppercase">SALOON</h3>
-                                    </div>
-                                </div>
-                                <div className="absolute inset-0 flex justify-end items-end">
-                                    <div className="w-full bg-gradient-to-t from-[#9152a8b6] to-transparent p-5 transition-opacity duration-300 group-hover:from-[#9152A8] group-hover:to-transparent">
-                                        <p className="2xl:text-base xl:text-base lg:text-xs text-base text-white font-inter">
-                                            RUPINIS</p>
-                                        <div className="flex justify-start items-end">
-                                            <h1 className="text-xl lg:text-xl xl:text-xl 2xl:text-2xl text-white font-gellix pt-2">
-                                                 Revolutionizing Customer Relationship Management...                                            </h1>
-                                            <svg fill="none" height="40" className="-rotate-90 text-white group-hover:rotate-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" viewBox="0 0 24 24" width="40" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
-                                                <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                                            <div className="col-span-12 lg:col-span-4 md:col-span-4 custom-margin-lg custom-margin-lg-1">
-                            <a href="/case-study%3Fid=2" className="relative overflow-hidden group block cursor-pointer">
-                                <img src="assets/front/home/tc_project_1722505900.PNG" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
-                                <div className="absolute top-0 right-0">
-                                    <div className="inline-flex justify-start items-center space-x-3 p-5">
-                                        <h3 className="bg-white px-3 py-1 rounded-3xl text-black text-xs uppercase">SCHOOL</h3>
-                                        <h3 className="bg-white px-3 py-1 rounded-3xl text-black text-xs uppercase">ACADAMIC</h3>
-                                    </div>
-                                </div>
-                                <div className="absolute inset-0 flex justify-end items-end">
-                                    <div className="w-full bg-gradient-to-t from-[#9152a8b6] to-transparent p-5 transition-opacity duration-300 group-hover:from-[#9152A8] group-hover:to-transparent">
-                                        <p className="2xl:text-base xl:text-base lg:text-xs text-base text-white font-inter">
-                                            School Management System</p>
-                                        <div className="flex justify-start items-end">
-                                            <h1 className="text-xl lg:text-xl xl:text-xl 2xl:text-2xl text-white font-gellix pt-2">
-                                                A Comprehensive School Management System                                            </h1>
-                                            <svg fill="none" height="40" className="-rotate-90 text-white group-hover:rotate-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" viewBox="0 0 24 24" width="40" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
-                                                <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                                            <div className="col-span-12 lg:col-span-4 md:col-span-4 custom-margin-lg custom-margin-lg-2">
-                            <a href="/case-study%3Fid=3" className="relative overflow-hidden group block cursor-pointer">
-                                <img src="assets/front/home/tc_project_1722505935.PNG" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
-                                <div className="absolute top-0 right-0">
-                                    <div className="inline-flex justify-start items-center space-x-3 p-5">
-                                        <h3 className="bg-white px-3 py-1 rounded-3xl text-black text-xs uppercase">BANKING</h3>
-                                        <h3 className="bg-white px-3 py-1 rounded-3xl text-black text-xs uppercase">FINANCE</h3>
-                                    </div>
-                                </div>
-                                <div className="absolute inset-0 flex justify-end items-end">
-                                    <div className="w-full bg-gradient-to-t from-[#9152a8b6] to-transparent p-5 transition-opacity duration-300 group-hover:from-[#9152A8] group-hover:to-transparent">
-                                        <p className="2xl:text-base xl:text-base lg:text-xs text-base text-white font-inter">
-                                            SIDBI</p>
-                                        <div className="flex justify-start items-end">
-                                            <h1 className="text-xl lg:text-xl xl:text-xl 2xl:text-2xl text-white font-gellix pt-2">
-                                                SIDBI's Digital Transformation: Boosting User Engagement, Operational Efficiency, and Customer Satisfaction                                            </h1>
-                                            <svg fill="none" height="40" className="-rotate-90 text-white group-hover:rotate-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" viewBox="0 0 24 24" width="40" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
-                                                <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    
                 </div>
+
+                <CaseStudiesAccordion />
 
             </div>
         </section>

@@ -24,7 +24,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#043E8C]">
+    <footer className="bg-primary">
       <div className="space-y-8 py-16 lg:space-y-16 2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 font-inter">
         
         {/* Top Footer: Social Links & Newsletter Subscription */}

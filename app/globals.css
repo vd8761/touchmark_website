@@ -40,6 +40,8 @@
   --color-secondary: #ffffff;
   --font-primary: Gellix, sans-serif;
   --font-secondary: Inter, sans-serif;
+  --font-gellix: Gellix, sans-serif;
+  --font-inter: Inter, sans-serif;
 }
 
 body {
@@ -49,6 +51,11 @@ body {
 }
 
 /* Custom classes from original src/input.css and styling needs */
+.font-gellix, .font-primary {
+  font-family: 'Gellix', sans-serif !important;
+  font-weight: 600 !important;
+}
+
 .only-lg {
   display: none;
 }

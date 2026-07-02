@@ -48,7 +48,7 @@ export default function RecentBlogs() {
         {/* Header Section */}
         <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-6 border-b border-white/10 pb-10 mb-12">
           <div className="max-w-3xl">
-            <p className="font-secondary text-xs lg:text-sm font-semibold tracking-widest text-white/70 uppercase">Blogs</p>
+            <p className="font-secondary text-xs lg:text-sm font-semibold tracking-widest text-white/70">Blogs</p>
             <h2 className="font-primary text-3xl md:text-4xl lg:text-5xl font-bold text-white mt-2">Recent Blogs</h2>
             <p className="font-secondary text-white/80 text-sm lg:text-base leading-relaxed mt-4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea c.
