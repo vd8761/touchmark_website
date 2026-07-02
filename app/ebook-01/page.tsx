@@ -1,6 +1,7 @@
 'use client';
 import { use } from "react";
 import Script from "next/script";
+import EbookForm from "@/components/EbookForm";
 
 interface PageProps {
   searchParams: Promise<{ ebook_content_id?: string }>;
@@ -290,7 +291,7 @@ export default function Page({ searchParams }: PageProps) {
                         </a>
                        
                         <h1 className="mt-4 text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-gellix">
-                           Agile Methodology Revolutionizes Software Engineering</h1>
+                           Advancing Aerospace Innovations And Future Directions In The Industry</h1>
                         <p className="mt-4 lg:mt-4 xl:mt-7 2xl:mt-10 text-base lg:text-lg xl:text-xl 2xl:text-2xl font-inter">
                             Lorem ipsum dolor sit amet kebuyeha consectetur Tristique consectetur sit tellus ut in in                        </p>
                      
@@ -304,118 +305,51 @@ export default function Page({ searchParams }: PageProps) {
 
 
         
-        <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 py-14 lg:pt-24 xl:py-24 2xl:py-32">
-            <div className="grid grid-cols-12 gap-4">
-                <div className="lg:col-span-5 col-span-12">
-                
-                    <div className="py-5 lg:py-10 xl:py-10 2xl:py-16 flex justify-center items-center lg:mt-0 mt-3">
-                        <img src="assets/front/home/ebook_thumb_1721628330.PNG" />
-                    </div>
+               <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 py-14 lg:pt-24 xl:py-24 2xl:py-32">
+            <div className="grid grid-cols-12 gap-8 items-start">
+                <div className="lg:col-span-6 col-span-12">
+                  <h2 className="text-2xl lg:text-3xl font-primary text-gray-950 mb-4 font-bold">What you can learn</h2>
+                  <p className="text-sm font-secondary text-gray-600 mb-4 leading-relaxed">
+                    Lorem ipsum dolor sit amet consectetur. Aliquam malesuada eu magna volutpat amet. Lectus aliquam morbi suspendisse mauris et eget in volutpat tortor. Sit amet risus justo pellentesque diam nisi fringilla fusce purus. Ipsum dictum velit porta elementum enim neque.
+                  </p>
+                  <p className="text-sm font-secondary text-gray-600 mb-6 leading-relaxed">
+                    Our commitment to holistic beauty ensures that every client experiences a transformative journey towards inner and outer radiance."
+                  </p>
+                  
+                  <div className="py-5 lg:py-6 flex justify-start items-center">
+                    <img src="assets/front/home/ebook_thumb_1721628330.PNG" className="max-w-[200px] shadow-sm border border-gray-100 rounded" alt="Ebook Cover" />
+                  </div>
 
+                  <ul className="space-y-4 mb-6">
+                    <li className="flex items-start gap-3">
+                      <img src="/images/ebooks/tick.svg" className="w-5 h-5 flex-shrink-0 mt-0.5" alt="tick" />
+                      <span className="text-sm font-secondary text-gray-600 leading-relaxed">
+                        Lorem ipsum dolor sit amet consectetur. Ut ultrices ac id arcu quis. Vitae nibh consequat tempor penatibus et pharetra condimentum. Et laoreet ullamcorpe.
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <img src="/images/ebooks/tick.svg" className="w-5 h-5 flex-shrink-0 mt-0.5" alt="tick" />
+                      <span className="text-sm font-secondary text-gray-600 leading-relaxed">
+                        Lorem ipsum dolor sit amet consectetur. Ut ultrices ac id arcu quis. Vitae nibh consequat tempor penatibus et pharetra condimentum. Et laoreet ullamcorpe.
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <img src="/images/ebooks/tick.svg" className="w-5 h-5 flex-shrink-0 mt-0.5" alt="tick" />
+                      <span className="text-sm font-secondary text-gray-600 leading-relaxed">
+                        Lorem ipsum dolor sit amet consectetur. Ut ultrices ac id arcu quis. Vitae nibh consequat tempor penatibus et pharetra condimentum. Et laoreet ullamcorpe.
+                      </span>
+                    </li>
+                  </ul>
 
-               <ul className="space-y-5" style={{ "boxSizing": "border-box", "listStyle": "none", "margin": "0px", "padding": "0px", "fontFamily": "Inter", "fontSize": "medium", "border": "0px solid #e5e7eb" }}>
-<li className="flex justify-start items-start space-x-3" style={{ "boxSizing": "border-box", "display": "flex", "alignItems": "flex-start", "justifyContent": "flex-start", "border": "0px solid #e5e7eb" }}>
-<p className="text-[14px] lg:text-sm xl:text-sm 2xl:text-base font-inter mt-2 lg:mt-1" style={{ "boxSizing": "border-box", "fontSize": "1rem", "lineHeight": "1.5rem", "margin": "0.25rem calc(0.75rem * var(--tw-space-x-reverse)) 0px calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))", "border": "0px solid #e5e7eb" }}>&nbsp;</p>
-</li>
-<li className="flex justify-start items-start space-x-3" style={{ "boxSizing": "border-box", "display": "flex", "alignItems": "flex-start", "justifyContent": "flex-start", "marginTop": "calc(1.25rem * calc(1 - var(--tw-space-y-reverse)))", "marginBottom": "calc(1.25rem * var(--tw-space-y-reverse))", "border": "0px solid #e5e7eb" }}>
-<p className="text-[14px] lg:text-sm xl:text-sm 2xl:text-base font-inter mt-2 lg:mt-1" style={{ "boxSizing": "border-box", "fontSize": "1rem", "lineHeight": "1.5rem", "margin": "0.25rem calc(0.75rem * var(--tw-space-x-reverse)) 0px calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))", "border": "0px solid #e5e7eb" }}>Lorem ipsum dolor sit amet consectetur. Ut ultrices ac id arcu quis. Vitae nibh consequat tempor penatibus et pharetra condimentum. Et laoreet ullamcorpe.</p>
-</li>
-<li className="flex justify-start items-start space-x-3" style={{ "boxSizing": "border-box", "display": "flex", "alignItems": "flex-start", "justifyContent": "flex-start", "marginTop": "calc(1.25rem * calc(1 - var(--tw-space-y-reverse)))", "marginBottom": "calc(1.25rem * var(--tw-space-y-reverse))", "border": "0px solid #e5e7eb" }}>
-<p className="text-[14px] lg:text-sm xl:text-sm 2xl:text-base font-inter mt-2 lg:mt-1" style={{ "boxSizing": "border-box", "fontSize": "1rem", "lineHeight": "1.5rem", "margin": "0.25rem calc(0.75rem * var(--tw-space-x-reverse)) 0px calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))", "border": "0px solid #e5e7eb" }}>Lorem ipsum dolor sit amet consectetur. Ut ultrices ac id arcu quis. Vitae nibh consequat tempor penatibus et pharetra condimentum. Et laoreet ullamcorpe.</p>
-</li>
-<li className="flex justify-start items-start space-x-3" style={{ "boxSizing": "border-box", "display": "flex", "alignItems": "flex-start", "justifyContent": "flex-start", "marginTop": "calc(1.25rem * calc(1 - var(--tw-space-y-reverse)))", "marginBottom": "calc(1.25rem * var(--tw-space-y-reverse))", "border": "0px solid #e5e7eb" }}>
-<p className="text-[14px] lg:text-sm xl:text-sm 2xl:text-base font-inter mt-2 lg:mt-1" style={{ "boxSizing": "border-box", "fontSize": "1rem", "lineHeight": "1.5rem", "margin": "0.25rem calc(0.75rem * var(--tw-space-x-reverse)) 0px calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))", "border": "0px solid #e5e7eb" }}>Lorem ipsum dolor sit amet consectetur. Ut ultrices ac id arcu quis. Vitae nibh consequat tempor penatibus et pharetra condimentum. Et laoreet ullamcorpe.</p>
-</li>
-</ul>                  
-
+                  <p className="italic text-base font-secondary text-gray-600 border-l-4 border-primary pl-4 py-1 leading-relaxed">
+                    “Lorem ipsum dolor sit amet consectetur. Nibh ipsum condimentum ac semper id non. Eget nibh nibh dolor auctor. Turpis sed donec eu tincidunt in.”
+                  </p>
                 </div>
-                <div className="col-span-1 lg:block hidden"></div>
-                <div className="lg:col-span-6 col-span-12 lg:my-0 my-10">
-
-  <div id="initialDiv" className="bg-white p-5 lg:p-10 border drop-shadow-md mx-auto">
-        <div className="text-center">
-            <h1 className="mt-1.5 lg:mt-1.5 xl:mt-3 2xl:mt-5 2xl:text-5xl xl:text-4xl lg:text-4xl text-3xl font-gellix">
-                Download now
-            </h1>
-            <p className="text-[14px] lg:text-sm xl:text-sm 2xl:text-base font-inter mt-5">
-                Share a few contact details and we’ll send a download link to your inbox
-            </p>
-        </div>
-        <form id="registrationForm" method="post" noValidate={true}>
-            <input type="hidden" name="g-token" id="g-token" />
-            
-            <div className="mt-5 lg:mt-10">
-                <input type="hidden" id="ebook_content_id" name="ebook_content_id" placeholder="your firstname" className="border border-[#194F97] p-3 w-full" defaultValue="1" />
-            </div>
-            <div className="mt-5 lg:mt-10">
-                <label htmlFor="ebook_name" className="block mb-2 font-bold text-gray-600">First Name<span className="required-star">*</span></label>
-                <input type="text" id="ebook_name" name="ebook_name" placeholder="your firstname" className="border border-[#194F97] p-3 w-full" />
-                <span className="error-message" id="ebook_name_error"></span>
-            </div>
-
-            <div className="mt-5">
-                <label htmlFor="ebook_lname" className="block mb-2 font-bold text-gray-600">Last Name<span className="required-star">*</span></label>
-                <input type="text" id="ebook_lname" name="ebook_lname" placeholder="your lastname" className="border border-[#194F97] p-3 w-full" />
-                <span className="error-message" id="ebook_lname_error"></span>
-            </div>
-
-            <div className="mt-5">
-                <label htmlFor="ebook_email" className="block mb-2 font-bold text-gray-600">Work Email<span className="required-star">*</span></label>
-                <input type="text" id="ebook_email" name="ebook_email" placeholder="your@company.com" className="border border-[#194F97] p-3 w-full" />
-                <span className="error-message" id="ebook_email_error"></span>
-            </div>
-
-            <div className="mt-5">
-                <label htmlFor="ebook_comname" className="block mb-2 font-bold text-gray-600">Company Name<span className="required-star">*</span></label>
-                <input type="text" id="ebook_comname" name="ebook_comname" placeholder="your Company" className="border border-[#194F97] p-3 w-full" />
-                <span className="error-message" id="ebook_comname_error"></span>
-            </div>
-
-            <div className="mt-5">
-                <p className="text-xs">By submitting this form, I am agreeing to Touchmark Descience’s <span className="text-[#194F97]">privacy policy.</span></p>
-            </div>
-
-            <button type="submit" id="ebook_submit_btn" name="submit" value="submit" className="w-full mt-10">
-                <div className="relative overflow-hidden bg-[#194F97] px-3 py-2 inline-flex justify-center items-center group w-full">
-                    <span className="relative z-10 text-white transition-colors text-sm uppercase">Submit</span>
-                    <svg fill="none" height="24" className="relative z-10 ml-2 -rotate-90 text-white transition-colors" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
-                        <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
-                    </svg>
-                    <span className="absolute inset-0 bg-blue-700 transition-transform duration-300 transform -translate-x-full group-hover:translate-x-0"></span>
+                <div className="lg:col-span-6 col-span-12 lg:mt-0 mt-8">
+                  <EbookForm ebookId="1" />
                 </div>
-            </button>
-        </form>
-    </div>
-
-    
-    <div id="successDiv" className="bg-white mx-auto" style={{ "display": "none" }}>
-  <div className="text-center">
-    <img src="assets/front/home/image_processing20191029-26493-1tfqzgm.gif" alt="img" className="mx-auto" style={{ "height": "200px" }} />
-    <h1 className="2xl:text-5xl xl:text-4xl lg:text-4xl text-3xl font-gellix">Success!</h1>
-    <p className="text-[14px] lg:text-sm xl:text-sm 2xl:text-base font-inter mt-5">Please check your email for the download link.</p>
-  </div>
-</div>
-
-
-
-    
-                    </div>
-
-                    <div className="bg-white p-5 lg:p-10 border drop-shadow-md mx-auto hidden">
-                        <div className="flex items-center justify-center">
-                            <div id="lottie-animation" className="w-1/2 h-1/2 p-5"></div>
-                          </div>
-                        <div className="text-center">
-                            <h1 className="2xl:text-5xl xl:text-4xl lg:text-4xl text-3xl font-gellix">
-                                Success!</h1>
-                            <p className="text-[14px] lg:text-sm xl:text-sm 2xl:text-base font-inter mt-5">Please check your
-                                email for the download link.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            </section></div>
+            </div>
+        </section></div>
         
         
 
@@ -1761,118 +1695,39 @@ const togglePassword = document.querySelector('#togglePassword');
                 
 
 
-        
-        <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 py-14 lg:pt-24 xl:py-24 2xl:py-32">
-            <div className="grid grid-cols-12 gap-4">
-                <div className="lg:col-span-5 col-span-12">
-                
-                    <div className="py-5 lg:py-10 xl:py-10 2xl:py-16 flex justify-center items-center lg:mt-0 mt-3">
-                        <img src="assets/front/home/ebook_thumb_1721628762.PNG" />
-                    </div>
+         <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 py-14 lg:pt-24 xl:py-24 2xl:py-32">
+            <div className="grid grid-cols-12 gap-8 items-start">
+                <div className="lg:col-span-6 col-span-12">
+                  <div className="py-5 lg:py-6 flex justify-start items-center">
+                    <img src="assets/front/home/ebook_thumb_1721628762.PNG" className="max-w-[200px] shadow-sm border border-gray-100 rounded" alt="Ebook Cover" />
+                  </div>
 
-
-               <ul className="space-y-5" style={{ "boxSizing": "border-box", "listStyle": "none", "margin": "0px", "padding": "0px", "fontFamily": "Inter", "fontSize": "medium", "border": "0px solid #e5e7eb" }}>
-<li className="flex justify-start items-start space-x-3" style={{ "boxSizing": "border-box", "display": "flex", "alignItems": "flex-start", "justifyContent": "flex-start", "border": "0px solid #e5e7eb" }}>
-<p className="text-[14px] lg:text-sm xl:text-sm 2xl:text-base font-inter mt-2 lg:mt-1" style={{ "boxSizing": "border-box", "fontSize": "1rem", "lineHeight": "1.5rem", "margin": "0.25rem calc(0.75rem * var(--tw-space-x-reverse)) 0px calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))", "border": "0px solid #e5e7eb" }}>Lorem ipsum dolor sit amet consectetur. Ut ultrices ac id arcu quis. Vitae nibh consequat tempor penatibus et pharetra condimentum. Et laoreet ullamcorpe.</p>
-</li>
-<li className="flex justify-start items-start space-x-3" style={{ "boxSizing": "border-box", "display": "flex", "alignItems": "flex-start", "justifyContent": "flex-start", "border": "0px solid #e5e7eb" }}></li>
-<li className="flex justify-start items-start space-x-3" style={{ "boxSizing": "border-box", "display": "flex", "alignItems": "flex-start", "justifyContent": "flex-start", "border": "0px solid #e5e7eb" }}>
-<p className="text-[14px] lg:text-sm xl:text-sm 2xl:text-base font-inter mt-2 lg:mt-1" style={{ "boxSizing": "border-box", "fontSize": "1rem", "lineHeight": "1.5rem", "margin": "0.25rem calc(0.75rem * var(--tw-space-x-reverse)) 0px calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))", "border": "0px solid #e5e7eb" }}>Lorem ipsum dolor sit amet consectetur. Ut ultrices ac id arcu quis. Vitae nibh consequat tempor penatibus et pharetra condimentum. Et laoreet ullamcorpe.</p>
-</li>
-<li className="flex justify-start items-start space-x-3" style={{ "boxSizing": "border-box", "display": "flex", "alignItems": "flex-start", "justifyContent": "flex-start", "border": "0px solid #e5e7eb" }}></li>
-<li className="flex justify-start items-start space-x-3" style={{ "boxSizing": "border-box", "display": "flex", "alignItems": "flex-start", "justifyContent": "flex-start", "border": "0px solid #e5e7eb" }}>
-<p className="text-[14px] lg:text-sm xl:text-sm 2xl:text-base font-inter mt-2 lg:mt-1" style={{ "boxSizing": "border-box", "fontSize": "1rem", "lineHeight": "1.5rem", "margin": "0.25rem calc(0.75rem * var(--tw-space-x-reverse)) 0px calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))", "border": "0px solid #e5e7eb" }}>Lorem ipsum dolor sit amet consectetur. Ut ultrices ac id arcu quis. Vitae nibh consequat tempor penatibus et pharetra condimentum. Et laoreet ullamcorpe.</p>
-</li>
-</ul>                  
-
+                  <ul className="space-y-4 mb-6">
+                    <li className="flex items-start gap-3">
+                      <img src="/images/ebooks/tick.svg" className="w-5 h-5 flex-shrink-0 mt-0.5" alt="tick" />
+                      <span className="text-sm font-secondary text-gray-600 leading-relaxed">
+                        Lorem ipsum dolor sit amet consectetur. Ut ultrices ac id arcu quis. Vitae nibh consequat tempor penatibus et pharetra condimentum. Et laoreet ullamcorpe.
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <img src="/images/ebooks/tick.svg" className="w-5 h-5 flex-shrink-0 mt-0.5" alt="tick" />
+                      <span className="text-sm font-secondary text-gray-600 leading-relaxed">
+                        Lorem ipsum dolor sit amet consectetur. Ut ultrices ac id arcu quis. Vitae nibh consequat tempor penatibus et pharetra condimentum. Et laoreet ullamcorpe.
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <img src="/images/ebooks/tick.svg" className="w-5 h-5 flex-shrink-0 mt-0.5" alt="tick" />
+                      <span className="text-sm font-secondary text-gray-600 leading-relaxed">
+                        Lorem ipsum dolor sit amet consectetur. Ut ultrices ac id arcu quis. Vitae nibh consequat tempor penatibus et pharetra condimentum. Et laoreet ullamcorpe.
+                      </span>
+                    </li>
+                  </ul>
                 </div>
-                <div className="col-span-1 lg:block hidden"></div>
-                <div className="lg:col-span-6 col-span-12 lg:my-0 my-10">
-
-  <div id="initialDiv" className="bg-white p-5 lg:p-10 border drop-shadow-md mx-auto">
-        <div className="text-center">
-            <h1 className="mt-1.5 lg:mt-1.5 xl:mt-3 2xl:mt-5 2xl:text-5xl xl:text-4xl lg:text-4xl text-3xl font-gellix">
-                Download now
-            </h1>
-            <p className="text-[14px] lg:text-sm xl:text-sm 2xl:text-base font-inter mt-5">
-                Share a few contact details and we’ll send a download link to your inbox
-            </p>
-        </div>
-        <form id="registrationForm" method="post" noValidate={true}>
-            <input type="hidden" name="g-token" id="g-token" />
-            
-            <div className="mt-5 lg:mt-10">
-                <input type="hidden" id="ebook_content_id" name="ebook_content_id" placeholder="your firstname" className="border border-[#194F97] p-3 w-full" defaultValue="2" />
-            </div>
-            <div className="mt-5 lg:mt-10">
-                <label htmlFor="ebook_name" className="block mb-2 font-bold text-gray-600">First Name<span className="required-star">*</span></label>
-                <input type="text" id="ebook_name" name="ebook_name" placeholder="your firstname" className="border border-[#194F97] p-3 w-full" />
-                <span className="error-message" id="ebook_name_error"></span>
-            </div>
-
-            <div className="mt-5">
-                <label htmlFor="ebook_lname" className="block mb-2 font-bold text-gray-600">Last Name<span className="required-star">*</span></label>
-                <input type="text" id="ebook_lname" name="ebook_lname" placeholder="your lastname" className="border border-[#194F97] p-3 w-full" />
-                <span className="error-message" id="ebook_lname_error"></span>
-            </div>
-
-            <div className="mt-5">
-                <label htmlFor="ebook_email" className="block mb-2 font-bold text-gray-600">Work Email<span className="required-star">*</span></label>
-                <input type="text" id="ebook_email" name="ebook_email" placeholder="your@company.com" className="border border-[#194F97] p-3 w-full" />
-                <span className="error-message" id="ebook_email_error"></span>
-            </div>
-
-            <div className="mt-5">
-                <label htmlFor="ebook_comname" className="block mb-2 font-bold text-gray-600">Company Name<span className="required-star">*</span></label>
-                <input type="text" id="ebook_comname" name="ebook_comname" placeholder="your Company" className="border border-[#194F97] p-3 w-full" />
-                <span className="error-message" id="ebook_comname_error"></span>
-            </div>
-
-            <div className="mt-5">
-                <p className="text-xs">By submitting this form, I am agreeing to Touchmark Descience’s <span className="text-[#194F97]">privacy policy.</span></p>
-            </div>
-
-            <button type="submit" id="ebook_submit_btn" name="submit" value="submit" className="w-full mt-10">
-                <div className="relative overflow-hidden bg-[#194F97] px-3 py-2 inline-flex justify-center items-center group w-full">
-                    <span className="relative z-10 text-white transition-colors text-sm uppercase">Submit</span>
-                    <svg fill="none" height="24" className="relative z-10 ml-2 -rotate-90 text-white transition-colors" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
-                        <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
-                    </svg>
-                    <span className="absolute inset-0 bg-blue-700 transition-transform duration-300 transform -translate-x-full group-hover:translate-x-0"></span>
+                <div className="lg:col-span-6 col-span-12 lg:mt-0 mt-8">
+                  <EbookForm ebookId="2" />
                 </div>
-            </button>
-        </form>
-    </div>
-
-    
-    <div id="successDiv" className="bg-white mx-auto" style={{ "display": "none" }}>
-  <div className="text-center">
-    <img src="assets/front/home/image_processing20191029-26493-1tfqzgm.gif" alt="img" className="mx-auto" style={{ "height": "200px" }} />
-    <h1 className="2xl:text-5xl xl:text-4xl lg:text-4xl text-3xl font-gellix">Success!</h1>
-    <p className="text-[14px] lg:text-sm xl:text-sm 2xl:text-base font-inter mt-5">Please check your email for the download link.</p>
-  </div>
-</div>
-
-
-
-    
-                    </div>
-
-                    <div className="bg-white p-5 lg:p-10 border drop-shadow-md mx-auto hidden">
-                        <div className="flex items-center justify-center">
-                            <div id="lottie-animation" className="w-1/2 h-1/2 p-5"></div>
-                          </div>
-                        <div className="text-center">
-                            <h1 className="2xl:text-5xl xl:text-4xl lg:text-4xl text-3xl font-gellix">
-                                Success!</h1>
-                            <p className="text-[14px] lg:text-sm xl:text-sm 2xl:text-base font-inter mt-5">Please check your
-                                email for the download link.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            </section></div>
+            </div>
+        </section></div>
         
         
 
@@ -3222,114 +3077,38 @@ const togglePassword = document.querySelector('#togglePassword');
         <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 py-14 lg:pt-24 xl:py-24 2xl:py-32">
             <div className="grid grid-cols-12 gap-4">
                 <div className="lg:col-span-5 col-span-12">
-                
-                    <div className="py-5 lg:py-10 xl:py-10 2xl:py-16 flex justify-center items-center lg:mt-0 mt-3">
-                        <img src="assets/front/home/ebook_thumb_1721628861.PNG" />
+                       <div className="py-5 lg:py-6 flex justify-start items-center">
+                        <img src="assets/front/home/ebook_thumb_1721628861.PNG" className="max-w-[200px] shadow-sm border border-gray-100 rounded" alt="Ebook Cover" />
                     </div>
 
 
-               <ul className="space-y-5" style={{ "boxSizing": "border-box", "listStyle": "none", "margin": "0px", "padding": "0px", "fontFamily": "Inter", "fontSize": "medium", "border": "0px solid #e5e7eb" }}>
-<li className="flex justify-start items-start space-x-3" style={{ "boxSizing": "border-box", "display": "flex", "alignItems": "flex-start", "justifyContent": "flex-start", "border": "0px solid #e5e7eb" }}>
-<p className="text-[14px] lg:text-sm xl:text-sm 2xl:text-base font-inter mt-2 lg:mt-1" style={{ "boxSizing": "border-box", "fontSize": "1rem", "lineHeight": "1.5rem", "margin": "0.25rem calc(0.75rem * var(--tw-space-x-reverse)) 0px calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))", "border": "0px solid #e5e7eb" }}>Lorem ipsum dolor sit amet consectetur. Ut ultrices ac id arcu quis. Vitae nibh consequat tempor penatibus et pharetra condimentum. Et laoreet ullamcorpe.</p>
-</li>
-<li className="flex justify-start items-start space-x-3" style={{ "boxSizing": "border-box", "display": "flex", "alignItems": "flex-start", "justifyContent": "flex-start", "border": "0px solid #e5e7eb" }}></li>
-<li className="flex justify-start items-start space-x-3" style={{ "boxSizing": "border-box", "display": "flex", "alignItems": "flex-start", "justifyContent": "flex-start", "border": "0px solid #e5e7eb" }}>
-<p className="text-[14px] lg:text-sm xl:text-sm 2xl:text-base font-inter mt-2 lg:mt-1" style={{ "boxSizing": "border-box", "fontSize": "1rem", "lineHeight": "1.5rem", "margin": "0.25rem calc(0.75rem * var(--tw-space-x-reverse)) 0px calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))", "border": "0px solid #e5e7eb" }}>Lorem ipsum dolor sit amet consectetur. Ut ultrices ac id arcu quis. Vitae nibh consequat tempor penatibus et pharetra condimentum. Et laoreet ullamcorpe.</p>
-</li>
-<li className="flex justify-start items-start space-x-3" style={{ "boxSizing": "border-box", "display": "flex", "alignItems": "flex-start", "justifyContent": "flex-start", "border": "0px solid #e5e7eb" }}></li>
-<li className="flex justify-start items-start space-x-3" style={{ "boxSizing": "border-box", "display": "flex", "alignItems": "flex-start", "justifyContent": "flex-start", "border": "0px solid #e5e7eb" }}>
-<p className="text-[14px] lg:text-sm xl:text-sm 2xl:text-base font-inter mt-2 lg:mt-1" style={{ "boxSizing": "border-box", "fontSize": "1rem", "lineHeight": "1.5rem", "margin": "0.25rem calc(0.75rem * var(--tw-space-x-reverse)) 0px calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))", "border": "0px solid #e5e7eb" }}>Lorem ipsum dolor sit amet consectetur. Ut ultrices ac id arcu quis. Vitae nibh consequat tempor penatibus et pharetra condimentum. Et laoreet ullamcorpe.</p>
-</li>
-</ul>                  
+                  <ul className="space-y-4 mb-6">
+                    <li className="flex items-start gap-3">
+                      <img src="/images/ebooks/tick.svg" className="w-5 h-5 flex-shrink-0 mt-0.5" alt="tick" />
+                      <span className="text-sm font-secondary text-gray-600 leading-relaxed">
+                        Lorem ipsum dolor sit amet consectetur. Ut ultrices ac id arcu quis. Vitae nibh consequat tempor penatibus et pharetra condimentum. Et laoreet ullamcorpe.
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <img src="/images/ebooks/tick.svg" className="w-5 h-5 flex-shrink-0 mt-0.5" alt="tick" />
+                      <span className="text-sm font-secondary text-gray-600 leading-relaxed">
+                        Lorem ipsum dolor sit amet consectetur. Ut ultrices ac id arcu quis. Vitae nibh consequat tempor penatibus et pharetra condimentum. Et laoreet ullamcorpe.
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <img src="/images/ebooks/tick.svg" className="w-5 h-5 flex-shrink-0 mt-0.5" alt="tick" />
+                      <span className="text-sm font-secondary text-gray-600 leading-relaxed">
+                        Lorem ipsum dolor sit amet consectetur. Ut ultrices ac id arcu quis. Vitae nibh consequat tempor penatibus et pharetra condimentum. Et laoreet ullamcorpe.
+                      </span>
+                    </li>
+                  </ul>
 
                 </div>
-                <div className="col-span-1 lg:block hidden"></div>
-                <div className="lg:col-span-6 col-span-12 lg:my-0 my-10">
-
-  <div id="initialDiv" className="bg-white p-5 lg:p-10 border drop-shadow-md mx-auto">
-        <div className="text-center">
-            <h1 className="mt-1.5 lg:mt-1.5 xl:mt-3 2xl:mt-5 2xl:text-5xl xl:text-4xl lg:text-4xl text-3xl font-gellix">
-                Download now
-            </h1>
-            <p className="text-[14px] lg:text-sm xl:text-sm 2xl:text-base font-inter mt-5">
-                Share a few contact details and we’ll send a download link to your inbox
-            </p>
-        </div>
-        <form id="registrationForm" method="post" noValidate={true}>
-            <input type="hidden" name="g-token" id="g-token" />
-            
-            <div className="mt-5 lg:mt-10">
-                <input type="hidden" id="ebook_content_id" name="ebook_content_id" placeholder="your firstname" className="border border-[#194F97] p-3 w-full" defaultValue="3" />
-            </div>
-            <div className="mt-5 lg:mt-10">
-                <label htmlFor="ebook_name" className="block mb-2 font-bold text-gray-600">First Name<span className="required-star">*</span></label>
-                <input type="text" id="ebook_name" name="ebook_name" placeholder="your firstname" className="border border-[#194F97] p-3 w-full" />
-                <span className="error-message" id="ebook_name_error"></span>
-            </div>
-
-            <div className="mt-5">
-                <label htmlFor="ebook_lname" className="block mb-2 font-bold text-gray-600">Last Name<span className="required-star">*</span></label>
-                <input type="text" id="ebook_lname" name="ebook_lname" placeholder="your lastname" className="border border-[#194F97] p-3 w-full" />
-                <span className="error-message" id="ebook_lname_error"></span>
-            </div>
-
-            <div className="mt-5">
-                <label htmlFor="ebook_email" className="block mb-2 font-bold text-gray-600">Work Email<span className="required-star">*</span></label>
-                <input type="text" id="ebook_email" name="ebook_email" placeholder="your@company.com" className="border border-[#194F97] p-3 w-full" />
-                <span className="error-message" id="ebook_email_error"></span>
-            </div>
-
-            <div className="mt-5">
-                <label htmlFor="ebook_comname" className="block mb-2 font-bold text-gray-600">Company Name<span className="required-star">*</span></label>
-                <input type="text" id="ebook_comname" name="ebook_comname" placeholder="your Company" className="border border-[#194F97] p-3 w-full" />
-                <span className="error-message" id="ebook_comname_error"></span>
-            </div>
-
-            <div className="mt-5">
-                <p className="text-xs">By submitting this form, I am agreeing to Touchmark Descience’s <span className="text-[#194F97]">privacy policy.</span></p>
-            </div>
-
-            <button type="submit" id="ebook_submit_btn" name="submit" value="submit" className="w-full mt-10">
-                <div className="relative overflow-hidden bg-[#194F97] px-3 py-2 inline-flex justify-center items-center group w-full">
-                    <span className="relative z-10 text-white transition-colors text-sm uppercase">Submit</span>
-                    <svg fill="none" height="24" className="relative z-10 ml-2 -rotate-90 text-white transition-colors" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
-                        <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
-                    </svg>
-                    <span className="absolute inset-0 bg-blue-700 transition-transform duration-300 transform -translate-x-full group-hover:translate-x-0"></span>
+                <div className="lg:col-span-6 col-span-12 lg:mt-0 mt-8">
+                  <EbookForm ebookId="3" />
                 </div>
-            </button>
-        </form>
-    </div>
-
-    
-    <div id="successDiv" className="bg-white mx-auto" style={{ "display": "none" }}>
-  <div className="text-center">
-    <img src="assets/front/home/image_processing20191029-26493-1tfqzgm.gif" alt="img" className="mx-auto" style={{ "height": "200px" }} />
-    <h1 className="2xl:text-5xl xl:text-4xl lg:text-4xl text-3xl font-gellix">Success!</h1>
-    <p className="text-[14px] lg:text-sm xl:text-sm 2xl:text-base font-inter mt-5">Please check your email for the download link.</p>
-  </div>
-</div>
-
-
-
-    
-                    </div>
-
-                    <div className="bg-white p-5 lg:p-10 border drop-shadow-md mx-auto hidden">
-                        <div className="flex items-center justify-center">
-                            <div id="lottie-animation" className="w-1/2 h-1/2 p-5"></div>
-                          </div>
-                        <div className="text-center">
-                            <h1 className="2xl:text-5xl xl:text-4xl lg:text-4xl text-3xl font-gellix">
-                                Success!</h1>
-                            <p className="text-[14px] lg:text-sm xl:text-sm 2xl:text-base font-inter mt-5">Please check your
-                                email for the download link.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            </section></div>
+            </div>
+        </section></div>
         
         
 

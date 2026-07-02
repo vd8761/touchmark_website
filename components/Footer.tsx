@@ -28,7 +28,7 @@ export default function Footer() {
       <div className="space-y-8 py-16 lg:space-y-16 2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 font-inter">
         
         {/* Top Footer: Social Links & Newsletter Subscription */}
-        <div className="grid grid-cols-12 gap-4">
+        <div className="grid grid-cols-12 gap-4 items-center">
           
           {/* Socials */}
           <div className="lg:col-span-4 col-span-12">
@@ -64,7 +64,7 @@ export default function Footer() {
             <div className="max-w-md mx-auto overflow-hidden md:max-w-xl -ml-3 lg:ml-0">
               <div className="md:flex">
                 <div className="w-full lg:p-0 p-3">
-                  <div id="formContainer" className="relative max-w-md mx-auto mt-10">
+                  <div id="formContainer" className="relative max-w-md mx-auto lg:mt-0 mt-4">
                     
                     {step === 1 && (
                       <form onSubmit={handleEmailSubmit} className="space-y-4">

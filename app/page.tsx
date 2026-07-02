@@ -482,8 +482,8 @@ export default function Page() {
                                 <div className="absolute top-0">
                                     <div className="p-5 w-64 lg:w-72 xl:w-80 2xl:w-96 h-44 lg:h-48 xl:h-52 2xl:h-56">
                                         <h3 className="text-white font-gellix text-lg lg:text-xl xl:text-xl 2xl:text-2xl">
-                                            Agile Methodology Revolutionizes Software Engineering</h3>
-                                        <a href="/e-book-01.php%3Febook_content_id=1" className="relative overflow-hidden border border-gray-100 px-3 py-2 inline-flex justify-center items-center group mt-7 lg:mt-8 xl:mt-8 2xl:mt-10">
+                                            Advancing Aerospace Innovations And Future Directions In The Industry</h3>
+                                        <a href="/ebook-01?ebook_content_id=1" className="relative overflow-hidden border border-gray-100 px-3 py-2 inline-flex justify-center items-center group mt-7 lg:mt-8 xl:mt-8 2xl:mt-10">
                                             <span className="relative z-10 text-white group-hover:text-black transition-colors duration-300 text-sm uppercase">Learn
                                                 More</span>
                                             <svg fill="none" height="24" className="relative z-10 ml-2 text-white -rotate-90 group-hover:text-black group-hover:rotate-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
@@ -502,7 +502,7 @@ export default function Page() {
                                     <div className="p-5 w-64 lg:w-72 xl:w-80 2xl:w-96 h-44 lg:h-48 xl:h-52 2xl:h-56">
                                         <h3 className="text-white font-gellix text-lg lg:text-xl xl:text-xl 2xl:text-2xl">
                                             Design and Technological Strategies Shaping the Future of UX/UI</h3>
-                                        <a href="/e-book-01.php%3Febook_content_id=2" className="relative overflow-hidden border border-gray-100 px-3 py-2 inline-flex justify-center items-center group mt-7 lg:mt-8 xl:mt-8 2xl:mt-10">
+                                        <a href="/ebook-01?ebook_content_id=2" className="relative overflow-hidden border border-gray-100 px-3 py-2 inline-flex justify-center items-center group mt-7 lg:mt-8 xl:mt-8 2xl:mt-10">
                                             <span className="relative z-10 text-white group-hover:text-black transition-colors duration-300 text-sm uppercase">Learn
                                                 More</span>
                                             <svg fill="none" height="24" className="relative z-10 ml-2 text-white -rotate-90 group-hover:text-black group-hover:rotate-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
@@ -521,7 +521,7 @@ export default function Page() {
                                     <div className="p-5 w-64 lg:w-72 xl:w-80 2xl:w-96 h-44 lg:h-48 xl:h-52 2xl:h-56">
                                         <h3 className="text-white font-gellix text-lg lg:text-xl xl:text-xl 2xl:text-2xl">
                                             Unleashing Business Potential through Open-Source Collaboration and Development</h3>
-                                        <a href="/e-book-01.php%3Febook_content_id=3" className="relative overflow-hidden border border-gray-100 px-3 py-2 inline-flex justify-center items-center group mt-7 lg:mt-8 xl:mt-8 2xl:mt-10">
+                                        <a href="/ebook-01?ebook_content_id=3" className="relative overflow-hidden border border-gray-100 px-3 py-2 inline-flex justify-center items-center group mt-7 lg:mt-8 xl:mt-8 2xl:mt-10">
                                             <span className="relative z-10 text-white group-hover:text-black transition-colors duration-300 text-sm uppercase">Learn
                                                 More</span>
                                             <svg fill="none" height="24" className="relative z-10 ml-2 text-white -rotate-90 group-hover:text-black group-hover:rotate-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" id="fi_10486492">
