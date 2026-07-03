@@ -8,7 +8,7 @@ const caseStudies = [
     title: 'RUPINIS',
     color: '#5C205F',
     logo: '/images/home/case-studies/rupinis-logo.webp',
-    image: '/assets/front/home/tc_project_1722505852.PNG',
+    image: '/assets/front/home/tc_project_1722505852.webp',
     description: 'Our goal is to become the preeminent online forum that brings people together from all walks of life via thought-provoking conversations, creating a worldwide community centred around mutual respect, curiosity, and development.\n\nOur goal is to become the preeminent online forum that brings people together from all walks of life via thought-provoking conversations, creating a worldwide community centred around mutual respect, curiosity, and development.',
     link: '/case-study?id=1',
     icon: '/images/home/case-studies/brush-icon.svg'
@@ -18,7 +18,7 @@ const caseStudies = [
     title: 'OLYMPIAD',
     color: '#4E878C',
     logo: '/images/home/case-studies/olympiad-logo.webp',
-    image: '/assets/front/home/tc_project_1722505900.PNG',
+    image: '/assets/front/home/tc_project_1722505900.webp',
     description: 'A Comprehensive School Management System that brings people together from all walks of life via thought-provoking conversations, creating a worldwide community centred around mutual respect, curiosity, and development.',
     link: '/case-study?id=2',
     icon: '/images/home/case-studies/graduation-icon.svg'
@@ -28,7 +28,7 @@ const caseStudies = [
     title: 'SIDBI',
     color: '#C4D347',
     logo: '/images/home/case-studies/sidbi-logo.webp',
-    image: '/assets/front/home/tc_project_1722505935.PNG',
+    image: '/assets/front/home/tc_project_1722505935.webp',
     description: 'SIDBI\'s Digital Transformation: Boosting User Engagement, Operational Efficiency, and Customer Satisfaction via thought-provoking conversations, creating a worldwide community.',
     link: '/case-study?id=3',
     icon: '/images/home/case-studies/bank-icon.svg'
@@ -38,7 +38,7 @@ const caseStudies = [
     title: 'DVI HOLIDAS',
     color: '#EE3E42',
     logo: '/images/home/case-studies/dvi-logo.webp',
-    image: '/assets/front/home/tc_project_1722505852.PNG',
+    image: '/assets/front/home/tc_project_1722505852.webp',
     description: 'An exceptional holiday experience that brings people together from all walks of life via thought-provoking conversations, creating a worldwide community centred around mutual respect, curiosity, and development.',
     link: '/case-study?id=4',
     icon: '/images/home/case-studies/globe-icon.svg'

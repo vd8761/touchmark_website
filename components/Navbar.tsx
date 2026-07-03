@@ -40,13 +40,13 @@ export default function Navbar() {
           <div className="flex-shrink-0">
             <a href="/" className="lg:block hidden">
               {scrolled || !isHome ? (
-                <img src="/images/tds-color-logo.png" className="h-7" alt="Logo" />
+                <img src="/images/tds-color-logo.webp" className="h-7" alt="Logo" />
               ) : (
                 <img src="/images/touchmark-logowhite.svg" className="h-7" alt="Logo" />
               )}
             </a>
             <a href="/" className="lg:hidden block">
-              <img src="/images/tds-color-logo.png" className="h-7" alt="Logo" />
+              <img src="/images/tds-color-logo.webp" className="h-7" alt="Logo" />
             </a>
           </div>
 
@@ -121,7 +121,7 @@ export default function Navbar() {
                         </div>
                       </div>
                       <div className="lg:block hidden p-3">
-                        <img src="/images/navbar-img-service.jpg" className="w-64 h-36 object-cover rounded shadow" alt="Featured Services" />
+                        <img src="/images/navbar-img-service.webp" className="w-64 h-36 object-cover rounded shadow" alt="Featured Services" />
                       </div>
                     </div>
                   </div>
@@ -187,7 +187,7 @@ export default function Navbar() {
                         </a>
                       </div>
                       <div className="lg:block hidden p-3">
-                        <img src="/images/navbar-img-industry.jpg" className="w-64 h-36 object-cover rounded shadow" alt="Featured Industries" />
+                        <img src="/images/navbar-img-industry.webp" className="w-64 h-36 object-cover rounded shadow" alt="Featured Industries" />
                       </div>
                     </div>
                   </div>

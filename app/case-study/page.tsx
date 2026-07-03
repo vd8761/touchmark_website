@@ -275,7 +275,7 @@ export default function Page({ searchParams }: PageProps) {
     
 
         
-    <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('assets/front/home/case_banner_1722575034.PNG')" }}>
+    <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('assets/front/home/case_banner_1722575034.webp')" }}>
     <div className="xl:max-w-screen-2xl 2xl:max-w-screen-2xl lg:max-w-screen-lg px-4 md:px-6 lg:px-8 mx-auto py-10 lg:py-24">
         <div className="grid grid-cols-12 lg:gap-4">
             <div className="lg:col-span-7 col-span-12 text-white text-left lg:pt-5">
@@ -317,7 +317,7 @@ export default function Page({ searchParams }: PageProps) {
             <div className="lg:col-span-1 lg:block hidden">
             </div>
             <div className="lg:col-span-5 col-span-12 lg:mt-0 mt-5 h-full">
-                <img src="assets/front/home/case_overview_1722578366.PNG" />
+                <img src="assets/front/home/case_overview_1722578366.webp" />
             </div>
         </div>
     </section>
@@ -434,7 +434,7 @@ export default function Page({ searchParams }: PageProps) {
     <section>
         <div className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto pt-14 lg:pt-24 xl:pt-24 2xl:pt-32 bg-no-repeat">
             
-             <img src="assets/front/home/case_value_1722589911.PNG" />
+             <img src="assets/front/home/case_value_1722589911.webp" />
         </div>
     </section>
         
@@ -460,7 +460,7 @@ export default function Page({ searchParams }: PageProps) {
         <div className="grid grid-cols-12 gap-4 mt-5 lg:mt-10">
                     <div className="lg:col-span-4 col-span-12">
                 <a href="/case-study%3Fid=2" className="relative overflow-hidden group block cursor-pointer">
-                    <img src="assets/front/home/tc_project_1722505900.PNG" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
+                    <img src="assets/front/home/tc_project_1722505900.webp" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
                     <div className="absolute top-0 right-0">
                         <div className="inline-flex justify-start items-center space-x-3 p-5">
                             <h3 className="bg-white px-3 py-1 rounded-3xl text-black text-xs uppercase">SCHOOL</h3>
@@ -484,7 +484,7 @@ export default function Page({ searchParams }: PageProps) {
             </div>
                         <div className="lg:col-span-4 col-span-12">
                 <a href="/case-study%3Fid=3" className="relative overflow-hidden group block cursor-pointer">
-                    <img src="assets/front/home/tc_project_1722505935.PNG" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
+                    <img src="assets/front/home/tc_project_1722505935.webp" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
                     <div className="absolute top-0 right-0">
                         <div className="inline-flex justify-start items-center space-x-3 p-5">
                             <h3 className="bg-white px-3 py-1 rounded-3xl text-black text-xs uppercase">BANKING</h3>
@@ -1338,8 +1338,8 @@ const togglePassword = document.querySelector('#togglePassword');
           window.addEventListener('scroll', function () {
         var header = document.querySelector('#navbar');
         var logo = document.querySelector('#logo');
-        var desktopLogo = './images/tds-color-logo.png';
-        var mobileLogo = './images/tds-color-logo.png';
+        var desktopLogo = './images/tds-color-logo.webp';
+        var mobileLogo = './images/tds-color-logo.webp';
 
         if (header) {
             header.classList.toggle('bg-scroll-white', window.scrollY > 0);
@@ -1666,7 +1666,7 @@ const togglePassword = document.querySelector('#togglePassword');
     
 
         
-    <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('assets/front/home/Olympiad%20case%20study%20banner.png')" }}>
+    <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('assets/front/home/Olympiad%20case%20study%20banner.webp')" }}>
     <div className="xl:max-w-screen-2xl 2xl:max-w-screen-2xl lg:max-w-screen-lg px-4 md:px-6 lg:px-8 mx-auto py-10 lg:py-24">
         <div className="grid grid-cols-12 lg:gap-4">
             <div className="lg:col-span-7 col-span-12 text-white text-left lg:pt-5">
@@ -1913,7 +1913,7 @@ const togglePassword = document.querySelector('#togglePassword');
         <div className="grid grid-cols-12 gap-4 mt-5 lg:mt-10">
                     <div className="lg:col-span-4 col-span-12">
                 <a href="/case-study%3Fid=1" className="relative overflow-hidden group block cursor-pointer">
-                    <img src="assets/front/home/tc_project_1722505852.PNG" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
+                    <img src="assets/front/home/tc_project_1722505852.webp" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
                     <div className="absolute top-0 right-0">
                         <div className="inline-flex justify-start items-center space-x-3 p-5">
                             <h3 className="bg-white px-3 py-1 rounded-3xl text-black text-xs uppercase">BEAUTY</h3>
@@ -1937,7 +1937,7 @@ const togglePassword = document.querySelector('#togglePassword');
             </div>
                         <div className="lg:col-span-4 col-span-12">
                 <a href="/case-study%3Fid=3" className="relative overflow-hidden group block cursor-pointer">
-                    <img src="assets/front/home/tc_project_1722505935.PNG" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
+                    <img src="assets/front/home/tc_project_1722505935.webp" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
                     <div className="absolute top-0 right-0">
                         <div className="inline-flex justify-start items-center space-x-3 p-5">
                             <h3 className="bg-white px-3 py-1 rounded-3xl text-black text-xs uppercase">BANKING</h3>
@@ -2791,8 +2791,8 @@ const togglePassword = document.querySelector('#togglePassword');
           window.addEventListener('scroll', function () {
         var header = document.querySelector('#navbar');
         var logo = document.querySelector('#logo');
-        var desktopLogo = './images/tds-color-logo.png';
-        var mobileLogo = './images/tds-color-logo.png';
+        var desktopLogo = './images/tds-color-logo.webp';
+        var mobileLogo = './images/tds-color-logo.webp';
 
         if (header) {
             header.classList.toggle('bg-scroll-white', window.scrollY > 0);
@@ -3119,7 +3119,7 @@ const togglePassword = document.querySelector('#togglePassword');
     
 
         
-    <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('assets/front/home/case_banner_1722575137.PNG')" }}>
+    <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('assets/front/home/case_banner_1722575137.webp')" }}>
     <div className="xl:max-w-screen-2xl 2xl:max-w-screen-2xl lg:max-w-screen-lg px-4 md:px-6 lg:px-8 mx-auto py-10 lg:py-24">
         <div className="grid grid-cols-12 lg:gap-4">
             <div className="lg:col-span-7 col-span-12 text-white text-left lg:pt-5">
@@ -3160,7 +3160,7 @@ const togglePassword = document.querySelector('#togglePassword');
             <div className="lg:col-span-1 lg:block hidden">
             </div>
             <div className="lg:col-span-5 col-span-12 lg:mt-0 mt-5 h-full">
-                <img src="assets/front/home/case_overview_1722578481.PNG" />
+                <img src="assets/front/home/case_overview_1722578481.webp" />
             </div>
         </div>
     </section>
@@ -3285,7 +3285,7 @@ const togglePassword = document.querySelector('#togglePassword');
     <section>
         <div className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto pt-14 lg:pt-24 xl:pt-24 2xl:pt-32 bg-no-repeat">
             
-             <img src="assets/front/home/case_value_1722590179.PNG" />
+             <img src="assets/front/home/case_value_1722590179.webp" />
         </div>
     </section>
         
@@ -3311,7 +3311,7 @@ const togglePassword = document.querySelector('#togglePassword');
         <div className="grid grid-cols-12 gap-4 mt-5 lg:mt-10">
                     <div className="lg:col-span-4 col-span-12">
                 <a href="/case-study%3Fid=1" className="relative overflow-hidden group block cursor-pointer">
-                    <img src="assets/front/home/tc_project_1722505852.PNG" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
+                    <img src="assets/front/home/tc_project_1722505852.webp" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
                     <div className="absolute top-0 right-0">
                         <div className="inline-flex justify-start items-center space-x-3 p-5">
                             <h3 className="bg-white px-3 py-1 rounded-3xl text-black text-xs uppercase">BEAUTY</h3>
@@ -3335,7 +3335,7 @@ const togglePassword = document.querySelector('#togglePassword');
             </div>
                         <div className="lg:col-span-4 col-span-12">
                 <a href="/case-study%3Fid=2" className="relative overflow-hidden group block cursor-pointer">
-                    <img src="assets/front/home/tc_project_1722505900.PNG" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
+                    <img src="assets/front/home/tc_project_1722505900.webp" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
                     <div className="absolute top-0 right-0">
                         <div className="inline-flex justify-start items-center space-x-3 p-5">
                             <h3 className="bg-white px-3 py-1 rounded-3xl text-black text-xs uppercase">SCHOOL</h3>
@@ -4189,8 +4189,8 @@ const togglePassword = document.querySelector('#togglePassword');
           window.addEventListener('scroll', function () {
         var header = document.querySelector('#navbar');
         var logo = document.querySelector('#logo');
-        var desktopLogo = './images/tds-color-logo.png';
-        var mobileLogo = './images/tds-color-logo.png';
+        var desktopLogo = './images/tds-color-logo.webp';
+        var mobileLogo = './images/tds-color-logo.webp';
 
         if (header) {
             header.classList.toggle('bg-scroll-white', window.scrollY > 0);

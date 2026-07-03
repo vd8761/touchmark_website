@@ -239,7 +239,7 @@ export default function Page() {
 
 
         
-        <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('/images/clients/Client-hero-banner-img.png')" }}>
+        <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('/images/clients/Client-hero-banner-img.webp')" }}>
             <div className="xl:max-w-screen-2xl 2xl:max-w-screen-2xl lg:max-w-screen-lg px-4 md:px-6 lg:px-8 mx-auto py-10 lg:py-24">
                 <div className="grid grid-cols-12 lg:gap-4">
                     <div className="lg:col-span-7 col-span-12 text-white text-left lg:pt-5">
@@ -1192,8 +1192,8 @@ const togglePassword = document.querySelector('#togglePassword');
           window.addEventListener('scroll', function () {
         var header = document.querySelector('#navbar');
         var logo = document.querySelector('#logo');
-        var desktopLogo = './images/tds-color-logo.png';
-        var mobileLogo = './images/tds-color-logo.png';
+        var desktopLogo = './images/tds-color-logo.webp';
+        var mobileLogo = './images/tds-color-logo.webp';
 
         if (header) {
             header.classList.toggle('bg-scroll-white', window.scrollY > 0);

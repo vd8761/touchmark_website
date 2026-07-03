@@ -301,7 +301,7 @@ export default function Page() {
                 
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="https://touchmarkdes.com/assets/front/home/Blog 1.png" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="https://touchmarkdes.com/assets/front/home/Blog 1.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/a-360-view-of-business-process-management-system">
@@ -316,7 +316,7 @@ export default function Page() {
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="https://touchmarkdes.com/assets/front/home/Blog 2.png" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="https://touchmarkdes.com/assets/front/home/Blog 2.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/key-factors-why-business-process-management-systems-are-successful">
@@ -331,7 +331,7 @@ export default function Page() {
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="https://touchmarkdes.com/assets/front/home/blog 3.png" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="https://touchmarkdes.com/assets/front/home/blog 3.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/increasing-your-productivity-using-business-process-management-system">
@@ -346,7 +346,7 @@ export default function Page() {
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="https://touchmarkdes.com/assets/front/home/blog 4.png" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="https://touchmarkdes.com/assets/front/home/blog 4.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/real-time-iot-applications-in-the-retail-industry">
@@ -361,7 +361,7 @@ export default function Page() {
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="../../assets/front/home/blog%205.png" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="../../assets/front/home/blog%205.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/why-internet-of-things">
@@ -376,7 +376,7 @@ export default function Page() {
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="../../assets/front/home/blog%206.png" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="../../assets/front/home/blog%206.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/how-does-iot-benefit-the-supply-chain">
@@ -391,7 +391,7 @@ export default function Page() {
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="../../assets/front/home/blog%207.png" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="../../assets/front/home/blog%207.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/key-benefits-in-hiring-a-dedicated-software-development-team">
@@ -406,7 +406,7 @@ export default function Page() {
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="../../assets/front/home/blog%208.png" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="../../assets/front/home/blog%208.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/the-value-of-big-data-analysis-in-the-retail-industry">
@@ -421,7 +421,7 @@ export default function Page() {
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="../../assets/front/home/blog%209.png" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="../../assets/front/home/blog%209.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/how-big-data-impacts-the-retail-industry">
@@ -436,7 +436,7 @@ export default function Page() {
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="../../assets/front/home/blog%2010.png" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="../../assets/front/home/blog%2010.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/enabling-big-data-for-a-better-omnichannel-experience">
@@ -451,7 +451,7 @@ export default function Page() {
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="../../assets/front/home/Agile%20blog1.png" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="../../assets/front/home/Agile%20blog1.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/how-agile-it-solutions-can-be-used-to-drive-business-growth">
@@ -496,7 +496,7 @@ export default function Page() {
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="../../assets/front/home/blog_1728975904.PNG" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="../../assets/front/home/blog_1728975904.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/smart-spending-how-it-consulting-can-help-you-achieve-more-with-less">
@@ -511,7 +511,7 @@ export default function Page() {
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="../../assets/front/home/blog_1729587230.PNG" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="../../assets/front/home/blog_1729587230.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/software-solutions-for-building-a-strong-brand-identity">
@@ -526,7 +526,7 @@ export default function Page() {
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="../../assets/front/home/blog_1730181954.JPG" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="../../assets/front/home/blog_1730181954.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/minimalist-software-development-for-business-success">
@@ -541,7 +541,7 @@ export default function Page() {
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="../../assets/front/home/website%20image%20%20Maximizing%20Global%20Expansion%20%20Digital.jpg" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="../../assets/front/home/website%20image%20%20Maximizing%20Global%20Expansion%20%20Digital.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/touchmark-descience-partnered-with-digital-ocean">
@@ -571,7 +571,7 @@ export default function Page() {
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="../../assets/front/home/website%20image%20Unlocking%20CRM%20Success%20and%20Transforming%20Customer%20Engagement%20final.jpg" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="../../assets/front/home/website%20image%20Unlocking%20CRM%20Success%20and%20Transforming%20Customer%20Engagement%20final.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/unlocking-crm-success-and-transforming-customer-engagement">
@@ -616,7 +616,7 @@ export default function Page() {
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="../../assets/front/home/blog_1733819064.jpg" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="../../assets/front/home/blog_1733819064.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/how-software-is-improving-the-healthcare-management-industry">
@@ -646,7 +646,7 @@ export default function Page() {
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="../../assets/front/home/Blog%20Website%20image.jpg" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="../../assets/front/home/Blog%20Website%20image.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/touchmark-decience-partners-with-monday-crm">
@@ -661,7 +661,7 @@ export default function Page() {
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="../../assets/front/home/Website%20image%20How%20Touchmark%20Inspires.jpg" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="../../assets/front/home/Website%20image%20How%20Touchmark%20Inspires.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/how-touchmark-inspires-breakthrough-idea-with-innovative-thinking">
@@ -677,7 +677,7 @@ Imagine in such a workplace where all the ideas no matter how unconventional, 
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="../../assets/front/home/Website%20image%20Vision%20to%20reality.jpg" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="../../assets/front/home/Website%20image%20Vision%20to%20reality.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/vision-to-reality-how-startups-can-build-scalable-software-solutions">
@@ -692,7 +692,7 @@ Imagine in such a workplace where all the ideas no matter how unconventional, 
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="../../assets/front/home/website%20image%20Building%20a%20Culture.jpg" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="../../assets/front/home/website%20image%20Building%20a%20Culture.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/building-a-culture-of-client-first-thinking-across-teams">
@@ -707,7 +707,7 @@ Imagine in such a workplace where all the ideas no matter how unconventional, 
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="../../assets/front/home/How%20Custom%20Software%20Enhances%20E-Commerce%20%20website%20image.jpg" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="../../assets/front/home/How%20Custom%20Software%20Enhances%20E-Commerce%20%20website%20image.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/cart-to-conversion-how-custom-software-enhances-e-commerce-user-experience">
@@ -722,7 +722,7 @@ Imagine in such a workplace where all the ideas no matter how unconventional, 
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="../../assets/front/home/website%20image%20DevOps%20%20Cloud%20Migration%202.jpg" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="../../assets/front/home/website%20image%20DevOps%20%20Cloud%20Migration%202.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/the-importance-of-devops-for-a-smooth-cloud-migration">
@@ -737,7 +737,7 @@ Imagine in such a workplace where all the ideas no matter how unconventional, 
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="../../assets/front/home/website%20image%20How%20AI%20and%20ML%20are%20Making%20Cloud%20Migration%20Easier%20for%20Enterprises%202.jpg" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="../../assets/front/home/website%20image%20How%20AI%20and%20ML%20are%20Making%20Cloud%20Migration%20Easier%20for%20Enterprises%202.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/how-ai-and-ml-are-making-cloud-migration-easier-for-enterprises">
@@ -752,7 +752,7 @@ Imagine in such a workplace where all the ideas no matter how unconventional, 
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="../../assets/front/home/website%20image%20How%20Enterprise%20Software%20Drives%20Efficiency%20real%20estate.jpg" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="../../assets/front/home/website%20image%20How%20Enterprise%20Software%20Drives%20Efficiency%20real%20estate.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/how-enterprise-software-drives-efficiency-in-real-estate-property-management">
@@ -767,7 +767,7 @@ Imagine in such a workplace where all the ideas no matter how unconventional, 
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="../../assets/front/home/Feb_25.jpg" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="../../assets/front/home/Feb_25.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/adapting-qa-to-agile-while-ensuring-software-quality">
@@ -782,7 +782,7 @@ Imagine in such a workplace where all the ideas no matter how unconventional, 
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="../../assets/front/home/march%2004.jpg" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="../../assets/front/home/march%2004.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/scaling-startups-in-emerging-markets-with-lean-software-development">
@@ -812,7 +812,7 @@ Imagine in such a workplace where all the ideas no matter how unconventional, 
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="../../assets/front/home/March%2018.jpg" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="../../assets/front/home/March%2018.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/adapting-qa-to-agile-while-ensuring-software-quality">
@@ -827,7 +827,7 @@ Imagine in such a workplace where all the ideas no matter how unconventional, 
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="../../assets/front/home/March%2025.jpg" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="../../assets/front/home/March%2025.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/innovation-culture-leadership-and-how-touchmark-stays-ahead-in-tech">
@@ -842,7 +842,7 @@ Imagine in such a workplace where all the ideas no matter how unconventional, 
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="../../assets/front/home/blog_1744362411.JPG" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="../../assets/front/home/blog_1744362411.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/how-ai-is-powering-industry-by-smarter-factories-faster-logistics-better-business">
@@ -857,7 +857,7 @@ Imagine in such a workplace where all the ideas no matter how unconventional, 
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="../../assets/front/home/website%20imageThe%20Role%20of%20AI%20in%20Cybersecurity.jpg" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="../../assets/front/home/website%20imageThe%20Role%20of%20AI%20in%20Cybersecurity.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/the-role-of-ai-in-cybersecurity-and-how-protecting-data-in-a-hyperconnected-world">
@@ -872,7 +872,7 @@ Imagine in such a workplace where all the ideas no matter how unconventional, 
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="../../assets/front/home/website%20image%20Quantum%20Computing%20is%20Coming.jpg" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="../../assets/front/home/website%20image%20Quantum%20Computing%20is%20Coming.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/quantum-computing-is-comingis-your-business-ready">
@@ -902,7 +902,7 @@ Imagine in such a workplace where all the ideas no matter how unconventional, 
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="../../assets/front/home/website%20image%20Blockchain%20without%20cyrpto.jpg" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="../../assets/front/home/website%20image%20Blockchain%20without%20cyrpto.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/blockchain-without-crypto-so-heres-how-it-works">
@@ -917,7 +917,7 @@ Imagine in such a workplace where all the ideas no matter how unconventional, 
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="../../assets/front/home/Website%20ImageWhy%20Cloud-Native%20is%20a%20Game%20Changer.jpg" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="../../assets/front/home/Website%20ImageWhy%20Cloud-Native%20is%20a%20Game%20Changer.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/let-me-tell-you-why-cloud-native-is-a-game-changer">
@@ -932,7 +932,7 @@ Imagine in such a workplace where all the ideas no matter how unconventional, 
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="../../assets/front/home/Website%20AI.jpg" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="../../assets/front/home/Website%20AI.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/ai-in-healthcare-isnt-sci-fi-its-real">
@@ -962,7 +962,7 @@ Imagine in such a workplace where all the ideas no matter how unconventional, 
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="../../assets/front/home/website%20How%20AI%20Agents%20Will%20Change%20the%20Way%20We%20Work%20in%20the%20Next%203%20Years.jpg" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="../../assets/front/home/website%20How%20AI%20Agents%20Will%20Change%20the%20Way%20We%20Work%20in%20the%20Next%203%20Years.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/how-ai-agents-will-change-the-way-we-work-in-the-next-3-years">
@@ -992,7 +992,7 @@ Imagine in such a workplace where all the ideas no matter how unconventional, 
                 </div>
                                 <div className="lg:col-span-4 col-span-12 group hover:shadow-xl bg-white border">
                     <div className="relative overflow-hidden">
-                        <img src="../../assets/front/home/blog_1751378001.JPG" className="transition-transform group-hover:scale-105 duration-300" />
+                        <img src="../../assets/front/home/blog_1751378001.webp" className="transition-transform group-hover:scale-105 duration-300" />
                     </div>
                     <div className="p-5 space-y-5">
                         <a href="/../articles/unleash-the-power-of-automation-in-the-cloud-your-ultimate-partner-not-your-enemy">

@@ -277,7 +277,7 @@ export default function Page() {
                     </div>
                     <div className="mt-10">
 
-                        <img src="../../assets/front/home/blog%205.png" style={{ "paddingBottom": "30px" }} />
+                        <img src="../../assets/front/home/blog%205.webp" style={{ "paddingBottom": "30px" }} />
                     </div>
                     
                     <div className="blog_desc">
@@ -368,7 +368,7 @@ export default function Page() {
                                         
                                         <div id="successAlert" className="text-dark mx-auto hidden" style={{ "width": "100%" }}>
                                             <div style={{ "display": "flex" }}>
-                                                <img src="../../assets/front/home/correct.png" style={{ "width": "64px", "height": "64px", "borderRadius": "50%", "marginRight": "24px", "marginTop": "8px" }} />
+                                                <img src="../../assets/front/home/correct.webp" style={{ "width": "64px", "height": "64px", "borderRadius": "50%", "marginRight": "24px", "marginTop": "8px" }} />
                                                 <span>
                                                     <h1 style={{ "fontSize": "32px" }} className="font-gellix">Thank you!</h1>
                                                     <p className="text-dark/80" style={{ "fontSize": "16px" }}>Subscribed Successfully</p>
@@ -404,7 +404,7 @@ export default function Page() {
                 
                                     <div className="lg:col-span-3 col-span-12 relative overflow-hidden group h-[300px] lg:h-[350px] xl:h-[400px]">
                         <a href="/a-360-view-of-business-process-management-system">
-                            <img src="https://touchmarkdes.com/assets/front/home/Blog 1.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full h-full object-cover" />
+                            <img src="https://touchmarkdes.com/assets/front/home/Blog 1.webp" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full h-full object-cover" />
                             <div className="absolute top-0 right-0">
                                 <div className="inline-flex justify-start items-center space-x-3 p-5"></div>
                             </div>
@@ -433,7 +433,7 @@ export default function Page() {
 
                                     <div className="lg:col-span-3 col-span-12 relative overflow-hidden group h-[300px] lg:h-[350px] xl:h-[400px]">
                         <a href="/key-factors-why-business-process-management-systems-are-successful">
-                            <img src="https://touchmarkdes.com/assets/front/home/Blog 2.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full h-full object-cover" />
+                            <img src="https://touchmarkdes.com/assets/front/home/Blog 2.webp" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full h-full object-cover" />
                             <div className="absolute top-0 right-0">
                                 <div className="inline-flex justify-start items-center space-x-3 p-5"></div>
                             </div>
@@ -462,7 +462,7 @@ export default function Page() {
 
                                     <div className="lg:col-span-3 col-span-12 relative overflow-hidden group h-[300px] lg:h-[350px] xl:h-[400px]">
                         <a href="/increasing-your-productivity-using-business-process-management-system">
-                            <img src="https://touchmarkdes.com/assets/front/home/blog 3.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full h-full object-cover" />
+                            <img src="https://touchmarkdes.com/assets/front/home/blog 3.webp" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full h-full object-cover" />
                             <div className="absolute top-0 right-0">
                                 <div className="inline-flex justify-start items-center space-x-3 p-5"></div>
                             </div>
@@ -491,7 +491,7 @@ export default function Page() {
 
                                     <div className="lg:col-span-3 col-span-12 relative overflow-hidden group h-[300px] lg:h-[350px] xl:h-[400px]">
                         <a href="/real-time-iot-applications-in-the-retail-industry">
-                            <img src="https://touchmarkdes.com/assets/front/home/blog 4.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full h-full object-cover" />
+                            <img src="https://touchmarkdes.com/assets/front/home/blog 4.webp" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full h-full object-cover" />
                             <div className="absolute top-0 right-0">
                                 <div className="inline-flex justify-start items-center space-x-3 p-5"></div>
                             </div>
@@ -1367,8 +1367,8 @@ const togglePassword = document.querySelector('#togglePassword');
           window.addEventListener('scroll', function() {
         var header = document.querySelector('#navbar');
         var logo = document.querySelector('#logo');
-        var desktopLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
-        var mobileLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
+        var desktopLogo = 'https://touchmarkdes.com/images/tds-color-logo.webp';
+        var mobileLogo = 'https://touchmarkdes.com/images/tds-color-logo.webp';
 
         if (header) {
             header.classList.toggle('bg-scroll-white', window.scrollY > 0);

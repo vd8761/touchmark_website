@@ -240,7 +240,7 @@ export default function Page() {
         
         <div className="w-full flex h-screen">
             <div className="grid grid-cols-12 w-full md:pr-6 lg:pr-8 lg:gap-0 gap-4">
-                <div className="lg:col-span-5 col-span-12 bg-cover lg:order-1 order-3" style={{ "backgroundImage": "url('/images/contact-us/contact-us-left-bg.png')" }}>
+                <div className="lg:col-span-5 col-span-12 bg-cover lg:order-1 order-3" style={{ "backgroundImage": "url('/images/contact-us/contact-us-left-bg.webp')" }}>
                     <div className="2xl:mt-40 xl:mt-32 lg:mt-32 mt-5 lg:pb-0 pb-7">
                         
                         <div>
@@ -1253,8 +1253,8 @@ const togglePassword = document.querySelector('#togglePassword');
           window.addEventListener('scroll', function() {
         var header = document.querySelector('#navbar');
         var logo = document.querySelector('#logo');
-        var desktopLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
-        var mobileLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
+        var desktopLogo = 'https://touchmarkdes.com/images/tds-color-logo.webp';
+        var mobileLogo = 'https://touchmarkdes.com/images/tds-color-logo.webp';
 
         if (header) {
             header.classList.toggle('bg-scroll-white', window.scrollY > 0);

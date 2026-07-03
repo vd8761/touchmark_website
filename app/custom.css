@@ -244,7 +244,7 @@ input[type="search"]::-webkit-search-cancel-button {
         }
 
 .save-icon.filled {
-            background-image: url('/images/save-instagram.png');
+            background-image: url('/images/save-instagram.webp');
             /* Replace with your filled image path */
         }
 

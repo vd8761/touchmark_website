@@ -239,7 +239,7 @@ export default function Page() {
 
 
         
-                <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('assets/front/home/fm_banner_1721883690.PNG')" }}>
+                <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('assets/front/home/fm_banner_1721883690.webp')" }}>
             <div className="xl:max-w-screen-2xl 2xl:max-w-screen-2xl lg:max-w-screen-lg px-4 md:px-6 lg:px-8 mx-auto py-10 lg:py-24">
                 <div className="grid grid-cols-12 lg:gap-4">
                     <div className="lg:col-span-7 col-span-12 text-white text-left lg:pt-5">
@@ -269,7 +269,7 @@ export default function Page() {
             </div>
             <div className="grid grid-cols-12 mt-10">
                 <div className="2xl:col-span-5 lg:col-span-5 col-span-12 flex justify-center items-center">
-                    <img src="assets/front/home/fm_overview_1721883748.PNG" className="" />
+                    <img src="assets/front/home/fm_overview_1721883748.webp" className="" />
                 </div>
                 <div className="2xl:col-span-1 xl:col-span-1 lg:block hidden"></div>
                 <div className="lg:col-span-6 col-span-12 flex justify-center items-center lg:mt-0 mt-5">
@@ -322,12 +322,12 @@ export default function Page() {
                                     <div className="group mt-[12px] xl:mt-[0px] 2xl:mt-[20px] xl:h-36 2xl:h-auto">
                                         
                                         <div className="block group-hover:hidden">
-                                            <img src="assets/front/home/fm_service_1721883949.PNG" />
+                                            <img src="assets/front/home/fm_service_1721883949.webp" />
                                         </div>
 
                                         
                                         <div className="hidden group-hover:block">
-                                            <img src="assets/front/home/fm_service_hover_1721883949.PNG" />
+                                            <img src="assets/front/home/fm_service_hover_1721883949.webp" />
                                         </div>
                                     </div>
                                 </div>
@@ -349,12 +349,12 @@ export default function Page() {
                                     <div className="group mt-[12px] xl:mt-[0px] 2xl:mt-[20px] xl:h-36 2xl:h-auto">
                                         
                                         <div className="block group-hover:hidden">
-                                            <img src="assets/front/home/fm_service_1721883974.PNG" />
+                                            <img src="assets/front/home/fm_service_1721883974.webp" />
                                         </div>
 
                                         
                                         <div className="hidden group-hover:block">
-                                            <img src="assets/front/home/fm_service_hover_1721883974.PNG" />
+                                            <img src="assets/front/home/fm_service_hover_1721883974.webp" />
                                         </div>
                                     </div>
                                 </div>
@@ -376,12 +376,12 @@ export default function Page() {
                                     <div className="group mt-[12px] xl:mt-[0px] 2xl:mt-[20px] xl:h-36 2xl:h-auto">
                                         
                                         <div className="block group-hover:hidden">
-                                            <img src="assets/front/home/fm_service_1721883995.PNG" />
+                                            <img src="assets/front/home/fm_service_1721883995.webp" />
                                         </div>
 
                                         
                                         <div className="hidden group-hover:block">
-                                            <img src="assets/front/home/fm_service_hover_1721883995.PNG" />
+                                            <img src="assets/front/home/fm_service_hover_1721883995.webp" />
                                         </div>
                                     </div>
                                 </div>
@@ -403,12 +403,12 @@ export default function Page() {
                                     <div className="group mt-[12px] xl:mt-[0px] 2xl:mt-[20px] xl:h-36 2xl:h-auto">
                                         
                                         <div className="block group-hover:hidden">
-                                            <img src="assets/front/home/fm_service_1721884025.PNG" />
+                                            <img src="assets/front/home/fm_service_1721884025.webp" />
                                         </div>
 
                                         
                                         <div className="hidden group-hover:block">
-                                            <img src="assets/front/home/fm_service_hover_1721884025.PNG" />
+                                            <img src="assets/front/home/fm_service_hover_1721884025.webp" />
                                         </div>
                                     </div>
                                 </div>
@@ -442,7 +442,7 @@ export default function Page() {
 	    
                                     <div className="lg:col-span-3 col-span-12 relative overflow-hidden group h-[300px] lg:h-[350px] xl:h-[400px]">
                         <a href="/blog/articles/a-360-view-of-business-process-management-system">
-                            <img src="https://touchmarkdes.com/assets/front/home/Blog 1.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full h-full object-cover" />
+                            <img src="https://touchmarkdes.com/assets/front/home/Blog 1.webp" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full h-full object-cover" />
                             <div className="absolute top-0 right-0">
                                 <div className="inline-flex justify-start items-center space-x-3 p-5"></div>
                             </div>
@@ -471,7 +471,7 @@ export default function Page() {
 
                                     <div className="lg:col-span-3 col-span-12 relative overflow-hidden group h-[300px] lg:h-[350px] xl:h-[400px]">
                         <a href="/blog/articles/key-factors-why-business-process-management-systems-are-successful">
-                            <img src="https://touchmarkdes.com/assets/front/home/Blog 2.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full h-full object-cover" />
+                            <img src="https://touchmarkdes.com/assets/front/home/Blog 2.webp" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full h-full object-cover" />
                             <div className="absolute top-0 right-0">
                                 <div className="inline-flex justify-start items-center space-x-3 p-5"></div>
                             </div>
@@ -500,7 +500,7 @@ export default function Page() {
 
                                     <div className="lg:col-span-3 col-span-12 relative overflow-hidden group h-[300px] lg:h-[350px] xl:h-[400px]">
                         <a href="/blog/articles/increasing-your-productivity-using-business-process-management-system">
-                            <img src="https://touchmarkdes.com/assets/front/home/blog 3.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full h-full object-cover" />
+                            <img src="https://touchmarkdes.com/assets/front/home/blog 3.webp" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full h-full object-cover" />
                             <div className="absolute top-0 right-0">
                                 <div className="inline-flex justify-start items-center space-x-3 p-5"></div>
                             </div>
@@ -529,7 +529,7 @@ export default function Page() {
 
                                     <div className="lg:col-span-3 col-span-12 relative overflow-hidden group h-[300px] lg:h-[350px] xl:h-[400px]">
                         <a href="/blog/articles/real-time-iot-applications-in-the-retail-industry">
-                            <img src="https://touchmarkdes.com/assets/front/home/blog 4.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full h-full object-cover" />
+                            <img src="https://touchmarkdes.com/assets/front/home/blog 4.webp" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full h-full object-cover" />
                             <div className="absolute top-0 right-0">
                                 <div className="inline-flex justify-start items-center space-x-3 p-5"></div>
                             </div>
@@ -1393,8 +1393,8 @@ const togglePassword = document.querySelector('#togglePassword');
           window.addEventListener('scroll', function () {
         var header = document.querySelector('#navbar');
         var logo = document.querySelector('#logo');
-        var desktopLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
-        var mobileLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
+        var desktopLogo = 'https://touchmarkdes.com/images/tds-color-logo.webp';
+        var mobileLogo = 'https://touchmarkdes.com/images/tds-color-logo.webp';
 
         if (header) {
             header.classList.toggle('bg-scroll-white', window.scrollY > 0);

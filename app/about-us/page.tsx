@@ -239,7 +239,7 @@ export default function Page() {
 
 
         
-        <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('/images/about/about-hero-banner.png')" }}>
+        <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('/images/about/about-hero-banner.webp')" }}>
             <div className="xl:max-w-screen-2xl 2xl:max-w-screen-2xl lg:max-w-screen-lg px-4 md:px-6 lg:px-8 mx-auto py-10 lg:py-24">
                 <div className="grid grid-cols-12 lg:gap-4">
                     <div className="lg:col-span-7 col-span-12 text-white text-left lg:pt-5">
@@ -412,7 +412,7 @@ export default function Page() {
 
                 <div className="lg:col-span-6 col-span-12 flex justify-end items-center order-1 lg:order-2 lg:mt-0 mt-2.5">
                     <div className="flex justify-end items-end">
-                        <img src="/images/about/bharathiraja-ceo-img.png" />
+                        <img src="/images/about/bharathiraja-ceo-img.webp" />
                     </div>
                 </div>
             </div>
@@ -432,7 +432,7 @@ export default function Page() {
             </div>
             <div className="grid grid-cols-12 lg:gap-8">
                 <div className="lg:col-span-6 col-span-12 flex justify-center items-end lg:mt-0 mt-2.5">
-                    <img src="/images/about/mohanraaj-cto-img.png" className="" />
+                    <img src="/images/about/mohanraaj-cto-img.webp" className="" />
                 </div>
                 <div className="lg:col-span-6 col-span-12 flex justify-start items-center">
                     <div>
@@ -507,39 +507,72 @@ export default function Page() {
         <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 py-14 lg:py-24 xl:py-24 2xl:py-32">
             <div className="grid grid-cols-12 lg:gap-8">
                 <div className="lg:col-span-6 col-span-12">
-                    <h3 className="text-xs lg:text-sm xl:text-sm 2xl:text-base text-[#194F97] font-medium">Explore</h3>
-                    <h1 className="mt-1.5 lg:mt-1.5 xl:mt-3 2xl:mt-5 2xl:text-5xl xl:text-4xl lg:text-3xl text-3xl font-gellix">
+                    <h3 className="text-xs lg:text-sm xl:text-sm 2xl:text-base text-primary font-secondary font-medium">Explore</h3>
+                    <h1 className="mt-1.5 lg:mt-1.5 xl:mt-3 2xl:mt-5 2xl:text-5xl xl:text-4xl lg:text-3xl text-3xl font-primary text-foreground">
                         Life at Touchmark</h1>
                 </div>
-                <div className="lg:col-span-6 lg:block hidden">
-                </div>
-            </div>
-
-            <div id="one-time" className="owl-carousel owl-theme mt-10">
-                
-                <div className="grid grid-cols-12 ">
-                    <div className="lg:col-span-12 col-span-12 flex justify-center items-end lg:order-1 order-3 lg:pt-0 pt-5">
-                        <img src="/images/group1.jpg" className="" />
+                <div className="lg:col-span-6 col-span-12 mt-4 lg:mt-0 flex items-center justify-between">
+                    <p className="text-xs lg:text-sm xl:text-base text-foreground/80 font-secondary leading-relaxed lg:pl-4 max-w-[80%]">
+                        Introducing the Brilliant Minds Driving Touchmark Descience Forward: Get to Know Our Exceptional Team
+                    </p>
+                    <div className="flex space-x-3 items-center">
+                        <button className="w-10 h-10 rounded-full border border-primary text-primary flex items-center justify-center hover:bg-primary hover:text-white transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                            </svg>
+                        </button>
+                        <button className="w-10 h-10 rounded-full border border-primary text-primary flex items-center justify-center hover:bg-primary hover:text-white transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </button>
                     </div>
-                    
                 </div>
-                
-                
             </div>
 
-            
-            
-
-            
-            
-
+            <div className="relative bg-primary-light mt-32 lg:mt-48 w-full overflow-visible rounded-none">
+                <div className="grid grid-cols-12 gap-8 items-stretch overflow-visible">
+                    <div className="lg:col-span-4 col-span-12 relative flex justify-center lg:justify-start items-end min-h-[300px] lg:min-h-0 overflow-visible">
+                        <img 
+                            src="/images/about/arumugam-profile.webp" 
+                            alt="Arumugam Murugan" 
+                            className="w-auto max-h-[350px] lg:max-h-none object-contain object-bottom -mt-20 lg:mt-0 lg:absolute lg:bottom-0 lg:left-0 lg:h-[145%] xl:h-[150%] z-10" 
+                        />
+                    </div>
+                    <div className="lg:col-span-8 col-span-12 py-10 lg:py-14 px-8 lg:px-16 flex flex-col justify-center">
+                        <h2 className="font-primary text-2xl lg:text-3xl xl:text-4xl text-neutral-900 font-bold tracking-tight">
+                            How we Deliver a Project :
+                        </h2>
+                        <p className="font-secondary text-xs lg:text-sm xl:text-base text-neutral-800 leading-relaxed mt-4 lg:mt-6">
+                            With over 20 years of experience, we specialize in creating tailored IT solutions for
+                            medium-sized businesses and corporations. Our priority is aligning with your business
+                            goals, and we take pride in the work we do and the clients we servrem ipsum dolor sit
+                            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor With over
+                            20 years of experience, we specialize in creating tailored IT solutions for medium-sized
+                            businesses and corporations. Our priority is aligning with your business goals, and we
+                            take pride in the work we do and e pride in the work we do and the clients we servrem
+                            ipsum dolor ng with your business goals, and we take pride in the work we do and the
+                            clients we servrem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labor With over 20 years of experience.
+                        </p>
+                        <div className="mt-6 lg:mt-8">
+                            <h4 className="font-secondary text-base lg:text-lg xl:text-xl font-bold text-neutral-900">
+                                Arumugam Murugan
+                            </h4>
+                            <p className="font-secondary text-xs lg:text-sm text-neutral-600 mt-1">
+                                IT Delivery Head
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         
 
 
         
         <section>
-            <div className="relative lg:h-[686px] h-full lg:w-full flex items-center justify-center text-center bg-cover bg-center" style={{ "backgroundImage": "url('/images/about/bg-scroll-logo.png')" }}>
+            <div className="relative lg:h-[686px] h-full lg:w-full flex items-center justify-center text-center bg-cover bg-center" style={{ "backgroundImage": "url('/images/about/bg-scroll-logo.webp')" }}>
                 <div className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 py-14 lg:py-16 xl:py-16 2xl:py-24">
                     <div className="grid grid-cols-12 lg:gap-8 lg:mt-0 mt-4">
                         <div className="lg:col-span-5 col-span-12 text-white text-left flex justify-start items-center">
@@ -563,44 +596,44 @@ export default function Page() {
 
                                     <div className="scroll-container col-span-2 space-y-2">
                                         <div className="scroll-content">
-                                            <img src="/images/about/coca-cola-logo.png" className="mt-3" />
-                                            <img src="/images/about/tag-logo.png" className="mt-3" />
-                                            <img src="/images/about/sidbi-logo.png" className="mt-3" />
-                                            <img src="/images/about/rupinis-logo.png" className="mt-3" />
-                                            <img src="/images/about/rare-logo.png" className="mt-3" />
-                                            <img src="/images/about/expleo-logo.png" className="mt-3" />
-                                            <img src="/images/about/rbl-bank-logo.png" className="mt-3" />
-                                            <img src="/images/about/coii-logo.png" className="mt-3" />
-                                            <img src="/images/about/switch-barath-logo.png" className="mt-3" />
+                                            <img src="/images/about/coca-cola-logo.webp" className="mt-3" />
+                                            <img src="/images/about/tag-logo.webp" className="mt-3" />
+                                            <img src="/images/about/sidbi-logo.webp" className="mt-3" />
+                                            <img src="/images/about/rupinis-logo.webp" className="mt-3" />
+                                            <img src="/images/about/rare-logo.webp" className="mt-3" />
+                                            <img src="/images/about/expleo-logo.webp" className="mt-3" />
+                                            <img src="/images/about/rbl-bank-logo.webp" className="mt-3" />
+                                            <img src="/images/about/coii-logo.webp" className="mt-3" />
+                                            <img src="/images/about/switch-barath-logo.webp" className="mt-3" />
                                         </div>
                                     </div>
 
                                     <div className="col-span-2 space-y-2 scroll-container-rev">
                                         <div className="scroll-content-rev" id="scrollContentRev">
-                                            <img src="/images/about/tag-logo.png" className="mt-3" />
-                                            <img src="/images/about/coii-logo.png" className="mt-3" />
-                                            <img src="/images/about/expleo-logo.png" className="mt-3" />
-                                            <img src="/images/about/sidbi-logo.png" className="mt-3" />
-                                            <img src="/images/about/switch-barath-logo.png" className="mt-3" />
-                                            <img src="/images/about/rare-logo.png" className="mt-3" />
-                                            <img src="/images/about/rbl-bank-logo.png" className="mt-3" />
-                                            <img src="/images/about/rupinis-logo.png" className="mt-3" />
-                                            <img src="/images/about/coca-cola-logo.png" className="mt-3" />
+                                            <img src="/images/about/tag-logo.webp" className="mt-3" />
+                                            <img src="/images/about/coii-logo.webp" className="mt-3" />
+                                            <img src="/images/about/expleo-logo.webp" className="mt-3" />
+                                            <img src="/images/about/sidbi-logo.webp" className="mt-3" />
+                                            <img src="/images/about/switch-barath-logo.webp" className="mt-3" />
+                                            <img src="/images/about/rare-logo.webp" className="mt-3" />
+                                            <img src="/images/about/rbl-bank-logo.webp" className="mt-3" />
+                                            <img src="/images/about/rupinis-logo.webp" className="mt-3" />
+                                            <img src="/images/about/coca-cola-logo.webp" className="mt-3" />
 
                                         </div>
                                     </div>
 
                                     <div className="scroll-container-2 col-span-2 space-y-2">
                                         <div className="scroll-content-2">
-                                            <img src="/images/about/coca-cola-logo.png" className="mt-3" />
-                                            <img src="/images/about/tag-logo.png" className="mt-3" />
-                                            <img src="/images/about/switch-barath-logo.png" className="mt-3" />
-                                            <img src="/images/about/rupinis-logo.png" className="mt-3" />
-                                            <img src="/images/about/expleo-logo.png" className="mt-3" />
-                                            <img src="/images/about/rare-logo.png" className="mt-3" />
-                                            <img src="/images/about/rbl-bank-logo.png" className="mt-3" />
-                                            <img src="/images/about/sidbi-logo.png" className="mt-3" />
-                                            <img src="/images/about/coii-logo.png" className="mt-3" />
+                                            <img src="/images/about/coca-cola-logo.webp" className="mt-3" />
+                                            <img src="/images/about/tag-logo.webp" className="mt-3" />
+                                            <img src="/images/about/switch-barath-logo.webp" className="mt-3" />
+                                            <img src="/images/about/rupinis-logo.webp" className="mt-3" />
+                                            <img src="/images/about/expleo-logo.webp" className="mt-3" />
+                                            <img src="/images/about/rare-logo.webp" className="mt-3" />
+                                            <img src="/images/about/rbl-bank-logo.webp" className="mt-3" />
+                                            <img src="/images/about/sidbi-logo.webp" className="mt-3" />
+                                            <img src="/images/about/coii-logo.webp" className="mt-3" />
                                         </div>
                                     </div>
 
@@ -653,7 +686,7 @@ export default function Page() {
                 <div className="lg:col-span-6 col-span-12 flex justify-center items-center lg:mt-0  mt-10">
                     <div>
                         <img src="/images/about/descience-launch-event.svg" className="lg:block hidden" />
-                        <img src="/images/about/descience-launch-event.png" className="lg:hidden block" />
+                        <img src="/images/about/descience-launch-event.webp" className="lg:hidden block" />
                     </div>
                 </div>
             </div>
@@ -1517,8 +1550,8 @@ const togglePassword = document.querySelector('#togglePassword');
           window.addEventListener('scroll', function () {
         var header = document.querySelector('#navbar');
         var logo = document.querySelector('#logo');
-        var desktopLogo = './images/tds-color-logo.png';
-        var mobileLogo = './images/tds-color-logo.png';
+        var desktopLogo = './images/tds-color-logo.webp';
+        var mobileLogo = './images/tds-color-logo.webp';
 
         if (header) {
             header.classList.toggle('bg-scroll-white', window.scrollY > 0);
@@ -1583,60 +1616,7 @@ const togglePassword = document.querySelector('#togglePassword');
           // Safe catch for conditional page elements
         }
       `}</Script>
-      <Script id="page-script-19" strategy="lazyOnload">{`
-        try {
-          \$(document).ready(function () {
-        \$("#one-time").owlCarousel({
-            loop: true,
-            nav: false,
-            dots: false,
-            autoplay: true,
-            autoplayTimeout: 2000,
-            autoplayHoverPause: true,
-            responsive: {
-                0: {
-                    items: 1,
-                    margin: 20
-                },
-                600: {
-                    items: 1
-                },
-                1000: {
-                    items: 1
-                }
-            }
-        });
-    });
-        } catch (e) {
-          // Safe catch for conditional page elements
-        }
-      `}</Script>
-      <Script id="page-script-20" strategy="lazyOnload">{`
-        try {
-          \$(document).ready(function () {
-        \$("#one-time-mob").owlCarousel({
-            loop: true,
-            nav: false,
-            autoplay: true,
-            autoplayTimeout: 2000,
-            autoplayHoverPause: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 1
-                },
-                1000: {
-                    items: 1
-                }
-            }
-        });
-    });
-        } catch (e) {
-          // Safe catch for conditional page elements
-        }
-      `}</Script>
+
       <Script id="page-script-21" strategy="lazyOnload">{`
         try {
           // Continuous scrolling function

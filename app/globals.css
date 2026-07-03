@@ -38,6 +38,7 @@
   --color-foreground: var(--foreground);
   --color-primary: #194F97;
   --color-secondary: #ffffff;
+  --color-primary-light: #D3E0F2;
   --font-primary: Gellix, sans-serif;
   --font-secondary: Inter, sans-serif;
   --font-gellix: Gellix, sans-serif;
@@ -63,4 +64,8 @@ body {
   .only-lg {
     display: block;
   }
+}
+
+.bg-primary-light {
+  background-color: #D3E0F2 !important;
 }

@@ -239,7 +239,7 @@ export default function Page() {
 
 
         
-                <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('assets/front/home/tt_banner_1721890158.PNG')" }}>
+                <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('assets/front/home/tt_banner_1721890158.webp')" }}>
             <div className="xl:max-w-screen-2xl 2xl:max-w-screen-2xl lg:max-w-screen-lg px-4 md:px-6 lg:px-8 mx-auto py-10 lg:py-24">
                 <div className="grid grid-cols-12 lg:gap-4">
                     <div className="lg:col-span-7 col-span-12 text-white text-left lg:pt-5">
@@ -269,7 +269,7 @@ export default function Page() {
             </div>
             <div className="grid grid-cols-12 mt-10">
                 <div className="2xl:col-span-5 lg:col-span-5 col-span-12 flex justify-center items-center">
-                    <img src="assets/front/home/tt_overview_1721890324.PNG" className="" />
+                    <img src="assets/front/home/tt_overview_1721890324.webp" className="" />
                 </div>
                 <div className="2xl:col-span-1 xl:col-span-1 lg:block hidden"></div>
                 <div className="lg:col-span-6 col-span-12 flex justify-center items-center lg:mt-0 mt-5">
@@ -322,11 +322,11 @@ export default function Page() {
                                     <div className="group mt-[12px] xl:mt-[0px] 2xl:mt-[20px] xl:h-36 2xl:h-auto">
                                         
                                         <div className="block group-hover:hidden">
-                                            <img src="assets/front/home/tt_service_1721890381.PNG" />
+                                            <img src="assets/front/home/tt_service_1721890381.webp" />
                                         </div>
                                         
                                         <div className="hidden group-hover:block">
-                                            <img src="assets/front/home/tt_service_hover_1721890381.PNG" />
+                                            <img src="assets/front/home/tt_service_hover_1721890381.webp" />
                                         </div>
                                     </div>
                                 </div>
@@ -347,11 +347,11 @@ export default function Page() {
                                     <div className="group mt-[12px] xl:mt-[0px] 2xl:mt-[20px] xl:h-36 2xl:h-auto">
                                         
                                         <div className="block group-hover:hidden">
-                                            <img src="assets/front/home/tt_service_1721890401.PNG" />
+                                            <img src="assets/front/home/tt_service_1721890401.webp" />
                                         </div>
                                         
                                         <div className="hidden group-hover:block">
-                                            <img src="assets/front/home/tt_service_hover_1721890401.PNG" />
+                                            <img src="assets/front/home/tt_service_hover_1721890401.webp" />
                                         </div>
                                     </div>
                                 </div>
@@ -372,11 +372,11 @@ export default function Page() {
                                     <div className="group mt-[12px] xl:mt-[0px] 2xl:mt-[20px] xl:h-36 2xl:h-auto">
                                         
                                         <div className="block group-hover:hidden">
-                                            <img src="assets/front/home/tt_service_1721890421.PNG" />
+                                            <img src="assets/front/home/tt_service_1721890421.webp" />
                                         </div>
                                         
                                         <div className="hidden group-hover:block">
-                                            <img src="assets/front/home/tt_service_hover_1721890421.PNG" />
+                                            <img src="assets/front/home/tt_service_hover_1721890421.webp" />
                                         </div>
                                     </div>
                                 </div>
@@ -397,11 +397,11 @@ export default function Page() {
                                     <div className="group mt-[12px] xl:mt-[0px] 2xl:mt-[20px] xl:h-36 2xl:h-auto">
                                         
                                         <div className="block group-hover:hidden">
-                                            <img src="assets/front/home/tt_service_1721890442.PNG" />
+                                            <img src="assets/front/home/tt_service_1721890442.webp" />
                                         </div>
                                         
                                         <div className="hidden group-hover:block">
-                                            <img src="assets/front/home/tpk-w-txt.png" />
+                                            <img src="assets/front/home/tpk-w-txt.webp" />
                                         </div>
                                     </div>
                                 </div>
@@ -435,7 +435,7 @@ export default function Page() {
                 
                                     <div className="lg:col-span-3 col-span-12 relative overflow-hidden group">
 
-                        <img src="assets/front/home/Blog%201.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" alt="Responsive image" />
+                        <img src="assets/front/home/Blog%201.webp" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" alt="Responsive image" />
                         <div className="absolute inset-0 flex justify-end items-end">
                             <div className="bg-gradient-to-t from-black/45 to-transparent p-5 transition-opacity duration-300 group-hover:from-black/90 group-hover:to-black/0 w-full">
                                 <div className="flex justify-between items-end">
@@ -460,7 +460,7 @@ export default function Page() {
                     </div>
                                     <div className="lg:col-span-3 col-span-12 relative overflow-hidden group">
 
-                        <img src="assets/front/home/Blog%202.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" alt="Responsive image" />
+                        <img src="assets/front/home/Blog%202.webp" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" alt="Responsive image" />
                         <div className="absolute inset-0 flex justify-end items-end">
                             <div className="bg-gradient-to-t from-black/45 to-transparent p-5 transition-opacity duration-300 group-hover:from-black/90 group-hover:to-black/0 w-full">
                                 <div className="flex justify-between items-end">
@@ -485,7 +485,7 @@ export default function Page() {
                     </div>
                                     <div className="lg:col-span-3 col-span-12 relative overflow-hidden group">
 
-                        <img src="assets/front/home/blog%203.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" alt="Responsive image" />
+                        <img src="assets/front/home/blog%203.webp" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" alt="Responsive image" />
                         <div className="absolute inset-0 flex justify-end items-end">
                             <div className="bg-gradient-to-t from-black/45 to-transparent p-5 transition-opacity duration-300 group-hover:from-black/90 group-hover:to-black/0 w-full">
                                 <div className="flex justify-between items-end">
@@ -510,7 +510,7 @@ export default function Page() {
                     </div>
                                     <div className="lg:col-span-3 col-span-12 relative overflow-hidden group">
 
-                        <img src="assets/front/home/blog%204.png" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" alt="Responsive image" />
+                        <img src="assets/front/home/blog%204.webp" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" alt="Responsive image" />
                         <div className="absolute inset-0 flex justify-end items-end">
                             <div className="bg-gradient-to-t from-black/45 to-transparent p-5 transition-opacity duration-300 group-hover:from-black/90 group-hover:to-black/0 w-full">
                                 <div className="flex justify-between items-end">
@@ -1369,8 +1369,8 @@ const togglePassword = document.querySelector('#togglePassword');
           window.addEventListener('scroll', function () {
         var header = document.querySelector('#navbar');
         var logo = document.querySelector('#logo');
-        var desktopLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
-        var mobileLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
+        var desktopLogo = 'https://touchmarkdes.com/images/tds-color-logo.webp';
+        var mobileLogo = 'https://touchmarkdes.com/images/tds-color-logo.webp';
 
         if (header) {
             header.classList.toggle('bg-scroll-white', window.scrollY > 0);

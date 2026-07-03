@@ -111,7 +111,7 @@ export default function Footer() {
                     {step === 3 && (
                       <div id="successAlert" className="text-white mx-auto flex items-center gap-4 py-2">
                         <img 
-                          src="/assets/front/home/correct.png" 
+                          src="/assets/front/home/correct.webp" 
                           className="w-12 h-12 rounded-full" 
                           alt="Success" 
                         />

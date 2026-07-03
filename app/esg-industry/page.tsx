@@ -239,7 +239,7 @@ export default function Page() {
 
 
         
-                <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('assets/front/home/esg_banner_1721890626.PNG')" }}>
+                <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('assets/front/home/esg_banner_1721890626.webp')" }}>
             <div className="xl:max-w-screen-2xl 2xl:max-w-screen-2xl lg:max-w-screen-lg px-4 md:px-6 lg:px-8 mx-auto py-10 lg:py-24">
                 <div className="grid grid-cols-12 lg:gap-4">
                     <div className="lg:col-span-7 col-span-12 text-white text-left lg:pt-5">
@@ -269,7 +269,7 @@ export default function Page() {
             </div>
             <div className="grid grid-cols-12 mt-10">
                 <div className="2xl:col-span-5 lg:col-span-5 col-span-12 flex justify-center items-center">
-                    <img src="assets/front/home/esg_overview_1721890768.PNG" className="" />
+                    <img src="assets/front/home/esg_overview_1721890768.webp" className="" />
                 </div>
                 <div className="2xl:col-span-1 xl:col-span-1 lg:block hidden"></div>
                 <div className="lg:col-span-6 col-span-12 flex justify-center items-center lg:mt-0 mt-5">
@@ -323,12 +323,12 @@ export default function Page() {
                                     <div className="group mt-[12px] xl:mt-[0px] 2xl:mt-[20px] xl:h-36 2xl:h-auto">
                                         
                                         <div className="block group-hover:hidden">
-                                            <img src="assets/front/home/esg_service_1721890817.PNG" />
+                                            <img src="assets/front/home/esg_service_1721890817.webp" />
                                         </div>
 
                                         
                                         <div className="hidden group-hover:block">
-                                            <img src="assets/front/home/esg_service_hover_1721890817.PNG" />
+                                            <img src="assets/front/home/esg_service_hover_1721890817.webp" />
                                         </div>
                                     </div>
                                 </div>
@@ -350,12 +350,12 @@ export default function Page() {
                                     <div className="group mt-[12px] xl:mt-[0px] 2xl:mt-[20px] xl:h-36 2xl:h-auto">
                                         
                                         <div className="block group-hover:hidden">
-                                            <img src="assets/front/home/esg_service_1721890835.PNG" />
+                                            <img src="assets/front/home/esg_service_1721890835.webp" />
                                         </div>
 
                                         
                                         <div className="hidden group-hover:block">
-                                            <img src="assets/front/home/esg_service_hover_1721890835.PNG" />
+                                            <img src="assets/front/home/esg_service_hover_1721890835.webp" />
                                         </div>
                                     </div>
                                 </div>
@@ -377,12 +377,12 @@ export default function Page() {
                                     <div className="group mt-[12px] xl:mt-[0px] 2xl:mt-[20px] xl:h-36 2xl:h-auto">
                                         
                                         <div className="block group-hover:hidden">
-                                            <img src="assets/front/home/esg_service_1721890857.PNG" />
+                                            <img src="assets/front/home/esg_service_1721890857.webp" />
                                         </div>
 
                                         
                                         <div className="hidden group-hover:block">
-                                            <img src="assets/front/home/esg_service_hover_1721890857.PNG" />
+                                            <img src="assets/front/home/esg_service_hover_1721890857.webp" />
                                         </div>
                                     </div>
                                 </div>
@@ -404,12 +404,12 @@ export default function Page() {
                                     <div className="group mt-[12px] xl:mt-[0px] 2xl:mt-[20px] xl:h-36 2xl:h-auto">
                                         
                                         <div className="block group-hover:hidden">
-                                            <img src="assets/front/home/esg_service_1721890875.PNG" />
+                                            <img src="assets/front/home/esg_service_1721890875.webp" />
                                         </div>
 
                                         
                                         <div className="hidden group-hover:block">
-                                            <img src="assets/front/home/esg_service_hover_1721890875.PNG" />
+                                            <img src="assets/front/home/esg_service_hover_1721890875.webp" />
                                         </div>
                                     </div>
                                 </div>
@@ -442,7 +442,7 @@ export default function Page() {
         
                 <div className="lg:col-span-3 col-span-12 relative overflow-hidden group">
       
-            <img src="assets/front/home/esg_blog_1721890899.PNG" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" />
+            <img src="assets/front/home/esg_blog_1721890899.webp" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" />
             <div className="absolute top-0 right-0">
                 <div className="inline-flex justify-start items-center space-x-3 p-5">
                     <h3 className="bg-[#194F97] px-3 py-1 rounded-3xl text-white text-xs">
@@ -472,7 +472,7 @@ export default function Page() {
         </div>
                 <div className="lg:col-span-3 col-span-12 relative overflow-hidden group">
       
-            <img src="assets/front/home/esg_blog_1721890911.PNG" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" />
+            <img src="assets/front/home/esg_blog_1721890911.webp" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" />
             <div className="absolute top-0 right-0">
                 <div className="inline-flex justify-start items-center space-x-3 p-5">
                     <h3 className="bg-[#194F97] px-3 py-1 rounded-3xl text-white text-xs">
@@ -502,7 +502,7 @@ export default function Page() {
         </div>
                 <div className="lg:col-span-3 col-span-12 relative overflow-hidden group">
       
-            <img src="assets/front/home/esg_blog_1721890923.PNG" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" />
+            <img src="assets/front/home/esg_blog_1721890923.webp" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" />
             <div className="absolute top-0 right-0">
                 <div className="inline-flex justify-start items-center space-x-3 p-5">
                     <h3 className="bg-[#194F97] px-3 py-1 rounded-3xl text-white text-xs">
@@ -532,7 +532,7 @@ export default function Page() {
         </div>
                 <div className="lg:col-span-3 col-span-12 relative overflow-hidden group">
       
-            <img src="assets/front/home/esg_blog_1721890934.PNG" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" />
+            <img src="assets/front/home/esg_blog_1721890934.webp" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" />
             <div className="absolute top-0 right-0">
                 <div className="inline-flex justify-start items-center space-x-3 p-5">
                     <h3 className="bg-[#194F97] px-3 py-1 rounded-3xl text-white text-xs">
@@ -1396,8 +1396,8 @@ const togglePassword = document.querySelector('#togglePassword');
           window.addEventListener('scroll', function () {
         var header = document.querySelector('#navbar');
         var logo = document.querySelector('#logo');
-        var desktopLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
-        var mobileLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
+        var desktopLogo = 'https://touchmarkdes.com/images/tds-color-logo.webp';
+        var mobileLogo = 'https://touchmarkdes.com/images/tds-color-logo.webp';
 
         if (header) {
             header.classList.toggle('bg-scroll-white', window.scrollY > 0);

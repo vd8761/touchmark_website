@@ -280,7 +280,7 @@ export default function Page({ searchParams }: PageProps) {
         
 
                 
-        <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('/images/ebooks/hero-banner-img-e-book.png')" }}>
+        <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('/images/ebooks/hero-banner-img-e-book.webp')" }}>
             <div className="xl:max-w-screen-2xl 2xl:max-w-screen-2xl lg:max-w-screen-lg px-4 md:px-6 lg:px-8 mx-auto py-10 lg:py-24">
                 <div className="grid grid-cols-12 lg:gap-4">
                     <div className="lg:col-span-7 col-span-12 text-white text-left lg:pt-5">
@@ -317,7 +317,7 @@ export default function Page({ searchParams }: PageProps) {
                   </p>
                   
                   <div className="py-5 lg:py-6 flex justify-start items-center">
-                    <img src="assets/front/home/ebook_thumb_1721628330.PNG" className="max-w-[200px] shadow-sm border border-gray-100 rounded" alt="Ebook Cover" />
+                    <img src="assets/front/home/ebook_thumb_1721628330.webp" className="max-w-[200px] shadow-sm border border-gray-100 rounded" alt="Ebook Cover" />
                   </div>
 
                   <ul className="space-y-4 mb-6">
@@ -1187,8 +1187,8 @@ const togglePassword = document.querySelector('#togglePassword');
           window.addEventListener('scroll', function () {
         var header = document.querySelector('#navbar');
         var logo = document.querySelector('#logo');
-        var desktopLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
-        var mobileLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
+        var desktopLogo = 'https://touchmarkdes.com/images/tds-color-logo.webp';
+        var mobileLogo = 'https://touchmarkdes.com/images/tds-color-logo.webp';
 
         if (header) {
             header.classList.toggle('bg-scroll-white', window.scrollY > 0);
@@ -1671,7 +1671,7 @@ const togglePassword = document.querySelector('#togglePassword');
         
 
                 
-        <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('/images/ebooks/hero-banner-img-e-book.png')" }}>
+        <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('/images/ebooks/hero-banner-img-e-book.webp')" }}>
             <div className="xl:max-w-screen-2xl 2xl:max-w-screen-2xl lg:max-w-screen-lg px-4 md:px-6 lg:px-8 mx-auto py-10 lg:py-24">
                 <div className="grid grid-cols-12 lg:gap-4">
                     <div className="lg:col-span-7 col-span-12 text-white text-left lg:pt-5">
@@ -1699,7 +1699,7 @@ const togglePassword = document.querySelector('#togglePassword');
             <div className="grid grid-cols-12 gap-8 items-start">
                 <div className="lg:col-span-6 col-span-12">
                   <div className="py-5 lg:py-6 flex justify-start items-center">
-                    <img src="assets/front/home/ebook_thumb_1721628762.PNG" className="max-w-[200px] shadow-sm border border-gray-100 rounded" alt="Ebook Cover" />
+                    <img src="assets/front/home/ebook_thumb_1721628762.webp" className="max-w-[200px] shadow-sm border border-gray-100 rounded" alt="Ebook Cover" />
                   </div>
 
                   <ul className="space-y-4 mb-6">
@@ -2565,8 +2565,8 @@ const togglePassword = document.querySelector('#togglePassword');
           window.addEventListener('scroll', function () {
         var header = document.querySelector('#navbar');
         var logo = document.querySelector('#logo');
-        var desktopLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
-        var mobileLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
+        var desktopLogo = 'https://touchmarkdes.com/images/tds-color-logo.webp';
+        var mobileLogo = 'https://touchmarkdes.com/images/tds-color-logo.webp';
 
         if (header) {
             header.classList.toggle('bg-scroll-white', window.scrollY > 0);
@@ -3049,7 +3049,7 @@ const togglePassword = document.querySelector('#togglePassword');
         
 
                 
-        <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('/images/ebooks/hero-banner-img-e-book.png')" }}>
+        <section className="relative 2xl:h-[720px] lg:h-[620px] h-[400px] w-full flex items-center justify-center text-center bg-cover bg-center lg:mt-0 mt-10" style={{ "backgroundImage": "url('/images/ebooks/hero-banner-img-e-book.webp')" }}>
             <div className="xl:max-w-screen-2xl 2xl:max-w-screen-2xl lg:max-w-screen-lg px-4 md:px-6 lg:px-8 mx-auto py-10 lg:py-24">
                 <div className="grid grid-cols-12 lg:gap-4">
                     <div className="lg:col-span-7 col-span-12 text-white text-left lg:pt-5">
@@ -3078,7 +3078,7 @@ const togglePassword = document.querySelector('#togglePassword');
             <div className="grid grid-cols-12 gap-4">
                 <div className="lg:col-span-5 col-span-12">
                        <div className="py-5 lg:py-6 flex justify-start items-center">
-                        <img src="assets/front/home/ebook_thumb_1721628861.PNG" className="max-w-[200px] shadow-sm border border-gray-100 rounded" alt="Ebook Cover" />
+                        <img src="assets/front/home/ebook_thumb_1721628861.webp" className="max-w-[200px] shadow-sm border border-gray-100 rounded" alt="Ebook Cover" />
                     </div>
 
 
@@ -3946,8 +3946,8 @@ const togglePassword = document.querySelector('#togglePassword');
           window.addEventListener('scroll', function () {
         var header = document.querySelector('#navbar');
         var logo = document.querySelector('#logo');
-        var desktopLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
-        var mobileLogo = 'https://touchmarkdes.com/images/tds-color-logo.png';
+        var desktopLogo = 'https://touchmarkdes.com/images/tds-color-logo.webp';
+        var mobileLogo = 'https://touchmarkdes.com/images/tds-color-logo.webp';
 
         if (header) {
             header.classList.toggle('bg-scroll-white', window.scrollY > 0);
