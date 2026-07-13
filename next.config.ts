@@ -1,4 +1,24 @@
 import type { NextConfig } from "next";
+import { readdirSync } from "node:fs";
+import { join } from "node:path";
+
+const articleDirectory = join(process.cwd(), "app", "blog", "articles");
+const articleSlugs = readdirSync(articleDirectory, { withFileTypes: true })
+  .filter((entry) => entry.isDirectory())
+  .map((entry) => entry.name);
+
+const legacyArticleRedirects = articleSlugs.flatMap((slug) => [
+  {
+    source: `/${slug}`,
+    destination: `/blog/articles/${slug}`,
+    permanent: true,
+  },
+  {
+    source: `/articles/${slug}`,
+    destination: `/blog/articles/${slug}`,
+    permanent: true,
+  },
+]);
 
 const nextConfig: NextConfig = {
   async redirects() {
@@ -21,6 +41,10 @@ const nextConfig: NextConfig = {
       { source: "/tc-service", destination: "/technology-consulting-service", permanent: true },
       { source: "/tt-industry", destination: "/travel-tourism-industry", permanent: true },
       { source: "/e-book-01", destination: "/ebook-01", permanent: true },
+      { source: "/ai-analytics", destination: "/blog/tag/ai-analytics", permanent: true },
+
+      // Converted article cards previously pointed at root-level or /articles URLs.
+      ...legacyArticleRedirects,
 
       // Redirect any path ending in .html to its extensionless counterpart
       {

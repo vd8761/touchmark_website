@@ -1,11 +1,20 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { submitEbookForm } from '@/services/ebook';
 
 interface EbookFormProps {
   ebookId: string;
+}
+
+interface GrecaptchaApi {
+  ready: (callback: () => void) => void;
+  execute: (siteKey: string, options: { action: string }) => Promise<string>;
+}
+
+interface WindowWithGrecaptcha extends Window {
+  grecaptcha?: GrecaptchaApi;
 }
 
 export default function EbookForm({ ebookId }: EbookFormProps) {
@@ -26,11 +35,24 @@ export default function EbookForm({ ebookId }: EbookFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [submitError, setSubmitError] = useState('');
+  const nameInputRef = useRef<HTMLInputElement>(null);
+  const lastNameInputRef = useRef<HTMLInputElement>(null);
+  const emailInputRef = useRef<HTMLInputElement>(null);
+  const companyInputRef = useRef<HTMLInputElement>(null);
+  const successRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!isSuccess) return;
+
+    const frameId = window.requestAnimationFrame(() => successRef.current?.focus());
+    return () => window.cancelAnimationFrame(frameId);
+  }, [isSuccess]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
     setErrors((prev) => ({ ...prev, [name]: '' }));
+    setSubmitError('');
   };
 
   const validate = () => {
@@ -58,6 +80,16 @@ export default function EbookForm({ ebookId }: EbookFormProps) {
     }
 
     setErrors(newErrors);
+
+    if (!valid) {
+      window.requestAnimationFrame(() => {
+        if (newErrors.name) nameInputRef.current?.focus();
+        else if (newErrors.lastName) lastNameInputRef.current?.focus();
+        else if (newErrors.email) emailInputRef.current?.focus();
+        else if (newErrors.companyName) companyInputRef.current?.focus();
+      });
+    }
+
     return valid;
   };
 
@@ -71,18 +103,22 @@ export default function EbookForm({ ebookId }: EbookFormProps) {
     try {
       // 1. Fetch reCAPTCHA token if available
       let gToken = '';
-      if (typeof window !== 'undefined' && (window as any).grecaptcha) {
-        try {
-          gToken = await new Promise<string>((resolve, reject) => {
-            (window as any).grecaptcha.ready(() => {
-              (window as any).grecaptcha
-                .execute('6LelLRwqAAAAAL6aHLVU9nE96q6UI6_H11dUU_Ix', { action: 'submit' })
-                .then((token: string) => resolve(token))
-                .catch((err: any) => reject(err));
+      if (typeof window !== 'undefined') {
+        const grecaptcha = (window as WindowWithGrecaptcha).grecaptcha;
+
+        if (grecaptcha) {
+          try {
+            gToken = await new Promise<string>((resolve, reject) => {
+              grecaptcha.ready(() => {
+                grecaptcha
+                  .execute('6LelLRwqAAAAAL6aHLVU9nE96q6UI6_H11dUU_Ix', { action: 'submit' })
+                  .then(resolve)
+                  .catch(reject);
+              });
             });
-          });
-        } catch (captchaErr) {
-          console.warn('reCAPTCHA execution failed, proceeding anyway:', captchaErr);
+          } catch (captchaErr) {
+            console.warn('reCAPTCHA execution failed, proceeding anyway:', captchaErr);
+          }
         }
       }
 
@@ -101,9 +137,13 @@ export default function EbookForm({ ebookId }: EbookFormProps) {
       } else {
         setSubmitError(result.message || 'Form submission failed. Please try again.');
       }
-    } catch (err: any) {
+    } catch (err: unknown) {
       console.error('Submission error:', err);
-      setSubmitError(err.message || 'An error occurred during submission. Please try again.');
+      setSubmitError(
+        err instanceof Error
+          ? err.message
+          : 'An error occurred during submission. Please try again.',
+      );
     } finally {
       setIsSubmitting(false);
     }
@@ -111,11 +151,18 @@ export default function EbookForm({ ebookId }: EbookFormProps) {
 
   if (isSuccess) {
     return (
-      <div className="bg-white p-8 lg:p-12 border border-gray-100 rounded-lg shadow-md mx-auto max-w-[540px] text-center flex flex-col items-center justify-center min-h-[450px] transition-all duration-300">
+      <div
+        ref={successRef}
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+        tabIndex={-1}
+        className="bg-white p-8 lg:p-12 border border-gray-100 rounded-lg shadow-md mx-auto max-w-[540px] text-center flex flex-col items-center justify-center min-h-[450px] transition-all duration-300"
+      >
         <img
           src="/images/ebooks/sucess.svg"
           alt="Success Icon"
-          className="w-[124px] h-[124px] mb-6 animate-bounce"
+          className="w-[124px] h-[124px] mb-6 animate-bounce motion-reduce:animate-none"
         />
         <h2 className="text-3xl lg:text-4xl font-primary text-gray-900 mb-3">
           Success!
@@ -134,19 +181,30 @@ export default function EbookForm({ ebookId }: EbookFormProps) {
           Download Now
         </h2>
         <p className="text-xs lg:text-sm font-secondary text-gray-500 mt-2 max-w-[320px] mx-auto leading-relaxed">
-          share a few contact details and we'll send a download link to your inbox
+          share a few contact details and we&apos;ll send a download link to your inbox
         </p>
       </div>
 
-      <form onSubmit={handleSubmit} className="space-y-4 lg:space-y-5">
+      <form
+        onSubmit={handleSubmit}
+        noValidate
+        aria-busy={isSubmitting}
+        aria-describedby={submitError ? 'ebook-submit-error' : undefined}
+        className="space-y-4 lg:space-y-5"
+      >
         <div>
           <label htmlFor="name" className="block text-xs font-semibold text-gray-700 mb-1 font-secondary">
             Name*
           </label>
           <input
+            ref={nameInputRef}
             type="text"
             id="name"
             name="name"
+            autoComplete="given-name"
+            required
+            aria-invalid={Boolean(errors.name)}
+            aria-describedby={errors.name ? 'ebook-name-error' : undefined}
             placeholder="your name"
             value={formData.name}
             onChange={handleChange}
@@ -154,7 +212,7 @@ export default function EbookForm({ ebookId }: EbookFormProps) {
               errors.name ? 'border-red-500 focus:border-red-500' : 'border-gray-200 focus:border-primary'
             }`}
           />
-          {errors.name && <p className="text-xs text-red-500 mt-1 font-secondary">{errors.name}</p>}
+          {errors.name && <p id="ebook-name-error" className="text-xs text-red-500 mt-1 font-secondary">{errors.name}</p>}
         </div>
 
         <div>
@@ -162,9 +220,14 @@ export default function EbookForm({ ebookId }: EbookFormProps) {
             Last Name*
           </label>
           <input
+            ref={lastNameInputRef}
             type="text"
             id="lastName"
             name="lastName"
+            autoComplete="family-name"
+            required
+            aria-invalid={Boolean(errors.lastName)}
+            aria-describedby={errors.lastName ? 'ebook-last-name-error' : undefined}
             placeholder="your name"
             value={formData.lastName}
             onChange={handleChange}
@@ -172,7 +235,7 @@ export default function EbookForm({ ebookId }: EbookFormProps) {
               errors.lastName ? 'border-red-500 focus:border-red-500' : 'border-gray-200 focus:border-primary'
             }`}
           />
-          {errors.lastName && <p className="text-xs text-red-500 mt-1 font-secondary">{errors.lastName}</p>}
+          {errors.lastName && <p id="ebook-last-name-error" className="text-xs text-red-500 mt-1 font-secondary">{errors.lastName}</p>}
         </div>
 
         <div>
@@ -180,9 +243,14 @@ export default function EbookForm({ ebookId }: EbookFormProps) {
             Work Email*
           </label>
           <input
+            ref={emailInputRef}
             type="email"
             id="email"
             name="email"
+            autoComplete="email"
+            required
+            aria-invalid={Boolean(errors.email)}
+            aria-describedby={errors.email ? 'ebook-email-error' : undefined}
             placeholder="you@company.com"
             value={formData.email}
             onChange={handleChange}
@@ -190,7 +258,7 @@ export default function EbookForm({ ebookId }: EbookFormProps) {
               errors.email ? 'border-red-500 focus:border-red-500' : 'border-gray-200 focus:border-primary'
             }`}
           />
-          {errors.email && <p className="text-xs text-red-500 mt-1 font-secondary">{errors.email}</p>}
+          {errors.email && <p id="ebook-email-error" className="text-xs text-red-500 mt-1 font-secondary">{errors.email}</p>}
         </div>
 
         <div>
@@ -198,9 +266,14 @@ export default function EbookForm({ ebookId }: EbookFormProps) {
             Company Name*
           </label>
           <input
+            ref={companyInputRef}
             type="text"
             id="companyName"
             name="companyName"
+            autoComplete="organization"
+            required
+            aria-invalid={Boolean(errors.companyName)}
+            aria-describedby={errors.companyName ? 'ebook-company-error' : undefined}
             placeholder="your company name"
             value={formData.companyName}
             onChange={handleChange}
@@ -208,12 +281,12 @@ export default function EbookForm({ ebookId }: EbookFormProps) {
               errors.companyName ? 'border-red-500 focus:border-red-500' : 'border-gray-200 focus:border-primary'
             }`}
           />
-          {errors.companyName && <p className="text-xs text-red-500 mt-1 font-secondary">{errors.companyName}</p>}
+          {errors.companyName && <p id="ebook-company-error" className="text-xs text-red-500 mt-1 font-secondary">{errors.companyName}</p>}
         </div>
 
         <div className="pt-2">
           <p className="text-[11px] text-gray-500 leading-normal font-secondary">
-            By submitting this form, I am agreeing to Touchmark Descience's{' '}
+            By submitting this form, I am agreeing to Touchmark Descience&apos;s{' '}
             <Link href="/privacy-policy" className="text-primary hover:underline font-semibold">
               privacy policy.
             </Link>
@@ -221,7 +294,14 @@ export default function EbookForm({ ebookId }: EbookFormProps) {
         </div>
 
         {submitError && (
-          <p className="text-xs text-red-500 mt-2 text-center font-secondary">{submitError}</p>
+          <p
+            id="ebook-submit-error"
+            role="alert"
+            aria-live="assertive"
+            className="text-xs text-red-500 mt-2 text-center font-secondary"
+          >
+            {submitError}
+          </p>
         )}
 
         <button

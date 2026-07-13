@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./custom.css";
-import Preloader from "@/components/Preloader";
+import "./motion.css";
+import MotionProvider from "@/components/MotionProvider";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import Script from "next/script";
+import LegacyScripts from "@/components/LegacyScripts";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
+import SubsidiaryUX from "@/components/SubsidiaryUX";
 
 export const metadata: Metadata = {
   title: "Touchmark Descience",
@@ -21,57 +24,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full antialiased">
-      <head>
-        {/* Swiper & Owl Carousel CSS assets */}
-        <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
-        <link rel="stylesheet" href="/css/owl.carousel.min.css" />
-        <link rel="stylesheet" href="/css/owl.theme.default.min.css" />
-        <script dangerouslySetInnerHTML={{ __html: `
-          if (typeof window !== 'undefined') {
-            window.addEventListener('error', function(e) {
-              if (e.filename && (e.filename.includes('preline') || e.filename.includes('jquery') || e.filename.includes('alpine'))) {
-                e.stopImmediatePropagation();
-              }
-              if (e.message && (e.message.includes('preline') || e.message.includes('length') || e.message.includes('undefined'))) {
-                e.stopImmediatePropagation();
-              }
-            });
-          }
-        ` }} />
-      </head>
       <body className="min-h-full flex flex-col">
-        <Preloader />
+        <a className="skip-link" href="#main-content">
+          Skip to main content
+        </a>
+        <MotionProvider />
+        <SubsidiaryUX />
         <Navbar />
-        <main className="flex-grow">
+        <main id="main-content" tabIndex={-1} className="flex-grow">
           {children}
         </main>
         <Footer />
 
-        {/* Third-party JavaScript assets */}
-        <Script 
-          src="/js/jquery-3.7.1.min.js" 
-          strategy="beforeInteractive" 
-        />
-        <Script 
-          src="https://unpkg.com/swiper/swiper-bundle.min.js" 
-          strategy="afterInteractive" 
-        />
-        <Script 
-          src="/js/owl.carousel.min.js" 
-          strategy="afterInteractive" 
-        />
-        <Script 
-          src="/js/flowbite.js" 
-          strategy="afterInteractive" 
-        />
-        <Script 
-          src="/js/preline.min.js" 
-          strategy="afterInteractive" 
-        />
-        <Script 
-          src="/js/alpine-v2.8.2.js" 
-          strategy="afterInteractive" 
-        />
+        <GoogleAnalytics />
+        <LegacyScripts />
       </body>
     </html>
   );

@@ -1,0 +1,321 @@
+/* ==========================================================
+   Touchmark — Motion & Typography Layer
+   All motion is gated behind `html.mo`, which MotionProvider
+   adds only when JS is running and the visitor has NOT asked
+   for reduced motion. Without it the site renders statically.
+   ========================================================== */
+
+/* ---------- Typography polish ---------- */
+
+::selection {
+  background: #194F97;
+  color: #fff;
+}
+
+main h1,
+main h2,
+footer h1 {
+  text-wrap: balance;
+}
+
+main p {
+  text-wrap: pretty;
+}
+
+.mo {
+  scroll-behavior: smooth;
+  scroll-padding-top: 84px;
+}
+
+.mo main h1,
+.mo main h2 {
+  letter-spacing: -0.02em;
+  line-height: 1.14;
+}
+
+.mo main h1.font-gellix {
+  line-height: 1.08;
+}
+
+.mo main p:not([class*="leading-"]) {
+  line-height: 1.72;
+}
+
+/* Section kickers ("About us", "Our Clients", ...) get an
+   editorial uppercase treatment with a drawing dash. */
+.mo .mo-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+}
+
+.mo .mo-eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 26px;
+  height: 2px;
+  background: currentColor;
+  margin-right: 0.6em;
+  vertical-align: 0.22em;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.2s;
+}
+
+.mo .mo-eyebrow.in::before {
+  transform: scaleX(1);
+}
+
+/* Thin brand scrollbar */
+.mo::-webkit-scrollbar {
+  width: 10px;
+}
+.mo::-webkit-scrollbar-track {
+  background: #f3f6fb;
+}
+.mo::-webkit-scrollbar-thumb {
+  background: #c3d0e5;
+  border-radius: 8px;
+  border: 2px solid #f3f6fb;
+}
+.mo::-webkit-scrollbar-thumb:hover {
+  background: #194F97;
+}
+
+/* ---------- Scroll progress bar ---------- */
+
+.mo-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  z-index: 90;
+  pointer-events: none;
+}
+
+html:not(.mo) .mo-progress {
+  display: none;
+}
+
+.mo-progress-fill {
+  height: 100%;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  background: linear-gradient(90deg, #194F97, #1692C8 60%, #4FC3F7);
+  box-shadow: 0 0 12px rgba(22, 146, 200, 0.55);
+}
+
+/* ---------- Scroll reveals ---------- */
+
+.mo [data-rv]:not(.in):not([data-rv="words"]) {
+  opacity: 0;
+}
+
+.mo .in[data-rv="fade"] {
+  animation: moFadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) var(--rv-d, 0ms) both;
+}
+
+@keyframes moFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+    filter: blur(7px);
+  }
+  60% {
+    filter: blur(0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+
+/* Images wipe open downward while settling out of a slight zoom */
+.mo .in[data-rv="img"] {
+  animation: moImgIn 1.05s cubic-bezier(0.22, 1, 0.36, 1) var(--rv-d, 0ms) both;
+}
+
+@keyframes moImgIn {
+  from {
+    opacity: 1;
+    clip-path: inset(0 0 100% 0);
+    transform: translateY(26px) scale(1.05);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 -1% 0);
+    transform: none;
+  }
+}
+
+/* Once a reveal has played, drop the animation so Tailwind hover
+   transforms/filters on the same element work again untouched. */
+.mo .rv-done {
+  animation: none !important;
+}
+
+/* ---------- Word-mask headline rises ---------- */
+
+.mo .mo-w {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  padding-bottom: 0.12em;
+  margin-bottom: -0.12em;
+}
+
+.mo .mo-wi {
+  display: inline-block;
+  transform: translateY(120%);
+  transition: transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: calc(var(--rv-d, 0ms) + var(--wd, 0ms));
+  will-change: transform;
+}
+
+.mo [data-rv="words"].in .mo-wi {
+  transform: none;
+}
+
+/* ---------- Splash → page handoff ----------
+   While the splash is still up, every entrance animation is held at its
+   first frame. Preloader adds .splash-out the instant the curtain starts
+   lifting, so the page visibly rises into place as it is revealed. */
+
+.mo.splash-active .swiper-container .swiper-slide-active h1,
+.mo.splash-active .swiper-container .swiper-slide-active a,
+.mo.splash-active .swiper-container .swiper-slide-active img,
+.mo.splash-active .swiper-container .tab-navigation,
+.mo.splash-active .in[data-rv] {
+  animation-play-state: paused !important;
+}
+
+/* The page itself settles out of a slight zoom as the curtain lifts.
+   Ends on transform: none so fixed-position descendants are unaffected. */
+.mo.splash-out main {
+  animation: moPageSettle 1.1s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes moPageSettle {
+  from {
+    transform: scale(1.012) translateY(8px);
+  }
+  to {
+    transform: none;
+  }
+}
+
+/* The hero background is generated and animated in HomeHero.tsx. Keep the
+   slide layer above that code-based SVG mesh. */
+.swiper-container .swiper-wrapper {
+  z-index: 1;
+}
+
+/* ---------- Hero (Swiper) entrance choreography ----------
+   Hidden states only apply once Swiper has initialised, so a
+   slow CDN can never leave the hero blank. Each slide change
+   re-triggers the sequence via .swiper-slide-active. */
+
+.mo .swiper-container .swiper-slide h1,
+.mo .swiper-container .swiper-slide a,
+.mo .swiper-container .swiper-slide img {
+  transition: opacity 0.5s ease;
+}
+
+.swiper-container[data-slide-direction="next"] {
+  --hero-enter-x: 48px;
+  --hero-image-enter-x: 64px;
+}
+
+.swiper-container[data-slide-direction="prev"] {
+  --hero-enter-x: -48px;
+  --hero-image-enter-x: -64px;
+}
+
+.mo .swiper-container.swiper-initialized .swiper-slide h1,
+.mo .swiper-container.swiper-container-initialized .swiper-slide h1,
+.mo .swiper-container.swiper-initialized .swiper-slide a,
+.mo .swiper-container.swiper-container-initialized .swiper-slide a,
+.mo .swiper-container.swiper-initialized .swiper-slide img,
+.mo .swiper-container.swiper-container-initialized .swiper-slide img {
+  opacity: 0;
+}
+
+.mo .swiper-container .swiper-slide-active h1 {
+  animation: moHeroText 1.05s 0.1s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.mo .swiper-container .swiper-slide-active a {
+  animation: moHeroText 0.9s 0.35s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.mo .swiper-container .swiper-slide-active img {
+  animation: moHeroImg 1.05s 0.12s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes moHeroText {
+  from {
+    opacity: 0;
+    transform: translate3d(var(--hero-enter-x, 0), 24px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes moHeroImg {
+  from {
+    opacity: 0;
+    transform: translate3d(var(--hero-image-enter-x, 0), 34px, 0) scale(0.965);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.mo .swiper-container .tab-navigation {
+  animation: moFadeUp 0.65s 0.15s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ---------- Micro-interactions ---------- */
+
+/* Client logo wall: rest in grayscale, bloom to color on hover
+   (their existing transition-all handles the easing). */
+.mo main div.group.overflow-hidden > img[src$=".svg"] {
+  filter: grayscale(1) opacity(0.68);
+}
+
+.mo main div.group.overflow-hidden:hover > img[src$=".svg"] {
+  filter: none;
+}
+
+/* Gentle press feedback on the slide-fill CTA buttons */
+.mo main a.group {
+  transition: translate 0.18s ease;
+}
+
+.mo main a.group:active {
+  translate: 0 1.5px;
+}
+
+/* ---------- Reduced-motion safety net ----------
+   MotionProvider never adds .mo under reduced motion, but if the
+   preference flips mid-session this keeps everything readable. */
+@media (prefers-reduced-motion: reduce) {
+  .mo *,
+  .mo *::before,
+  .mo *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .mo [data-rv]:not(.in) {
+    opacity: 1 !important;
+  }
+  .mo .mo-wi {
+    transform: none !important;
+  }
+}

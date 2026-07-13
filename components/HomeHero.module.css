@@ -1,0 +1,418 @@
+.hero {
+  --hero-controls-bottom: clamp(8px, 1.5dvh, 16px);
+  --hero-tab-row: 44px;
+  --hero-tab-gap: 8px;
+  --hero-tabs-height: calc(
+    var(--hero-tab-row) + var(--hero-tab-row) + var(--hero-tab-row) +
+    var(--hero-tab-gap) + var(--hero-tab-gap)
+  );
+  position: relative;
+  height: 100vh;
+  height: 100dvh;
+  min-height: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: linear-gradient(118deg, #164f96 0%, #2478d1 48%, #1385ea 100%);
+  isolation: isolate;
+}
+
+.backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  contain: strict;
+  pointer-events: none;
+  background:
+    linear-gradient(110deg, rgb(4 38 83 / 42%), transparent 44%),
+    radial-gradient(70% 100% at 67% 40%, rgb(55 158 255 / 35%), transparent 70%);
+}
+
+.mesh {
+  position: absolute;
+  inset: -3%;
+  width: 106%;
+  height: 106%;
+  overflow: visible;
+  transform: translate3d(-2%, 0, 0);
+  animation: hero-mesh-x 18s cubic-bezier(0.45, 0, 0.55, 1) infinite alternate;
+  will-change: transform;
+}
+
+.hero[data-hero-motion='paused'] .mesh {
+  animation-play-state: paused;
+  will-change: auto;
+}
+
+.ringField {
+  fill: none;
+  stroke-linecap: round;
+}
+
+.swirlLine {
+  fill: none;
+  stroke: rgb(183 224 255 / 22%);
+  stroke-width: 1.35;
+}
+
+.slide,
+.slideShell {
+  width: 100%;
+  height: 100%;
+}
+
+.slideShell {
+  padding-top: 56px;
+  padding-bottom: 0;
+}
+
+.copy {
+  max-width: 680px;
+}
+
+.visualColumn {
+  position: relative;
+  overflow: visible;
+}
+
+.figure {
+  position: relative;
+  z-index: 2;
+  width: min(100%, 920px);
+  height: auto;
+  max-height: calc(100dvh - 56px);
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+.imageMask {
+  position: absolute;
+  z-index: 3;
+  bottom: -1px;
+  left: -4%;
+  width: 108%;
+  height: clamp(82px, 12dvh, 140px);
+  display: block;
+  overflow: visible;
+  transform-origin: 70% 100%;
+  pointer-events: none;
+}
+
+.curveSvg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.curveShape {
+  fill: url('#home-hero-connector');
+}
+
+.curveDecoration {
+  pointer-events: none;
+}
+
+.curveCopyStop {
+  stop-color: var(--home-about-copy);
+}
+
+.curveStatsStop {
+  stop-color: var(--home-about-blue);
+}
+
+.tabsWrap {
+  position: absolute;
+  right: 0;
+  bottom: var(--hero-controls-bottom);
+  left: 0;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.tabs {
+  display: flex;
+  width: min(100%, 360px);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--hero-tab-gap);
+  color: white;
+  pointer-events: auto;
+}
+
+.tab {
+  display: grid;
+  width: max-content;
+  max-width: 100%;
+  min-height: var(--hero-tab-row);
+  grid-template-columns: 32px minmax(0, 1fr);
+  align-items: center;
+  gap: 10px;
+  padding: 4px 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: rgb(255 255 255 / 54%);
+  text-align: left;
+  font-family: var(--font-secondary), sans-serif;
+  font-size: clamp(0.72rem, 0.9vw, 0.86rem);
+  line-height: 1.25;
+  transition: color 180ms ease;
+}
+
+.tab:hover {
+  color: white;
+}
+
+.tab:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+.tab[aria-current='true'] {
+  color: white;
+}
+
+.tabLabel {
+  min-width: 0;
+  transition: transform 180ms ease;
+}
+
+.tab:hover .tabLabel,
+.tab[aria-current='true'] .tabLabel {
+  transform: translateX(3px);
+}
+
+.tab[aria-current='true'] .tabLabel {
+  font-weight: 600;
+}
+
+.timer {
+  position: relative;
+  display: grid;
+  width: 32px;
+  height: 32px;
+  place-items: center;
+  flex: none;
+}
+
+.timerSvg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  transform: rotate(-90deg);
+}
+
+.timerTrack,
+.timerProgress {
+  fill: none;
+  stroke-width: 1.75;
+}
+
+.timerTrack {
+  stroke: rgb(255 255 255 / 28%);
+}
+
+.timerProgress {
+  stroke: white;
+  stroke-linecap: round;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  opacity: 0;
+}
+
+.timerNumber {
+  color: currentColor;
+  font-size: 0.57rem;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+.tab[aria-current='true'] .timerProgress {
+  opacity: 1;
+  animation: hero-timer 5.2s linear forwards;
+}
+
+.hero[data-hero-autoplay='paused'] .tab[aria-current='true'] .timerProgress {
+  animation-play-state: paused;
+}
+
+@keyframes hero-mesh-x {
+  from {
+    transform: translate3d(-2%, 0, 0);
+  }
+
+  to {
+    transform: translate3d(2%, 0, 0);
+  }
+}
+
+@keyframes hero-timer {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media (max-width: 1023px) {
+  .hero {
+    --hero-controls-bottom: 14px;
+    --hero-tab-row: 40px;
+    --hero-tab-gap: 5px;
+  }
+
+  .slideShell {
+    grid-template-rows: auto minmax(0, 1fr);
+    padding-top: 82px;
+  }
+
+  .copyColumn {
+    align-items: flex-start;
+  }
+
+  .copy {
+    max-width: 650px;
+  }
+
+  .visualColumn {
+    align-items: end;
+  }
+
+  .figure {
+    width: min(100%, 680px);
+    max-height: 55dvh;
+  }
+
+  .imageMask {
+    height: clamp(62px, 10dvh, 96px);
+  }
+
+  .tabsWrap {
+    padding-inline: 16px;
+  }
+
+  .tabs {
+    width: min(100%, 330px);
+  }
+
+  .tab {
+    font-size: 0.74rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .curveStatsStop {
+    stop-color: var(--home-about-copy);
+  }
+
+  .curveDecoration {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero {
+    --hero-controls-bottom: max(10px, env(safe-area-inset-bottom));
+    --hero-tab-row: 36px;
+  }
+
+  .slideShell {
+    padding-top: 76px;
+  }
+
+  .copy :global(h1) {
+    font-size: clamp(1.78rem, 8vw, 2.25rem);
+    line-height: 1.04;
+  }
+
+  .figure {
+    width: 112%;
+    max-width: none;
+    max-height: 52dvh;
+  }
+
+  .imageMask {
+    left: -7%;
+    width: 114%;
+    height: clamp(52px, 8dvh, 72px);
+  }
+
+  .tabsWrap {
+    padding-inline: 12px;
+  }
+
+  .tabs {
+    width: min(90vw, 330px);
+  }
+
+  .tab {
+    grid-template-columns: 26px minmax(0, 1fr);
+    gap: 8px;
+    padding: 2px 0;
+    font-size: 0.68rem;
+  }
+
+  .timer {
+    width: 26px;
+    height: 26px;
+  }
+
+  .timerNumber {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 1023px) and (max-height: 640px) {
+  .hero {
+    --hero-top: clamp(58px, 12dvh, 68px);
+    --hero-controls-bottom: max(8px, env(safe-area-inset-bottom));
+    --hero-copy-controls-gap: clamp(22px, 5dvh, 30px);
+  }
+
+  .slideShell {
+    padding-top: var(--hero-top);
+    grid-template-rows:
+      minmax(
+        0,
+        calc(
+          100dvh - var(--hero-top) - var(--hero-controls-bottom) -
+          var(--hero-tabs-height) - var(--hero-copy-controls-gap)
+        )
+      )
+      minmax(0, 1fr);
+  }
+
+  .copyColumn {
+    grid-row: 1;
+    min-height: 0;
+    align-items: flex-start;
+  }
+
+  .visualColumn {
+    grid-row: 2;
+    min-height: 0;
+  }
+
+  .copy :global(h1) {
+    font-size: clamp(1.3rem, 5.4dvh, 2rem);
+    line-height: 1.03;
+  }
+
+  .cta {
+    margin-top: clamp(10px, 2.5dvh, 16px) !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mesh,
+  .timerProgress {
+    animation: none !important;
+    transform: none;
+    will-change: auto;
+  }
+
+  .tab[aria-current='true'] .timerProgress {
+    stroke-dashoffset: 0;
+  }
+}

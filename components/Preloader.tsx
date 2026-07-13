@@ -1,84 +1,75 @@
 'use client';
-import { useEffect, useState } from 'react';
 
+import Image from 'next/image';
+import { useEffect, useState } from 'react';
+import styles from './Preloader.module.css';
+
+const INTRO_DURATION = 600;
+const EXIT_DURATION = 320;
+
+/**
+ * A short brand intro used by the landing page only.
+ *
+ * This is intentionally not a load-progress indicator: the application is
+ * already rendered behind it, so the animation has a predictable duration and
+ * never waits on unrelated images or third-party scripts.
+ */
 export default function Preloader() {
-  const [visible, setVisible] = useState(true);
-  const [fade, setFade] = useState(false);
+  const [phase, setPhase] = useState<'intro' | 'exit' | 'hidden'>('intro');
 
   useEffect(() => {
-    // Hide loader once document is fully loaded
-    const handleLoad = () => {
-      setFade(true);
-      setTimeout(() => setVisible(false), 300);
-    };
+    const root = document.documentElement;
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const introDuration = reducedMotion ? 80 : INTRO_DURATION;
+    const exitDuration = reducedMotion ? 80 : EXIT_DURATION;
 
-    if (document.readyState === 'complete') {
-      setFade(true);
-      const timer = setTimeout(() => setVisible(false), 300);
-      return () => clearTimeout(timer);
-    } else {
-      window.addEventListener('load', handleLoad);
-      // Fallback timeout to ensure loader goes away in case load event already fired
-      const timer = setTimeout(() => {
-        setFade(true);
-        setTimeout(() => setVisible(false), 300);
-      }, 800);
-      return () => {
-        window.removeEventListener('load', handleLoad);
-        clearTimeout(timer);
-      };
-    }
+    root.classList.remove('splash-out');
+    root.classList.add('splash-active');
+    window.dispatchEvent(new Event('tm:splash-start'));
+
+    const exitTimer = window.setTimeout(() => {
+      root.classList.remove('splash-active');
+      root.classList.add('splash-out');
+      setPhase('exit');
+      window.dispatchEvent(new Event('tm:splash-exit'));
+    }, introDuration);
+
+    const hideTimer = window.setTimeout(() => {
+      setPhase('hidden');
+    }, introDuration + exitDuration);
+
+    const settleTimer = window.setTimeout(() => {
+      root.classList.remove('splash-out');
+    }, introDuration + exitDuration + 700);
+
+    return () => {
+      window.clearTimeout(exitTimer);
+      window.clearTimeout(hideTimer);
+      window.clearTimeout(settleTimer);
+      root.classList.remove('splash-active', 'splash-out');
+    };
   }, []);
 
-  if (!visible) return null;
+  if (phase === 'hidden') return null;
 
   return (
-    <div 
-      id="loader-wrapper" 
-      style={{ 
-        opacity: fade ? 0 : 1, 
-        visibility: fade ? 'hidden' : 'visible', 
-        transition: 'opacity 300ms ease-out, visibility 300ms ease-out' 
-      }}
+    <div
+      id="loader-wrapper"
+      className={styles.overlay}
+      data-phase={phase}
+      aria-hidden="true"
     >
-      <div className="loader"></div>
-      <style jsx global>{`
-        #loader-wrapper {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: white;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          z-index: 9999;
-        }
-
-        .loader {
-          width: 20px;
-          aspect-ratio: 1;
-          background: #1692C8;
-          box-shadow: 0 0 60px 15px #1692C8;
-          transform: translate(-80px);
-          clip-path: inset(0);
-          animation:
-            l4-1 0.5s ease-in-out infinite alternate,
-            l4-2 1s ease-in-out infinite;
-        }
-
-        @keyframes l4-1 {
-          100% { transform: translateX(80px); }
-        }
-
-        @keyframes l4-2 {
-          33% { clip-path: inset(0 0 0 -100px); }
-          50% { clip-path: inset(0 0 0 0); }
-          83% { clip-path: inset(0 -100px 0 0); }
-        }
-      `}</style>
+      <div className={styles.brand}>
+        <Image
+          src="/images/touchmark-logowhite.svg"
+          alt=""
+          width={176}
+          height={37}
+          priority
+          className={styles.logo}
+        />
+        <span className={styles.accent} />
+      </div>
     </div>
   );
 }
-

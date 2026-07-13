@@ -66,7 +66,7 @@ export default function RecentBlogs() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-16">
           {/* Left: Image */}
           <div className="relative group overflow-hidden rounded-none">
-            <img 
+            <img loading="lazy" decoding="async"
               src="/images/blog/vr.webp" 
               alt="Featured Blog - VR Headset" 
               className="w-full h-auto object-cover rounded-none" 
@@ -150,7 +150,7 @@ export default function RecentBlogs() {
               
               <div>
                 <div className="my-6 overflow-hidden rounded-none">
-                  <img 
+                  <img loading="lazy" decoding="async"
                     src={blog.image} 
                     alt="Blog representation" 
                     className="w-full h-44 object-cover object-center" 

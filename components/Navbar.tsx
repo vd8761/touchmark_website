@@ -1,307 +1,573 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import styles from './Navbar.module.css';
 
-export default function Navbar() {
-  const pathname = usePathname();
+type MenuName = 'services' | 'industries';
+
+type NavigationItem = {
+  label: string;
+  href: string;
+  detail: string;
+};
+
+const serviceItems: NavigationItem[] = [
+  { label: 'Technology & Consulting', href: '/technology-consulting-service', detail: 'Digital strategy and transformation' },
+  { label: 'Cloud', href: '/cloud', detail: 'Secure, scalable cloud foundations' },
+  { label: 'Sales & Commerce', href: '/sales-commerce-service', detail: 'Connected customer journeys' },
+  { label: 'Metaverse', href: '/metaverse-service', detail: 'Immersive spatial experiences' },
+  { label: 'Data & Analytics', href: '/data-analytics-service', detail: 'Decisions powered by useful data' },
+  { label: 'AI & ML', href: '/ai-ml-service', detail: 'Practical intelligent automation' },
+  { label: 'Robotic Process Automation', href: '/robotic-process-automation-service', detail: 'Faster, reliable business operations' },
+];
+
+const industryItems: NavigationItem[] = [
+  { label: 'BFSI', href: '/bfsi-industry', detail: 'Banking and financial services' },
+  { label: 'Aerospace & Defense', href: '/aerospace-industry', detail: 'Mission-ready digital systems' },
+  { label: 'Engineering & R&D', href: '/engineering-industry', detail: 'Product and process innovation' },
+  { label: 'ESG', href: '/esg-industry', detail: 'Responsible, measurable growth' },
+  { label: 'FMCG & Retail', href: '/fmcg-industry', detail: 'Modern consumer experiences' },
+  { label: 'Geospatial Tech', href: '/green-tech-industry', detail: 'Location-powered intelligence' },
+  { label: 'Healthcare & Life Sciences', href: '/healthcare-industry', detail: 'Human-centred health technology' },
+  { label: 'Media & Entertainment', href: '/media-entertainment-industry', detail: 'Engaging digital content' },
+  { label: 'Mining', href: '/mining-industry', detail: 'Safer, smarter operations' },
+  { label: 'Real Estate', href: '/real-estate-industry', detail: 'Connected property ecosystems' },
+  { label: 'Travel & Tourism', href: '/travel-tourism-industry', detail: 'Memorable traveller journeys' },
+];
+
+const menuContent = {
+  services: {
+    eyebrow: 'Our capabilities',
+    title: 'Build what comes next',
+    description: 'Strategy, engineering and experience design brought together to solve complex business challenges.',
+    header: 'Explore our end-to-end digital capabilities.',
+  },
+  industries: {
+    eyebrow: 'Industry expertise',
+    title: 'Context changes everything',
+    description: 'Sector knowledge paired with modern technology, so every solution fits the people and systems around it.',
+    header: 'See how we apply technology across industries.',
+  },
+};
+
+function ArrowIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M7 17 17 7M9 7h8v8" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+function ChevronIcon({ open }: { open: boolean }) {
+  return (
+    <svg
+      className={['ml-1 size-4 flex-none transition-transform duration-200', open ? 'rotate-180' : ''].join(' ')}
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="none"
+      aria-hidden="true"
+    >
+      <path d="m7 10 5 5 5-5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+function MegaMenu({
+  activeMenu,
+  currentPath,
+  onClose,
+}: {
+  activeMenu: MenuName;
+  currentPath: string;
+  onClose: (restoreTriggerFocus?: boolean) => void;
+}) {
+  const content = menuContent[activeMenu];
+  const items = activeMenu === 'services' ? serviceItems : industryItems;
+
+  return (
+    <>
+      <button
+        type="button"
+        className={styles.scrim}
+        aria-label="Close navigation panel"
+        tabIndex={-1}
+        onClick={() => onClose(true)}
+      />
+      <section
+        id={activeMenu + '-menu'}
+        className={styles.megaMenu}
+        aria-labelledby={activeMenu + '-menu-trigger'}
+        data-motion-skip
+      >
+        <div className={styles.megaGrid}>
+          <div className={styles.megaIntro}>
+            <div>
+              <p className={styles.eyebrow}>{content.eyebrow}</p>
+              <h2 className={styles.megaTitle}>{content.title}</h2>
+              <p className={styles.megaDescription}>{content.description}</p>
+            </div>
+            <span className={styles.introNote}>Touchmark Descience</span>
+          </div>
+
+          <div className={styles.megaBody}>
+            <div className={styles.megaHeader}>
+              <p>{content.header}</p>
+              <button
+                type="button"
+                className={styles.closeButton}
+                aria-label="Close navigation panel"
+                onClick={() => onClose(true)}
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="m6 6 12 12M18 6 6 18" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+                </svg>
+              </button>
+            </div>
+
+            <div className={[styles.linkGrid, activeMenu === 'industries' ? styles.industryGrid : ''].join(' ')}>
+              {items.map((item, index) => (
+                <Link
+                  className={styles.megaLink}
+                  href={item.href}
+                  key={item.href}
+                  aria-current={currentPath === item.href ? 'page' : undefined}
+                  data-mega-link
+                  onClick={() => onClose()}
+                >
+                  <span className={styles.linkIndex}>{String(index + 1).padStart(2, '0')}</span>
+                  <span>
+                    <span className={styles.linkLabel}>{item.label}</span>
+                    <span className={styles.linkDetail}>{item.detail}</span>
+                  </span>
+                  <ArrowIcon className={styles.linkArrow} />
+                </Link>
+              ))}
+            </div>
+
+            <div className={styles.megaFooter}>
+              <span>Not sure where to begin? Tell us what you are trying to solve.</span>
+              <Link className={styles.footerLink} href="/contact-us" onClick={() => onClose()}>
+                Start a conversation
+                <ArrowIcon />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
+function NavbarContent({ pathname }: { pathname: string }) {
   const isHome = pathname === '/';
-  
+  const navRef = useRef<HTMLElement>(null);
+  const mobileMenuButtonRef = useRef<HTMLButtonElement>(null);
+  const mobileMenuPanelRef = useRef<HTMLDivElement>(null);
+  const closeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeMenu, setActiveMenu] = useState<MenuName | null>(null);
 
   useEffect(() => {
-    if (!isHome) {
-      setScrolled(true);
+    if (!isHome) return;
+
+    const handleScroll = () => setScrolled(window.scrollY > 0);
+    const initialFrame = requestAnimationFrame(handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => {
+      cancelAnimationFrame(initialFrame);
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [isHome]);
+
+  useEffect(() => {
+    if (!activeMenu) return;
+
+    const handlePointerDown = (event: PointerEvent) => {
+      if (navRef.current && !navRef.current.contains(event.target as Node)) {
+        setActiveMenu(null);
+      }
+    };
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key !== 'Escape') return;
+      const triggerId = activeMenu + '-menu-trigger';
+      setActiveMenu(null);
+      requestAnimationFrame(() => document.getElementById(triggerId)?.focus());
+    };
+
+    document.addEventListener('pointerdown', handlePointerDown);
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('pointerdown', handlePointerDown);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [activeMenu]);
+
+  useEffect(() => {
+    if (!mobileMenuOpen) return;
+
+    const previousBodyOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        setMobileMenuOpen(false);
+        requestAnimationFrame(() => mobileMenuButtonRef.current?.focus());
+        return;
+      }
+
+      if (event.key !== 'Tab') return;
+
+      const panel = mobileMenuPanelRef.current;
+      const toggle = mobileMenuButtonRef.current;
+      if (!panel || !toggle) return;
+
+      const panelItems = Array.from(
+        panel.querySelectorAll<HTMLElement>(
+          'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])',
+        ),
+      ).filter((element) => element.getClientRects().length > 0);
+      const focusableItems = [toggle, ...panelItems];
+      const firstItem = focusableItems[0];
+      const lastItem = focusableItems[focusableItems.length - 1];
+      const activeElement = document.activeElement;
+
+      if (!(activeElement instanceof HTMLElement) || !focusableItems.includes(activeElement)) {
+        event.preventDefault();
+        (event.shiftKey ? lastItem : firstItem).focus();
+        return;
+      }
+
+      if (event.shiftKey && activeElement === firstItem) {
+        event.preventDefault();
+        lastItem.focus();
+      } else if (!event.shiftKey && activeElement === lastItem) {
+        event.preventDefault();
+        firstItem.focus();
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.body.style.overflow = previousBodyOverflow;
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [mobileMenuOpen]);
+
+  useEffect(() => {
+    return () => {
+      if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
+    };
+  }, []);
+
+  useEffect(() => {
+    const desktopViewport = window.matchMedia('(min-width: 1024px)');
+    const handleViewportChange = (event: MediaQueryListEvent) => {
+      if (event.matches) setMobileMenuOpen(false);
+      else setActiveMenu(null);
+    };
+
+    desktopViewport.addEventListener('change', handleViewportChange);
+    return () => desktopViewport.removeEventListener('change', handleViewportChange);
+  }, []);
+
+  const cancelScheduledClose = () => {
+    if (!closeTimerRef.current) return;
+    clearTimeout(closeTimerRef.current);
+    closeTimerRef.current = null;
+  };
+
+  const openMenu = (menu: MenuName) => {
+    cancelScheduledClose();
+    setActiveMenu(menu);
+    setMobileMenuOpen(false);
+  };
+
+  const focusFirstMenuLink = (menu: MenuName) => {
+    requestAnimationFrame(() => {
+      document.querySelector<HTMLAnchorElement>(`#${menu}-menu [data-mega-link]`)?.focus();
+    });
+  };
+
+  const openMenuFromKeyboard = (menu: MenuName) => {
+    openMenu(menu);
+    focusFirstMenuLink(menu);
+  };
+
+  const scheduleMenuClose = () => {
+    cancelScheduledClose();
+    closeTimerRef.current = setTimeout(() => setActiveMenu(null), 160);
+  };
+
+  const toggleMenu = (menu: MenuName) => {
+    cancelScheduledClose();
+    setActiveMenu((current) => current === menu ? null : menu);
+  };
+
+  const closeActiveMenu = (restoreTriggerFocus = false) => {
+    const menuToRestore = activeMenu;
+    setActiveMenu(null);
+    if (restoreTriggerFocus && menuToRestore) {
+      requestAnimationFrame(() => {
+        document.getElementById(`${menuToRestore}-menu-trigger`)?.focus();
+      });
+    }
+  };
+
+  const handleMenuTriggerClick = (menu: MenuName, event: React.MouseEvent<HTMLButtonElement>) => {
+    if (event.detail !== 0) {
+      openMenu(menu);
       return;
     }
 
-    setScrolled(window.scrollY > 0);
+    const willOpen = activeMenu !== menu;
+    toggleMenu(menu);
+    if (willOpen) focusFirstMenuLink(menu);
+  };
 
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 0);
-    };
+  const handleMenuTriggerKeyDown = (menu: MenuName, event: React.KeyboardEvent<HTMLButtonElement>) => {
+    if (event.key === 'ArrowDown' || (event.key === 'Enter' && activeMenu !== menu)) {
+      event.preventDefault();
+      openMenuFromKeyboard(menu);
+    }
+  };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [isHome]);
-
-  const navClass = scrolled || !isHome
-    ? 'lg:bg-white lg:shadow-md lg:text-black bg-white text-black'
-    : 'lg:bg-transparent lg:text-white bg-white text-black';
+  const solidNav = scrolled || !isHome || activeMenu !== null;
+  const navClass = solidNav
+    ? 'lg:bg-white/95 lg:backdrop-blur-xl lg:shadow-[0_8px_30px_rgba(15,40,80,0.08)] lg:text-slate-950 bg-white text-slate-950'
+    : 'lg:bg-transparent lg:text-white bg-white text-slate-950';
+  const indicatorColor = solidNav ? 'bg-primary' : 'bg-white';
+  const topLinkClass = 'relative flex h-14 items-center px-3 font-inter text-sm font-medium';
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${navClass}`}>
-      {/* Desktop & Mobile Navbar Container */}
-      <div className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-14">
-          
-          {/* Logo */}
-          <div className="flex-shrink-0">
-            <a href="/" className="lg:block hidden">
-              {scrolled || !isHome ? (
-                <img src="/images/tds-color-logo.webp" className="h-7" alt="Logo" />
-              ) : (
-                <img src="/images/touchmark-logowhite.svg" className="h-7" alt="Logo" />
-              )}
-            </a>
-            <a href="/" className="lg:hidden block">
-              <img src="/images/tds-color-logo.webp" className="h-7" alt="Logo" />
-            </a>
+    <nav
+      ref={navRef}
+      aria-label="Primary navigation"
+      className={[styles.nav, 'fixed left-0 top-0 z-50 w-full transition-colors duration-300', navClass].join(' ')}
+      onMouseEnter={cancelScheduledClose}
+      onMouseLeave={scheduleMenuClose}
+      onBlur={(event) => {
+        if (!event.currentTarget.contains(event.relatedTarget as Node | null)) {
+          setActiveMenu(null);
+        }
+      }}
+    >
+      <div className={[styles.barContent, '2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] mx-auto w-full px-4 md:px-6 lg:px-8'].join(' ')}>
+        <div className="flex h-14 items-center justify-between">
+          <Link
+            href="/"
+            className="flex shrink-0 items-center"
+            aria-label="Touchmark Descience home"
+            aria-current={pathname === '/' ? 'page' : undefined}
+            onFocus={() => setActiveMenu(null)}
+          >
+            <Image
+              src={solidNav ? '/images/tds-color-logo.webp' : '/images/touchmark-logowhite.svg'}
+              width={151}
+              height={28}
+              unoptimized
+              loading="eager"
+              className="hidden h-7 w-auto lg:block"
+              alt="Touchmark Descience"
+            />
+            <Image
+              src="/images/tds-color-logo.webp"
+              width={151}
+              height={28}
+              unoptimized
+              loading="eager"
+              className="block h-7 w-auto lg:hidden"
+              alt="Touchmark Descience"
+            />
+          </Link>
+
+          <div className="hidden items-center lg:flex">
+            <Link
+              href="/about-us"
+              className={['group', topLinkClass].join(' ')}
+              aria-current={pathname === '/about-us' ? 'page' : undefined}
+              onFocus={() => setActiveMenu(null)}
+            >
+              Who we are
+              <span className={['absolute inset-x-3 bottom-1 h-0.5 origin-left scale-x-0 rounded-full transition-transform duration-200 group-hover:scale-x-100', indicatorColor].join(' ')} />
+            </Link>
+
+            <div className="relative" onMouseEnter={() => openMenu('services')}>
+              <button
+                id="services-menu-trigger"
+                type="button"
+                className={topLinkClass}
+                aria-expanded={activeMenu === 'services'}
+                aria-controls="services-menu"
+                aria-haspopup="true"
+                onClick={(event) => handleMenuTriggerClick('services', event)}
+                onKeyDown={(event) => handleMenuTriggerKeyDown('services', event)}
+              >
+                What we do
+                <ChevronIcon open={activeMenu === 'services'} />
+                <span className={['absolute inset-x-3 bottom-1 h-0.5 origin-left rounded-full transition-transform duration-200', activeMenu === 'services' ? 'scale-x-100' : 'scale-x-0', indicatorColor].join(' ')} />
+              </button>
+            </div>
+
+            <div className="relative" onMouseEnter={() => openMenu('industries')}>
+              <button
+                id="industries-menu-trigger"
+                type="button"
+                className={topLinkClass}
+                aria-expanded={activeMenu === 'industries'}
+                aria-controls="industries-menu"
+                aria-haspopup="true"
+                onClick={(event) => handleMenuTriggerClick('industries', event)}
+                onKeyDown={(event) => handleMenuTriggerKeyDown('industries', event)}
+              >
+                Industries
+                <ChevronIcon open={activeMenu === 'industries'} />
+                <span className={['absolute inset-x-3 bottom-1 h-0.5 origin-left rounded-full transition-transform duration-200', activeMenu === 'industries' ? 'scale-x-100' : 'scale-x-0', indicatorColor].join(' ')} />
+              </button>
+            </div>
+
+            <Link
+              href="/blog"
+              className={['group', topLinkClass].join(' ')}
+              aria-current={pathname === '/blog' ? 'page' : undefined}
+              onFocus={() => setActiveMenu(null)}
+            >
+              Blog
+              <span className={['absolute inset-x-3 bottom-1 h-0.5 origin-left scale-x-0 rounded-full transition-transform duration-200 group-hover:scale-x-100', indicatorColor].join(' ')} />
+            </Link>
+            <Link
+              href="/contact-us"
+              className={['group', topLinkClass].join(' ')}
+              aria-current={pathname === '/contact-us' ? 'page' : undefined}
+              onFocus={() => setActiveMenu(null)}
+            >
+              Contact Us
+              <span className={['absolute inset-x-3 bottom-1 h-0.5 origin-left scale-x-0 rounded-full transition-transform duration-200 group-hover:scale-x-100', indicatorColor].join(' ')} />
+            </Link>
           </div>
 
-          {/* Desktop Navigation Links */}
-          <div className="hidden lg:block">
-            <div className="flex justify-start items-center">
-              
-              {/* Who We Are */}
-              <div className="hs-dropdown group [--strategy:static] lg:h-14 sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover] flex lg:justify-center items-center">
-                <div className="h-10">
-                  <a href="/about-us">
-                    <button type="button" className="font-inter font-semibold lg:font-normal sm:p-3 flex items-center w-full text-lg lg:text-sm">
-                      Who we are
-                    </button>
-                  </a>
-                  <div className={`h-[2px] mx-3 rounded-[100px] lg:block hidden -mt-1.5 transition-all duration-300 scale-x-0 group-hover:scale-x-100 origin-left ${scrolled || !isHome ? 'bg-primary' : 'bg-white'}`} />
-                </div>
-              </div>
+          <Link
+            href="/contact-us"
+            className={[
+              'hidden items-center px-4 py-2 font-inter text-xs font-semibold transition-all duration-200 hover:-translate-y-0.5 lg:inline-flex',
+              solidNav ? 'bg-primary text-white hover:shadow-lg hover:shadow-primary/20' : 'bg-white text-primary hover:shadow-lg hover:shadow-white/10',
+            ].join(' ')}
+            onFocus={() => setActiveMenu(null)}
+          >
+            Work With Us
+          </Link>
 
-              {/* What We Do */}
-              <div className="hs-dropdown group lg:h-14 [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover] lg:flex lg:justify-center items-center">
-                <div className="h-10">
-                  <button type="button" className="font-inter font-semibold lg:font-normal sm:p-3 flex justify-between items-center w-full text-lg lg:text-sm">
-                    What we do
-                    <svg className="ms-1 flex-shrink-0 size-4 group-hover:-rotate-180 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="m6 9 6 6 6-6" />
-                    </svg>
-                  </button>
-                  <div className={`h-[2px] mx-3 rounded-[100px] lg:block hidden -mt-1.5 transition-all duration-300 scale-x-0 group-hover:scale-x-100 origin-left ${scrolled || !isHome ? 'bg-primary' : 'bg-white'}`} />
-                </div>
-                
-                {/* Mega Dropdown for What We Do */}
-                <div className="hs-dropdown-menu absolute z-10 top-full left-0 w-full bg-white sm:shadow-md py-3 sm:px-2 border border-gray-100 opacity-0 invisible translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 ease-out">
-                  <div className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8">
-                    <div className="ml-5">
-                      <h1 className="font-gellix text-xl py-2 lg:block hidden text-gray-950">What We Do</h1>
-                    </div>
-                    <div className="sm:grid sm:grid-cols-4 px-5 lg:px-2 lg:p-7 text-gray-900">
-                      <div className="flex flex-col space-y-5 lg:text-sm text-base lg:pt-0 pt-2">
-                        <a className="group hover:text-primary" href="/technology-consulting-service">
-                          <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-primary after:absolute after:h-[2px] after:w-0 after:bottom-1 after:left-0 group-hover:after:w-full after:transition-all after:duration-300 cursor-pointer">Technology & Consulting</span>
-                        </a>
-                        <a className="group hover:text-primary" href="/cloud">
-                          <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-primary after:absolute after:h-[2px] after:w-0 after:bottom-1 after:left-0 group-hover:after:w-full after:transition-all after:duration-300 cursor-pointer">Cloud</span>
-                        </a>
-                        <a className="group hover:text-primary" href="/sales-commerce-service">
-                          <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-primary after:absolute after:h-[2px] after:w-0 after:bottom-1 after:left-0 group-hover:after:w-full after:transition-all after:duration-300 cursor-pointer">Sales & Commerce</span>
-                        </a>
-                        <a className="group hover:text-primary" href="/metaverse-service">
-                          <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-primary after:absolute after:h-[2px] after:w-0 after:bottom-1 after:left-0 group-hover:after:w-full after:transition-all after:duration-300 cursor-pointer">Metaverse</span>
-                        </a>
-                      </div>
-                      <div className="flex flex-col space-y-5 lg:pt-0 pt-5 lg:text-sm text-base">
-                        <a className="group hover:text-primary" href="/data-analytics-service">
-                          <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-primary after:absolute after:h-[2px] after:w-0 after:bottom-1 after:left-0 group-hover:after:w-full after:transition-all after:duration-300 cursor-pointer">Data & Analytics</span>
-                        </a>
-                        <a className="group hover:text-primary" href="/ai-ml-service">
-                          <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-primary after:absolute after:h-[2px] after:w-0 after:bottom-1 after:left-0 group-hover:after:w-full after:transition-all after:duration-300 cursor-pointer">AI & ML</span>
-                        </a>
-                        <a className="group hover:text-primary" href="/robotic-process-automation-service">
-                          <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-primary after:absolute after:h-[2px] after:w-0 after:bottom-1 after:left-0 group-hover:after:w-full after:transition-all after:duration-300 cursor-pointer">Robotic Process Automation</span>
-                        </a>
-                      </div>
-                      <div className="lg:block hidden">
-                        <div className="flex space-x-5">
-                          <div className="border-gray-300 border-l" />
-                          <div className="space-y-4 px-5">
-                            <h1 className="uppercase text-gray-500 text-xs font-gellix font-semibold">Featured</h1>
-                            <h3 className="mt-3 text-sm font-gellix font-semibold">Touchmark Quarterly</h3>
-                            <p className="mt-2 text-xs font-inter text-gray-500 leading-relaxed">Silicon Valley pioneer Reid Hoffman explains why we should view AI as a colleague rather than a competitor.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="lg:block hidden p-3">
-                        <img src="/images/navbar-img-service.webp" className="w-64 h-36 object-cover rounded shadow" alt="Featured Services" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <button
+            ref={mobileMenuButtonRef}
+            type="button"
+            className="inline-flex size-10 items-center justify-center border border-slate-200 bg-white text-slate-800 shadow-sm lg:hidden"
+            aria-label={mobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+            aria-expanded={mobileMenuOpen}
+            aria-controls="mobile-navigation"
+            onClick={() => {
+              setMobileMenuOpen((open) => !open);
+              setActiveMenu(null);
+            }}
+          >
+            {mobileMenuOpen ? (
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="m6 6 12 12M18 6 6 18" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+              </svg>
+            ) : (
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+              </svg>
+            )}
+          </button>
+        </div>
+      </div>
 
-              {/* Industries */}
-              <div className="hs-dropdown group lg:h-14 [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover] lg:flex lg:justify-center items-center">
-                <div className="h-10">
-                  <button type="button" className="font-inter font-semibold lg:font-normal sm:p-3 flex justify-between items-center w-full text-lg lg:text-sm">
-                    Industries
-                    <svg className="ms-1 flex-shrink-0 size-4 group-hover:-rotate-180 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="m6 9 6 6 6-6" />
-                    </svg>
-                  </button>
-                  <div className={`h-[2px] mx-3 rounded-[100px] lg:block hidden -mt-1.5 transition-all duration-300 scale-x-0 group-hover:scale-x-100 origin-left ${scrolled || !isHome ? 'bg-primary' : 'bg-white'}`} />
-                </div>
+      {activeMenu && (
+        <MegaMenu
+          activeMenu={activeMenu}
+          currentPath={pathname}
+          onClose={closeActiveMenu}
+        />
+      )}
 
-                {/* Mega Dropdown for Industries */}
-                <div className="hs-dropdown-menu absolute z-10 top-full left-0 w-full bg-white sm:shadow-md py-3 sm:px-2 border border-gray-100 opacity-0 invisible translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 ease-out">
-                  <div className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8">
-                    <div className="ml-5">
-                      <h1 className="font-gellix text-xl py-2 lg:block hidden text-gray-950">Industries</h1>
-                    </div>
-                    <div className="sm:grid sm:grid-cols-4 px-5 lg:px-2 lg:p-7 text-gray-900">
-                      <div className="flex flex-col space-y-5 lg:text-sm text-base lg:pt-0 pt-2">
-                        <a className="group hover:text-primary" href="/bfsi-industry">
-                          <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-primary after:absolute after:h-[2px] after:w-0 after:bottom-1 after:left-0 group-hover:after:w-full after:transition-all after:duration-300 cursor-pointer">BFSI</span>
-                        </a>
-                        <a className="group hover:text-primary" href="/aerospace-industry">
-                          <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-primary after:absolute after:h-[2px] after:w-0 after:bottom-1 after:left-0 group-hover:after:w-full after:transition-all after:duration-300 cursor-pointer">Aerospace & Defense</span>
-                        </a>
-                        <a className="group hover:text-primary" href="/engineering-industry">
-                          <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-primary after:absolute after:h-[2px] after:w-0 after:bottom-1 after:left-0 group-hover:after:w-full after:transition-all after:duration-300 cursor-pointer">Engineering & R&D</span>
-                        </a>
-                        <a className="group hover:text-primary" href="/esg-industry">
-                          <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-primary after:absolute after:h-[2px] after:w-0 after:bottom-1 after:left-0 group-hover:after:w-full after:transition-all after:duration-300 cursor-pointer">ESG</span>
-                        </a>
-                      </div>
-                      <div className="flex flex-col space-y-5 lg:pt-0 pt-5 lg:text-sm text-base">
-                        <a className="group hover:text-primary" href="/fmcg-industry">
-                          <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-primary after:absolute after:h-[2px] after:w-0 after:bottom-1 after:left-0 group-hover:after:w-full after:transition-all after:duration-300 cursor-pointer">FMCG & Retail</span>
-                        </a>
-                        <a className="group hover:text-primary" href="/green-tech-industry">
-                          <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-primary after:absolute after:h-[2px] after:w-0 after:bottom-1 after:left-0 group-hover:after:w-full after:transition-all after:duration-300 cursor-pointer">Geospatial Tech</span>
-                        </a>
-                        <a className="group hover:text-primary" href="/healthcare-industry">
-                          <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-primary after:absolute after:h-[2px] after:w-0 after:bottom-1 after:left-0 group-hover:after:w-full after:transition-all after:duration-300 cursor-pointer">Healthcare & Life Sciences</span>
-                        </a>
-                        <a className="group hover:text-primary" href="/media-entertainment-industry">
-                          <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-primary after:absolute after:h-[2px] after:w-0 after:bottom-1 after:left-0 group-hover:after:w-full after:transition-all after:duration-300 cursor-pointer">Media & Entertainment</span>
-                        </a>
-                      </div>
-                      <div className="flex flex-col space-y-5 lg:pt-0 pt-5 lg:text-sm text-base">
-                        <a className="group hover:text-primary" href="/mining-industry">
-                          <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-primary after:absolute after:h-[2px] after:w-0 after:bottom-1 after:left-0 group-hover:after:w-full after:transition-all after:duration-300 cursor-pointer">Mining</span>
-                        </a>
-                        <a className="group hover:text-primary" href="/real-estate-industry">
-                          <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-primary after:absolute after:h-[2px] after:w-0 after:bottom-1 after:left-0 group-hover:after:w-full after:transition-all after:duration-300 cursor-pointer">Real Estate</span>
-                        </a>
-                        <a className="group hover:text-primary" href="/travel-tourism-industry">
-                          <span className="lg:ml-3 gap-x-3.5 py-2 relative after:bg-primary after:absolute after:h-[2px] after:w-0 after:bottom-1 after:left-0 group-hover:after:w-full after:transition-all after:duration-300 cursor-pointer">Travel & Tourism</span>
-                        </a>
-                      </div>
-                      <div className="lg:block hidden p-3">
-                        <img src="/images/navbar-img-industry.webp" className="w-64 h-36 object-cover rounded shadow" alt="Featured Industries" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      {mobileMenuOpen && (
+        <div
+          ref={mobileMenuPanelRef}
+          id="mobile-navigation"
+          className="max-h-[calc(100dvh-56px)] overflow-y-auto border-t border-slate-100 bg-white px-4 py-5 text-slate-900 shadow-xl lg:hidden"
+        >
+          <div className="mx-auto max-w-xl">
+            <Link
+              href="/about-us"
+              className="block border-b border-slate-100 py-3 font-semibold"
+              aria-current={pathname === '/about-us' ? 'page' : undefined}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Who we are
+            </Link>
 
-              {/* Blog */}
-              <div className="hs-dropdown group [--strategy:static] lg:h-14 sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover] flex lg:justify-center items-center">
-                <div className="h-10">
-                  <a href="/blog">
-                    <button type="button" className="font-inter font-semibold lg:font-normal sm:p-3 flex items-center w-full text-lg lg:text-sm">
-                      Blog
-                    </button>
-                  </a>
-                  <div className={`h-[2px] mx-3 rounded-[100px] lg:block hidden -mt-1.5 transition-all duration-300 scale-x-0 group-hover:scale-x-100 origin-left ${scrolled || !isHome ? 'bg-primary' : 'bg-white'}`} />
-                </div>
-              </div>
+            <p className="mb-2 mt-5 text-xs font-semibold uppercase tracking-[0.16em] text-primary">What we do</p>
+            <div className="grid grid-cols-1 gap-x-6 sm:grid-cols-2">
+              {serviceItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="border-b border-slate-100 py-2.5 text-sm text-slate-700 hover:text-primary"
+                  aria-current={pathname === item.href ? 'page' : undefined}
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
 
-              {/* Contact Us */}
-              <div className="hs-dropdown group [--strategy:static] lg:h-14 sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover] flex lg:justify-center items-center">
-                <div className="h-10">
-                  <a href="/contact-us">
-                    <button type="button" className="font-inter font-semibold lg:font-normal sm:p-3 flex items-center w-full text-lg lg:text-sm">
-                      Contact Us
-                    </button>
-                  </a>
-                  <div className={`h-[2px] mx-3 rounded-[100px] lg:block hidden -mt-1.5 transition-all duration-300 scale-x-0 group-hover:scale-x-100 origin-left ${scrolled || !isHome ? 'bg-primary' : 'bg-white'}`} />
-                </div>
-              </div>
+            <p className="mb-2 mt-5 text-xs font-semibold uppercase tracking-[0.16em] text-primary">Industries</p>
+            <div className="grid grid-cols-2 gap-x-6">
+              {industryItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="border-b border-slate-100 py-2.5 text-sm text-slate-700 hover:text-primary"
+                  aria-current={pathname === item.href ? 'page' : undefined}
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
 
+            <div className="mt-5 grid grid-cols-2 gap-3">
+              <Link
+                href="/blog"
+                className="border border-slate-200 px-3 py-3 text-center text-sm font-semibold"
+                aria-current={pathname === '/blog' ? 'page' : undefined}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Blog
+              </Link>
+              <Link
+                href="/contact-us"
+                className="bg-primary px-3 py-3 text-center text-sm font-semibold text-white"
+                aria-current={pathname === '/contact-us' ? 'page' : undefined}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Work With Us
+              </Link>
             </div>
           </div>
-
-          {/* Right Action Button (Desktop Only) */}
-          <div className="hidden lg:flex items-center space-x-4">
-            <a href="/contact-us">
-              <button className={`px-4 py-2 font-inter text-xs font-semibold rounded transition-all duration-300 hover:scale-105 active:scale-95 ${
-                scrolled || !isHome 
-                  ? 'bg-primary text-white hover:bg-primary/95 hover:shadow-lg hover:shadow-primary/20' 
-                  : 'bg-white text-primary hover:bg-gray-50 hover:shadow-lg hover:shadow-white/10'
-              }`}>
-                Work With Us
-              </button>
-            </a>
-          </div>
-
-          {/* Mobile Menu Toggle (Hamburger) */}
-          <div className="lg:hidden flex items-center">
-            <button 
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              type="button" 
-              className="p-2 inline-flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none"
-            >
-              <svg className={`hs-collapse-open:hidden ${mobileMenuOpen ? 'hidden' : 'block'} size-4`} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <line x1="3" x2="21" y1="6" y2="6" />
-                <line x1="3" x2="21" y1="12" y2="12" />
-                <line x1="3" x2="21" y1="18" y2="18" />
-              </svg>
-              <svg className={`hs-collapse-open:block ${mobileMenuOpen ? 'block' : 'hidden'} size-4`} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M18 6 6 18" />
-                <path d="m6 6 12 12" />
-              </svg>
-            </button>
-          </div>
-
         </div>
-      </div>
-
-      {/* Mobile Drawer Navigation Menu */}
-      <div className={`lg:hidden w-full bg-white border-t border-gray-100 transition-all duration-300 overflow-hidden ${mobileMenuOpen ? 'max-h-[100vh] py-4' : 'max-h-0'}`}>
-        <div className="px-4 space-y-4">
-          <a href="/about-us" className="block text-gray-800 hover:text-primary hover:pl-2 transition-all duration-300 font-medium py-2">Who we are</a>
-          
-          <div className="border-t border-gray-100 my-2" />
-          <h4 className="text-gray-400 font-semibold text-xs uppercase tracking-wider">What We Do</h4>
-          <div className="pl-3 space-y-2">
-            <a href="/technology-consulting-service" className="block text-gray-600 hover:text-primary hover:pl-2 transition-all duration-300 text-sm py-1">Technology & Consulting</a>
-            <a href="/cloud" className="block text-gray-600 hover:text-primary hover:pl-2 transition-all duration-300 text-sm py-1">Cloud</a>
-            <a href="/sales-commerce-service" className="block text-gray-600 hover:text-primary hover:pl-2 transition-all duration-300 text-sm py-1">Sales & Commerce</a>
-            <a href="/metaverse-service" className="block text-gray-600 hover:text-primary hover:pl-2 transition-all duration-300 text-sm py-1">Metaverse</a>
-            <a href="/data-analytics-service" className="block text-gray-600 hover:text-primary hover:pl-2 transition-all duration-300 text-sm py-1">Data & Analytics</a>
-            <a href="/ai-ml-service" className="block text-gray-600 hover:text-primary hover:pl-2 transition-all duration-300 text-sm py-1">AI & ML</a>
-            <a href="/robotic-process-automation-service" className="block text-gray-600 hover:text-primary hover:pl-2 transition-all duration-300 text-sm py-1">Robotic Process Automation</a>
-          </div>
-
-          <div className="border-t border-gray-100 my-2" />
-          <h4 className="text-gray-400 font-semibold text-xs uppercase tracking-wider">Industries</h4>
-          <div className="pl-3 grid grid-cols-2 gap-2 text-sm">
-            <a href="/bfsi-industry" className="block text-gray-600 hover:text-primary hover:pl-2 transition-all duration-300 py-1">BFSI</a>
-            <a href="/aerospace-industry" className="block text-gray-600 hover:text-primary hover:pl-2 transition-all duration-300 py-1">Aerospace</a>
-            <a href="/engineering-industry" className="block text-gray-600 hover:text-primary hover:pl-2 transition-all duration-300 py-1">Engineering</a>
-            <a href="/esg-industry" className="block text-gray-600 hover:text-primary hover:pl-2 transition-all duration-300 py-1">ESG</a>
-            <a href="/fmcg-industry" className="block text-gray-600 hover:text-primary hover:pl-2 transition-all duration-300 py-1">Fast-Moving Consumer Goods</a>
-            <a href="/green-tech-industry" className="block text-gray-600 hover:text-primary hover:pl-2 transition-all duration-300 py-1">Geospatial</a>
-            <a href="/healthcare-industry" className="block text-gray-600 hover:text-primary hover:pl-2 transition-all duration-300 py-1">Healthcare</a>
-            <a href="/media-entertainment-industry" className="block text-gray-600 hover:text-primary hover:pl-2 transition-all duration-300 py-1">Media & Ent.</a>
-            <a href="/mining-industry" className="block text-gray-600 hover:text-primary hover:pl-2 transition-all duration-300 py-1">Mining</a>
-            <a href="/real-estate-industry" className="block text-gray-600 hover:text-primary hover:pl-2 transition-all duration-300 py-1">Real Estate</a>
-            <a href="/travel-tourism-industry" className="block text-gray-600 hover:text-primary hover:pl-2 transition-all duration-300 py-1">Travel & Tourism</a>
-          </div>
-
-          <div className="border-t border-gray-100 my-2" />
-          <a href="/blog" className="block text-gray-800 hover:text-primary hover:pl-2 transition-all duration-300 font-medium py-2">Blog</a>
-          <a href="/contact-us" className="block text-gray-800 hover:text-primary hover:pl-2 transition-all duration-300 font-medium py-2">Contact Us</a>
-
-          <div className="pt-2">
-            <a href="/contact-us">
-              <button className="w-full bg-primary hover:bg-primary/95 hover:scale-[1.02] active:scale-[0.98] text-white py-3 font-semibold rounded text-sm shadow transition-all duration-300">
-                Work With Us
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>
+      )}
     </nav>
   );
+}
+
+export default function Navbar() {
+  const pathname = usePathname();
+  return <NavbarContent key={pathname} pathname={pathname} />;
 }
