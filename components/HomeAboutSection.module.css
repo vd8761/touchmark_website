@@ -26,19 +26,32 @@
   min-height: 390px;
   overflow: hidden;
   padding: clamp(2rem, 5vw, 4.75rem);
-  background: var(--home-about-blue);
+  background-color: var(--home-about-blue);
 }
 
-.ripple {
+/*
+ * Abstract, layered gradient mesh painted entirely in CSS. Every edge is pinned
+ * to the base blue (the top guard especially) so the panel dissolves into the
+ * hero's bell curve with no visible box or colour break — soft organic colour
+ * fields, never lines.
+ */
+.swirl {
   position: absolute;
+  inset: 0;
   z-index: 0;
-  right: 0;
-  bottom: 0;
-  display: block;
-  width: auto;
-  max-width: none;
-  height: auto;
   pointer-events: none;
+  background-image:
+    /* edge guards: hold the top and right slices on the exact panel colour so the
+       panel melts into the curve above and the flat section margin beside it —
+       no box, no colour cut where the max-width container ends on wide screens */
+    linear-gradient(180deg, var(--home-about-blue) 0%, rgb(25 79 151 / 0) 22%),
+    linear-gradient(270deg, var(--home-about-blue) 0%, rgb(25 79 151 / 0) 16%),
+    /* lighter field behind the headline number, kept clear of the edges */
+    radial-gradient(42% 50% at 56% 46%, rgb(122 180 255 / 32%), transparent 72%),
+    /* deep shadow field sinking into the lower-left */
+    radial-gradient(50% 56% at 22% 80%, rgb(9 42 94 / 40%), transparent 74%),
+    /* mid glow lifting the lower-centre */
+    radial-gradient(38% 44% at 60% 86%, rgb(58 126 212 / 26%), transparent 72%);
 }
 
 .picture {
@@ -70,14 +83,10 @@
 
   .statsPanel {
     min-height: 0;
-    padding: 0;
+    padding: 2.75rem 1.5rem 3.25rem;
   }
 
   .picture {
-    width: 100%;
-  }
-
-  .ripple {
-    display: none;
+    width: min(100%, 480px);
   }
 }

@@ -318,11 +318,21 @@ export default function Page() {
                                         </div>
                                         
                                         <div className="col-span-6 w-full">
-                                            <button type="submit" id="contact_submit_btn" name="submit" value="submit" className="w-full">
-                                                <div className="relative overflow-hidden bg-[#194F97] px-3 py-2 inline-flex justify-center items-center group w-full">
-                                                    <span className="relative z-10 text-white transition-colors text-sm uppercase">Submit</span>
-                                                    <svg fill="none" height="24" className="relative z-10 ml-2 -rotate-90 text-white transition-colors" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                            <button
+                                                type="submit"
+                                                id="contact_submit_btn"
+                                                name="submit"
+                                                value="submit"
+                                                className="w-full transition-transform duration-150 ease-out hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#70C217] disabled:pointer-events-none disabled:opacity-60 disabled:hover:translate-y-0"
+                                            >
+                                                <div className="relative overflow-hidden bg-[#194F97] px-3 py-3 inline-flex justify-center items-center gap-2 group w-full shadow-sm transition-shadow duration-300 group-hover:shadow-md">
+                                                    <span id="contact_submit_label" className="relative z-10 text-white transition-colors text-sm uppercase tracking-wide">Submit</span>
+                                                    <svg id="contact_submit_arrow" fill="none" height="24" className="relative z-10 -rotate-90 text-white transition-colors" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-4.58578v2h8v-8h-2z" fill="currentColor"></path>
+                                                    </svg>
+                                                    <svg id="contact_submit_spinner" className="hidden relative z-10 h-5 w-5 animate-spin text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                                                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
                                                     </svg>
                                                     <div className="absolute top-0 left-0 w-full h-full bg-[#70C217]"></div>
                                                     <span className="absolute left-0 w-0 h-full bg-[#70C217] group-hover:w-full transition-all ease-out duration-300"></span>

@@ -6,8 +6,7 @@ import { usePathname, useRouter } from 'next/navigation';
 const ARTICLE_PREFIX = '/blog/articles/';
 const SUBSCRIBE_ENDPOINT =
   'https://touchmarkdes.com/head/engine/ajax/__ajax_subscribe_form.php';
-const CONTACT_ENDPOINT =
-  'https://touchmarkdes.com/head/engine/ajax/__ajax_contact_form.php';
+const CONTACT_ENDPOINT = '/api/contact';
 const RECAPTCHA_SITE_KEY = '6LelLRwqAAAAAL6aHLVU9nE96q6UI6_H11dUU_Ix';
 const SAVED_BLOGS_KEY = 'touchmark:saved-blogs';
 
@@ -622,6 +621,15 @@ function setupContactForm(pathname: string): Cleanup | undefined {
   const submitButton = form?.querySelector<HTMLButtonElement>('#contact_submit_btn');
   if (!form || !submitButton) return;
 
+  const submitLabel = submitButton.querySelector<HTMLElement>('#contact_submit_label');
+  const submitArrow = submitButton.querySelector<HTMLElement>('#contact_submit_arrow');
+  const submitSpinner = submitButton.querySelector<HTMLElement>('#contact_submit_spinner');
+  const setSubmitting = (submitting: boolean) => {
+    if (submitLabel) submitLabel.textContent = submitting ? 'Submitting...' : 'Submit';
+    submitArrow?.classList.toggle('hidden', submitting);
+    submitSpinner?.classList.toggle('hidden', !submitting);
+  };
+
   const abortController = new AbortController();
   const requestStatus = document.createElement('p');
   requestStatus.id = 'contact_request_status';
@@ -867,6 +875,7 @@ function setupContactForm(pathname: string): Cleanup | undefined {
 
     submitButton.disabled = true;
     submitButton.setAttribute('aria-busy', 'true');
+    setSubmitting(true);
     try {
       const token = await getRecaptchaToken('submit');
       const tokenField = form.querySelector<HTMLInputElement>('#g-token');
@@ -899,6 +908,7 @@ function setupContactForm(pathname: string): Cleanup | undefined {
     } finally {
       submitButton.disabled = false;
       submitButton.removeAttribute('aria-busy');
+      setSubmitting(false);
     }
   };
 

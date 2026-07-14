@@ -169,10 +169,10 @@ export default function Page() {
                         <div className="lg:col-span-2 col-span-6">
                             <div className="hidden lg:block flex flex-col justify-between items-center h-full lg:space-y-5 space-y-3">
                                 <img loading="lazy" decoding="async" src="/images/home/hayakawa-icon-testimonial.webp" className="mb-auto" />
-                                <img loading="lazy" decoding="async" src="/images/home/hayakawa-icon-testimonial-02.webp" className="mt-auto" />
+                                <img loading="lazy" decoding="async" src="/images/home/hayakawa-icon-testimonial-02.webp" className="mt-auto rounded-2xl" />
                             </div>
                             <div className="block lg:hidden">
-                                <img loading="lazy" decoding="async" src="/images/home/hayakawa-icon-testimonial-02-mob.webp" />
+                                <img loading="lazy" decoding="async" src="/images/home/hayakawa-icon-testimonial-02-mob.webp" className="rounded-2xl" />
                             </div>
                         </div>
                         <div className="lg:col-span-4 col-span-6 flex justify-start items-center relative">
@@ -216,10 +216,10 @@ export default function Page() {
                         <div className="lg:col-span-2 col-span-6">
                             <div className="hidden lg:block flex flex-col justify-between items-center h-full lg:space-y-5 space-y-3">
                                 <img loading="lazy" decoding="async" src="/images/home/alpha-icon-testimonial.webp" className="mb-auto" />
-                                <img loading="lazy" decoding="async" src="/images/home/alpha-icon-testimonial-02.webp" className="mt-auto" />
+                                <img loading="lazy" decoding="async" src="/images/home/alpha-icon-testimonial-02.webp" className="mt-auto rounded-2xl" />
                             </div>
                             <div className="block lg:hidden">
-                                <img loading="lazy" decoding="async" src="/images/home/alpha-icon-testimonial-02-mob.webp" className="" />
+                                <img loading="lazy" decoding="async" src="/images/home/alpha-icon-testimonial-02-mob.webp" className="rounded-2xl" />
                             </div>
                         </div>
                         <div className="lg:col-span-4 col-span-6 flex justify-start items-center relative">
@@ -265,10 +265,10 @@ export default function Page() {
                         <div className="lg:col-span-2 col-span-6">
                             <div className="lg:block hidden flex flex-col justify-between items-center h-full lg:space-y-5 space-y-3">
                                 <img loading="lazy" decoding="async" src="/images/home/tantra-icon-testimonial.webp" className="mb-auto" />
-                                <img loading="lazy" decoding="async" src="/images/home/tantra-icon-testimonial-02.webp" className="mt-auto" />
+                                <img loading="lazy" decoding="async" src="/images/home/tantra-icon-testimonial-02.webp" className="mt-auto rounded-2xl" />
                             </div>
                             <div className="lg:hidden block">
-                                <img loading="lazy" decoding="async" src="/images/home/tantra-icon-testimonial-02-mob.webp" className="" />
+                                <img loading="lazy" decoding="async" src="/images/home/tantra-icon-testimonial-02-mob.webp" className="rounded-2xl" />
                             </div>
                         </div>
                         <div className="lg:col-span-4 col-span-6 flex justify-start items-center relative">
@@ -309,10 +309,10 @@ export default function Page() {
                         <div className="lg:col-span-2 col-span-6">
                             <div className="hidden lg:block flex flex-col justify-between items-center h-full lg:space-y-5 space-y-3">
                                 <img loading="lazy" decoding="async" src="/images/home/armtech-icon-testimonial.webp" className="mb-auto" />
-                                <img loading="lazy" decoding="async" src="/images/home/armtech-icon-testimonial-02.webp" className="mt-auto" />
+                                <img loading="lazy" decoding="async" src="/images/home/armtech-icon-testimonial-02.webp" className="mt-auto rounded-2xl" />
                             </div>
                             <div className="lg:hidden block">
-                                <img loading="lazy" decoding="async" src="/images/home/armtech-icon-testimonial-02-mob.webp" className="" />
+                                <img loading="lazy" decoding="async" src="/images/home/armtech-icon-testimonial-02-mob.webp" className="rounded-2xl" />
                             </div>
                         </div>
                         <div className="lg:col-span-4 col-span-6 flex justify-start items-center relative">
@@ -470,7 +470,7 @@ export default function Page() {
       {/* Page Inline Script Initializers */}
       <Script id="page-script-2" strategy="lazyOnload">{`
         try {
-          \$(document).ready(function() {
+          (function() {
         var owlOptions = {
             loop: true,
             nav: false,
@@ -496,8 +496,29 @@ export default function Page() {
             }
         };
 
-        \$("#one-time").owlCarousel(owlOptions);
-    });
+        // The owl plugin is loaded lazily and may not be attached to jQuery yet
+        // when this runs. Poll for it (and listen for the ready signal) instead
+        // of assuming it exists, which threw "owlCarousel is not a function".
+        var owlTries = 0;
+        function initTestimonialCarousel() {
+            var jq = window.jQuery || window['$'];
+            if (!jq || !jq.fn || typeof jq.fn.owlCarousel !== 'function') {
+                if (owlTries++ < 100) window.setTimeout(initTestimonialCarousel, 100);
+                return;
+            }
+            var el = jq('#one-time');
+            if (!el.length || el.hasClass('owl-loaded')) return;
+            el.owlCarousel(owlOptions);
+        }
+
+        window.addEventListener('tm:owl-ready', initTestimonialCarousel);
+        document.addEventListener('tm:owl-ready', initTestimonialCarousel);
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initTestimonialCarousel);
+        } else {
+            initTestimonialCarousel();
+        }
+    })();
         } catch (e) {
           // Safe catch for conditional page elements
         }

@@ -88,7 +88,24 @@ export default function CaseStudiesAccordion() {
             className="sticky mb-8 overflow-hidden rounded-md shadow-2xl text-white font-inter"
             style={{ top: `calc(50vh - 265px + ${i * 14}px)`, backgroundColor: study.color, zIndex: i + 1 }}
           >
-            <img loading="lazy" decoding="async" src={study.image} alt={study.title} className="w-full h-44 object-cover" />
+            <div className="relative h-48 w-full overflow-hidden">
+              {/* Blurred fill so the whole image is visible without cropping or stretching */}
+              <img
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src={study.image}
+                alt=""
+                className="absolute inset-0 h-full w-full scale-125 object-cover blur-2xl"
+              />
+              <img
+                loading="lazy"
+                decoding="async"
+                src={study.image}
+                alt={study.title}
+                className="relative z-10 h-full w-full object-contain"
+              />
+            </div>
             <div className="p-5">
               <div className="flex justify-between items-center gap-3">
                 <h2 className="text-xl font-gellix font-semibold uppercase">{study.title}</h2>

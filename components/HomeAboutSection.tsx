@@ -45,21 +45,8 @@ export default function HomeAboutSection() {
           </div>
 
           <div className={styles.statsPanel}>
-            <img
-              className={styles.ripple}
-              src="/images/home/ripple-white-img.webp"
-              width="944"
-              height="604"
-              loading="lazy"
-              decoding="async"
-              alt=""
-              aria-hidden="true"
-            />
+            <span className={styles.swirl} aria-hidden="true" />
             <picture className={styles.picture}>
-              <source
-                media="(max-width: 767px)"
-                srcSet="/images/home/about-us-15+year-image-blue-mobile.webp"
-              />
               <img
                 src="/images/home/about-us-15+year-image.webp"
                 width="697"

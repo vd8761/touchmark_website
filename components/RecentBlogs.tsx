@@ -65,11 +65,11 @@ export default function RecentBlogs() {
         {/* Featured Blog Card */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-16">
           {/* Left: Image */}
-          <div className="relative group overflow-hidden rounded-none">
+          <div className="relative group overflow-hidden rounded-3xl">
             <img loading="lazy" decoding="async"
-              src="/images/blog/vr.webp" 
-              alt="Featured Blog - VR Headset" 
-              className="w-full h-auto object-cover rounded-none" 
+              src="/images/blog/vr.webp"
+              alt="Featured Blog - VR Headset"
+              className="w-full h-auto object-cover rounded-3xl"
             />
           </div>
           
@@ -149,11 +149,11 @@ export default function RecentBlogs() {
               </div>
               
               <div>
-                <div className="my-6 overflow-hidden rounded-none">
+                <div className="my-6 overflow-hidden rounded-2xl">
                   <img loading="lazy" decoding="async"
-                    src={blog.image} 
-                    alt="Blog representation" 
-                    className="w-full h-44 object-cover object-center" 
+                    src={blog.image}
+                    alt="Blog representation"
+                    className="w-full h-44 object-cover object-center rounded-2xl"
                   />
                 </div>
                 

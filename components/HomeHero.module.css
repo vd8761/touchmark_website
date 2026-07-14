@@ -109,10 +109,6 @@
   fill: url('#home-hero-connector');
 }
 
-.curveDecoration {
-  pointer-events: none;
-}
-
 .curveCopyStop {
   stop-color: var(--home-about-copy);
 }
@@ -306,8 +302,19 @@
     stop-color: var(--home-about-copy);
   }
 
-  .curveDecoration {
-    display: none;
+  .imageMask {
+    height: clamp(44px, 6.5dvh, 72px);
+  }
+}
+
+/* Pull the slide selectors into the empty middle band between the headline and
+   the bottom-anchored figure so the hero no longer reads as hollow. Only tall
+   phones have that gap; shorter screens keep the selectors at the bottom. */
+@media (max-width: 767px) and (min-height: 720px) {
+  .tabsWrap {
+    top: 47%;
+    bottom: auto;
+    transform: translateY(-50%);
   }
 }
 
@@ -335,7 +342,7 @@
   .imageMask {
     left: -7%;
     width: 114%;
-    height: clamp(52px, 8dvh, 72px);
+    height: clamp(38px, 5.5dvh, 56px);
   }
 
   .tabsWrap {

@@ -143,15 +143,6 @@ export default function HomeHero() {
           </defs>
           <g clipPath="url(#home-hero-connector-clip)">
             <rect className={styles.curveShape} x="0" y="0" width="1040" height="184" />
-            <image
-              className={styles.curveDecoration}
-              href="/images/home/ripple-white-img.webp"
-              x="260"
-              y="-105"
-              width="780"
-              height="499"
-              preserveAspectRatio="xMaxYMid meet"
-            />
           </g>
         </svg>
       </div>
