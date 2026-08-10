@@ -135,9 +135,10 @@ curl -H "Authorization: Bearer sk_test_..." http://localhost:4000/v1/me
 
 Portal → the site → **Webhooks** → Add endpoint:
 
-- **URL** `https://touchmarkdes.com/api/revalidate` (production) — the CMS
-  rejects `localhost`, so for local testing expose the site with ngrok and use
-  that URL
+- **URL** — `http://127.0.0.1:3000/api/revalidate` for local development, or
+  `https://touchmarkdes.com/api/revalidate` in production. The CMS rejects the
+  hostname `localhost`, but `127.0.0.1` passes validation and works, so no
+  tunnel is needed to test this locally
 - **Events** `content.published`, `content.unpublished`, `content.updated`
 
 Copy the `whsec_…` secret into `CMS_WEBHOOK_SECRET`. Use **Send test** and check
@@ -167,7 +168,8 @@ Delivery API.
 
 | Field | Notes |
 |---|---|
-| `card_image` | Thumbnail for index cards. Separate from `hero_image`, which is a media field needing an uploaded asset; the migrated posts point at existing paths |
+| `hero_image` | Preferred. Pick an uploaded asset from the media library; it becomes the hero on the article and the thumbnail everywhere else |
+| `card_image` | Fallback for the migrated posts, which reference images already on the site rather than CMS media. Leave it empty on new posts |
 | `tag_name` / `tag_slug` | This CMS build cannot link an entry to a taxonomy term, so the tag lives on the entry. `tag_slug` drives the `/blog/tag/<slug>` link |
 | `read_time` | Optional. Left empty, the homepage estimates it from the body |
 | `legacy_id` | Case studies only — the `?id=N` value, so old links keep resolving |

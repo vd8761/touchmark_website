@@ -1,5 +1,4 @@
 import { listBlogPosts, type BlogPost } from '@/services/cms';
-import { resolveMediaUrl } from '@/utils/media';
 import { estimateReadTime } from '@/utils/readTime';
 
 /** The newest post is featured; the next three fill the row beneath it. */
@@ -80,7 +79,7 @@ export default async function RecentBlogs() {
               <img
                 loading="lazy"
                 decoding="async"
-                src={resolveMediaUrl(featured.data.card_image)}
+                src={featured.image_url}
                 alt={featured.data.title}
                 className="w-full h-auto object-cover rounded-3xl"
               />
@@ -144,7 +143,7 @@ export default async function RecentBlogs() {
                   <img
                     loading="lazy"
                     decoding="async"
-                    src={resolveMediaUrl(post.data.card_image)}
+                    src={post.image_url}
                     alt={post.data.title}
                     className="w-full h-44 object-cover object-center rounded-2xl"
                   />

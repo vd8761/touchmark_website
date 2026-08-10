@@ -30,7 +30,7 @@ export async function generateMetadata(
     openGraph: {
       title: post.data.seo_title ?? post.data.title,
       description: post.data.seo_description ?? post.data.excerpt,
-      images: post.data.hero_image ? [post.data.hero_image] : undefined,
+      images: post.image_url ? [post.image_url] : undefined,
       type: 'article',
       publishedTime: post.published_at ?? undefined,
     },
@@ -95,6 +95,22 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
               {post.data.read_time && <span>{post.data.read_time}</span>}
             </div>
           ) : null}
+
+          {/* Posts authored in the CMS carry a hero as a media asset. The migrated ones
+              have it baked into the body HTML instead, so this stays empty for them and
+              the image is never rendered twice. */}
+          {post.data.hero_image && post.image_url && (
+            <div className="mt-10">
+              <img
+                decoding="async"
+                fetchPriority="high"
+                src={post.image_url}
+                alt={post.data.title}
+                className="w-full h-auto"
+                style={{ paddingBottom: '30px' }}
+              />
+            </div>
+          )}
 
           {/* Body is trusted HTML authored in the CMS by an authenticated editor.
               Do not render untrusted input through this path. */}

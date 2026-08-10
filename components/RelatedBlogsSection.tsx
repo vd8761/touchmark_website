@@ -1,5 +1,4 @@
 import type { BlogPost } from '@/services/cms';
-import { resolveMediaUrl } from '@/utils/media';
 
 /**
  * The "Read Touchmark Descience Blogs" tile grid shown under every article.
@@ -32,7 +31,7 @@ export default function RelatedBlogsSection({ posts }: { posts: BlogPost[] }) {
               <img
                 decoding="async"
                 loading="lazy"
-                src={resolveMediaUrl(post.data.card_image)}
+                src={post.image_url}
                 alt={post.data.title}
                 className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full h-full object-cover"
               />

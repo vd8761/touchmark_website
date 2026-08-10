@@ -1,5 +1,4 @@
 import type { BlogPost } from '@/services/cms';
-import { resolveMediaUrl } from '@/utils/media';
 
 /**
  * The blog card grid, shared by the index and the tag listings.
@@ -23,7 +22,7 @@ export default function BlogPostGrid({ posts }: { posts: BlogPost[] }) {
             <img
               decoding="async"
               loading="lazy"
-              src={resolveMediaUrl(post.data.card_image)}
+              src={post.image_url}
               alt={post.data.title}
               className="transition-transform group-hover:scale-105 duration-300"
             />

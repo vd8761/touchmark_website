@@ -6,6 +6,8 @@
  * callers never see it.
  */
 
+import { resolveMediaUrl } from '@/utils/media';
+
 const CMS_URL = process.env.CMS_API_URL;
 const CMS_KEY = process.env.CMS_API_KEY;
 
@@ -51,14 +53,26 @@ export interface BlogPostData {
   tag_slug?: string;
 }
 
-export type BlogPost = CmsEntry<BlogPostData>;
+export type BlogPost = CmsEntry<BlogPostData> & ResolvedImage;
+
+/**
+ * The single image a card or hero should show.
+ *
+ * `hero_image` is a CMS media field, so it holds an asset **id**, not a URL —
+ * resolving it needs a second call. `card_image` is a plain path carried over from the
+ * pre-CMS pages. Callers should not have to know which of the two an entry uses, so the
+ * client resolves both into one value here.
+ */
+interface ResolvedImage {
+  image_url: string;
+}
 
 export interface CaseStudyData extends BlogPostData {
   /** The `?id=` value the old /case-study route used, kept so inbound links resolve. */
   legacy_id?: string;
 }
 
-export type CaseStudy = CmsEntry<CaseStudyData>;
+export type CaseStudy = CmsEntry<CaseStudyData> & ResolvedImage;
 
 interface ListResponse<T> {
   data: T[];
@@ -86,12 +100,45 @@ async function delivery<T>(path: string, revalidate = DEFAULT_REVALIDATE_SECONDS
   return response.json() as Promise<T>;
 }
 
+interface MediaAsset {
+  id: string;
+  url: string;
+  alt_text: string | null;
+}
+
+/**
+ * asset id → public URL for the whole library.
+ *
+ * One request for the library beats one per entry: a 46-post index would otherwise
+ * make 46 round trips to resolve its thumbnails. Under the CMS's local storage driver
+ * these URLs point back at the API; in production they are CDN URLs.
+ */
+async function mediaUrlsById(): Promise<Map<string, string>> {
+  const body = await delivery<ListResponse<MediaAsset>>('/v1/media?limit=100');
+  return new Map(body.data.map((asset) => [asset.id, asset.url]));
+}
+
+/** Attaches `image_url`, resolving media ids only when some entry actually uses one. */
+async function withImages<T extends CmsEntry<BlogPostData>>(
+  entries: T[],
+): Promise<(T & ResolvedImage)[]> {
+  const usesMedia = entries.some((entry) => entry.data.hero_image);
+  const media = usesMedia ? await mediaUrlsById() : new Map<string, string>();
+
+  return entries.map((entry) => ({
+    ...entry,
+    image_url: entry.data.hero_image
+      ? media.get(entry.data.hero_image) ?? ''
+      : resolveMediaUrl(entry.data.card_image),
+  }));
+}
+
 /** Published posts, newest first. */
 export async function listBlogPosts(limit = 100): Promise<BlogPost[]> {
-  const body = await delivery<ListResponse<BlogPost>>(
+  const body = await delivery<ListResponse<CmsEntry<BlogPostData>>>(
     `/v1/content/blog_post?limit=${limit}&sort=-published_at`,
   );
-  return body.data;
+  return withImages(body.data);
 }
 
 /**
@@ -109,10 +156,11 @@ export async function listBlogPostsByTag(tagSlug: string): Promise<BlogPost[]> {
 /** One post by slug, or null when it does not exist or is unpublished. */
 export async function getBlogPost(slug: string): Promise<BlogPost | null> {
   try {
-    const body = await delivery<{ data: BlogPost }>(
+    const body = await delivery<{ data: CmsEntry<BlogPostData> }>(
       `/v1/content/blog_post/${encodeURIComponent(slug)}`,
     );
-    return body.data;
+    const [post] = await withImages([body.data]);
+    return post;
   } catch {
     return null;
   }
@@ -120,10 +168,10 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
 
 /** Published case studies, newest first. */
 export async function listCaseStudies(limit = 100): Promise<CaseStudy[]> {
-  const body = await delivery<ListResponse<CaseStudy>>(
+  const body = await delivery<ListResponse<CmsEntry<CaseStudyData>>>(
     `/v1/content/case_study?limit=${limit}&sort=-published_at`,
   );
-  return body.data;
+  return withImages(body.data);
 }
 
 /**
