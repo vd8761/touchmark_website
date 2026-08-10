@@ -87,6 +87,18 @@ export async function listBlogPosts(limit = 100): Promise<BlogPost[]> {
   return body.data;
 }
 
+/**
+ * Published posts carrying a given tag, newest first.
+ *
+ * Filtered here rather than through `filter[…]` on the Delivery API: the tag lives in
+ * an ordinary field because this CMS build cannot link an entry to a taxonomy term, and
+ * at this catalogue size reusing the cached full list costs less than a second request.
+ */
+export async function listBlogPostsByTag(tagSlug: string): Promise<BlogPost[]> {
+  const posts = await listBlogPosts();
+  return posts.filter((post) => post.data.tag_slug === tagSlug);
+}
+
 /** One post by slug, or null when it does not exist or is unpublished. */
 export async function getBlogPost(slug: string): Promise<BlogPost | null> {
   try {
