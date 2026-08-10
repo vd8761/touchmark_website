@@ -1,5 +1,3 @@
-'use client';
-
 import Script from "next/script";
 import RecentBlogs from "@/components/RecentBlogs";
 import CaseStudiesAccordion from "@/components/CaseStudiesAccordion";
@@ -7,6 +5,11 @@ import Preloader from "@/components/Preloader";
 import HomeHero from "@/components/HomeHero";
 import HomeAboutSection from "@/components/HomeAboutSection";
 import HomeClientsSection from "@/components/HomeClientsSection";
+
+// A Server Component: the interactive pieces (Preloader, CaseStudiesAccordion) carry
+// their own 'use client', and the inline <Script> blocks below run in the browser
+// regardless. Keeping this on the server is what lets RecentBlogs read the CMS.
+export const revalidate = 300;
 
 export default function Page() {
   return (
