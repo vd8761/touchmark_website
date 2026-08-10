@@ -53,6 +53,13 @@ export interface BlogPostData {
 
 export type BlogPost = CmsEntry<BlogPostData>;
 
+export interface CaseStudyData extends BlogPostData {
+  /** The `?id=` value the old /case-study route used, kept so inbound links resolve. */
+  legacy_id?: string;
+}
+
+export type CaseStudy = CmsEntry<CaseStudyData>;
+
 interface ListResponse<T> {
   data: T[];
   meta: { total: number; limit: number; has_more: boolean; next_cursor: string | null };
@@ -109,6 +116,26 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
   } catch {
     return null;
   }
+}
+
+/** Published case studies, newest first. */
+export async function listCaseStudies(limit = 100): Promise<CaseStudy[]> {
+  const body = await delivery<ListResponse<CaseStudy>>(
+    `/v1/content/case_study?limit=${limit}&sort=-published_at`,
+  );
+  return body.data;
+}
+
+/**
+ * One case study by its old `?id=` value.
+ *
+ * The route still answers on `?id=N` because those links are embedded in the migrated
+ * bodies and in the SubsidiaryUX legacy-URL rewrite, so the mapping has to live
+ * somewhere; it lives on the entry rather than in code.
+ */
+export async function getCaseStudyByLegacyId(legacyId: string): Promise<CaseStudy | null> {
+  const studies = await listCaseStudies();
+  return studies.find((study) => study.data.legacy_id === legacyId) ?? null;
 }
 
 /** Ranked full-text search across published content. */

@@ -21,6 +21,8 @@ import { readFile, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
 import * as cheerio from 'cheerio';
 
+import { jsxToHtml } from './lib/jsx-to-html.mjs';
+
 const CMS_URL = process.env.CMS_API_URL ?? 'http://localhost:4000';
 const WORKSPACE_ID = process.env.CMS_WORKSPACE_ID;
 const EMAIL = process.env.CMS_EMAIL ?? 'owner@example.test';
@@ -48,28 +50,6 @@ async function admin(cookie, path, init = {}) {
     throw new Error(`${init.method ?? 'GET'} ${path} → ${response.status} ${await response.text()}`);
   }
   return response.status === 204 ? null : response.json();
-}
-
-/**
- * Rewrites JSX-only syntax back to HTML so the stored body renders correctly.
- * Only `style={{ … }}` and `className` appear in these generated files.
- */
-function jsxToHtml(source) {
-  return source
-    .replace(/style=\{\{([\s\S]*?)\}\}/g, (_match, object) => {
-      const declarations = [...object.matchAll(/"([^"]+)"\s*:\s*"([^"]*)"/g)].map(
-        ([, property, value]) =>
-          `${property.replace(/[A-Z]/g, (letter) => `-${letter.toLowerCase()}`)}:${value}`,
-      );
-      return `style="${declarations.join(';')}"`;
-    })
-    .replace(/\bclassName=/g, 'class=')
-    .replace(/\bfetchPriority=/g, 'fetchpriority=')
-    .replace(/\bautoComplete=/g, 'autocomplete=')
-    .replace(/\bspellCheck=/g, 'spellcheck=')
-    .replace(/\bstrokeWidth=/g, 'stroke-width=')
-    .replace(/\bstrokeLinecap=/g, 'stroke-linecap=')
-    .replace(/\bstrokeLinejoin=/g, 'stroke-linejoin=');
 }
 
 /** slug → { title, excerpt, cardImage, tagName, tagSlug } harvested from the blog index. */
