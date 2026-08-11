@@ -38,6 +38,10 @@ yarn-error.log*
 # vercel
 .vercel
 
+# Records the live API key and webhook secret in plaintext, because the CMS
+# shows each exactly once and they cannot be read back.
+PRODUCTION_CMS_SETUP.md
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

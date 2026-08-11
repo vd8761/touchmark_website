@@ -100,7 +100,7 @@ cp .env.example .env.local
 | `CMS_API_URL` | `http://localhost:4000`, no trailing slash |
 | `CMS_API_KEY` | §2.3 below |
 | `CMS_WEBHOOK_SECRET` | §2.4 below |
-| `CMS_WORKSPACE_ID` | Site settings in the portal, or the URL. Scripts only |
+| `CMS_WORKSPACE_ID` | Portal → the site → **Settings**, in the line under the heading ("…a workspace in the API — `<uuid>`"). Not in the address bar — the portal routes on slugs. Scripts only |
 
 ```bash
 npm run dev
