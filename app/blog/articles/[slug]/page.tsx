@@ -1,9 +1,10 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 
+import ContentUnavailable from '@/components/ContentUnavailable';
 import NewsletterSection from '@/components/NewsletterSection';
 import RelatedBlogsSection from '@/components/RelatedBlogsSection';
-import { getBlogPost, listBlogPosts } from '@/services/cms';
+import { getBlogPost, listBlogPosts, tryCms, type BlogPost } from '@/services/cms';
 
 export const revalidate = 300;
 export const dynamicParams = true;
@@ -11,8 +12,12 @@ export const dynamicParams = true;
 const SITE_URL = 'https://touchmarkdes.com';
 const RELATED_COUNT = 4;
 
+/**
+ * A CMS outage at build time prunes the prerender list rather than failing the build —
+ * `dynamicParams` means every article still renders on demand once the CMS is back.
+ */
 export async function generateStaticParams() {
-  const posts = await listBlogPosts();
+  const { data: posts } = await tryCms(() => listBlogPosts(), [] as BlogPost[]);
   return posts
     .filter((post) => post.slug)
     .map((post) => ({ slug: post.slug as string }));
@@ -21,7 +26,9 @@ export async function generateStaticParams() {
 export async function generateMetadata(
   { params }: { params: Promise<{ slug: string }> },
 ): Promise<Metadata> {
-  const post = await getBlogPost((await params).slug);
+  const { slug } = await params;
+  const { data: post, unavailable } = await tryCms(() => getBlogPost(slug), null as BlogPost | null);
+  if (unavailable) return { robots: { index: false, follow: true } };
   if (!post) return {};
 
   return {
@@ -39,10 +46,27 @@ export async function generateMetadata(
 
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const post = await getBlogPost(slug);
-  if (!post) notFound();
+  const { data: post, unavailable } = await tryCms(() => getBlogPost(slug), null as BlogPost | null);
 
-  const allPosts = await listBlogPosts();
+  // Only a genuinely missing article is a 404. During an outage we cannot know whether
+  // it exists, so the page degrades and keeps the URL alive.
+  if (!post) {
+    if (!unavailable) notFound();
+    return (
+      <div className="overflow-x-hidden lg:overflow-x-auto">
+        <section className="2xl:max-w-screen-lg xl:max-w-screen-md lg:max-w-screen-md w-full mx-auto px-4 md:px-6 lg:px-8 pt-24 pb-16 lg:pt-32 lg:pb-24">
+          <ContentUnavailable
+            title="This article is temporarily unavailable"
+            message="We cannot reach our content library at the moment, so this article will not load. It is a problem on our end — please try again shortly."
+            retryHref={`/blog/articles/${slug}`}
+          />
+        </section>
+      </div>
+    );
+  }
+
+  // Related posts are supporting content: an empty list quietly hides the section.
+  const { data: allPosts } = await tryCms(() => listBlogPosts(), [] as BlogPost[]);
   const related = allPosts.filter((other) => other.slug !== slug).slice(0, RELATED_COUNT);
   const shareUrl = encodeURIComponent(`${SITE_URL}/blog/articles/${slug}`);
 

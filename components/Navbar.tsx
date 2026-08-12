@@ -305,6 +305,14 @@ function NavbarContent({ pathname }: { pathname: string }) {
     closeTimerRef.current = setTimeout(() => setActiveMenu(null), 160);
   };
 
+  // Hovering anywhere on the bar that is not a dropdown trigger dismisses an open
+  // panel. `mouseover` (not `mouseenter`) so it still fires when the pointer moves
+  // between siblings inside the bar without ever leaving it.
+  const handleBarMouseOver = (event: React.MouseEvent<HTMLDivElement>) => {
+    if ((event.target as HTMLElement).closest('[data-menu-trigger]')) return;
+    scheduleMenuClose();
+  };
+
   const toggleMenu = (menu: MenuName) => {
     cancelScheduledClose();
     setActiveMenu((current) => current === menu ? null : menu);
@@ -359,7 +367,7 @@ function NavbarContent({ pathname }: { pathname: string }) {
       }}
     >
       <div className={[styles.barContent, '2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] mx-auto w-full px-4 md:px-6 lg:px-8'].join(' ')}>
-        <div className="flex h-14 items-center justify-between">
+        <div className="flex h-14 items-center justify-between" onMouseOver={handleBarMouseOver}>
           <Link
             href="/"
             className="flex shrink-0 items-center"
@@ -398,7 +406,7 @@ function NavbarContent({ pathname }: { pathname: string }) {
               <span className={['absolute inset-x-3 bottom-1 h-0.5 origin-left scale-x-0 rounded-full transition-transform duration-200 group-hover:scale-x-100', indicatorColor].join(' ')} />
             </Link>
 
-            <div className="relative" onMouseEnter={() => openMenu('services')}>
+            <div className="relative" data-menu-trigger onMouseEnter={() => openMenu('services')}>
               <button
                 id="services-menu-trigger"
                 type="button"
@@ -415,7 +423,7 @@ function NavbarContent({ pathname }: { pathname: string }) {
               </button>
             </div>
 
-            <div className="relative" onMouseEnter={() => openMenu('industries')}>
+            <div className="relative" data-menu-trigger onMouseEnter={() => openMenu('industries')}>
               <button
                 id="industries-menu-trigger"
                 type="button"

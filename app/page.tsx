@@ -155,7 +155,7 @@ export default function Page() {
         </section>
         
         
-        <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto lg:min-h-screen lg:flex lg:flex-col lg:justify-center py-14 lg:py-0">
+        <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto lg:flex lg:flex-col lg:justify-center py-12 lg:py-16 2xl:py-20">
             <div className="grid grid-cols-12 lg:gap-4 px-4 md:px-6 lg:px-8">
                 <div className="lg:col-span-5 col-span-12">
                     <h3 className="text-xs lg:text-sm xl:text-sm 2xl:text-base text-[#194F97] font-medium">Testimonials</h3>

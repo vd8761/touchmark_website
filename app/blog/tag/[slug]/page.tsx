@@ -3,13 +3,18 @@ import type { Metadata } from 'next';
 
 import BlogPostGrid from '@/components/BlogPostGrid';
 import BlogSocialBar from '@/components/BlogSocialBar';
-import { listBlogPosts, listBlogPostsByTag, listTags } from '@/services/cms';
+import ContentUnavailable from '@/components/ContentUnavailable';
+import { listBlogPosts, listBlogPostsByTag, listTags, tryCms, type BlogPost } from '@/services/cms';
 
 export const revalidate = 300;
 export const dynamicParams = true;
 
+/**
+ * A CMS outage at build time prunes the prerender list rather than failing the build —
+ * `dynamicParams` means every tag still renders on demand once the CMS is back.
+ */
 export async function generateStaticParams() {
-  const posts = await listBlogPosts();
+  const { data: posts } = await tryCms(() => listBlogPosts(), [] as BlogPost[]);
   const slugs = new Set(
     posts.map((post) => post.data.tag_slug).filter((slug): slug is string => Boolean(slug)),
   );
@@ -32,7 +37,11 @@ export async function generateMetadata(
   { params }: { params: Promise<{ slug: string }> },
 ): Promise<Metadata> {
   const { slug } = await params;
-  const posts = await listBlogPostsByTag(slug);
+  const { data: posts, unavailable } = await tryCms(
+    () => listBlogPostsByTag(slug),
+    [] as BlogPost[],
+  );
+  if (unavailable) return { title: 'Touchmark Blog', robots: { index: false, follow: true } };
   if (!posts.length) return {};
 
   const name = await resolveTagName(slug, posts);
@@ -44,13 +53,17 @@ export async function generateMetadata(
 
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const posts = await listBlogPostsByTag(slug);
+  const { data: posts, unavailable } = await tryCms(
+    () => listBlogPostsByTag(slug),
+    [] as BlogPost[],
+  );
 
   // A tag with no published posts has no page — the old hardcoded route only ever
-  // existed for tags that had content.
-  if (!posts.length) notFound();
+  // existed for tags that had content. An outage is not that case: 404-ing here would
+  // tell crawlers the tag is gone, so it degrades instead.
+  if (!posts.length && !unavailable) notFound();
 
-  const tagName = await resolveTagName(slug, posts);
+  const tagName = unavailable ? '' : await resolveTagName(slug, posts);
 
   return (
     <div className="overflow-x-hidden lg:overflow-x-auto">
@@ -66,16 +79,26 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
               </div>
             </a>
             <h1 className="mt-5 lg:mt-10 xl:mt-5 2xl:mt-10 font-gellix text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
-              {tagName}</h1>
+              {tagName || 'Blog'}</h1>
           </div>
           <div className="lg:col-span-2 col-span-12 lg:block hidden"></div>
         </div>
       </section>
 
       <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 pt-7 lg:pt-12 xl:pt-12 2xl:pt-16">
-        <BlogSocialBar heading="BROWSE ALL POSTS" />
-        <div className="border border-b mt-5"></div>
-        <BlogPostGrid posts={posts} />
+        {unavailable ? (
+          <ContentUnavailable
+            title="Articles are temporarily unavailable"
+            message="We cannot reach our content library at the moment. It is a problem on our end — please try again shortly."
+            retryHref={`/blog/tag/${slug}`}
+          />
+        ) : (
+          <>
+            <BlogSocialBar heading="BROWSE ALL POSTS" />
+            <div className="border border-b mt-5"></div>
+            <BlogPostGrid posts={posts} />
+          </>
+        )}
       </section>
 
       <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 pt-7 lg:pt-12 xl:pt-12 2xl:pt-16">

@@ -79,25 +79,89 @@ interface ListResponse<T> {
   meta: { total: number; limit: number; has_more: boolean; next_cursor: string | null };
 }
 
+/**
+ * The CMS could not be reached, or answered in a way that says "try again later"
+ * rather than "this does not exist".
+ *
+ * Kept distinct from an ordinary error so callers can tell an outage apart from a
+ * missing entry: a missing entry is a 404, an outage is a degraded page. Never let
+ * one of these reach the render — it turns the whole route into a 500.
+ */
+export class CmsUnavailableError extends Error {
+  constructor(message: string, options?: { cause?: unknown }) {
+    super(message, options);
+    this.name = 'CmsUnavailableError';
+  }
+}
+
+/** Statuses that mean "the CMS is unwell", as opposed to "you asked for the wrong thing". */
+function isTransientStatus(status: number) {
+  return status >= 500 || status === 408 || status === 429;
+}
+
 async function delivery<T>(path: string, revalidate = DEFAULT_REVALIDATE_SECONDS): Promise<T> {
   if (!CMS_URL || !CMS_KEY) {
-    throw new Error('CMS_API_URL and CMS_API_KEY must be set.');
+    throw new CmsUnavailableError('CMS_API_URL and CMS_API_KEY must be set.');
   }
 
-  const response = await fetch(`${CMS_URL}${path}`, {
-    headers: { Authorization: `Bearer ${CMS_KEY}` },
-    next: { revalidate, tags: [CMS_CACHE_TAG] },
-  });
+  let response: Response;
+  try {
+    response = await fetch(`${CMS_URL}${path}`, {
+      headers: { Authorization: `Bearer ${CMS_KEY}` },
+      next: { revalidate, tags: [CMS_CACHE_TAG] },
+    });
+  } catch (cause) {
+    // DNS failure, connection refused, TLS error, timeout — the CMS is not answering.
+    throw new CmsUnavailableError(`CMS unreachable on ${path}`, { cause });
+  }
 
   if (!response.ok) {
     // The CMS names the failing condition in every error — surface it rather than
     // a bare status code, because "insufficient_scope" and "key_revoked" have very
     // different fixes.
     const detail = await response.text().catch(() => '');
-    throw new Error(`CMS ${response.status} on ${path}: ${detail.slice(0, 300)}`);
+    const message = `CMS ${response.status} on ${path}: ${detail.slice(0, 300)}`;
+    throw isTransientStatus(response.status)
+      ? new CmsUnavailableError(message)
+      : new Error(message);
   }
 
-  return response.json() as Promise<T>;
+  try {
+    return (await response.json()) as T;
+  } catch (cause) {
+    // A truncated or non-JSON body means the response never really arrived.
+    throw new CmsUnavailableError(`CMS sent an unreadable body on ${path}`, { cause });
+  }
+}
+
+/** What a page got back, and whether the CMS was reachable at all. */
+export interface CmsResult<T> {
+  data: T;
+  /** True when the content is missing because the CMS is down, not because it is empty. */
+  unavailable: boolean;
+}
+
+/**
+ * Runs a CMS read without letting an outage take the page down.
+ *
+ * Returns `fallback` and `unavailable: true` when the CMS cannot answer, so the caller
+ * can render a "temporarily unavailable" state instead of a 500.
+ *
+ * Every failure degrades, not just outages: from a visitor's point of view a revoked
+ * key is indistinguishable from a dead host, and neither justifies a broken page. The
+ * distinction is kept in the log line — and in /cms/health, which deliberately does not
+ * go through here, so operators still see the real error.
+ */
+export async function tryCms<T>(load: () => Promise<T>, fallback: T): Promise<CmsResult<T>> {
+  try {
+    return { data: await load(), unavailable: false };
+  } catch (error) {
+    // warn, not error: the page handled this and rendered. Logging it as an error makes
+    // Next's dev overlay announce a crash that did not happen.
+    const kind = error instanceof CmsUnavailableError ? 'unavailable' : 'misconfigured';
+    console.warn(`[cms] read failed (${kind}), degrading page:`, (error as Error).message);
+    return { data: fallback, unavailable: true };
+  }
 }
 
 interface MediaAsset {
@@ -153,7 +217,13 @@ export async function listBlogPostsByTag(tagSlug: string): Promise<BlogPost[]> {
   return posts.filter((post) => post.data.tag_slug === tagSlug);
 }
 
-/** One post by slug, or null when it does not exist or is unpublished. */
+/**
+ * One post by slug, or null when it does not exist or is unpublished.
+ *
+ * An outage is *not* flattened into null here: a page that turns "the CMS is down" into
+ * a 404 tells search engines the article is gone. Those propagate as
+ * `CmsUnavailableError` so the route can degrade instead.
+ */
 export async function getBlogPost(slug: string): Promise<BlogPost | null> {
   try {
     const body = await delivery<{ data: CmsEntry<BlogPostData> }>(
@@ -161,7 +231,8 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
     );
     const [post] = await withImages([body.data]);
     return post;
-  } catch {
+  } catch (error) {
+    if (error instanceof CmsUnavailableError) throw error;
     return null;
   }
 }

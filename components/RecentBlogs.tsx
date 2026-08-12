@@ -1,4 +1,4 @@
-import { listBlogPosts, type BlogPost } from '@/services/cms';
+import { listBlogPosts, tryCms, type BlogPost } from '@/services/cms';
 import { estimateReadTime } from '@/utils/readTime';
 
 /** The newest post is featured; the next three fill the row beneath it. */
@@ -47,14 +47,17 @@ function ArrowIcon({ className }: { className: string }) {
  * homepage on the next revalidation, with no code change.
  */
 export default async function RecentBlogs() {
-  const posts = await listBlogPosts();
+  // A supporting section on a page that is not about the blog: if the CMS is down the
+  // section simply does not appear, rather than putting an error banner on the homepage
+  // or — as it used to — throwing and turning `/` into a 500.
+  const { data: posts } = await tryCms(() => listBlogPosts(), [] as BlogPost[]);
   if (!posts.length) return null;
 
   const [featured, ...rest] = posts;
   const supporting = rest.slice(0, SUPPORTING_COUNT);
 
   return (
-    <section className="w-full bg-primary py-14 lg:py-24 xl:py-24 2xl:py-32 text-white">
+    <section className="w-full bg-primary pt-10 pb-14 lg:pt-14 lg:pb-24 2xl:pt-16 2xl:pb-32 text-white">
       <div className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8">
 
         {/* Header Section */}

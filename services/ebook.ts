@@ -7,45 +7,55 @@ export interface EbookSubmissionData {
   'g-token'?: string;
 }
 
+interface EbookSubmissionResult {
+  success: boolean;
+  message?: string;
+}
+
 /**
- * Submits the e-book contact form to the legacy PHP backend endpoint.
+ * Submits the e-book contact form.
+ *
+ * Posts to this site's own /api/ebook route. It used to post to
+ * `/head/engine/ajax/__ajax_ebook_form.php` — a path that only exists on the legacy PHP
+ * host, so on this site every submission came back 404 and the form could never
+ * succeed. The route handles delivery server-side, which also keeps the mail
+ * credentials out of the browser.
  */
-export async function submitEbookForm(data: EbookSubmissionData): Promise<{ success: boolean; message?: string }> {
-  // Convert object to url-encoded body for PHP backend compatibility
+export async function submitEbookForm(
+  data: EbookSubmissionData,
+): Promise<EbookSubmissionResult> {
   const formBody = new URLSearchParams();
   Object.entries(data).forEach(([key, value]) => {
-    if (value !== undefined) {
-      formBody.append(key, value);
-    }
+    if (value !== undefined) formBody.append(key, value);
   });
 
-  const response = await fetch('/head/engine/ajax/__ajax_ebook_form.php', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-    },
-    body: formBody.toString(),
-  });
-
-  if (!response.ok) {
-    throw new Error(`Server returned error status: ${response.status}`);
-  }
-
-  // Legacy AJAX endpoints typically return HTML/text or JSON
-  const responseText = await response.text();
-  
-  // Since we check success state by matching div toggling on frontend, we assume HTTP 200 is success.
-  // We can try to parse JSON if backend returns it, otherwise return success as true.
+  let response: Response;
   try {
-    const json = JSON.parse(responseText);
-    return {
-      success: json.success !== false,
-      message: json.message || '',
-    };
+    response = await fetch('/api/ebook', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' },
+      body: formBody.toString(),
+    });
   } catch {
     return {
-      success: true,
-      message: responseText,
+      success: false,
+      message: 'We could not reach the server. Please check your connection and try again.',
     };
   }
+
+  const body = (await response.json().catch(() => ({}))) as {
+    ok?: boolean;
+    message?: string;
+  };
+
+  if (!response.ok) {
+    // Surface the server's own wording where it has any — it names the failing field —
+    // and never leak a bare status code to a visitor.
+    return {
+      success: false,
+      message: body.message || 'We could not send your request right now. Please try again.',
+    };
+  }
+
+  return { success: true };
 }
