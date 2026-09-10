@@ -58,6 +58,17 @@ const nextConfig: NextConfig = {
         destination: "/:path*",
         permanent: true,
       },
+      // Redirect legacy blog image formats to their converted WebP versions
+      {
+        source: "/assets/front/home/:path*\\.jpg",
+        destination: "/assets/front/home/:path*.webp",
+        permanent: true,
+      },
+      {
+        source: "/assets/front/home/:path*\\.png",
+        destination: "/assets/front/home/:path*.webp",
+        permanent: true,
+      },
     ];
   },
 };

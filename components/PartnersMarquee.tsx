@@ -96,8 +96,8 @@ export default function PartnersMarquee() {
           <div className="grid grid-cols-12 lg:gap-8 lg:mt-0 mt-4">
             <div className="lg:col-span-5 col-span-12 text-white text-left flex justify-start items-center">
               <div>
-                <p className="text-xs lg:text-sm xl:text-sm 2xl:text-base text-white font-medium">
-                  Our Partners
+                <p className="text-xs lg:text-sm xl:text-sm 2xl:text-base text-white font-medium before:!hidden after:!hidden">
+                  Our Clients
                 </p>
                 <h1
                   id="partners-heading"
@@ -127,9 +127,8 @@ export default function PartnersMarquee() {
                 {COLUMN_ORDERS.map((order, columnIndex) => (
                   <div className={styles.logoColumn} key={columnIndex}>
                     <div
-                      className={`${styles.logoTrack} ${
-                        columnIndex === 1 ? styles.reverse : styles.forward
-                      }`}
+                      className={`${styles.logoTrack} ${columnIndex === 1 ? styles.reverse : styles.forward
+                        }`}
                     >
                       <LogoGroup order={order} duplicate={false} />
                       <LogoGroup order={order} duplicate />

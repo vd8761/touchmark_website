@@ -97,7 +97,7 @@ export default function Page() {
             <div className="xl:max-w-screen-2xl 2xl:max-w-screen-2xl lg:max-w-screen-lg px-4 md:px-6 lg:px-8 mx-auto py-10 lg:py-24">
                 <div className="grid grid-cols-12 lg:gap-4">
                     <div className="lg:col-span-7 col-span-12 text-white text-left lg:pt-5">
-                        <a href="https://touchmarkdes.com/index.html">
+                        <a href="/">
                             <p className="text-xs lg:text-sm xl:text-sm 2xl:text-base mt-4 font-inter lg:block hidden">Home / Client &amp; Partner
                             </p>
                         </a>

@@ -30,7 +30,7 @@ const caseStudies: CaseStudy[] = [
     title: 'OLYMPIAD',
     color: '#4E878C',
     logo: '/images/home/case-studies/olympiad-logo.webp',
-    image: '/assets/front/home/tc_project_1722505935.webp',
+    image: '/assets/front/home/tc_project_1722505950.png',
     description: 'A Comprehensive School Management System that brings people together from all walks of life via thought-provoking conversations, creating a worldwide community centred around mutual respect, curiosity, and development.',
     link: '/case-study?id=2',
     icon: '/images/home/case-studies/graduation-icon.svg'
@@ -40,6 +40,7 @@ const caseStudies: CaseStudy[] = [
     title: 'SIDBI',
     color: '#C4D347',
     logo: '/images/home/case-studies/sidbi-logo.webp',
+    image: '/assets/front/home/tc_project_1722505935.webp',
     description: 'SIDBI\'s Digital Transformation: Boosting User Engagement, Operational Efficiency, and Customer Satisfaction via thought-provoking conversations, creating a worldwide community.',
     link: '/case-study?id=3',
     icon: '/images/home/case-studies/bank-icon.svg'
@@ -148,18 +149,16 @@ export default function CaseStudiesAccordion() {
           return (
             <div
               key={study.id}
-              className={`transition-all duration-700 ease-in-out relative flex overflow-hidden ${
-                isActive ? 'w-[75%]' : 'w-[8.33%]'
-              }`}
+              className={`transition-all duration-700 ease-in-out relative flex overflow-hidden ${isActive ? 'w-[75%]' : 'w-[8.33%]'
+                }`}
               style={{ backgroundColor: study.color }}
             >
               {/* Active State Content */}
               <div
                 id={`case-study-panel-${study.id}`}
                 aria-hidden={!isActive}
-                className={`absolute inset-0 flex flex-row transition-opacity duration-500 delay-200 ${
-                  isActive ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'
-                }`}
+                className={`absolute inset-0 flex flex-row transition-opacity duration-500 delay-200 ${isActive ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'
+                  }`}
               >
                 {/* Left Image Side — omitted for case studies without artwork */}
                 {study.image && (
@@ -205,9 +204,8 @@ export default function CaseStudiesAccordion() {
                 aria-expanded={isActive}
                 aria-label={`Show ${study.title} case study`}
                 tabIndex={isActive ? -1 : 0}
-                className={`absolute inset-0 flex w-full cursor-pointer flex-col items-center justify-between py-6 text-white transition-opacity duration-300 ${
-                  !isActive ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'
-                }`}
+                className={`absolute inset-0 flex w-full cursor-pointer flex-col items-center justify-between py-6 text-white transition-opacity duration-300 ${!isActive ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'
+                  }`}
               >
                 {/* Top Logo */}
                 <div className="h-10 flex items-center justify-center w-full px-2">

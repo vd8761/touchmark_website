@@ -351,7 +351,7 @@ function NavbarContent({ pathname }: { pathname: string }) {
     ? 'lg:bg-white/95 lg:backdrop-blur-xl lg:shadow-[0_8px_30px_rgba(15,40,80,0.08)] lg:text-slate-950 bg-white text-slate-950'
     : 'lg:bg-transparent lg:text-white bg-white text-slate-950';
   const indicatorColor = solidNav ? 'bg-primary' : 'bg-white';
-  const topLinkClass = 'relative flex h-14 items-center px-3 font-inter text-sm font-medium';
+  const topLinkClass = 'relative flex h-16 items-center px-3 font-inter text-[15px] font-normal';
 
   return (
     <nav
@@ -367,9 +367,10 @@ function NavbarContent({ pathname }: { pathname: string }) {
       }}
     >
       <div className={[styles.barContent, '2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] mx-auto w-full px-4 md:px-6 lg:px-8'].join(' ')}>
-        <div className="flex h-14 items-center justify-between" onMouseOver={handleBarMouseOver}>
-          <Link
-            href="/"
+        <div className="grid h-16 grid-cols-[1fr_auto] items-center gap-4 lg:grid-cols-[1fr_auto_1fr]" onMouseOver={handleBarMouseOver}>
+          <div className="flex justify-start">
+            <Link
+              href="/"
             className="flex shrink-0 items-center"
             aria-label="Touchmark Descience home"
             aria-current={pathname === '/' ? 'page' : undefined}
@@ -377,25 +378,26 @@ function NavbarContent({ pathname }: { pathname: string }) {
           >
             <Image
               src={solidNav ? '/images/tds-color-logo.webp' : '/images/touchmark-logowhite.svg'}
-              width={151}
-              height={28}
+              width={172}
+              height={32}
               unoptimized
               loading="eager"
-              className="hidden h-7 w-auto lg:block"
+              className="hidden h-8 w-auto lg:block"
               alt="Touchmark Descience"
             />
             <Image
               src="/images/tds-color-logo.webp"
-              width={151}
-              height={28}
+              width={172}
+              height={32}
               unoptimized
               loading="eager"
-              className="block h-7 w-auto lg:hidden"
+              className="block h-8 w-auto lg:hidden"
               alt="Touchmark Descience"
             />
-          </Link>
+            </Link>
+          </div>
 
-          <div className="hidden items-center lg:flex">
+          <div className="hidden justify-center lg:flex">
             <Link
               href="/about-us"
               className={['group', topLinkClass].join(' ')}
@@ -460,10 +462,11 @@ function NavbarContent({ pathname }: { pathname: string }) {
             </Link>
           </div>
 
-          <Link
-            href="/contact-us"
-            className={[
-              'hidden items-center px-4 py-2 font-inter text-xs font-semibold transition-all duration-200 hover:-translate-y-0.5 lg:inline-flex',
+          <div className="flex items-center justify-end gap-4">
+            <Link
+              href="/contact-us"
+              className={[
+                'hidden items-center px-5 py-2.5 font-inter text-sm font-medium transition-all duration-200 hover:-translate-y-0.5 lg:inline-flex',
               solidNav ? 'bg-primary text-white hover:shadow-lg hover:shadow-primary/20' : 'bg-white text-primary hover:shadow-lg hover:shadow-white/10',
             ].join(' ')}
             onFocus={() => setActiveMenu(null)}
@@ -493,6 +496,7 @@ function NavbarContent({ pathname }: { pathname: string }) {
               </svg>
             )}
           </button>
+          </div>
         </div>
       </div>
 
@@ -508,7 +512,7 @@ function NavbarContent({ pathname }: { pathname: string }) {
         <div
           ref={mobileMenuPanelRef}
           id="mobile-navigation"
-          className="max-h-[calc(100dvh-56px)] overflow-y-auto border-t border-slate-100 bg-white px-4 py-5 text-slate-900 shadow-xl lg:hidden"
+          className="max-h-[calc(100dvh-64px)] overflow-y-auto border-t border-slate-100 bg-white px-4 py-5 text-slate-900 shadow-xl lg:hidden"
         >
           <div className="mx-auto max-w-xl">
             <Link

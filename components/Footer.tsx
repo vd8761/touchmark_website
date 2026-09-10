@@ -42,7 +42,7 @@ const socials = [
 function FooterLinkColumn({
   title,
   links,
-  listClassName = 'mt-3 space-y-2 text-sm text-white/70',
+  listClassName = 'mt-4 space-y-2.5 text-sm text-white/70',
 }: {
   title: string;
   links: { href: string; label: string }[];
@@ -50,7 +50,7 @@ function FooterLinkColumn({
 }) {
   return (
     <div>
-      <p className="font-gellix text-sm font-semibold text-white xl:text-base">{title}</p>
+      <p className="font-gellix text-sm font-semibold tracking-wide text-white xl:text-base">{title}</p>
       <ul className={listClassName}>
         {links.map((link) => (
           <li key={link.href + link.label}>
@@ -75,40 +75,39 @@ export default function Footer() {
 
       <div className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8">
 
-        {/* Brand + Contact band */}
-        <div className="grid grid-cols-1 gap-8 pt-10 lg:grid-cols-12 lg:gap-10 lg:pt-12">
+        {/* Main Footer Grid */}
+        <div className="grid grid-cols-1 gap-12 pt-8 pb-4 sm:grid-cols-2 lg:grid-cols-12 lg:gap-8 xl:gap-12 lg:pt-10 lg:pb-4">
 
-          {/* Brand block */}
-          <div className="lg:col-span-7">
+          {/* Brand & Contact block */}
+          <div className="sm:col-span-2 lg:col-span-4 xl:col-span-4 lg:pr-8">
             <Link href="/" aria-label="Touchmark Descience home" className="inline-block">
               <img loading="lazy" decoding="async" src="/images/touchmark-logowhite.svg" className="h-8 w-auto" alt="Touchmark" />
             </Link>
-            <p className="mt-4 max-w-xl text-xs leading-relaxed text-white/70 lg:text-sm">
+            <p className="mt-6 text-sm leading-relaxed text-white/70">
               Innovative Solutions Connecting Brands and Customers. We provide full-service IT consulting, digital marketing, and software development — using automation and rich media to close the gap between brands and consumers.
             </p>
-          </div>
 
-          {/* Contact block */}
-          <div className="lg:col-span-5 lg:pl-6">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/50">Get in touch</p>
-            <div className="mt-3 space-y-2.5">
-              <a href="tel:+914440652648" className="group flex items-center gap-2.5 text-sm font-semibold text-white/90 transition-colors hover:text-white">
-                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 ring-1 ring-white/15 transition-colors group-hover:bg-white/20">
-                  <img loading="lazy" decoding="async" src="/images/home/icons/phone-icon.svg" alt="" className="h-3.5 w-3.5" />
-                </span>
-                +91 44 4065 2648
-              </a>
-              <a href="mailto:info@touchmarkdes.com" className="group flex items-center gap-2.5 text-sm font-semibold text-white/90 transition-colors hover:text-white">
-                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 ring-1 ring-white/15 transition-colors group-hover:bg-white/20">
-                  <img loading="lazy" decoding="async" src="/images/home/icons/mail-icon.svg" alt="" className="h-3.5 w-3.5" />
-                </span>
-                info@touchmarkdes.com
-              </a>
+            <div className="mt-12">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/50">Get in touch</p>
+              <div className="mt-5 space-y-3.5">
+                <a href="tel:+914440652648" className="group flex items-center gap-3 text-sm font-medium text-white/90 transition-colors hover:text-white">
+                  <span className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 ring-1 ring-white/15 transition-colors group-hover:bg-white/20">
+                    <img loading="lazy" decoding="async" src="/images/home/icons/phone-icon.svg" alt="" className="h-3.5 w-3.5" />
+                  </span>
+                  +91 44 4065 2648
+                </a>
+                <a href="mailto:info@touchmarkdes.com" className="group flex items-center gap-3 text-sm font-medium text-white/90 transition-colors hover:text-white">
+                  <span className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 ring-1 ring-white/15 transition-colors group-hover:bg-white/20">
+                    <img loading="lazy" decoding="async" src="/images/home/icons/mail-icon.svg" alt="" className="h-3.5 w-3.5" />
+                  </span>
+                  info@touchmarkdes.com
+                </a>
+              </div>
             </div>
 
-            <div className="mt-5">
+            <div className="mt-10">
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/50">Follow us</p>
-              <div className="mt-2 flex items-center gap-2">
+              <div className="mt-4 flex items-center gap-3">
                 {socials.map((social) => (
                   <a
                     key={social.href}
@@ -129,23 +128,29 @@ export default function Footer() {
               </div>
             </div>
           </div>
-        </div>
 
-        {/* Links grid */}
-        <div className="mt-8 grid grid-cols-2 gap-6 border-t border-white/10 pt-8 md:grid-cols-3 lg:gap-10 lg:pt-9">
-          <FooterLinkColumn title="Quick Links" links={quickLinks} />
-          <FooterLinkColumn title="Services" links={serviceLinks} />
-          <div className="col-span-2 md:col-span-1">
-            <FooterLinkColumn
-              title="Industries"
-              links={industryLinks}
-              listClassName="mt-3 grid grid-cols-2 gap-x-6 gap-y-2 text-sm text-white/70 md:grid-cols-1"
-            />
+          {/* Navigation Links Blocks */}
+          <div className="sm:col-span-2 lg:col-span-8 flex flex-col gap-10 sm:flex-row sm:justify-between lg:pl-8 xl:pl-16">
+            <div className="shrink-0">
+              <FooterLinkColumn title="Quick Links" links={quickLinks} />
+            </div>
+
+            <div className="shrink-0">
+              <FooterLinkColumn title="Services" links={serviceLinks} />
+            </div>
+
+            <div className="shrink-0 max-w-[280px] xl:max-w-[320px]">
+              <FooterLinkColumn
+                title="Industries"
+                links={industryLinks}
+                listClassName="mt-4 flex flex-col gap-y-2.5 text-sm text-white/70"
+              />
+            </div>
           </div>
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-8 flex flex-col items-center justify-between gap-2 border-t border-white/10 py-5 text-xs text-white/60 sm:flex-row">
+        <div className="mt-4 flex flex-col items-center justify-between gap-2 border-t border-white/10 py-5 text-xs text-white/60 sm:flex-row">
           <p>&copy; 2010-2026 Touchmark Descience Pvt. Ltd</p>
           <div className="flex items-center gap-4">
             <Link href="/terms-condition" className="transition-colors hover:text-white">Terms of Use</Link>
