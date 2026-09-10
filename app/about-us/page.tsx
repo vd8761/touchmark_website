@@ -339,12 +339,12 @@ export default function Page() {
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 lg:mt-16">
                         {[
-                            { name: "Arumugam Murugan", role: "VP - IT Delivery Head", image: "/images/about/team/arumugam.webp" },
-                            { name: "Ariyappan P", role: "VP - Tech Architect", image: "/images/about/team/ariyappan.webp" },
-                            { name: "Karthikeyan", role: "VP - Operations OriginBI", image: "/images/about/team/karthikeyan.webp" },
-                            { name: "Sujith", role: "VP - AI Reinvention initiative,\nTouchmark Nano GCC", image: "/images/about/team/sujith.webp" },
-                            { name: "Monishwar Rajasekaran", role: "Visual Designer", image: "/images/about/team/monishwar.webp" },
-                            { name: "Bhuvana", role: "Accounts Manager &\nClient Relationship", image: "/images/about/team/bhuvana.webp" },
+                            { name: "Arumugam Murugan", role: "VP - IT Delivery Head", image: "/images/about/team/Arumugam.webp" },
+                            { name: "Ariyappan P", role: "VP - Tech Architect", image: "/images/about/team/Ariyappan.webp" },
+                            { name: "Karthikeyan", role: "VP - Operations OriginBI", image: "/images/about/team/Karthikeyan.webp" },
+                            { name: "Sujith", role: "VP - AI Reinvention initiative,\nTouchmark Nano GCC", image: "/images/about/team/Sujith.webp" },
+                            { name: "Monishwar Rajasekaran", role: "Visual Designer", image: "/images/about/team/Monishwar.webp" },
+                            { name: "Bhuvana", role: "Accounts Manager &\nClient Relationship", image: "/images/about/team/Bhuvana.webp" },
                         ].map((member, idx) => (
                             <div key={idx} className="group border border-[#BED7F8] bg-white flex flex-col cursor-pointer hover:shadow-lg transition-all duration-300 aspect-[376/558]">
                                 <div className="bg-[#F2F9FF] flex-1 relative flex justify-center items-end overflow-hidden">
