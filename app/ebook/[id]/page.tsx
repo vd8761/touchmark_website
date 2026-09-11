@@ -14,11 +14,11 @@ import { getEbook } from '@/services/ebooks';
  * One layout now; the entries live in services/ebooks.ts.
  */
 interface PageProps {
-  searchParams: Promise<{ ebook_content_id?: string }>;
+  params: Promise<{ id: string }>;
 }
 
-export async function generateMetadata({ searchParams }: PageProps): Promise<Metadata> {
-  const ebook = getEbook((await searchParams).ebook_content_id);
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const ebook = getEbook((await params).id);
   if (!ebook) return {};
 
   return {
@@ -27,8 +27,8 @@ export async function generateMetadata({ searchParams }: PageProps): Promise<Met
   };
 }
 
-export default async function Page({ searchParams }: PageProps) {
-  const ebook = getEbook((await searchParams).ebook_content_id);
+export default async function Page({ params }: PageProps) {
+  const ebook = getEbook((await params).id);
   if (!ebook) notFound();
 
   const hasDetail = Boolean(ebook.intro?.length || ebook.points?.length || ebook.quote);
@@ -68,49 +68,49 @@ export default async function Page({ searchParams }: PageProps) {
       <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 py-14 lg:pt-24 xl:py-24 2xl:py-32">
         <div className="grid grid-cols-12 gap-8 items-start">
           <div className="lg:col-span-6 col-span-12">
-            {hasDetail && (
-              <h2 className="text-2xl lg:text-3xl font-primary text-gray-950 mb-4 font-bold">
-                What you can learn
-              </h2>
-            )}
-
-            {ebook.intro?.map((paragraph) => (
-              <p key={paragraph} className="text-sm font-secondary text-gray-600 mb-4 leading-relaxed">
-                {paragraph}
-              </p>
-            ))}
-
-            <div className="py-5 lg:py-6 flex justify-start items-center">
+            <div className="flex flex-col items-start">
               <img
                 decoding="async"
                 src={ebook.coverImage}
-                className="max-w-[200px] shadow-sm border border-gray-100 rounded"
+                className="w-full max-w-[280px] lg:max-w-[340px] border border-gray-200 rounded object-contain mb-8"
                 alt={`${ebook.title} cover`}
               />
+
+              {hasDetail && (
+                <h2 className="text-2xl lg:text-3xl font-primary text-gray-950 mb-4 font-bold">
+                  What you can learn
+                </h2>
+              )}
+
+              {ebook.intro?.map((paragraph, index) => (
+                <p key={index} className="text-sm font-secondary text-gray-600 mb-4 leading-relaxed">
+                  {paragraph}
+                </p>
+              ))}
+
+              {ebook.points && ebook.points.length > 0 && (
+                <ul className="space-y-4 mb-6">
+                  {ebook.points.map((point) => (
+                    <li key={point} className="flex items-start gap-3">
+                      <img
+                        decoding="async"
+                        loading="lazy"
+                        src="/images/ebooks/tick.svg"
+                        className="w-5 h-5 flex-shrink-0 mt-0.5"
+                        alt=""
+                      />
+                      <span className="text-sm font-secondary text-gray-600 leading-relaxed">{point}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+
+              {ebook.quote && (
+                <p className="italic text-base font-secondary text-gray-600 border-l-4 border-primary pl-4 py-1 leading-relaxed">
+                  &ldquo;{ebook.quote}&rdquo;
+                </p>
+              )}
             </div>
-
-            {ebook.points && ebook.points.length > 0 && (
-              <ul className="space-y-4 mb-6">
-                {ebook.points.map((point) => (
-                  <li key={point} className="flex items-start gap-3">
-                    <img
-                      decoding="async"
-                      loading="lazy"
-                      src="/images/ebooks/tick.svg"
-                      className="w-5 h-5 flex-shrink-0 mt-0.5"
-                      alt=""
-                    />
-                    <span className="text-sm font-secondary text-gray-600 leading-relaxed">{point}</span>
-                  </li>
-                ))}
-              </ul>
-            )}
-
-            {ebook.quote && (
-              <p className="italic text-base font-secondary text-gray-600 border-l-4 border-primary pl-4 py-1 leading-relaxed">
-                &ldquo;{ebook.quote}&rdquo;
-              </p>
-            )}
           </div>
 
           <div className="lg:col-span-6 col-span-12 lg:mt-0 mt-8">

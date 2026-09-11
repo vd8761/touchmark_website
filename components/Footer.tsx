@@ -151,7 +151,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="mt-4 flex flex-col items-center justify-between gap-2 border-t border-white/10 py-5 text-xs text-white/60 sm:flex-row">
-          <p>&copy; 2010-2026 Touchmark Descience Pvt. Ltd</p>
+          <p>&copy; 2010-{new Date().getFullYear()} Touchmark Descience Pvt. Ltd</p>
           <div className="flex items-center gap-4">
             <Link href="/terms-condition" className="transition-colors hover:text-white">Terms of Use</Link>
             <span className="text-white/25">|</span>

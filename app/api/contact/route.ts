@@ -17,7 +17,7 @@ type ContactPayload = {
 
 const RESEND_ENDPOINT = 'https://api.resend.com/emails';
 const DEFAULT_TO_EMAIL = 'info@touchmarkdes.com';
-const DEFAULT_FROM_EMAIL = 'no-reply@touchmarkdes.com';
+const DEFAULT_FROM_EMAIL = 'Touchmark Descience <no-reply@touchmarkdes.com>';
 const SITE_URL = 'https://touchmarkdes.com';
 // Points at the logo on the currently-live site rather than this repo's own
 // /public path, since that path 404s until this Next.js revamp is deployed.

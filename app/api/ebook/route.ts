@@ -15,7 +15,7 @@ export const runtime = 'nodejs';
 
 const RESEND_ENDPOINT = 'https://api.resend.com/emails';
 const DEFAULT_TO_EMAIL = 'info@touchmarkdes.com';
-const DEFAULT_FROM_EMAIL = 'no-reply@touchmarkdes.com';
+const DEFAULT_FROM_EMAIL = 'Touchmark Descience <no-reply@touchmarkdes.com>';
 const SITE_URL = 'https://touchmarkdes.com';
 const LOGO_URL = `${SITE_URL}/src/assets/img/tds-color-logo.png`;
 const BRAND_BLUE = '#194F97';
@@ -275,5 +275,5 @@ export async function POST(request: Request) {
     reply_to: teamEmail,
   }).catch(() => undefined);
 
-  return NextResponse.json({ ok: true, delivered: Boolean(downloadUrl) });
+  return NextResponse.json({ ok: true, delivered: Boolean(downloadUrl), downloadUrl });
 }

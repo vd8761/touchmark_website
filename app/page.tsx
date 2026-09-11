@@ -56,7 +56,7 @@ export default function Page() {
                             <div className="flex flex-col lg:flex-row lg:items-end justify-between">
                                 <h1 className="mt-1.5 lg:mt-1.5 xl:mt-3 2xl:mt-5 2xl:text-5xl xl:text-4xl lg:text-4xl text-3xl font-gellix">
                                     Check out Our<br className="hidden lg:block"/>Case Studies</h1>
-                                <p className="text-[14px] lg:text-sm xl:text-sm 2xl:text-base font-inter max-w-2xl lg:text-right mt-4 lg:mt-0 lg:ml-8">
+                                <p className="text-[14px] lg:text-sm xl:text-sm 2xl:text-base font-inter max-w-2xl lg:text-left mt-4 lg:mt-0 lg:ml-8">
                                     Established enterprises and emerging startups need a perfect balance of strategy, technology, analytics, and knowhow to solve everyday business challenges rises and emerging startups need a perfect balance of strategy, technology, analytics, and knowhow to solve everyday business.
                                 </p>
                             </div>
@@ -99,7 +99,7 @@ export default function Page() {
                                     <div className="p-5 w-64 lg:w-72 xl:w-80 2xl:w-96 h-44 lg:h-48 xl:h-52 2xl:h-56">
                                         <h3 className="text-white font-gellix text-lg lg:text-xl xl:text-xl 2xl:text-2xl">
                                             Advancing Aerospace Innovations And Future Directions In The Industry</h3>
-                                        <a href="/ebook-01?ebook_content_id=1" className="relative overflow-hidden border border-gray-100 px-3 py-2 inline-flex justify-center items-center group mt-7 lg:mt-8 xl:mt-8 2xl:mt-10">
+                                        <a href="/ebook/1" className="relative overflow-hidden border border-gray-100 px-3 py-2 inline-flex justify-center items-center group mt-7 lg:mt-8 xl:mt-8 2xl:mt-10">
                                             <span className="relative z-10 text-white group-hover:text-black transition-colors duration-300 text-sm uppercase">Learn
                                                 More</span>
                                             <svg fill="none" height="24" className="relative z-10 ml-2 text-white -rotate-90 group-hover:text-black group-hover:rotate-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
@@ -118,7 +118,7 @@ export default function Page() {
                                     <div className="p-5 w-64 lg:w-72 xl:w-80 2xl:w-96 h-44 lg:h-48 xl:h-52 2xl:h-56">
                                         <h3 className="text-white font-gellix text-lg lg:text-xl xl:text-xl 2xl:text-2xl">
                                             Design and Technological Strategies Shaping the Future of UX/UI</h3>
-                                        <a href="/ebook-01?ebook_content_id=2" className="relative overflow-hidden border border-gray-100 px-3 py-2 inline-flex justify-center items-center group mt-7 lg:mt-8 xl:mt-8 2xl:mt-10">
+                                        <a href="/ebook/2" className="relative overflow-hidden border border-gray-100 px-3 py-2 inline-flex justify-center items-center group mt-7 lg:mt-8 xl:mt-8 2xl:mt-10">
                                             <span className="relative z-10 text-white group-hover:text-black transition-colors duration-300 text-sm uppercase">Learn
                                                 More</span>
                                             <svg fill="none" height="24" className="relative z-10 ml-2 text-white -rotate-90 group-hover:text-black group-hover:rotate-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
@@ -137,7 +137,7 @@ export default function Page() {
                                     <div className="p-5 w-64 lg:w-72 xl:w-80 2xl:w-96 h-44 lg:h-48 xl:h-52 2xl:h-56">
                                         <h3 className="text-white font-gellix text-lg lg:text-xl xl:text-xl 2xl:text-2xl">
                                             Unleashing Business Potential through Open-Source Collaboration and Development</h3>
-                                        <a href="/ebook-01?ebook_content_id=3" className="relative overflow-hidden border border-gray-100 px-3 py-2 inline-flex justify-center items-center group mt-7 lg:mt-8 xl:mt-8 2xl:mt-10">
+                                        <a href="/ebook/3" className="relative overflow-hidden border border-gray-100 px-3 py-2 inline-flex justify-center items-center group mt-7 lg:mt-8 xl:mt-8 2xl:mt-10">
                                             <span className="relative z-10 text-white group-hover:text-black transition-colors duration-300 text-sm uppercase">Learn
                                                 More</span>
                                             <svg fill="none" height="24" className="relative z-10 ml-2 text-white -rotate-90 group-hover:text-black group-hover:rotate-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
@@ -168,7 +168,7 @@ export default function Page() {
             <div className="">
                 <div id="one-time" className="owl-carousel owl-theme mt-10 md:px-6 lg:px-8">
                     
-                    <div className="border bg-[#F1F2FF] grid grid-cols-6 gap-10 lg:p-7 p-5 hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-300">
+                    <div className="group relative overflow-hidden rounded-2xl border border-gray-100 bg-gradient-to-br from-white to-gray-50 grid grid-cols-6 gap-10 lg:p-8 p-6 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 hover:border-transparent">
                         <div className="lg:col-span-2 col-span-6">
                             <div className="hidden lg:block flex flex-col justify-between items-center h-full lg:space-y-5 space-y-3">
                                 <img loading="lazy" decoding="async" src="/images/home/hayakawa-icon-testimonial.webp" className="mb-auto" />
@@ -215,7 +215,7 @@ export default function Page() {
                         </div>
                     </div>
                     
-                    <div className="border bg-[#FFF6F7] grid grid-cols-6 gap-10 lg:p-7 p-5 hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-300">
+                    <div className="group relative overflow-hidden rounded-2xl border border-gray-100 bg-gradient-to-br from-white to-gray-50 grid grid-cols-6 gap-10 lg:p-8 p-6 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 hover:border-transparent">
                         <div className="lg:col-span-2 col-span-6">
                             <div className="hidden lg:block flex flex-col justify-between items-center h-full lg:space-y-5 space-y-3">
                                 <img loading="lazy" decoding="async" src="/images/home/alpha-icon-testimonial.webp" className="mb-auto" />
@@ -264,7 +264,7 @@ export default function Page() {
                         </div>
                     </div>
                     
-                    <div className="border bg-[#F8F9FF] grid grid-cols-6 gap-10 lg:p-7 p-5 hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-300">
+                    <div className="group relative overflow-hidden rounded-2xl border border-gray-100 bg-gradient-to-br from-white to-gray-50 grid grid-cols-6 gap-10 lg:p-8 p-6 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 hover:border-transparent">
                         <div className="lg:col-span-2 col-span-6">
                             <div className="lg:block hidden flex flex-col justify-between items-center h-full lg:space-y-5 space-y-3">
                                 <img loading="lazy" decoding="async" src="/images/home/tantra-icon-testimonial.webp" className="mb-auto" />
@@ -308,7 +308,7 @@ export default function Page() {
                         </div>
                     </div>
                     
-                    <div className="border bg-[#F4FFFE] grid grid-cols-6 gap-10 lg:p-7 p-5 hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-300">
+                    <div className="group relative overflow-hidden rounded-2xl border border-gray-100 bg-gradient-to-br from-white to-gray-50 grid grid-cols-6 gap-10 lg:p-8 p-6 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 hover:border-transparent">
                         <div className="lg:col-span-2 col-span-6">
                             <div className="hidden lg:block flex flex-col justify-between items-center h-full lg:space-y-5 space-y-3">
                                 <img loading="lazy" decoding="async" src="/images/home/armtech-icon-testimonial.webp" className="mb-auto" />

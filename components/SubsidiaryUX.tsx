@@ -21,7 +21,7 @@ const ROOT_ROUTES = new Set([
   'cloud',
   'contact-us',
   'data-analytics-service',
-  'ebook-01',
+  'ebook',
   'engineering-industry',
   'esg-industry',
   'fmcg-industry',
@@ -1148,6 +1148,12 @@ export default function SubsidiaryUX() {
   const router = useRouter();
 
   useEffect(() => {
+    if (!window.location.hash) {
+      window.scrollTo(0, 0);
+    }
+  }, [pathname]);
+
+  useEffect(() => {
     if (pathname === '/') return;
 
     const cleanups: Cleanup[] = [];
@@ -1203,6 +1209,12 @@ export default function SubsidiaryUX() {
       if (url.href === window.location.href) return;
 
       event.preventDefault();
+      
+      // Explicitly scroll to top for standard navigations to prevent staying anchored to the footer/bottom
+      if (!url.hash) {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+      }
+      
       router.push(`${url.pathname}${url.search}${url.hash}`);
     };
 

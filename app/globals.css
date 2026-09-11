@@ -36,13 +36,13 @@
   --background: #ffffff;
   --foreground: #171717;
   --home-about-copy: #f1fbff;
-  --home-about-blue: #194f97;
+  --home-about-blue: #043E8C;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-primary: #194F97;
+  --color-primary: #043E8C;
   --color-secondary: #ffffff;
   --color-primary-light: #D3E0F2;
   --font-primary: Gellix, sans-serif;
@@ -84,8 +84,8 @@ body {
   left: 0.75rem;
   padding: 0.7rem 1rem;
   background: #ffffff;
-  color: #194f97;
-  border: 2px solid #194f97;
+  color: #043E8C;
+  border: 2px solid #043E8C;
   font-size: 0.875rem;
   font-weight: 600;
   transform: translateY(calc(-100% - 1rem));

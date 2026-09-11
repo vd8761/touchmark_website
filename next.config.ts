@@ -40,7 +40,6 @@ const nextConfig: NextConfig = {
       { source: "/sc-service", destination: "/sales-commerce-service", permanent: true },
       { source: "/tc-service", destination: "/technology-consulting-service", permanent: true },
       { source: "/tt-industry", destination: "/travel-tourism-industry", permanent: true },
-      { source: "/e-book-01", destination: "/ebook-01", permanent: true },
       { source: "/ai-analytics", destination: "/blog/tag/ai-analytics", permanent: true },
 
       // Converted article cards previously pointed at root-level or /articles URLs.

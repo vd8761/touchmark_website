@@ -34,6 +34,7 @@ export default function EbookForm({ ebookId }: EbookFormProps) {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [downloadUrl, setDownloadUrl] = useState('');
   const [submitError, setSubmitError] = useState('');
   const nameInputRef = useRef<HTMLInputElement>(null);
   const lastNameInputRef = useRef<HTMLInputElement>(null);
@@ -167,7 +168,7 @@ export default function EbookForm({ ebookId }: EbookFormProps) {
         <h2 className="text-3xl lg:text-4xl font-primary text-gray-900 mb-3">
           Success!
         </h2>
-        <p className="text-sm lg:text-base font-secondary text-gray-600 max-w-[320px]">
+        <p className="text-sm lg:text-base font-secondary text-gray-600 max-w-[320px] mb-6">
           Please check your email for the download link.
         </p>
       </div>
@@ -178,10 +179,10 @@ export default function EbookForm({ ebookId }: EbookFormProps) {
     <div className="bg-white p-6 lg:p-10 border border-gray-100 rounded-lg shadow-md mx-auto max-w-[540px] transition-all duration-300">
       <div className="text-center mb-6 lg:mb-8">
         <h2 className="text-2xl lg:text-3xl font-primary text-gray-900 font-bold">
-          Download Now
+          Download now
         </h2>
-        <p className="text-xs lg:text-sm font-secondary text-gray-500 mt-2 max-w-[320px] mx-auto leading-relaxed">
-          share a few contact details and we&apos;ll send a download link to your inbox
+        <p className="text-sm lg:text-base font-secondary text-gray-700 mt-3 max-w-[320px] mx-auto leading-relaxed">
+          Enter your details below to receive your free e-book directly in your inbox.
         </p>
       </div>
 
@@ -193,8 +194,8 @@ export default function EbookForm({ ebookId }: EbookFormProps) {
         className="space-y-4 lg:space-y-5"
       >
         <div>
-          <label htmlFor="name" className="block text-xs font-semibold text-gray-700 mb-1 font-secondary">
-            Name*
+          <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-1 font-secondary">
+            First Name*
           </label>
           <input
             ref={nameInputRef}
@@ -205,18 +206,19 @@ export default function EbookForm({ ebookId }: EbookFormProps) {
             required
             aria-invalid={Boolean(errors.name)}
             aria-describedby={errors.name ? 'ebook-name-error' : undefined}
-            placeholder="your name"
+            placeholder="e.g. John"
             value={formData.name}
             onChange={handleChange}
-            className={`w-full border p-3 text-sm font-secondary transition-all rounded outline-none ${
-              errors.name ? 'border-red-500 focus:border-red-500' : 'border-gray-200 focus:border-primary'
+            style={{ boxShadow: 'none' }}
+            className={`w-full border p-3 text-sm font-secondary transition-colors rounded !outline-none !ring-0 ${
+              errors.name ? 'border-red-500 bg-red-50/50' : 'border-gray-300 focus:border-primary hover:border-gray-400'
             }`}
           />
           {errors.name && <p id="ebook-name-error" className="text-xs text-red-500 mt-1 font-secondary">{errors.name}</p>}
         </div>
 
         <div>
-          <label htmlFor="lastName" className="block text-xs font-semibold text-gray-700 mb-1 font-secondary">
+          <label htmlFor="lastName" className="block text-sm font-semibold text-gray-700 mb-1 font-secondary">
             Last Name*
           </label>
           <input
@@ -228,18 +230,19 @@ export default function EbookForm({ ebookId }: EbookFormProps) {
             required
             aria-invalid={Boolean(errors.lastName)}
             aria-describedby={errors.lastName ? 'ebook-last-name-error' : undefined}
-            placeholder="your name"
+            placeholder="e.g. Doe"
             value={formData.lastName}
             onChange={handleChange}
-            className={`w-full border p-3 text-sm font-secondary transition-all rounded outline-none ${
-              errors.lastName ? 'border-red-500 focus:border-red-500' : 'border-gray-200 focus:border-primary'
+            style={{ boxShadow: 'none' }}
+            className={`w-full border p-3 text-sm font-secondary transition-colors rounded !outline-none !ring-0 ${
+              errors.lastName ? 'border-red-500 bg-red-50/50' : 'border-gray-300 focus:border-primary hover:border-gray-400'
             }`}
           />
           {errors.lastName && <p id="ebook-last-name-error" className="text-xs text-red-500 mt-1 font-secondary">{errors.lastName}</p>}
         </div>
 
         <div>
-          <label htmlFor="email" className="block text-xs font-semibold text-gray-700 mb-1 font-secondary">
+          <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-1 font-secondary">
             Work Email*
           </label>
           <input
@@ -251,18 +254,19 @@ export default function EbookForm({ ebookId }: EbookFormProps) {
             required
             aria-invalid={Boolean(errors.email)}
             aria-describedby={errors.email ? 'ebook-email-error' : undefined}
-            placeholder="you@company.com"
+            placeholder="e.g. john@company.com"
             value={formData.email}
             onChange={handleChange}
-            className={`w-full border p-3 text-sm font-secondary transition-all rounded outline-none ${
-              errors.email ? 'border-red-500 focus:border-red-500' : 'border-gray-200 focus:border-primary'
+            style={{ boxShadow: 'none' }}
+            className={`w-full border p-3 text-sm font-secondary transition-colors rounded !outline-none !ring-0 ${
+              errors.email ? 'border-red-500 bg-red-50/50' : 'border-gray-300 focus:border-primary hover:border-gray-400'
             }`}
           />
           {errors.email && <p id="ebook-email-error" className="text-xs text-red-500 mt-1 font-secondary">{errors.email}</p>}
         </div>
 
         <div>
-          <label htmlFor="companyName" className="block text-xs font-semibold text-gray-700 mb-1 font-secondary">
+          <label htmlFor="companyName" className="block text-sm font-semibold text-gray-700 mb-1 font-secondary">
             Company Name*
           </label>
           <input
@@ -274,11 +278,12 @@ export default function EbookForm({ ebookId }: EbookFormProps) {
             required
             aria-invalid={Boolean(errors.companyName)}
             aria-describedby={errors.companyName ? 'ebook-company-error' : undefined}
-            placeholder="your company name"
+            placeholder="e.g. Touchmark Descience"
             value={formData.companyName}
             onChange={handleChange}
-            className={`w-full border p-3 text-sm font-secondary transition-all rounded outline-none ${
-              errors.companyName ? 'border-red-500 focus:border-red-500' : 'border-gray-200 focus:border-primary'
+            style={{ boxShadow: 'none' }}
+            className={`w-full border p-3 text-sm font-secondary transition-colors rounded !outline-none !ring-0 ${
+              errors.companyName ? 'border-red-500 bg-red-50/50' : 'border-gray-300 focus:border-primary hover:border-gray-400'
             }`}
           />
           {errors.companyName && <p id="ebook-company-error" className="text-xs text-red-500 mt-1 font-secondary">{errors.companyName}</p>}

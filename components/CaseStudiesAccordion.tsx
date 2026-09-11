@@ -1,61 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-
-type CaseStudy = {
-  id: number;
-  title: string;
-  color: string;
-  logo: string;
-  /** Optional: a panel with no artwork yet renders as a full-width colour block. */
-  image?: string;
-  description: string;
-  link: string;
-  icon: string;
-};
-
-const caseStudies: CaseStudy[] = [
-  {
-    id: 1,
-    title: 'RUPINIS',
-    color: '#5C205F',
-    logo: '/images/home/case-studies/rupinis-logo.webp',
-    image: '/assets/front/home/tc_project_1722505852.webp',
-    description: 'Our goal is to become the preeminent online forum that brings people together from all walks of life via thought-provoking conversations, creating a worldwide community centred around mutual respect, curiosity, and development.\n\nOur goal is to become the preeminent online forum that brings people together from all walks of life via thought-provoking conversations, creating a worldwide community centred around mutual respect, curiosity, and development.',
-    link: '/case-study?id=1',
-    icon: '/images/home/case-studies/brush-icon.svg'
-  },
-  {
-    id: 2,
-    title: 'OLYMPIAD',
-    color: '#4E878C',
-    logo: '/images/home/case-studies/olympiad-logo.webp',
-    image: '/assets/front/home/tc_project_1722505950.png',
-    description: 'A Comprehensive School Management System that brings people together from all walks of life via thought-provoking conversations, creating a worldwide community centred around mutual respect, curiosity, and development.',
-    link: '/case-study?id=2',
-    icon: '/images/home/case-studies/graduation-icon.svg'
-  },
-  {
-    id: 3,
-    title: 'SIDBI',
-    color: '#C4D347',
-    logo: '/images/home/case-studies/sidbi-logo.webp',
-    image: '/assets/front/home/tc_project_1722505935.webp',
-    description: 'SIDBI\'s Digital Transformation: Boosting User Engagement, Operational Efficiency, and Customer Satisfaction via thought-provoking conversations, creating a worldwide community.',
-    link: '/case-study?id=3',
-    icon: '/images/home/case-studies/bank-icon.svg'
-  },
-  {
-    id: 4,
-    title: 'DVI HOLIDAYS',
-    color: '#EE3E42',
-    logo: '/images/home/case-studies/dvi-logo.webp',
-    image: '/assets/front/home/tc_project_1722505900.webp',
-    description: 'An exceptional holiday experience that brings people together from all walks of life via thought-provoking conversations, creating a worldwide community centred around mutual respect, curiosity, and development.',
-    link: '/contact-us',
-    icon: '/images/home/case-studies/globe-icon.svg'
-  }
-];
+import { caseStudies, CaseStudyData } from '../data/case-studies';
 
 export default function CaseStudiesAccordion() {
   const [activeId, setActiveId] = useState(1);
@@ -100,34 +46,34 @@ export default function CaseStudiesAccordion() {
             className="sticky mb-8 overflow-hidden rounded-md shadow-2xl text-white font-inter"
             style={{ top: `calc(50vh - 265px + ${i * 14}px)`, backgroundColor: study.color, zIndex: i + 1 }}
           >
-            {study.image && (
+            {study.accordionImage && (
               <div className="relative h-48 w-full overflow-hidden">
                 {/* Blurred fill so the whole image is visible without cropping or stretching */}
                 <img
                   aria-hidden="true"
                   loading="lazy"
                   decoding="async"
-                  src={study.image}
+                  src={study.accordionImage}
                   alt=""
                   className="absolute inset-0 h-full w-full scale-125 object-cover blur-2xl"
                 />
                 <img
                   loading="lazy"
                   decoding="async"
-                  src={study.image}
-                  alt={study.title}
+                  src={study.accordionImage}
+                  alt={study.accordionTitle}
                   className="relative z-10 h-full w-full object-contain"
                 />
               </div>
             )}
             <div className="p-5">
               <div className="flex justify-between items-center gap-3">
-                <h2 className="text-xl font-gellix font-semibold uppercase">{study.title}</h2>
+                <h2 className="text-xl font-gellix font-semibold uppercase">{study.accordionTitle}</h2>
                 <img loading="lazy" decoding="async" src={study.logo} alt="" className="h-6 max-w-[96px] object-contain brightness-0 invert shrink-0" />
               </div>
               <div className="mt-3">
                 <p className="text-xs text-white/90 leading-relaxed font-secondary line-clamp-4">
-                  {study.description.split('\n')[0]}
+                  {study.accordionDescription.split('\n')[0]}
                 </p>
               </div>
               <div className="mt-5 flex justify-between items-end">
@@ -161,23 +107,23 @@ export default function CaseStudiesAccordion() {
                   }`}
               >
                 {/* Left Image Side — omitted for case studies without artwork */}
-                {study.image && (
+                {study.accordionImage && (
                   <div className="w-[45%] h-full relative overflow-hidden">
-                    <img loading="lazy" decoding="async" src={study.image} alt={study.title} className="w-full h-full object-cover" />
+                    <img loading="lazy" decoding="async" src={study.accordionImage} alt={study.accordionTitle} className="w-full h-full object-cover" />
                   </div>
                 )}
 
                 {/* Right Content Side */}
-                <div className={`${study.image ? 'w-[55%]' : 'w-full'} h-full p-10 xl:p-12 flex flex-col relative`} style={{ backgroundColor: study.color }}>
+                <div className={`${study.accordionImage ? 'w-[55%]' : 'w-full'} h-full p-10 xl:p-12 flex flex-col relative`} style={{ backgroundColor: study.color }}>
                   {/* Logo and Title */}
                   <div className="flex justify-between items-center pr-44">
-                    <h2 className="text-3xl font-gellix font-semibold uppercase">{study.title}</h2>
+                    <h2 className="text-3xl font-gellix font-semibold uppercase">{study.accordionTitle}</h2>
                   </div>
-                  <img loading="lazy" decoding="async" src={study.logo} alt={`${study.title} Logo`} className="absolute top-4 right-4 xl:top-5 xl:right-5 h-12 xl:h-14 max-w-[160px] object-contain brightness-0 invert" />
+                  <img loading="lazy" decoding="async" src={study.logo} alt={`${study.accordionTitle} Logo`} className="absolute top-4 right-4 xl:top-5 xl:right-5 h-12 xl:h-14 max-w-[160px] object-contain brightness-0 invert" />
 
                   {/* Description */}
-                  <div className={`mt-6 flex-grow space-y-4 overflow-hidden ${study.image ? '' : 'max-w-3xl'}`}>
-                    {study.description.split('\n').map((paragraph, index) => (
+                  <div className={`mt-6 flex-grow space-y-4 overflow-hidden ${study.accordionImage ? '' : 'max-w-3xl'}`}>
+                    {study.accordionDescription.split('\n').map((paragraph, index) => (
                       <p key={index} className="text-sm text-white/90 leading-relaxed font-secondary">
                         {paragraph}
                       </p>
@@ -202,7 +148,7 @@ export default function CaseStudiesAccordion() {
                 onClick={() => setActiveId(study.id)}
                 aria-controls={`case-study-panel-${study.id}`}
                 aria-expanded={isActive}
-                aria-label={`Show ${study.title} case study`}
+                aria-label={`Show ${study.accordionTitle} case study`}
                 tabIndex={isActive ? -1 : 0}
                 className={`absolute inset-0 flex w-full cursor-pointer flex-col items-center justify-between py-6 text-white transition-opacity duration-300 ${!isActive ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'
                   }`}
@@ -215,7 +161,7 @@ export default function CaseStudiesAccordion() {
                 {/* Center Rotated Text */}
                 <div className="flex-grow flex items-center justify-center relative w-full h-full min-h-[100px]">
                   <h3 className="-rotate-90 text-lg xl:text-xl font-gellix font-semibold uppercase whitespace-nowrap tracking-wider text-white absolute">
-                    {study.title}
+                    {study.accordionTitle}
                   </h3>
                 </div>
 

@@ -10,6 +10,7 @@ export interface EbookSubmissionData {
 interface EbookSubmissionResult {
   success: boolean;
   message?: string;
+  downloadUrl?: string;
 }
 
 /**
@@ -46,6 +47,7 @@ export async function submitEbookForm(
   const body = (await response.json().catch(() => ({}))) as {
     ok?: boolean;
     message?: string;
+    downloadUrl?: string;
   };
 
   if (!response.ok) {
@@ -57,5 +59,5 @@ export async function submitEbookForm(
     };
   }
 
-  return { success: true };
+  return { success: true, downloadUrl: body.downloadUrl };
 }
