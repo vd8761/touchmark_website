@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import { isValidPhoneNumber } from 'libphonenumber-js';
 
 export const runtime = 'nodejs';
 
@@ -94,7 +95,6 @@ async function readPayload(request: Request): Promise<ContactPayload> {
 
 function validatePayload(payload: ContactPayload) {
   const errors: Record<string, string> = {};
-  const phoneRule = COUNTRY_DIGITS[payload.country_code] ?? COUNTRY_DIGITS['+91'];
 
   if (!payload.first_name) errors.first_name = 'First name is required.';
   if (!payload.last_name) errors.last_name = 'Last name is required.';
@@ -103,10 +103,9 @@ function validatePayload(payload: ContactPayload) {
   if (!payload.location) errors.location = 'Location is required.';
   if (!payload.project_type) errors.project_type = 'Project type is required.';
   if (!payload.requirements) errors.requirements = 'Requirement details are required.';
-  if (
-    payload.contact_number.length < phoneRule.min ||
-    payload.contact_number.length > phoneRule.max
-  ) {
+
+  const fullPhone = `${payload.country_code}${payload.contact_number}`;
+  if (!payload.contact_number || !isValidPhoneNumber(fullPhone)) {
     errors.contact_number = 'A valid contact number is required.';
   }
 

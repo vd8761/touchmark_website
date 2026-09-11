@@ -584,18 +584,7 @@ function setupArticleSubscription(pathname: string): Cleanup | undefined {
 
 type ContactField = HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement;
 
-type CountryChoice = {
-  label: string;
-  code: string;
-  minDigits: number;
-  maxDigits: number;
-};
 
-const COUNTRY_CHOICES: CountryChoice[] = [
-  { label: 'IND', code: '+91', minDigits: 10, maxDigits: 10 },
-  { label: 'UK', code: '+44', minDigits: 10, maxDigits: 11 },
-  { label: 'SING', code: '+65', minDigits: 8, maxDigits: 8 },
-];
 
 function getRecaptchaToken(action: string) {
   const recaptcha = (window as EnhancedWindow).grecaptcha;
@@ -675,146 +664,7 @@ function setupContactForm(pathname: string): Cleanup | undefined {
     }
   }
 
-  const phone = fields.get('contact_number') as HTMLInputElement | undefined;
-  phone?.setAttribute('inputmode', 'numeric');
-  phone?.setAttribute('autocomplete', 'tel-national');
 
-  const countryButton = document.querySelector<HTMLButtonElement>('#dropdown-phone-button');
-  const countryMenu = document.querySelector<HTMLElement>('#dropdown-phone');
-  const countryOptions = countryMenu
-    ? [...countryMenu.querySelectorAll<HTMLButtonElement>('button')]
-    : [];
-  let selectedCountry = COUNTRY_CHOICES[0];
-
-  let countryInput = form.querySelector<HTMLInputElement>('input[name="country_code"]');
-  if (!countryInput) {
-    countryInput = document.createElement('input');
-    countryInput.type = 'hidden';
-    countryInput.name = 'country_code';
-    form.appendChild(countryInput);
-  }
-
-  const countryLabel = document.createElement('span');
-  countryLabel.dataset.countryLabel = 'true';
-  if (countryButton) {
-    [...countryButton.childNodes].forEach((node) => {
-      if (node.nodeType === Node.TEXT_NODE) node.remove();
-    });
-    countryButton.insertBefore(countryLabel, countryButton.firstChild);
-    countryButton.setAttribute('aria-haspopup', 'listbox');
-    countryButton.setAttribute('aria-expanded', 'false');
-    countryButton.setAttribute('aria-controls', countryMenu?.id ?? 'dropdown-phone');
-  }
-  countryMenu?.setAttribute('role', 'listbox');
-  countryMenu?.setAttribute('aria-label', 'Country calling code');
-  const countryList = countryMenu?.querySelector<HTMLElement>('ul');
-  countryList?.setAttribute('role', 'none');
-  countryList?.removeAttribute('aria-labelledby');
-  countryList?.querySelectorAll<HTMLElement>('li').forEach((item) => {
-    item.setAttribute('role', 'none');
-  });
-
-  const applyCountry = (choice: CountryChoice, focusButton = false) => {
-    selectedCountry = choice;
-    countryInput.value = choice.code;
-    countryLabel.textContent = `${choice.label} ${choice.code}`;
-    if (phone) {
-      phone.maxLength = choice.maxDigits;
-      phone.placeholder = '0'.repeat(choice.maxDigits);
-      phone.value = phone.value.replace(/\D/g, '').slice(0, choice.maxDigits);
-    }
-    countryOptions.forEach((option, index) => {
-      const optionChoice = COUNTRY_CHOICES[index];
-      if (!optionChoice) return;
-      option.textContent = `${optionChoice.label} (${optionChoice.code})`;
-      option.dataset.countryCode = optionChoice.code;
-      option.setAttribute('role', 'option');
-      option.setAttribute('aria-selected', String(optionChoice.code === choice.code));
-      option.tabIndex = optionChoice.code === choice.code ? 0 : -1;
-    });
-    if (focusButton) countryButton?.focus({ preventScroll: true });
-  };
-
-  const openCountryMenu = () => {
-    if (!countryMenu || !countryButton) return;
-    countryMenu.classList.remove('hidden');
-    countryButton.setAttribute('aria-expanded', 'true');
-    const selectedIndex = Math.max(
-      0,
-      COUNTRY_CHOICES.findIndex((choice) => choice.code === selectedCountry.code),
-    );
-    countryOptions[selectedIndex]?.focus({ preventScroll: true });
-  };
-
-  const closeCountryMenu = (restoreFocus = false) => {
-    countryMenu?.classList.add('hidden');
-    countryButton?.setAttribute('aria-expanded', 'false');
-    if (restoreFocus) countryButton?.focus({ preventScroll: true });
-  };
-
-  const onCountryButtonClick = (event: MouseEvent) => {
-    event.preventDefault();
-    event.stopImmediatePropagation();
-    if (countryMenu?.classList.contains('hidden')) openCountryMenu();
-    else closeCountryMenu();
-  };
-
-  const onCountryButtonKeyDown = (event: KeyboardEvent) => {
-    if (event.key === 'ArrowDown' || event.key === 'Enter' || event.key === ' ') {
-      event.preventDefault();
-      openCountryMenu();
-    } else if (event.key === 'Escape') {
-      event.preventDefault();
-      closeCountryMenu();
-    }
-  };
-
-  const optionCleanups: Cleanup[] = [];
-  countryOptions.forEach((option, index) => {
-    const choice = COUNTRY_CHOICES[index];
-    if (!choice) return;
-    const onClick = (event: MouseEvent) => {
-      event.preventDefault();
-      event.stopImmediatePropagation();
-      applyCountry(choice, true);
-      closeCountryMenu();
-    };
-    const onKeyDown = (event: KeyboardEvent) => {
-      const current = countryOptions.indexOf(option);
-      if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
-        event.preventDefault();
-        const delta = event.key === 'ArrowDown' ? 1 : -1;
-        const next = (current + delta + countryOptions.length) % countryOptions.length;
-        countryOptions[next]?.focus({ preventScroll: true });
-      } else if (event.key === 'Home' || event.key === 'End') {
-        event.preventDefault();
-        countryOptions[event.key === 'Home' ? 0 : countryOptions.length - 1]?.focus({
-          preventScroll: true,
-        });
-      } else if (event.key === 'Escape') {
-        event.preventDefault();
-        closeCountryMenu(true);
-      }
-    };
-    option.addEventListener('click', onClick, true);
-    option.addEventListener('keydown', onKeyDown);
-    optionCleanups.push(() => {
-      option.removeEventListener('click', onClick, true);
-      option.removeEventListener('keydown', onKeyDown);
-    });
-  });
-
-  const onOutsidePointerDown = (event: PointerEvent) => {
-    if (!isElement(event.target)) return;
-    if (countryButton?.contains(event.target) || countryMenu?.contains(event.target)) return;
-    closeCountryMenu();
-  };
-
-  const onDocumentFocusIn = (event: FocusEvent) => {
-    if (!isElement(event.target)) return;
-    if (countryButton?.contains(event.target) || countryMenu?.contains(event.target)) return;
-    closeCountryMenu();
-  };
 
   const getErrorMessage = (id: string, value: string) => {
     if (!value.trim()) return 'Please fill out this field.';
@@ -822,12 +672,12 @@ function setupContactForm(pathname: string): Cleanup | undefined {
       return 'Please enter a valid email address.';
     }
     if (id === 'contact_number') {
-      const digits = value.replace(/\D/g, '');
-      if (digits.length < selectedCountry.minDigits || digits.length > selectedCountry.maxDigits) {
-        return selectedCountry.minDigits === selectedCountry.maxDigits
-          ? `Please enter a valid ${selectedCountry.minDigits}-digit phone number.`
-          : `Please enter a ${selectedCountry.minDigits}-${selectedCountry.maxDigits} digit phone number.`;
+      if (!value.trim()) return 'Please fill out this field.';
+      const localInput = document.getElementById('contact_number_local');
+      if (localInput && localInput.classList.contains('invalid')) {
+        return 'Please enter a valid phone number.';
       }
+      return '';
     }
     return '';
   };
@@ -849,13 +699,7 @@ function setupContactForm(pathname: string): Cleanup | undefined {
     });
   });
 
-  if (phone) {
-    const sanitizePhone = () => {
-      phone.value = phone.value.replace(/\D/g, '').slice(0, selectedCountry.maxDigits);
-    };
-    phone.addEventListener('input', sanitizePhone, { capture: true });
-    fieldCleanups.push(() => phone.removeEventListener('input', sanitizePhone, { capture: true }));
-  }
+
 
   const submit = async () => {
     requestStatus.textContent = '';
@@ -890,7 +734,10 @@ function setupContactForm(pathname: string): Cleanup | undefined {
         credentials: 'omit',
         signal: abortController.signal,
       });
-      if (!response.ok) throw new Error(`Contact request failed with status ${response.status}`);
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => null);
+        throw new Error(errorData?.message || `Contact request failed with status ${response.status}`);
+      }
 
       if (initial) initial.style.display = 'none';
       if (success) {
@@ -902,7 +749,7 @@ function setupContactForm(pathname: string): Cleanup | undefined {
       }
     } catch (error) {
       if ((error as Error).name !== 'AbortError') {
-        requestStatus.textContent = 'Unable to submit your request right now. Please try again.';
+        requestStatus.textContent = (error as Error).message || 'Unable to submit your request right now. Please try again.';
         requestStatus.hidden = false;
       }
     } finally {
@@ -918,21 +765,12 @@ function setupContactForm(pathname: string): Cleanup | undefined {
     void submit();
   };
 
-  applyCountry(COUNTRY_CHOICES[0]);
-  countryButton?.addEventListener('click', onCountryButtonClick, true);
-  countryButton?.addEventListener('keydown', onCountryButtonKeyDown);
-  document.addEventListener('pointerdown', onOutsidePointerDown, true);
-  document.addEventListener('focusin', onDocumentFocusIn);
+
   form.addEventListener('submit', onSubmit, true);
 
   return () => {
     abortController.abort();
-    countryButton?.removeEventListener('click', onCountryButtonClick, true);
-    countryButton?.removeEventListener('keydown', onCountryButtonKeyDown);
-    document.removeEventListener('pointerdown', onOutsidePointerDown, true);
-    document.removeEventListener('focusin', onDocumentFocusIn);
-    form.removeEventListener('submit', onSubmit, true);
-    optionCleanups.forEach((cleanup) => cleanup());
+
     fieldCleanups.forEach((cleanup) => cleanup());
     requestStatus.remove();
   };

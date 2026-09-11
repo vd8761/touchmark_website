@@ -63,6 +63,13 @@ body {
   font-weight: 600 !important;
 }
 
+.error-message {
+  color: #dc2626; /* Tailwind red-600 */
+  font-size: 0.875rem; /* text-sm */
+  margin-top: 0.25rem;
+  display: block;
+}
+
 .only-lg {
   display: none;
 }

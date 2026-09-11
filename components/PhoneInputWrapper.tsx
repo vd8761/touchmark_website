@@ -91,8 +91,9 @@ export default function PhoneInputWrapper() {
         <div className="h-5 w-[1px] bg-gray-300"></div>
       </div>
 
-      {/* Hidden input to submit the full international number for the backend */}
-      <input type="hidden" name="contact_number" value={phone ? '+' + dialCode + phone : ''} />
+      {/* Hidden inputs to submit the format expected by the backend */}
+      <input type="hidden" name="contact_number" id="contact_number" value={phone} />
+      <input type="hidden" name="country_code" id="country_code" value={'+' + dialCode} />
     </div>
   );
 }

@@ -221,6 +221,16 @@ export default function Page() {
                         </a>
                         <h1 className="2xl:text-6xl xl:text-5xl lg:text-4xl text-3xl font-gellix">Partner with us</h1>
                         <h3 className="2xl:mt-10 xl:mt-5 lg:mt-5 mt-5">We value your feedback and inquiries at <span className="text-[#194F97]">info@touchmarkdes.com</span></h3>
+                        <div id="successDiv" className="hidden bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg mt-6 shadow-sm mb-6" role="status" aria-live="polite" tabIndex={-1}>
+                            <div className="flex items-center">
+                                <svg className="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                                </svg>
+                                <strong className="font-gellix font-semibold">Success!</strong>
+                            </div>
+                            <p className="mt-1 text-sm font-inter ml-7">Thank you for submitting. We will get back to you shortly.</p>
+                        </div>
+                        
                         <div id="initialDiv">
                             <form id="contactForm" method="post" noValidate={true}>
                                 <input type="hidden" name="g-token" id="g-token" />
@@ -300,7 +310,7 @@ export default function Page() {
                                                     <svg id="contact_submit_arrow" fill="none" height="24" className="relative z-10 -rotate-90 text-white group-hover:text-primary transition-colors" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-4.58578v2h8v-8h-2z" fill="currentColor"></path>
                                                     </svg>
-                                                    <svg id="contact_submit_spinner" className="hidden relative z-10 h-5 w-5 animate-spin text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <svg id="contact_submit_spinner" className="hidden relative z-10 h-5 w-5 animate-spin text-white group-hover:text-primary transition-colors" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                                                         <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
                                                     </svg>
@@ -312,20 +322,12 @@ export default function Page() {
                                 </div>
                             </form>
                         </div>
-                        
-                        <div id="successDiv" className="bg-white mx-auto" style={{ "display": "none" }} role="status" aria-live="polite" tabIndex={-1}>
-                            <div className="text-center">
-                                <img decoding="async" loading="lazy" src="assets/front/home/image_processing20191029-26493-1tfqzgm.gif" alt="img" className="mx-auto" style={{ "height": "200px" }} />
-                                <h1 className="2xl:text-5xl xl:text-4xl lg:text-4xl text-3xl font-gellix">Success!</h1>
-                                <p className="text-[14px] lg:text-sm xl:text-sm 2xl:text-base font-inter mt-5">Thank you for submitting</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </div>
         </div>
         
     </div>
+</div>
 
 
 
