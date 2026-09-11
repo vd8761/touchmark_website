@@ -1,3 +1,49 @@
+import ServiceTabs, { TabData } from '@/components/ServiceTabs';
+
+const defaultDesc = "We provide comprehensive solutions to optimize your business processes and drive digital transformation.";
+
+const technologyTabsData: TabData[] = [
+  {
+    id: 'content-1',
+    title: 'IT STRATEGY AND PLANNING',
+    cards: [
+      { title: 'Technology Roadmap Development', description: "Create a strategic technology roadmap that outlines the path to achieve your business objectives. Plan for future growth and technological advancements.", watermark: 'TRD' },
+      { title: 'IT Governance and Compliance', description: "Establish IT governance frameworks and ensure compliance with industry regulations. Mitigate risks and maintain secure and reliable IT operations.", watermark: 'ITG' },
+      { title: 'Infrastructure Assessment and Optimization', description: "Conduct comprehensive infrastructure assessments to identify bottlenecks and optimize performance. Enhance scalability and reduce operational costs.", watermark: 'IAC' },
+      { title: 'Digital Transformation Strategy', description: "Formulate a digital transformation strategy to modernize your business operations. Leverage new technologies to improve efficiency and customer experience.", watermark: 'DTS' },
+    ],
+  },
+  {
+    id: 'content-2',
+    title: 'DIGITAL TRANSFORMATION CONSULTING',
+    cards: [
+      { title: 'Digital Strategy Development', description: "Formulate a comprehensive digital strategy to align with your business goals. Drive innovation and stay competitive in the digital landscape.", watermark: 'DSD' },
+      { title: 'Process Automation', description: "Automate key business processes to improve efficiency and reduce manual tasks. Enhance productivity and accelerate business operations.", watermark: 'PA' },
+      { title: 'Cloud Transformation', description: "Migrate to cloud solutions for scalability and flexibility. Optimize your IT infrastructure and leverage cloud technologies for business growth.", watermark: 'CT' },
+      { title: 'Data Analytics and Insights', description: "Utilize advanced data analytics to gain actionable insights. Make informed decisions and drive business performance with data-driven strategies.", watermark: 'DAI' },
+    ],
+  },
+  {
+    id: 'content-3',
+    title: 'BUSINESS PROCESS OPTIMIZATION',
+    cards: [
+      { title: 'Workflow Automation', description: "Implement automation solutions to streamline repetitive tasks. Increase efficiency and reduce manual errors across business operations.", watermark: 'WA' },
+      { title: 'Process Re-engineering', description: "Redesign existing processes to improve performance and adaptability. Enhance overall efficiency and support business objectives.", watermark: 'PRE' },
+      { title: 'Performance Metrics and Analytics', description: "Utilize data analytics to monitor and measure process performance. Make informed decisions to optimize business operations and outcomes.", watermark: 'PMA' },
+      { title: 'Lean Process Improvement', description: "Apply Lean methodologies to eliminate waste and optimize resource utilization. Focus on continuous improvement and value creation.", watermark: 'LPI' },
+    ],
+  },
+  {
+    id: 'content-4',
+    title: 'TECHNOLOGY IMPLEMENTATION AND INTEGRATION',
+    cards: [
+      { title: 'Enterprise System Integration', description: "Seamlessly integrate enterprise systems to ensure data consistency and streamline workflows. Enhance interoperability and data sharing across your organization.", watermark: 'ESI' },
+      { title: 'Cloud Solutions Deployment', description: "Implement cloud-based solutions tailored to your business needs. Enhance scalability, flexibility, and accessibility of your IT infrastructure.", watermark: 'CSD' },
+      { title: 'Software Development and Integration', description: "Develop custom software solutions and integrate them with existing systems. Improve functionality and user experience across your platforms.", watermark: 'SDI' },
+      { title: 'Network Infrastructure Setup', description: "Design and deploy robust network infrastructure to support your business operations. Ensure reliable connectivity and optimal performance.", watermark: 'NIS' },
+    ],
+  },
+];
 
 export default function Page() {
   return (
@@ -175,29 +221,9 @@ export default function Page() {
                 </div>
             </div>
             <div>
-         
-                
                 <div className="2xl:pt-16 xl:pt-12 lg:pt-8 pt-4 relative">
-        
-        <div className="border-b-[1px] border-black/30"></div>
+        <ServiceTabs tabsData={technologyTabsData} />
     </div>
-
-    <div className="mt-10">
-        
-                    <div id="content-1" className="block">
-                
-            </div>
-                    <div id="content-2" className="hidden">
-                
-            </div>
-                    <div id="content-3" className="hidden">
-                
-            </div>
-                    <div id="content-4" className="hidden">
-                
-            </div>
-            </div>
-
             </div>
         </section>
         
@@ -220,7 +246,7 @@ export default function Page() {
 
         <div className="grid grid-cols-12 gap-4 mt-5 lg:mt-10">
                     <div className="lg:col-span-4 col-span-12">
-                <a href="/case-study?id=1" className="relative overflow-hidden group block cursor-pointer">
+                <a href="/case-study/rupinis" className="relative overflow-hidden group block cursor-pointer">
                     <img decoding="async" loading="lazy" src="assets/front/home/tc_project_1722505852.webp" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
                     <div className="absolute top-0 right-0">
                         <div className="inline-flex justify-start items-center space-x-3 p-5">
@@ -244,7 +270,7 @@ export default function Page() {
                 </a>
             </div>
                         <div className="lg:col-span-4 col-span-12">
-                <a href="/case-study?id=2" className="relative overflow-hidden group block cursor-pointer">
+                <a href="/case-study/olympiad" className="relative overflow-hidden group block cursor-pointer">
                     <img decoding="async" loading="lazy" src="assets/front/home/tc_project_1722505900.webp" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
                     <div className="absolute top-0 right-0">
                         <div className="inline-flex justify-start items-center space-x-3 p-5">
@@ -268,7 +294,7 @@ export default function Page() {
                 </a>
             </div>
                         <div className="lg:col-span-4 col-span-12">
-                <a href="/case-study?id=3" className="relative overflow-hidden group block cursor-pointer">
+                <a href="/case-study/sidbi" className="relative overflow-hidden group block cursor-pointer">
                     <img decoding="async" loading="lazy" src="assets/front/home/tc_project_1722505935.webp" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
                     <div className="absolute top-0 right-0">
                         <div className="inline-flex justify-start items-center space-x-3 p-5">

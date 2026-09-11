@@ -1,3 +1,111 @@
+import ServiceTabs from '../../components/ServiceTabs';
+
+const salesCommerceTabsData = [
+  {
+    id: 'content-1',
+    title: 'E-COMMERCE STRATEGY & CONSULTING',
+    cards: [
+      {
+        title: 'Market Analysis & Research',
+        description: 'Conduct comprehensive market research and analysis to identify opportunities, understand customer behavior, and tailor strategies to target specific market segments.',
+        watermark: 'MAR'
+      },
+      {
+        title: 'Customer Experience Optimization',
+        description: 'Enhance user experience through personalized recommendations, seamless navigation, and responsive design to increase engagement and conversion rates.',
+        watermark: 'CEO'
+      },
+      {
+        title: 'SEO & Content Strategy',
+        description: 'Develop and implement effective SEO and content strategies to improve search engine rankings, drive organic traffic, and boost online visibility.',
+        watermark: 'SCS'
+      },
+      {
+        title: 'Performance Analytics & Reporting',
+        description: 'Utilize advanced analytics tools to monitor e-commerce performance, generate actionable insights, and continuously optimize strategies for better results.',
+        watermark: 'PAR'
+      }
+    ]
+  },
+  {
+    id: 'content-2',
+    title: 'SALESFORCE IMPLEMENTATION',
+    cards: [
+      {
+        title: 'Salesforce Customization',
+        description: 'Tailor Salesforce to meet your unique business requirements with custom workflows, fields, and objects',
+        watermark: 'SC'
+      },
+      {
+        title: 'Salesforce Integration',
+        description: 'Seamlessly integrate Salesforce with your existing systems and applications to ensure a unified data ecosystem.',
+        watermark: 'SI'
+      },
+      {
+        title: 'Salesforce Training & Support',
+        description: 'Provide comprehensive training and ongoing support to ensure your team maximizes the potential of Salesforce.',
+        watermark: 'STS'
+      },
+      {
+        title: 'Salesforce App Development',
+        description: 'Develop custom applications on the Salesforce platform to extend its functionality and address specific business needs.',
+        watermark: 'SAD'
+      }
+    ]
+  },
+  {
+    id: 'content-3',
+    title: 'DIGITAL PAYMENT SOLUTIONS',
+    cards: [
+      {
+        title: 'Payment Gateway Integration',
+        description: 'Integrate secure and efficient payment gateways to facilitate seamless online transactions for your customers.',
+        watermark: 'PGI'
+      },
+      {
+        title: 'Mobile Payment Solutions',
+        description: 'Enable mobile payment options to provide a convenient and secure payment experience for users on the go.',
+        watermark: 'MPS'
+      },
+      {
+        title: 'Fraud Detection and Prevention',
+        description: 'Implement advanced fraud detection systems to protect your business and customers from fraudulent activities.',
+        watermark: 'FDP'
+      },
+      {
+        title: 'Multi-currency Support',
+        description: 'Offer multi-currency support to cater to a global customer base, enhancing the ease of international transactions.',
+        watermark: 'MCS'
+      }
+    ]
+  },
+  {
+    id: 'content-4',
+    title: 'OMNICHANNEL RETAIL SOLUTIONS',
+    cards: [
+      {
+        title: 'Integrated Inventory Management',
+        description: 'Synchronize inventory across all sales channels to ensure real-time accuracy and improve stock management efficiency.',
+        watermark: 'IIM'
+      },
+      {
+        title: 'Unified Customer Experience',
+        description: 'Deliver a consistent and personalized shopping experience across in-store, online, and mobile channels.',
+        watermark: 'UCE'
+      },
+      {
+        title: 'Cross-Channel Marketing',
+        description: 'Develop and execute marketing campaigns that seamlessly engage customers across all retail touchpoints.',
+        watermark: 'CCM'
+      },
+      {
+        title: 'Order Fulfillment & Logistics',
+        description: 'Optimize order processing, fulfillment, and delivery to meet customer expectations and reduce operational costs.',
+        watermark: 'OFL'
+      }
+    ]
+  }
+];
 
 export default function Page() {
   return (
@@ -16,7 +124,6 @@ export default function Page() {
     
 
     
-
 
 
 
@@ -176,25 +283,8 @@ export default function Page() {
             </div>
             <div>
             <div className="2xl:pt-16 xl:pt-12 lg:pt-8 pt-4 relative">
-        
-        <div className="border-b-[1px] border-black/30"></div>
+        <ServiceTabs tabsData={salesCommerceTabsData} />
     </div>
-
-    <div className="mt-10">
-        
-                    <div id="content-1" className="block">
-                
-            </div>
-                    <div id="content-2" className="hidden">
-                
-            </div>
-                    <div id="content-3" className="hidden">
-                
-            </div>
-                    <div id="content-4" className="hidden">
-                
-            </div>
-            </div>
             </div>
         </section>
         
@@ -217,7 +307,7 @@ export default function Page() {
 
         <div className="grid grid-cols-12 gap-4 mt-5 lg:mt-10">
                     <div className="lg:col-span-4 col-span-12">
-                <a href="/case-study?id=1" className="relative overflow-hidden group block cursor-pointer">
+                <a href="/case-study/rupinis" className="relative overflow-hidden group block cursor-pointer">
                     <img decoding="async" loading="lazy" src="assets/front/home/tc_project_1722505852.webp" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
                     <div className="absolute top-0 right-0">
                         <div className="inline-flex justify-start items-center space-x-3 p-5">
@@ -241,7 +331,7 @@ export default function Page() {
                 </a>
             </div>
                         <div className="lg:col-span-4 col-span-12">
-                <a href="/case-study?id=2" className="relative overflow-hidden group block cursor-pointer">
+                <a href="/case-study/olympiad" className="relative overflow-hidden group block cursor-pointer">
                     <img decoding="async" loading="lazy" src="assets/front/home/tc_project_1722505900.webp" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
                     <div className="absolute top-0 right-0">
                         <div className="inline-flex justify-start items-center space-x-3 p-5">
@@ -265,7 +355,7 @@ export default function Page() {
                 </a>
             </div>
                         <div className="lg:col-span-4 col-span-12">
-                <a href="/case-study?id=3" className="relative overflow-hidden group block cursor-pointer">
+                <a href="/case-study/sidbi" className="relative overflow-hidden group block cursor-pointer">
                     <img decoding="async" loading="lazy" src="assets/front/home/tc_project_1722505935.webp" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
                     <div className="absolute top-0 right-0">
                         <div className="inline-flex justify-start items-center space-x-3 p-5">

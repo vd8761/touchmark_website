@@ -1,3 +1,4 @@
+import PhoneInputWrapper from '@/components/PhoneInputWrapper';
 
 export default function Page() {
   return (
@@ -246,38 +247,7 @@ export default function Page() {
                                         
                                         <div className="lg:col-span-3 col-span-6 space-y-2 mt-2.5">
                                             <label htmlFor="contact_number" className="block font-inter font-medium">Phone Number<span className="required-star">*</span></label>
-                                            <div className="flex items-center border border-[#194F97]">
-                                                <button id="dropdown-phone-button" className="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-black hover:bg-gray-200" type="button" aria-haspopup="menu" aria-controls="dropdown-phone" aria-expanded="false">
-                                                    IND +91
-                                                    <svg id="fi_2951226" height="20" viewBox="0 0 100 100" width="20" xmlns="http://www.w3.org/2000/svg">
-                                                        <g>
-                                                            <path d="m67.41 45.41-2.82-2.82-14.59 14.58-14.59-14.58-2.82 2.82 17.41 17.42z"></path>
-                                                        </g>
-                                                    </svg>
-                                                </button>
-                                                <div id="dropdown-phone" className="z-10 hidden bg-white divide-y divide-gray-100 shadow w-52">
-                                                    <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" role="menu" aria-labelledby="dropdown-phone-button">
-                                                        <li>
-                                                            <button type="button" className="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 " role="menuitem">
-                                                                IND (+91)
-                                                            </button>
-                                                        </li>
-                                                        <li>
-                                                            <button type="button" className="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 " role="menuitem">
-                                                                UK (+44)
-                                                            </button>
-                                                        </li>
-                                                        <li>
-                                                            <button type="button" className="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 " role="menuitem">
-                                                                SING (+66)
-                                                            </button>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div className="relative w-full">
-                                                    <input type="tel" inputMode="numeric" id="contact_number" name="contact_number" className="border-none block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 focus:ring-blue-500" placeholder="0000000000" maxLength={10} autoComplete="tel-national" required={true} aria-describedby="contact_number_error" />
-                                                </div>
-                                            </div>
+                                            <PhoneInputWrapper />
                                             <span className="error-message" id="contact_number_error"></span>
                                         </div>
                                         

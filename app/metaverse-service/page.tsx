@@ -1,3 +1,111 @@
+import ServiceTabs from '../../components/ServiceTabs';
+
+const metaverseTabsData = [
+  {
+    id: 'content-1',
+    title: 'VIRTUAL REALITY (VR) DEVELOPMENT',
+    cards: [
+      {
+        title: 'Custom VR Application Development',
+        description: 'Develop tailored VR applications to meet the unique needs of various industries, including gaming, education, and healthcare.',
+        watermark: 'CVD'
+      },
+      {
+        title: 'VR Training Solutions',
+        description: 'Create immersive VR training programs to enhance learning experiences and improve skill acquisition in a controlled, virtual environment.',
+        watermark: 'VTS'
+      },
+      {
+        title: 'VR Simulation Development',
+        description: 'Design and implement realistic VR simulations for applications such as flight training, medical procedures, and disaster response.',
+        watermark: 'VSD'
+      },
+      {
+        title: 'VR Content Creation',
+        description: 'Produce high-quality, interactive VR content including 3D models, animations, and environments to engage users deeply.',
+        watermark: 'VCC'
+      }
+    ]
+  },
+  {
+    id: 'content-2',
+    title: 'AUGMENTED REALITY (AR) SOLUTIONS',
+    cards: [
+      {
+        title: 'AR App Development',
+        description: 'Design and develop custom AR applications that enhance user experiences by integrating digital content with the real world.',
+        watermark: 'AAD'
+      },
+      {
+        title: 'AR for E-Commerce',
+        description: 'Create AR solutions that allow customers to visualize products in their environment before making a purchase, increasing engagement and reducing returns.',
+        watermark: 'AEC'
+      },
+      {
+        title: 'AR Marketing Campaigns',
+        description: 'Develop interactive AR marketing campaigns that captivate audiences and drive brand engagement through immersive experiences.',
+        watermark: 'AMC'
+      },
+      {
+        title: 'AR Training and Simulation',
+        description: 'Build AR-based training programs and simulations to provide realistic and effective training experiences across various industries.',
+        watermark: 'ATS'
+      }
+    ]
+  },
+  {
+    id: 'content-3',
+    title: '3D MODELING AND DESIGN',
+    cards: [
+      {
+        title: 'Character Modeling',
+        description: 'Develop intricate and realistic 3D character models for games, animations, and virtual environments.',
+        watermark: 'CM'
+      },
+      {
+        title: 'Environmental Design',
+        description: 'Create immersive 3D environments that captivate users and enhance the storytelling of digital experiences.',
+        watermark: 'EVD'
+      },
+      {
+        title: 'Product Visualization',
+        description: 'Design high-fidelity 3D models for product prototyping, visualization, and marketing purposes.',
+        watermark: 'PV'
+      },
+      {
+        title: 'Animation and Rigging',
+        description: 'Implement animation and rigging to bring 3D models to life with smooth and realistic movements.',
+        watermark: 'ANR'
+      }
+    ]
+  },
+  {
+    id: 'content-4',
+    title: 'METAVERSE STRATEGY & CONSULTING',
+    cards: [
+      {
+        title: 'Metaverse Market Analysis',
+        description: 'Conduct comprehensive market analysis to identify trends, opportunities, and competitive landscapes within the metaverse.',
+        watermark: 'MMA'
+      },
+      {
+        title: 'Strategic Roadmapping',
+        description: 'Develop a detailed strategic roadmap tailored to your business goals, guiding your entry and growth within the metaverse.',
+        watermark: 'SRM'
+      },
+      {
+        title: 'Virtual Asset Management',
+        description: 'Manage and optimize virtual assets to maximize their value and utility within metaverse environments.',
+        watermark: 'VAM'
+      },
+      {
+        title: 'User Experience Design',
+        description: 'Craft immersive and engaging user experiences that align with your brand and captivate your target audience in the metaverse.',
+        watermark: 'UED'
+      }
+    ]
+  }
+];
 
 export default function Page() {
   return (
@@ -16,7 +124,6 @@ export default function Page() {
     
 
     
-
 
 
 
@@ -176,25 +283,8 @@ export default function Page() {
             </div>
             <div>
             <div className="2xl:pt-16 xl:pt-12 lg:pt-8 pt-4 relative">
-        
-        <div className="border-b-[1px] border-black/30"></div>
+        <ServiceTabs tabsData={metaverseTabsData} />
     </div>
-
-    <div className="mt-10">
-        
-                    <div id="content-1" className="block">
-                
-            </div>
-                    <div id="content-2" className="hidden">
-                
-            </div>
-                    <div id="content-3" className="hidden">
-                
-            </div>
-                    <div id="content-4" className="hidden">
-                
-            </div>
-            </div>
             </div>
         </section>
         
@@ -216,7 +306,7 @@ export default function Page() {
 
         <div className="grid grid-cols-12 gap-4 mt-5 lg:mt-10">
                     <div className="lg:col-span-4 col-span-12">
-                <a href="/case-study?id=1" className="relative overflow-hidden group block cursor-pointer">
+                <a href="/case-study/rupinis" className="relative overflow-hidden group block cursor-pointer">
                     <img decoding="async" loading="lazy" src="assets/front/home/tc_project_1722505852.webp" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
                     <div className="absolute top-0 right-0">
                         <div className="inline-flex justify-start items-center space-x-3 p-5">
@@ -240,7 +330,7 @@ export default function Page() {
                 </a>
             </div>
                         <div className="lg:col-span-4 col-span-12">
-                <a href="/case-study?id=2" className="relative overflow-hidden group block cursor-pointer">
+                <a href="/case-study/olympiad" className="relative overflow-hidden group block cursor-pointer">
                     <img decoding="async" loading="lazy" src="assets/front/home/tc_project_1722505900.webp" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
                     <div className="absolute top-0 right-0">
                         <div className="inline-flex justify-start items-center space-x-3 p-5">
@@ -264,7 +354,7 @@ export default function Page() {
                 </a>
             </div>
                         <div className="lg:col-span-4 col-span-12">
-                <a href="/case-study?id=3" className="relative overflow-hidden group block cursor-pointer">
+                <a href="/case-study/sidbi" className="relative overflow-hidden group block cursor-pointer">
                     <img decoding="async" loading="lazy" src="assets/front/home/tc_project_1722505935.webp" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
                     <div className="absolute top-0 right-0">
                         <div className="inline-flex justify-start items-center space-x-3 p-5">

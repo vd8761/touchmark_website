@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 
 const quickLinks = [
@@ -57,6 +59,12 @@ function FooterLinkColumn({
             <Link
               href={link.href}
               className="inline-block transition-all duration-300 ease-out hover:translate-x-1.5 hover:text-white"
+              onClick={(e) => {
+                if (window.location.pathname === link.href) {
+                  e.preventDefault();
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+              }}
             >
               {link.label}
             </Link>
@@ -80,7 +88,17 @@ export default function Footer() {
 
           {/* Brand & Contact block */}
           <div className="sm:col-span-2 lg:col-span-4 xl:col-span-4 lg:pr-8">
-            <Link href="/" aria-label="Touchmark Descience home" className="inline-block">
+            <Link 
+              href="/" 
+              aria-label="Touchmark Descience home" 
+              className="inline-block"
+              onClick={(e) => {
+                if (window.location.pathname === '/') {
+                  e.preventDefault();
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+              }}
+            >
               <img loading="lazy" decoding="async" src="/images/touchmark-logowhite.svg" className="h-8 w-auto" alt="Touchmark" />
             </Link>
             <p className="mt-6 text-sm leading-relaxed text-white/70">
@@ -153,9 +171,31 @@ export default function Footer() {
         <div className="mt-4 flex flex-col items-center justify-between gap-2 border-t border-white/10 py-5 text-xs text-white/60 sm:flex-row">
           <p>&copy; 2010-{new Date().getFullYear()} Touchmark Descience Pvt. Ltd</p>
           <div className="flex items-center gap-4">
-            <Link href="/terms-condition" className="transition-colors hover:text-white">Terms of Use</Link>
+            <Link 
+              href="/terms-condition" 
+              className="transition-colors hover:text-white"
+              onClick={(e) => {
+                if (window.location.pathname === '/terms-condition') {
+                  e.preventDefault();
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+              }}
+            >
+              Terms of Use
+            </Link>
             <span className="text-white/25">|</span>
-            <Link href="/privacy-policy" className="transition-colors hover:text-white">Privacy Policy</Link>
+            <Link 
+              href="/privacy-policy" 
+              className="transition-colors hover:text-white"
+              onClick={(e) => {
+                if (window.location.pathname === '/privacy-policy') {
+                  e.preventDefault();
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+              }}
+            >
+              Privacy Policy
+            </Link>
           </div>
         </div>
       </div>

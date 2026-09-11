@@ -1,3 +1,111 @@
+import ServiceTabs from '../../components/ServiceTabs';
+
+const dataAnalyticsTabsData = [
+  {
+    id: 'content-1',
+    title: 'DATA MANAGEMENT',
+    cards: [
+      {
+        title: 'Data Governance',
+        description: 'Establish and enforce policies, procedures, and standards to ensure data quality, security, and compliance across the organization.',
+        watermark: 'DGV'
+      },
+      {
+        title: 'Data Warehousing',
+        description: 'Design and implement data warehousing solutions to consolidate and manage large volumes of data for efficient querying and reporting.',
+        watermark: 'DWH'
+      },
+      {
+        title: 'Master Data Management (MDM)',
+        description: 'Create a unified and accurate view of critical business data to improve decision-making and operational efficiency.',
+        watermark: 'MDM'
+      },
+      {
+        title: 'Data Integration',
+        description: 'Integrate data from diverse sources to provide a cohesive and comprehensive dataset for analysis and reporting.',
+        watermark: 'DIN'
+      }
+    ]
+  },
+  {
+    id: 'content-2',
+    title: 'ADVANCED ANALYTICS',
+    cards: [
+      {
+        title: 'Predictive Analytics',
+        description: 'Use historical data and machine learning to forecast future trends and behaviors, helping businesses make proactive decisions.',
+        watermark: 'PDA'
+      },
+      {
+        title: 'Prescriptive Analytics',
+        description: 'Apply advanced algorithms to recommend actions based on predictive insights to optimize business outcomes.',
+        watermark: 'PSA'
+      },
+      {
+        title: 'Real-Time Analytics',
+        description: 'Analyze data as it is generated to provide immediate insights and support rapid decision-making processes.',
+        watermark: 'RTA'
+      },
+      {
+        title: 'Customer Analytics',
+        description: 'Understand customer behaviors, preferences, and trends to enhance customer engagement and tailor marketing strategies.',
+        watermark: 'CAN'
+      }
+    ]
+  },
+  {
+    id: 'content-3',
+    title: 'BUSINESS INTELLIGENCE',
+    cards: [
+      {
+        title: 'Dashboard Development',
+        description: 'Create interactive and user-friendly dashboards to visualize key metrics, monitor performance, and facilitate data-driven decision-making.',
+        watermark: 'DBD'
+      },
+      {
+        title: 'Reporting and Analytics',
+        description: 'Design comprehensive reporting systems that provide actionable insights and detailed analysis to support strategic planning and operations.',
+        watermark: 'RTA'
+      },
+      {
+        title: 'Data Warehousing',
+        description: 'Implement robust data warehousing solutions to centralize, store, and manage large volumes of data for efficient retrieval and analysis.',
+        watermark: 'DWH'
+      },
+      {
+        title: 'Self-Service BI',
+        description: 'Develop self-service BI tools that empower business users to generate their own reports and insights without needing extensive technical knowledge.',
+        watermark: 'SSE'
+      }
+    ]
+  },
+  {
+    id: 'content-4',
+    title: 'DATA SCIENCE SOLUTIONS',
+    cards: [
+      {
+        title: 'Predictive Analytics',
+        description: 'Use historical data and machine learning algorithms to predict future trends and behaviors, enabling proactive decision-making.',
+        watermark: 'PDA'
+      },
+      {
+        title: 'Natural Language Processing (NLP)',
+        description: 'Implement NLP techniques to analyze and understand human language, enhancing customer interactions and extracting valuable insights from text data.',
+        watermark: 'NLP'
+      },
+      {
+        title: 'Machine Learning Models',
+        description: 'Develop and deploy custom machine learning models to automate processes, improve accuracy, and drive innovation in various business functions.',
+        watermark: 'MLM'
+      },
+      {
+        title: 'Data Visualization',
+        description: 'Create intuitive and interactive data visualizations to simplify complex data sets and support data-driven storytelling.',
+        watermark: 'DVZ'
+      }
+    ]
+  }
+];
 
 export default function Page() {
   return (
@@ -16,7 +124,6 @@ export default function Page() {
     
 
     
-
 
 
 
@@ -176,25 +283,8 @@ export default function Page() {
             </div>
             <div>
             <div className="2xl:pt-16 xl:pt-12 lg:pt-8 pt-4 relative">
-        
-        <div className="border-b-[1px] border-black/30"></div>
+        <ServiceTabs tabsData={dataAnalyticsTabsData} />
     </div>
-
-    <div className="mt-10">
-        
-                    <div id="content-1" className="block">
-                
-            </div>
-                    <div id="content-2" className="hidden">
-                
-            </div>
-                    <div id="content-3" className="hidden">
-                
-            </div>
-                    <div id="content-4" className="hidden">
-                
-            </div>
-            </div>
             </div>
         </section>
         
@@ -216,7 +306,7 @@ export default function Page() {
 
         <div className="grid grid-cols-12 gap-4 mt-5 lg:mt-10">
                     <div className="lg:col-span-4 col-span-12">
-                <a href="/case-study?id=1" className="relative overflow-hidden group block cursor-pointer">
+                <a href="/case-study/rupinis" className="relative overflow-hidden group block cursor-pointer">
                     <img decoding="async" loading="lazy" src="assets/front/home/tc_project_1722505852.webp" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
                     <div className="absolute top-0 right-0">
                         <div className="inline-flex justify-start items-center space-x-3 p-5">
@@ -240,7 +330,7 @@ export default function Page() {
                 </a>
             </div>
                         <div className="lg:col-span-4 col-span-12">
-                <a href="/case-study?id=2" className="relative overflow-hidden group block cursor-pointer">
+                <a href="/case-study/olympiad" className="relative overflow-hidden group block cursor-pointer">
                     <img decoding="async" loading="lazy" src="assets/front/home/tc_project_1722505900.webp" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
                     <div className="absolute top-0 right-0">
                         <div className="inline-flex justify-start items-center space-x-3 p-5">
@@ -264,7 +354,7 @@ export default function Page() {
                 </a>
             </div>
                         <div className="lg:col-span-4 col-span-12">
-                <a href="/case-study?id=3" className="relative overflow-hidden group block cursor-pointer">
+                <a href="/case-study/sidbi" className="relative overflow-hidden group block cursor-pointer">
                     <img decoding="async" loading="lazy" src="assets/front/home/tc_project_1722505935.webp" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
                     <div className="absolute top-0 right-0">
                         <div className="inline-flex justify-start items-center space-x-3 p-5">

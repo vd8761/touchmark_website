@@ -1,3 +1,111 @@
+import ServiceTabs from '../../components/ServiceTabs';
+
+const aiMlTabsData = [
+  {
+    id: 'content-1',
+    title: 'AI STRATEGY AND CONSULTING',
+    cards: [
+      {
+        title: 'AI Readiness Assessment',
+        description: 'Evaluate your organizations current capabilities and readiness for AI adoption, identifying strengths and areas for improvement.',
+        watermark: 'ARA'
+      },
+      {
+        title: 'AI Roadmap Development',
+        description: 'Create a detailed AI strategy roadmap outlining the steps required to integrate AI technologies into your business processes.',
+        watermark: 'ARD'
+      },
+      {
+        title: 'Use Case Identification',
+        description: 'Identify and prioritize AI use cases that will provide the most significant impact and ROI for your business.',
+        watermark: 'UCI'
+      },
+      {
+        title: 'Proof of Concept (PoC) Development',
+        description: 'Design and execute PoCs to validate the feasibility and benefits of AI solutions before full-scale implementation.',
+        watermark: 'POC'
+      }
+    ]
+  },
+  {
+    id: 'content-2',
+    title: 'MACHINE LEARNING MODEL DEVELOPMENT',
+    cards: [
+      {
+        title: 'Data Preparation and Cleaning',
+        description: 'Ensure high-quality input by cleaning and preparing your data for machine learning models, addressing missing values, and formatting inconsistencies.',
+        watermark: 'DPC'
+      },
+      {
+        title: 'Feature Engineering',
+        description: 'Enhance model performance by creating meaningful features from raw data, enabling the model to learn relevant patterns effectively.',
+        watermark: 'FEN'
+      },
+      {
+        title: 'Model Training and Optimization',
+        description: 'Train machine learning models using advanced algorithms, followed by fine-tuning and optimization to achieve the best possible accuracy and performance.',
+        watermark: 'MTO'
+      },
+      {
+        title: 'Model Validation and Testing',
+        description: 'Validate and test models rigorously to ensure robustness and generalizability, using cross-validation techniques and performance metrics.',
+        watermark: 'MVT'
+      }
+    ]
+  },
+  {
+    id: 'content-3',
+    title: 'NATURAL LANGUAGE PROCESSING (NLP)',
+    cards: [
+      {
+        title: 'Text Classification',
+        description: 'Develop systems to categorize and classify text into predefined groups, enhancing information retrieval and organization.',
+        watermark: 'TCL'
+      },
+      {
+        title: 'Sentiment Analysis',
+        description: 'Analyze and interpret emotions within text data to understand customer feedback, market trends, and social media sentiment.',
+        watermark: 'SAN'
+      },
+      {
+        title: 'Chatbots and Virtual Assistants',
+        description: 'Design intelligent chatbots and virtual assistants to automate customer support and improve user engagement.',
+        watermark: 'CVA'
+      },
+      {
+        title: 'Named Entity Recognition (NER)',
+        description: 'Identify and extract key entities from text, such as names, dates, and locations, to facilitate data analysis and knowledge extraction.',
+        watermark: 'NER'
+      }
+    ]
+  },
+  {
+    id: 'content-4',
+    title: 'COMPUTER VISION',
+    cards: [
+      {
+        title: 'Image Recognition',
+        description: 'Implement image recognition solutions to identify and classify objects, scenes, and activities in images and videos with high precision.',
+        watermark: 'IMR'
+      },
+      {
+        title: 'Facial Recognition',
+        description: 'Develop facial recognition systems for secure authentication, surveillance, and personalized user experiences.',
+        watermark: 'FRN'
+      },
+      {
+        title: 'Object Detection',
+        description: 'Deploy object detection models to locate and track objects within images or videos for real-time monitoring and analytics.',
+        watermark: 'OBD'
+      },
+      {
+        title: 'Image Segmentation',
+        description: 'Use image segmentation techniques to partition images into meaningful regions for detailed analysis and interpretation.',
+        watermark: 'IMS'
+      }
+    ]
+  }
+];
 
 export default function Page() {
   return (
@@ -16,7 +124,6 @@ export default function Page() {
     
 
     
-
 
 
 
@@ -176,25 +283,8 @@ export default function Page() {
             </div>
             <div>
             <div className="2xl:pt-16 xl:pt-12 lg:pt-8 pt-4 relative">
-        
-        <div className="border-b-[1px] border-black/30"></div>
+        <ServiceTabs tabsData={aiMlTabsData} />
     </div>
-
-    <div className="mt-10">
-        
-                    <div id="content-1" className="block">
-                
-            </div>
-                    <div id="content-2" className="hidden">
-                
-            </div>
-                    <div id="content-3" className="hidden">
-                
-            </div>
-                    <div id="content-4" className="hidden">
-                
-            </div>
-            </div>
             </div>
         </section>
         
@@ -217,7 +307,7 @@ export default function Page() {
 
         <div className="grid grid-cols-12 gap-4 mt-5 lg:mt-10">
                     <div className="lg:col-span-4 col-span-12">
-                <a href="/case-study?id=1" className="relative overflow-hidden group block cursor-pointer">
+                <a href="/case-study/rupinis" className="relative overflow-hidden group block cursor-pointer">
                     <img decoding="async" loading="lazy" src="assets/front/home/tc_project_1722505852.webp" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
                     <div className="absolute top-0 right-0">
                         <div className="inline-flex justify-start items-center space-x-3 p-5">
@@ -241,7 +331,7 @@ export default function Page() {
                 </a>
             </div>
                         <div className="lg:col-span-4 col-span-12">
-                <a href="/case-study?id=2" className="relative overflow-hidden group block cursor-pointer">
+                <a href="/case-study/olympiad" className="relative overflow-hidden group block cursor-pointer">
                     <img decoding="async" loading="lazy" src="assets/front/home/tc_project_1722505900.webp" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
                     <div className="absolute top-0 right-0">
                         <div className="inline-flex justify-start items-center space-x-3 p-5">
@@ -265,7 +355,7 @@ export default function Page() {
                 </a>
             </div>
                         <div className="lg:col-span-4 col-span-12">
-                <a href="/case-study?id=3" className="relative overflow-hidden group block cursor-pointer">
+                <a href="/case-study/sidbi" className="relative overflow-hidden group block cursor-pointer">
                     <img decoding="async" loading="lazy" src="assets/front/home/tc_project_1722505935.webp" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
                     <div className="absolute top-0 right-0">
                         <div className="inline-flex justify-start items-center space-x-3 p-5">

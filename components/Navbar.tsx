@@ -353,6 +353,9 @@ function NavbarContent({ pathname }: { pathname: string }) {
   const indicatorColor = solidNav ? 'bg-primary' : 'bg-white';
   const topLinkClass = 'relative flex h-16 items-center px-3 font-inter text-[15px] font-normal';
 
+  const isServiceActive = serviceItems.some(item => item.href === pathname);
+  const isIndustryActive = industryItems.some(item => item.href === pathname);
+
   return (
     <nav
       ref={navRef}
@@ -371,29 +374,29 @@ function NavbarContent({ pathname }: { pathname: string }) {
           <div className="flex justify-start">
             <Link
               href="/"
-            className="flex shrink-0 items-center"
-            aria-label="Touchmark Descience home"
-            aria-current={pathname === '/' ? 'page' : undefined}
-            onFocus={() => setActiveMenu(null)}
-          >
-            <Image
-              src={solidNav ? '/images/tds-color-logo.webp' : '/images/touchmark-logowhite.svg'}
-              width={172}
-              height={32}
-              unoptimized
-              loading="eager"
-              className="hidden h-8 w-auto lg:block"
-              alt="Touchmark Descience"
-            />
-            <Image
-              src="/images/tds-color-logo.webp"
-              width={172}
-              height={32}
-              unoptimized
-              loading="eager"
-              className="block h-8 w-auto lg:hidden"
-              alt="Touchmark Descience"
-            />
+              className="flex shrink-0 items-center"
+              aria-label="Touchmark Descience home"
+              aria-current={pathname === '/' ? 'page' : undefined}
+              onFocus={() => setActiveMenu(null)}
+            >
+              <Image
+                src={solidNav ? '/images/tds-color-logo.webp' : '/images/touchmark-logowhite.svg'}
+                width={172}
+                height={32}
+                unoptimized
+                loading="eager"
+                className="hidden h-8 w-auto lg:block"
+                alt="Touchmark Descience"
+              />
+              <Image
+                src="/images/tds-color-logo.webp"
+                width={172}
+                height={32}
+                unoptimized
+                loading="eager"
+                className="block h-8 w-auto lg:hidden"
+                alt="Touchmark Descience"
+              />
             </Link>
           </div>
 
@@ -405,7 +408,7 @@ function NavbarContent({ pathname }: { pathname: string }) {
               onFocus={() => setActiveMenu(null)}
             >
               Who we are
-              <span className={['absolute inset-x-3 bottom-1 h-0.5 origin-left scale-x-0 rounded-full transition-transform duration-200 group-hover:scale-x-100', indicatorColor].join(' ')} />
+              <span className={['absolute inset-x-3 bottom-4 h-0.5 origin-left scale-x-0 rounded-full transition-transform duration-200 group-hover:scale-x-100', indicatorColor].join(' ')} />
             </Link>
 
             <div className="relative" data-menu-trigger onMouseEnter={() => openMenu('services')}>
@@ -421,7 +424,7 @@ function NavbarContent({ pathname }: { pathname: string }) {
               >
                 What we do
                 <ChevronIcon open={activeMenu === 'services'} />
-                <span className={['absolute inset-x-3 bottom-1 h-0.5 origin-left rounded-full transition-transform duration-200', activeMenu === 'services' ? 'scale-x-100' : 'scale-x-0', indicatorColor].join(' ')} />
+                <span className={['absolute inset-x-3 bottom-4 h-0.5 origin-left rounded-full transition-transform duration-200', activeMenu === 'services' || isServiceActive ? 'scale-x-100' : 'scale-x-0', indicatorColor].join(' ')} />
               </button>
             </div>
 
@@ -438,9 +441,29 @@ function NavbarContent({ pathname }: { pathname: string }) {
               >
                 Industries
                 <ChevronIcon open={activeMenu === 'industries'} />
-                <span className={['absolute inset-x-3 bottom-1 h-0.5 origin-left rounded-full transition-transform duration-200', activeMenu === 'industries' ? 'scale-x-100' : 'scale-x-0', indicatorColor].join(' ')} />
+                <span className={['absolute inset-x-3 bottom-4 h-0.5 origin-left rounded-full transition-transform duration-200', activeMenu === 'industries' || isIndustryActive ? 'scale-x-100' : 'scale-x-0', indicatorColor].join(' ')} />
               </button>
             </div>
+
+            <Link
+              href="/case-study/rupinis"
+              className={['group', topLinkClass].join(' ')}
+              aria-current={pathname === '/case-study' ? 'page' : undefined}
+              onFocus={() => setActiveMenu(null)}
+            >
+              Case Studies
+              <span className={['absolute inset-x-3 bottom-4 h-0.5 origin-left scale-x-0 rounded-full transition-transform duration-200 group-hover:scale-x-100', indicatorColor].join(' ')} />
+            </Link>
+
+            <Link
+              href="/client-partner"
+              className={['group', topLinkClass].join(' ')}
+              aria-current={pathname === '/client-partner' ? 'page' : undefined}
+              onFocus={() => setActiveMenu(null)}
+            >
+              Clients & Partners
+              <span className={['absolute inset-x-3 bottom-4 h-0.5 origin-left scale-x-0 rounded-full transition-transform duration-200 group-hover:scale-x-100', indicatorColor].join(' ')} />
+            </Link>
 
             <Link
               href="/blog"
@@ -449,7 +472,7 @@ function NavbarContent({ pathname }: { pathname: string }) {
               onFocus={() => setActiveMenu(null)}
             >
               Blog
-              <span className={['absolute inset-x-3 bottom-1 h-0.5 origin-left scale-x-0 rounded-full transition-transform duration-200 group-hover:scale-x-100', indicatorColor].join(' ')} />
+              <span className={['absolute inset-x-3 bottom-4 h-0.5 origin-left scale-x-0 rounded-full transition-transform duration-200 group-hover:scale-x-100', indicatorColor].join(' ')} />
             </Link>
             <Link
               href="/contact-us"
@@ -458,7 +481,7 @@ function NavbarContent({ pathname }: { pathname: string }) {
               onFocus={() => setActiveMenu(null)}
             >
               Contact Us
-              <span className={['absolute inset-x-3 bottom-1 h-0.5 origin-left scale-x-0 rounded-full transition-transform duration-200 group-hover:scale-x-100', indicatorColor].join(' ')} />
+              <span className={['absolute inset-x-3 bottom-4 h-0.5 origin-left scale-x-0 rounded-full transition-transform duration-200 group-hover:scale-x-100', indicatorColor].join(' ')} />
             </Link>
           </div>
 
@@ -467,35 +490,35 @@ function NavbarContent({ pathname }: { pathname: string }) {
               href="/contact-us"
               className={[
                 'hidden items-center px-5 py-2.5 font-inter text-sm font-medium transition-all duration-200 hover:-translate-y-0.5 lg:inline-flex',
-              solidNav ? 'bg-primary text-white hover:shadow-lg hover:shadow-primary/20' : 'bg-white text-primary hover:shadow-lg hover:shadow-white/10',
-            ].join(' ')}
-            onFocus={() => setActiveMenu(null)}
-          >
-            Work With Us
-          </Link>
+                solidNav ? 'bg-primary text-white hover:shadow-lg hover:shadow-primary/20' : 'bg-white text-primary hover:shadow-lg hover:shadow-white/10',
+              ].join(' ')}
+              onFocus={() => setActiveMenu(null)}
+            >
+              Work With Us
+            </Link>
 
-          <button
-            ref={mobileMenuButtonRef}
-            type="button"
-            className="inline-flex size-10 items-center justify-center border border-slate-200 bg-white text-slate-800 shadow-sm lg:hidden"
-            aria-label={mobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
-            aria-expanded={mobileMenuOpen}
-            aria-controls="mobile-navigation"
-            onClick={() => {
-              setMobileMenuOpen((open) => !open);
-              setActiveMenu(null);
-            }}
-          >
-            {mobileMenuOpen ? (
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="m6 6 12 12M18 6 6 18" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
-              </svg>
-            ) : (
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
-              </svg>
-            )}
-          </button>
+            <button
+              ref={mobileMenuButtonRef}
+              type="button"
+              className="inline-flex size-10 items-center justify-center border border-slate-200 bg-white text-slate-800 shadow-sm lg:hidden"
+              aria-label={mobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+              aria-expanded={mobileMenuOpen}
+              aria-controls="mobile-navigation"
+              onClick={() => {
+                setMobileMenuOpen((open) => !open);
+                setActiveMenu(null);
+              }}
+            >
+              {mobileMenuOpen ? (
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="m6 6 12 12M18 6 6 18" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+                </svg>
+              ) : (
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+                </svg>
+              )}
+            </button>
           </div>
         </div>
       </div>

@@ -1,3 +1,111 @@
+import ServiceTabs from '../../components/ServiceTabs';
+
+const rpaTabsData = [
+  {
+    id: 'content-1',
+    title: 'RPA STRATEGY AND CONSULTING',
+    cards: [
+      {
+        title: 'Process Assessment',
+        description: 'Conduct comprehensive evaluations to identify automation opportunities within your business processes.',
+        watermark: 'PSA'
+      },
+      {
+        title: 'Automation Roadmap Development',
+        description: 'Create a strategic roadmap for implementing RPA, aligned with your business goals and objectives.',
+        watermark: 'ARD'
+      },
+      {
+        title: 'Technology Selection',
+        description: 'Advise on the best RPA tools and technologies tailored to your specific needs and infrastructure.',
+        watermark: 'TSL'
+      },
+      {
+        title: 'ROI Analysis',
+        description: 'Analyze and project the return on investment for proposed RPA initiatives to ensure value-driven decisions.',
+        watermark: 'ROA'
+      }
+    ]
+  },
+  {
+    id: 'content-2',
+    title: 'RPA IMPLEMENTATION',
+    cards: [
+      {
+        title: 'Process Assessment and Selection',
+        description: 'Identify and prioritize business processes suitable for automation to ensure maximum impact and efficiency.',
+        watermark: 'PAS'
+      },
+      {
+        title: 'Bot Development and Deployment',
+        description: 'Design, develop, and deploy custom bots to automate specific tasks, tailored to your business needs.',
+        watermark: 'BDD'
+      },
+      {
+        title: 'Integration with Existing Systems',
+        description: 'Seamlessly integrate RPA solutions with your current IT infrastructure and software applications.',
+        watermark: 'IES'
+      },
+      {
+        title: 'Workflow Optimization',
+        description: 'Streamline and optimize workflows to enhance the efficiency and effectiveness of automated processes.',
+        watermark: 'WFO'
+      }
+    ]
+  },
+  {
+    id: 'content-3',
+    title: 'RPA MAINTENANCE AND SUPPORT',
+    cards: [
+      {
+        title: 'Monitoring and Incident Management',
+        description: 'Continuous monitoring and incident management to ensure your RPA systems run smoothly without interruptions.',
+        watermark: 'MIN'
+      },
+      {
+        title: 'Performance Optimization',
+        description: 'Regular performance reviews and optimizations to enhance the efficiency and effectiveness of your RPA processes.',
+        watermark: 'POZ'
+      },
+      {
+        title: 'Troubleshooting and Issue Resolution',
+        description: 'Rapid troubleshooting and resolution of any issues to minimize downtime and maintain productivity.',
+        watermark: 'TIR'
+      },
+      {
+        title: 'Software Updates and Upgrades',
+        description: 'Manage and implement software updates and upgrades to keep your RPA systems up-to-date with the latest features and security patches.',
+        watermark: 'SUU'
+      }
+    ]
+  },
+  {
+    id: 'content-4',
+    title: 'RPA TRAINING AND ENABLEMENT',
+    cards: [
+      {
+        title: 'Customized RPA Workshops',
+        description: 'Offer tailored workshops designed to meet the specific needs of your organization, covering various aspects of RPA implementation and management.',
+        watermark: 'CRW'
+      },
+      {
+        title: 'RPA Certification Programs',
+        description: 'Provide certification programs to validate the skills and knowledge of your team in RPA tools and methodologies.',
+        watermark: 'RCP'
+      },
+      {
+        title: 'On-Demand Training Modules',
+        description: 'Develop and deliver on-demand training modules that employees can access anytime, facilitating continuous learning and skill enhancement.',
+        watermark: 'OTN'
+      },
+      {
+        title: 'Hands-On Training Sessions',
+        description: 'Conduct hands-on training sessions to give your team practical experience with RPA tools and real-world scenarios.',
+        watermark: 'HTS'
+      }
+    ]
+  }
+];
 
 export default function Page() {
   return (
@@ -175,25 +283,8 @@ export default function Page() {
             </div>
             <div>
             <div className="2xl:pt-16 xl:pt-12 lg:pt-8 pt-4 relative">
-        
-        <div className="border-b-[1px] border-black/30"></div>
+        <ServiceTabs tabsData={rpaTabsData} />
     </div>
-
-    <div className="mt-10">
-        
-                    <div id="content-1" className="block">
-                
-            </div>
-                    <div id="content-2" className="hidden">
-                
-            </div>
-                    <div id="content-3" className="hidden">
-                
-            </div>
-                    <div id="content-4" className="hidden">
-                
-            </div>
-            </div>
             </div>
         </section>
         
@@ -216,7 +307,7 @@ export default function Page() {
 
         <div className="grid grid-cols-12 gap-4 mt-5 lg:mt-10">
                     <div className="lg:col-span-4 col-span-12">
-                <a href="/case-study?id=1" className="relative overflow-hidden group block cursor-pointer">
+                <a href="/case-study/rupinis" className="relative overflow-hidden group block cursor-pointer">
                     <img decoding="async" loading="lazy" src="assets/front/home/tc_project_1722505852.webp" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
                     <div className="absolute top-0 right-0">
                         <div className="inline-flex justify-start items-center space-x-3 p-5">
@@ -240,7 +331,7 @@ export default function Page() {
                 </a>
             </div>
                         <div className="lg:col-span-4 col-span-12">
-                <a href="/case-study?id=2" className="relative overflow-hidden group block cursor-pointer">
+                <a href="/case-study/olympiad" className="relative overflow-hidden group block cursor-pointer">
                     <img decoding="async" loading="lazy" src="assets/front/home/tc_project_1722505900.webp" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
                     <div className="absolute top-0 right-0">
                         <div className="inline-flex justify-start items-center space-x-3 p-5">
@@ -264,7 +355,7 @@ export default function Page() {
                 </a>
             </div>
                         <div className="lg:col-span-4 col-span-12">
-                <a href="/case-study?id=3" className="relative overflow-hidden group block cursor-pointer">
+                <a href="/case-study/sidbi" className="relative overflow-hidden group block cursor-pointer">
                     <img decoding="async" loading="lazy" src="assets/front/home/tc_project_1722505935.webp" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
                     <div className="absolute top-0 right-0">
                         <div className="inline-flex justify-start items-center space-x-3 p-5">

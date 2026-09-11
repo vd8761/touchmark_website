@@ -1,3 +1,49 @@
+import ServiceTabs, { TabData } from '@/components/ServiceTabs';
+
+const defaultDesc = "Empower your business with strategic technology consulting and innovative cloud solutions.";
+
+const cloudTabsData: TabData[] = [
+  {
+    id: 'content-1',
+    title: 'CLOUD CONSULTING & ADVISORY',
+    cards: [
+      { title: 'Cloud Strategy Development', description: "Create a tailored cloud strategy that aligns with your business goals, ensuring efficient and effective cloud adoption.", watermark: 'CSD' },
+      { title: 'Cloud Readiness Assessment', description: "Evaluate your organization's readiness for cloud migration, identifying gaps and providing actionable recommendations.", watermark: 'CRA' },
+      { title: 'Cost Optimization', description: "Implement cost-saving strategies to maximize the return on your cloud investments through efficient resource management.", watermark: 'CO' },
+      { title: 'Security and Compliance', description: "Ensure your cloud infrastructure meets industry standards and regulatory requirements, protecting your data and applications.", watermark: 'SC' },
+    ],
+  },
+  {
+    id: 'content-2',
+    title: 'CLOUD INTEGRATION AND ENGINEERING',
+    cards: [
+      { title: 'Infrastructure as Code', description: "Automate the management and provisioning of your cloud infrastructure using code to ensure consistency and efficiency.", watermark: 'IAC' },
+      { title: 'Cloud Architecture Design', description: "Design scalable and resilient cloud architectures tailored to your business needs, ensuring optimal performance and cost-efficiency.", watermark: 'CAD' },
+      { title: 'Application Modernization', description: "Update and refactor legacy applications to leverage cloud-native features and improve scalability, reliability, and performance.", watermark: 'AM' },
+      { title: 'Data Migration', description: "Safely and efficiently migrate data to the cloud, ensuring integrity and minimal downtime.", watermark: 'DM' },
+    ],
+  },
+  {
+    id: 'content-3',
+    title: 'CLOUD AUTOMATION',
+    cards: [
+      { title: 'Self-Healing Systems', description: "Develop systems that automatically detect and resolve issues without human intervention, reducing downtime and improving reliability.", watermark: 'SHS' },
+      { title: 'CI/CD Pipeline Automation', description: "Streamline your development and deployment processes with automated Continuous Integration and Continuous Deployment (CI/CD) pipelines.", watermark: 'CPA' },
+      { title: 'Auto-scaling Solutions', description: "Implement auto-scaling to dynamically adjust resources based on demand, ensuring optimal performance and cost-efficiency.", watermark: 'ASS' },
+      { title: 'Cloud Orchestration', description: "Coordinate and manage complex workflows and services across multiple cloud environments for seamless operations.", watermark: 'CAO' },
+    ],
+  },
+  {
+    id: 'content-4',
+    title: 'MANAGED SERVICES',
+    cards: [
+      { title: 'Infrastructure Management', description: "Comprehensive management of your IT infrastructure, ensuring optimal performance, reliability, and scalability.", watermark: 'ISM' },
+      { title: 'Security Management', description: "Proactive monitoring and management of security measures to protect your data and systems from threats.", watermark: 'SM' },
+      { title: 'Network Management', description: "Continuous monitoring and maintenance of your network to ensure seamless connectivity and performance.", watermark: 'NM' },
+      { title: 'Application Management', description: "End-to-end management of your applications to ensure they run smoothly, are up-to-date, and meet business requirements.", watermark: 'AM' },
+    ],
+  },
+];
 
 export default function Page() {
   return (
@@ -176,26 +222,8 @@ export default function Page() {
             </div>
             <div>
             <div className="2xl:pt-16 xl:pt-12 lg:pt-8 pt-4 relative">
-        
-        <div className="border-b-[1px] border-black/30"></div>
+        <ServiceTabs tabsData={cloudTabsData} />
     </div>
-
-    <div className="mt-10">
-        
-                    <div id="content-1" className="block">
-                
-            </div>
-                    <div id="content-2" className="hidden">
-                
-            </div>
-                    <div id="content-3" className="hidden">
-                
-            </div>
-                    <div id="content-4" className="hidden">
-                
-            </div>
-            </div>
-
             </div>
         </section>
         
@@ -218,7 +246,7 @@ export default function Page() {
 
         <div className="grid grid-cols-12 gap-4 mt-5 lg:mt-10">
                     <div className="lg:col-span-4 col-span-12">
-                <a href="/case-study?id=1" className="relative overflow-hidden group block cursor-pointer">
+                <a href="/case-study/rupinis" className="relative overflow-hidden group block cursor-pointer">
                     <img decoding="async" loading="lazy" src="assets/front/home/tc_project_1722505852.webp" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
                     <div className="absolute top-0 right-0">
                         <div className="inline-flex justify-start items-center space-x-3 p-5">
@@ -242,7 +270,7 @@ export default function Page() {
                 </a>
             </div>
                         <div className="lg:col-span-4 col-span-12">
-                <a href="/case-study?id=2" className="relative overflow-hidden group block cursor-pointer">
+                <a href="/case-study/olympiad" className="relative overflow-hidden group block cursor-pointer">
                     <img decoding="async" loading="lazy" src="assets/front/home/tc_project_1722505900.webp" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
                     <div className="absolute top-0 right-0">
                         <div className="inline-flex justify-start items-center space-x-3 p-5">
@@ -266,7 +294,7 @@ export default function Page() {
                 </a>
             </div>
                         <div className="lg:col-span-4 col-span-12">
-                <a href="/case-study?id=3" className="relative overflow-hidden group block cursor-pointer">
+                <a href="/case-study/sidbi" className="relative overflow-hidden group block cursor-pointer">
                     <img decoding="async" loading="lazy" src="assets/front/home/tc_project_1722505935.webp" className="transition-transform group-hover:scale-110 duration-500 h-full lg:w-auto w-full" />
                     <div className="absolute top-0 right-0">
                         <div className="inline-flex justify-start items-center space-x-3 p-5">
