@@ -266,57 +266,6 @@ export default function Page() {
                     </div>
                 </section>
 
-                <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 pt-14 lg:pt-24 xl:pt-24 2xl:pt-32">
-                    <div className="grid grid-cols-12 lg:gap-12">
-                        <div className="lg:col-span-6 col-span-12 flex justify-center lg:justify-start items-end order-1 lg:order-1 mt-12 lg:mt-0">
-                            <div className="bg-[#F2F9FF] w-full h-full flex justify-center items-end relative overflow-hidden">
-                                <img loading="lazy" decoding="async" src="/images/about/mohanraaj-cto-img.webp" alt="Mohanraaj Govindasamy, Director and Chief of Software Production" className="object-cover w-[90%] lg:w-[85%] h-auto max-h-full bottom-0" />
-                            </div>
-                        </div>
-
-                        <div className="lg:col-span-6 col-span-12 flex flex-col order-2 lg:order-2 mt-8 lg:mt-0">
-                            <div>
-                                <h3 className="text-[10px] lg:text-xs text-[#194F97] font-medium tracking-wide before:!hidden after:!hidden border-none">
-                                    Why Touchmark Descience
-                                </h3>
-                                <h1 className="mt-1 lg:mt-2 text-2xl lg:text-3xl xl:text-4xl font-gellix text-black">
-                                    From Our CTO
-                                </h1>
-                            </div>
-
-                            <div className="mt-4 lg:mt-6 border border-[#BED7F8] p-6 lg:p-8 xl:p-10 text-xs lg:text-sm font-inter bg-white flex flex-col justify-between h-full">
-                                <div className="space-y-4 text-black">
-                                    <p>MohanRaaj Govindaswamy S is a visionary tech leader, driving Touchmark Descience's mission to deliver cutting-edge software solutions.</p>
-                                    <p>As Director &amp; Chief - Software Production at Touchmark Descience, he oversees the development and delivery of high-quality software solutions.</p>
-                                    <p>With a focus on customer-centricity and data-driven approaches, he ensures that Touchmark Descience's offerings meet the evolving needs of businesses. His expertise in IT consulting, digital media marketing &amp; advertising, and brand design has enabled the company to deliver comprehensive solutions that drive results.</p>
-                                    <p>He is committed to nurturing the next generation of tech professionals. He actively facilitates open-source initiatives and provides mentorship opportunities for students, empowering them to contribute to the industry's growth. By fostering collaboration between industry and academia, he aims to create a vibrant ecosystem for innovation and development.</p>
-                                </div>
-
-                                <div className="mt-8 flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
-                                    <div>
-                                        <h1 className="text-base lg:text-lg font-gellix font-semibold text-black">
-                                            Mohanraaj Govindasamy
-                                        </h1>
-                                        <h3 className="text-[10px] lg:text-xs font-inter text-gray-600 mt-1">
-                                            Director &amp; Chief - Software Production
-                                        </h3>
-                                    </div>
-                                    <div className="flex items-center space-x-2">
-                                        <a href="#" className="w-8 h-8 rounded-full border border-[#194F97] flex items-center justify-center hover:bg-[#194F97] group transition-colors">
-                                            <svg className="w-3.5 h-3.5 text-[#194F97] group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
-                                        </a>
-                                        <a href="#" className="w-8 h-8 rounded-full border border-[#194F97] flex items-center justify-center hover:bg-[#194F97] group transition-colors">
-                                            <svg className="w-3.5 h-3.5 text-[#194F97] group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" /></svg>
-                                        </a>
-                                        <a href="#" className="w-8 h-8 rounded-full border border-[#194F97] flex items-center justify-center hover:bg-[#194F97] group transition-colors">
-                                            <svg className="w-3.5 h-3.5 text-[#194F97] group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" /></svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
 
 
@@ -340,6 +289,7 @@ export default function Page() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 lg:mt-16">
                         {[
                             { name: "Arumugam Murugan", role: "VP - IT Delivery Head", image: "/images/about/team/Arumugam.webp" },
+                            { name: "Mohanraaj Govindasamy", role: "Director & Chief - Software Production", image: "/images/about/mohanraaj-cto-img.webp" },
                             { name: "Ariyappan P", role: "VP - Tech Architect", image: "/images/about/team/Ariyappan.webp" },
                             { name: "Karthikeyan", role: "VP - Operations OriginBI", image: "/images/about/team/Karthikeyan.webp" },
                             { name: "Sujith", role: "VP - AI Reinvention initiative,\nTouchmark Nano GCC", image: "/images/about/team/Sujith.webp" },
