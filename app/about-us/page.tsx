@@ -289,7 +289,7 @@ export default function Page() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 lg:mt-16">
                         {[
                             { name: "Arumugam Murugan", role: "VP - IT Delivery Head", image: "/images/about/team/Arumugam.webp" },
-                            { name: "Mohanraaj Govindasamy", role: "Director & Chief - Software Production", image: "/images/about/team/Mohanraaj.webp" },
+                            { name: "Mohanraaj Govindasamy", role: "Director & Chief - Software Production", image: "/images/about/team/Mohanraaj.webp", imageClass: "scale-[2.6] origin-[50%_28%]" },
                             { name: "Ariyappan P", role: "VP - Tech Architect", image: "/images/about/team/Ariyappan.webp" },
                             { name: "Karthikeyan", role: "VP - Operations OriginBI", image: "/images/about/team/Karthikeyan.webp" },
                             { name: "Sujith", role: "VP - AI Reinvention initiative,\nTouchmark Nano GCC", image: "/images/about/team/Sujith.webp" },
@@ -298,7 +298,7 @@ export default function Page() {
                         ].map((member, idx) => (
                             <div key={idx} className="group border border-[#BED7F8] bg-white flex flex-col cursor-pointer hover:shadow-lg transition-all duration-300 aspect-[376/558]">
                                 <div className="bg-[#F2F9FF] flex-1 relative flex justify-center items-end overflow-hidden">
-                                    <img loading="lazy" decoding="async" src={member.image} alt={member.name} className="w-full h-full object-contain object-bottom absolute inset-0" />
+                                    <img loading="lazy" decoding="async" src={member.image} alt={member.name} className={`w-full h-full object-contain object-bottom absolute inset-0 ${member.imageClass || ''}`} />
                                 </div>
                                 <div className="h-[89px] px-4 lg:px-5 bg-white group-hover:bg-[#194F97] transition-colors duration-300 flex justify-between items-center">
                                     <div className="flex-1 pr-3 min-w-0">
