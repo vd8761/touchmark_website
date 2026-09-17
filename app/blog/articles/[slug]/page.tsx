@@ -67,7 +67,10 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
 
   // Related posts are supporting content: an empty list quietly hides the section.
   const { data: allPosts } = await tryCms(() => listBlogPosts(), [] as BlogPost[]);
-  const related = allPosts.filter((other) => other.slug !== slug).slice(0, RELATED_COUNT);
+  const related = [...allPosts]
+    .filter((other) => other.slug !== slug)
+    .sort(() => 0.5 - Math.random())
+    .slice(0, RELATED_COUNT);
   const shareUrl = encodeURIComponent(`${SITE_URL}/blog/articles/${slug}`);
 
   return (
