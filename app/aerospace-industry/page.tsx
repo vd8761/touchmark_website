@@ -5,7 +5,7 @@ import { listBlogPosts, tryCms, type BlogPost } from '@/services/cms';
 export default async function Page() {
 
   const { data: allPosts } = await tryCms(() => listBlogPosts(), [] as BlogPost[]);
-  const posts = allPosts.slice(0, 4);
+  const posts = [...allPosts].sort(() => 0.5 - Math.random()).slice(0, 4);
 
   return (
     <>
