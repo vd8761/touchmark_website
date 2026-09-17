@@ -1,5 +1,12 @@
+import RelatedBlogsSection from '@/components/RelatedBlogsSection';
+import { listBlogPosts, tryCms, type BlogPost } from '@/services/cms';
 
-export default function Page() {
+
+export default async function Page() {
+
+  const { data: allPosts } = await tryCms(() => listBlogPosts(), [] as BlogPost[]);
+  const posts = allPosts.slice(0, 4);
+
   return (
     <>
       <title>Environmental, Social and Governance</title>
@@ -280,142 +287,7 @@ export default function Page() {
         
 
         
-        <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 py-14 lg:py-24 xl:py-24 2xl:py-32">
-    <div className="grid grid-cols-12">
-        <div className="lg:col-span-4 xl:col-span-5 2xl:col-span-6 col-span-12">
-            <h3 className="text-xs lg:text-sm xl:text-sm 2xl:text-base text-[#194F97] font-inter font-medium">
-                Descience Blogs</h3>
-            <h1 className="mt-1.5 lg:mt-1.5 xl:mt-3 2xl:mt-5 2xl:text-5xl xl:text-4xl lg:text-4xl text-3xl font-gellix">
-                Read Touchmark Descience Blogs</h1>
-        </div>
-        <div className="lg:col-span-8 xl:col-span-7 2xl:col-span-6 col-span-12 lg:block hidden">
-            
-        </div>
-    </div>
-    <div className="grid grid-cols-12 gap-4 mt-10">
-        
-                <div className="lg:col-span-3 col-span-12 relative overflow-hidden group">
-      
-            <img decoding="async" loading="lazy" src="assets/front/home/esg_blog_1721890899.webp" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" />
-            <div className="absolute top-0 right-0">
-                <div className="inline-flex justify-start items-center space-x-3 p-5">
-                    <h3 className="bg-[#194F97] px-3 py-1 rounded-3xl text-white text-xs">
-                        AEROSPACE</h3>
-                </div>
-            </div>
-            <div className="absolute inset-0 flex justify-end items-end">
-                <div className="bg-gradient-to-t from-black/45 to-transparent p-5 transition-opacity duration-300 group-hover:from-black/90 group-hover:to-black/0 w-full">
-                    <div className="flex justify-between items-end">
-                        <div>
-                            <p className="text-[12px] text-white font-inter">29 June 2024</p>
-                            <h1 className="text-lg lg:text-xl xl:text-xl 2xl:text-2xl text-white font-gellix pt-2">
-                            Breakthroughs in Aerospace Technology</h1>
-                        </div>
-                        <div>
-                            <span aria-hidden="true">
-                                <svg fill="none" height="28" className="-rotate-90 rounded-full text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-
-        </div>
-                <div className="lg:col-span-3 col-span-12 relative overflow-hidden group">
-      
-            <img decoding="async" loading="lazy" src="assets/front/home/esg_blog_1721890911.webp" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" />
-            <div className="absolute top-0 right-0">
-                <div className="inline-flex justify-start items-center space-x-3 p-5">
-                    <h3 className="bg-[#194F97] px-3 py-1 rounded-3xl text-white text-xs">
-                        AEROSPACE</h3>
-                </div>
-            </div>
-            <div className="absolute inset-0 flex justify-end items-end">
-                <div className="bg-gradient-to-t from-black/45 to-transparent p-5 transition-opacity duration-300 group-hover:from-black/90 group-hover:to-black/0 w-full">
-                    <div className="flex justify-between items-end">
-                        <div>
-                            <p className="text-[12px] text-white font-inter">29 June 2024</p>
-                            <h1 className="text-lg lg:text-xl xl:text-xl 2xl:text-2xl text-white font-gellix pt-2">
-                            Breakthroughs in Aerospace Technology</h1>
-                        </div>
-                        <div>
-                            <span aria-hidden="true">
-                                <svg fill="none" height="28" className="-rotate-90 rounded-full text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-
-        </div>
-                <div className="lg:col-span-3 col-span-12 relative overflow-hidden group">
-      
-            <img decoding="async" loading="lazy" src="assets/front/home/esg_blog_1721890923.webp" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" />
-            <div className="absolute top-0 right-0">
-                <div className="inline-flex justify-start items-center space-x-3 p-5">
-                    <h3 className="bg-[#194F97] px-3 py-1 rounded-3xl text-white text-xs">
-                        SPACE</h3>
-                </div>
-            </div>
-            <div className="absolute inset-0 flex justify-end items-end">
-                <div className="bg-gradient-to-t from-black/45 to-transparent p-5 transition-opacity duration-300 group-hover:from-black/90 group-hover:to-black/0 w-full">
-                    <div className="flex justify-between items-end">
-                        <div>
-                            <p className="text-[12px] text-white font-inter">29 June 2024</p>
-                            <h1 className="text-lg lg:text-xl xl:text-xl 2xl:text-2xl text-white font-gellix pt-2">
-                            Breakthroughs in Aerospace Technology</h1>
-                        </div>
-                        <div>
-                            <span aria-hidden="true">
-                                <svg fill="none" height="28" className="-rotate-90 rounded-full text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-
-        </div>
-                <div className="lg:col-span-3 col-span-12 relative overflow-hidden group">
-      
-            <img decoding="async" loading="lazy" src="assets/front/home/esg_blog_1721890934.webp" className="transition-transform group-hover:scale-125 duration-500 lg:w-auto w-full" />
-            <div className="absolute top-0 right-0">
-                <div className="inline-flex justify-start items-center space-x-3 p-5">
-                    <h3 className="bg-[#194F97] px-3 py-1 rounded-3xl text-white text-xs">
-                        SPACE</h3>
-                </div>
-            </div>
-            <div className="absolute inset-0 flex justify-end items-end">
-                <div className="bg-gradient-to-t from-black/45 to-transparent p-5 transition-opacity duration-300 group-hover:from-black/90 group-hover:to-black/0 w-full">
-                    <div className="flex justify-between items-end">
-                        <div>
-                            <p className="text-[12px] text-white font-inter">29 June 2024</p>
-                            <h1 className="text-lg lg:text-xl xl:text-xl 2xl:text-2xl text-white font-gellix pt-2">
-                            Breakthroughs in Aerospace Technology</h1>
-                        </div>
-                        <div>
-                            <span aria-hidden="true">
-                                <svg fill="none" height="28" className="-rotate-90 rounded-full text-[#FFFF] transition-colors duration-300" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="m16 14.5858-8.99997-8.99998-1.41421 1.41421 8.99998 8.99997h-7.5858v2h11v-11h-2" fill="currentColor"></path>
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-
-        </div>
-            </div>
-</section>
+        <RelatedBlogsSection posts={posts} />
     </>
   );
 }

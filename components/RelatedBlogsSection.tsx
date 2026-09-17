@@ -7,7 +7,10 @@ import type { BlogPost } from '@/services/cms';
  * the caller passes, so the tiles now follow the CMS.
  */
 export default function RelatedBlogsSection({ posts }: { posts: BlogPost[] }) {
-  if (!posts.length) return null;
+  if (!posts.length) {
+    // Preserve the bottom padding that the page layout expects before the footer
+    return <div className="pb-14 lg:pb-24 xl:pb-24 2xl:pb-32" />;
+  }
 
   return (
     <section className="2xl:max-w-screen-2xl xl:max-w-screen-[100rem] lg:max-w-screen-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 py-14 lg:py-24 xl:py-24 2xl:py-32">
