@@ -4,8 +4,7 @@ import { useEffect } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 
 const ARTICLE_PREFIX = '/blog/articles/';
-const SUBSCRIBE_ENDPOINT =
-  'https://touchmarkdes.com/head/engine/ajax/__ajax_subscribe_form.php';
+const SUBSCRIBE_ENDPOINT = '/api/subscribe';
 const CONTACT_ENDPOINT = '/api/contact';
 const RECAPTCHA_SITE_KEY = '6LelLRwqAAAAAL6aHLVU9nE96q6UI6_H11dUU_Ix';
 const SAVED_BLOGS_KEY = 'touchmark:saved-blogs';
@@ -534,7 +533,10 @@ function setupArticleSubscription(pathname: string): Cleanup | undefined {
         credentials: 'omit',
         signal: abortController.signal,
       });
-      if (!response.ok) throw new Error(`Subscription failed with status ${response.status}`);
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => null);
+        throw new Error(errorData?.message || `Subscription failed with status ${response.status}`);
+      }
       form.classList.add('hidden');
       success?.classList.remove('hidden');
       success?.setAttribute('role', 'status');
@@ -543,7 +545,7 @@ function setupArticleSubscription(pathname: string): Cleanup | undefined {
       success?.focus({ preventScroll: true });
     } catch (error) {
       if ((error as Error).name !== 'AbortError') {
-        requestStatus.textContent = 'Unable to subscribe right now. Please try again.';
+        requestStatus.textContent = (error as Error).message || 'Unable to subscribe right now. Please try again.';
         requestStatus.hidden = false;
       }
     } finally {
