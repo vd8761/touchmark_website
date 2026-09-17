@@ -289,7 +289,7 @@ export default function Page() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 lg:mt-16">
                         {[
                             { name: "Arumugam Murugan", role: "VP - IT Delivery Head", image: "/images/about/team/Arumugam.webp" },
-                            { name: "Mohanraaj Govindasamy", role: "Director & Chief - Software Production", image: "/images/about/mohanraaj-cto-img.webp" },
+                            { name: "Mohanraaj Govindasamy", role: "Director & Chief - Software Production", image: "/images/about/team/Mohanraaj.webp" },
                             { name: "Ariyappan P", role: "VP - Tech Architect", image: "/images/about/team/Ariyappan.webp" },
                             { name: "Karthikeyan", role: "VP - Operations OriginBI", image: "/images/about/team/Karthikeyan.webp" },
                             { name: "Sujith", role: "VP - AI Reinvention initiative,\nTouchmark Nano GCC", image: "/images/about/team/Sujith.webp" },
