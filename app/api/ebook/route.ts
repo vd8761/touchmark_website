@@ -17,7 +17,7 @@ const RESEND_ENDPOINT = 'https://api.resend.com/emails';
 const DEFAULT_TO_EMAIL = 'info@touchmarkdes.com';
 const DEFAULT_FROM_EMAIL = 'Touchmark Descience <no-reply@touchmarkdes.com>';
 const SITE_URL = 'https://touchmarkdes.com';
-const LOGO_URL = `${SITE_URL}/src/assets/img/tds-color-logo.png`;
+const LOGO_URL = `${SITE_URL}/images/tds-color-logo.webp`;
 const BRAND_BLUE = '#194F97';
 const BRAND_NAVY = '#10233F';
 const COPYRIGHT_YEARS = `2010-${new Date().getFullYear()}`;
@@ -28,6 +28,8 @@ interface EbookPayload {
   ebook_lname: string;
   ebook_email: string;
   ebook_comname: string;
+  honeypot: string;
+  gToken?: string;
 }
 
 function clean(value: unknown, maxLength = 200) {
@@ -72,6 +74,8 @@ async function readPayload(request: Request): Promise<EbookPayload> {
     ebook_lname: clean(values.ebook_lname, 80),
     ebook_email: clean(values.ebook_email, 160).toLowerCase(),
     ebook_comname: clean(values.ebook_comname, 160),
+    honeypot: clean(values.website_url, 100),
+    gToken: values['g-token'] || values.gToken,
   };
 }
 
@@ -179,6 +183,16 @@ export async function POST(request: Request) {
   if (!payload.ebook_comname) errors.ebook_comname = 'Company name is required.';
   if (Object.keys(errors).length > 0 || !ebook) {
     return NextResponse.json({ message: 'Please check the form fields.', errors }, { status: 400 });
+  }
+
+  if (payload.honeypot) {
+    return NextResponse.json({ ok: true, delivered: true, downloadUrl: getEbookDownloadUrl(ebook!.id) });
+  }
+
+  const { verifyRecaptcha } = await import('@/lib/recaptcha');
+  const isHuman = await verifyRecaptcha(payload.gToken);
+  if (!isHuman) {
+    return NextResponse.json({ ok: true, delivered: true, downloadUrl: getEbookDownloadUrl(ebook!.id) });
   }
 
   const fromEmail = process.env.RESEND_FROM_EMAIL || DEFAULT_FROM_EMAIL;

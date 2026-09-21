@@ -14,6 +14,8 @@ type ContactPayload = {
   project_type: string;
   requirements: string;
   country_code: string;
+  honeypot: string;
+  gToken?: string;
 };
 
 const RESEND_ENDPOINT = 'https://api.resend.com/emails';
@@ -22,7 +24,7 @@ const DEFAULT_FROM_EMAIL = 'Touchmark Descience <no-reply@touchmarkdes.com>';
 const SITE_URL = 'https://touchmarkdes.com';
 // Points at the logo on the currently-live site rather than this repo's own
 // /public path, since that path 404s until this Next.js revamp is deployed.
-const LOGO_URL = `${SITE_URL}/src/assets/img/tds-color-logo.png`;
+const LOGO_URL = `${SITE_URL}/images/tds-color-logo.webp`;
 const BRAND_BLUE = '#194F97';
 const BRAND_NAVY = '#10233F';
 const COPYRIGHT_YEARS = `2010-${new Date().getFullYear()}`;
@@ -90,6 +92,8 @@ async function readPayload(request: Request): Promise<ContactPayload> {
     project_type: clean(values.project_type, 120),
     requirements: clean(values.requirements, 4000),
     country_code: clean(values.country_code, 8) || '+91',
+    honeypot: clean(values.website_url, 100),
+    gToken: values['g-token'] || values.gToken,
   };
 }
 
@@ -348,6 +352,18 @@ export async function POST(request: Request) {
   const errors = validatePayload(payload);
   if (Object.keys(errors).length > 0) {
     return NextResponse.json({ message: 'Please check the form fields.', errors }, { status: 400 });
+  }
+
+  // Spam protection: if the hidden honeypot field is filled, silently ignore the submission.
+  if (payload.honeypot) {
+    return NextResponse.json({ ok: true, id: null });
+  }
+
+  const { verifyRecaptcha } = await import('@/lib/recaptcha');
+  const isHuman = await verifyRecaptcha(payload.gToken);
+  if (!isHuman) {
+    // Return early to drop the spam silently, or you could return a 400
+    return NextResponse.json({ ok: true, id: null });
   }
 
   const fromEmail = process.env.RESEND_FROM_EMAIL || DEFAULT_FROM_EMAIL;

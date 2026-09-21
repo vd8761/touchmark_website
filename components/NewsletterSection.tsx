@@ -20,6 +20,10 @@ export default function NewsletterSection() {
               <div id="formContainer" className="relative max-w-md mx-auto mt-10">
                 <form id="subscribeFormed" method="post" className="space-y-4">
 
+                  <div className="sr-only" aria-hidden="true">
+                    <label htmlFor="website_url">Website URL</label>
+                    <input type="text" id="website_url" name="website_url" tabIndex={-1} autoComplete="off" />
+                  </div>
                   <div id="emailStep1" className="relative">
                     <input type="email" id="subscribe_email" name="subscribe_email" className="bg-white h-14 w-full px-4 focus:outline-none placeholder:black" placeholder="Enter Your Email" required={true} style={{ "paddingRight": "180px" }} />
                     <button type="button" id="nextButton" className="absolute top-2 right-2 bg-[#194F97] text-white px-3 py-2 inline-flex items-center group">

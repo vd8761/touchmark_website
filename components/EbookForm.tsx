@@ -23,6 +23,7 @@ export default function EbookForm({ ebookId }: EbookFormProps) {
     lastName: '',
     email: '',
     companyName: '',
+    websiteUrl: '',
   });
 
   const [errors, setErrors] = useState({
@@ -112,7 +113,7 @@ export default function EbookForm({ ebookId }: EbookFormProps) {
             gToken = await new Promise<string>((resolve, reject) => {
               grecaptcha.ready(() => {
                 grecaptcha
-                  .execute('6LelLRwqAAAAAL6aHLVU9nE96q6UI6_H11dUU_Ix', { action: 'submit' })
+                  .execute(process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || '6Ld50TwrAAAAAGUQ6i0U8_b3fd54WWov1dcpqJPr', { action: 'submit' })
                   .then(resolve)
                   .catch(reject);
               });
@@ -130,6 +131,7 @@ export default function EbookForm({ ebookId }: EbookFormProps) {
         ebook_lname: formData.lastName,
         ebook_email: formData.email,
         ebook_comname: formData.companyName,
+        website_url: formData.websiteUrl,
         'g-token': gToken,
       });
 
@@ -193,6 +195,18 @@ export default function EbookForm({ ebookId }: EbookFormProps) {
         aria-describedby={submitError ? 'ebook-submit-error' : undefined}
         className="space-y-4 lg:space-y-5"
       >
+        <div className="sr-only" aria-hidden="true">
+          <label htmlFor="websiteUrl">Website URL</label>
+          <input
+            type="text"
+            id="websiteUrl"
+            name="websiteUrl"
+            tabIndex={-1}
+            autoComplete="off"
+            value={formData.websiteUrl}
+            onChange={handleChange}
+          />
+        </div>
         <div>
           <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-1 font-secondary">
             First Name*

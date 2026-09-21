@@ -5,13 +5,15 @@ export const runtime = 'nodejs';
 type SubscribePayload = {
   subscribe_name: string;
   subscribe_email: string;
+  honeypot: string;
+  gToken?: string;
 };
 
 const RESEND_ENDPOINT = 'https://api.resend.com/emails';
 const DEFAULT_TO_EMAIL = 'info@touchmarkdes.com';
 const DEFAULT_FROM_EMAIL = 'Touchmark Descience <no-reply@touchmarkdes.com>';
 const SITE_URL = 'https://touchmarkdes.com';
-const LOGO_URL = `${SITE_URL}/src/assets/img/tds-color-logo.png`;
+const LOGO_URL = `${SITE_URL}/images/tds-color-logo.webp`;
 const BRAND_BLUE = '#194F97';
 const BRAND_NAVY = '#10233F';
 const COPYRIGHT_YEARS = `2010-${new Date().getFullYear()}`;
@@ -55,6 +57,8 @@ async function readPayload(request: Request): Promise<SubscribePayload> {
   return {
     subscribe_name: clean(values.subscribe_name, 80),
     subscribe_email: clean(values.subscribe_email, 160).toLowerCase(),
+    honeypot: clean(values.website_url, 100),
+    gToken: values['g-token'] || values.gToken,
   };
 }
 
@@ -232,6 +236,16 @@ export async function POST(request: Request) {
   const errors = validatePayload(payload);
   if (Object.keys(errors).length > 0) {
     return NextResponse.json({ message: 'Please check the form fields.', errors }, { status: 400 });
+  }
+
+  if (payload.honeypot) {
+    return NextResponse.json({ ok: true, id: null });
+  }
+
+  const { verifyRecaptcha } = await import('@/lib/recaptcha');
+  const isHuman = await verifyRecaptcha(payload.gToken);
+  if (!isHuman) {
+    return NextResponse.json({ ok: true, id: null });
   }
 
   const fromEmail = process.env.RESEND_FROM_EMAIL || DEFAULT_FROM_EMAIL;

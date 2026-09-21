@@ -6,7 +6,7 @@ import { usePathname, useRouter } from 'next/navigation';
 const ARTICLE_PREFIX = '/blog/articles/';
 const SUBSCRIBE_ENDPOINT = '/api/subscribe';
 const CONTACT_ENDPOINT = '/api/contact';
-const RECAPTCHA_SITE_KEY = '6LelLRwqAAAAAL6aHLVU9nE96q6UI6_H11dUU_Ix';
+const RECAPTCHA_SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || '6Ld50TwrAAAAAGUQ6i0U8_b3fd54WWov1dcpqJPr';
 const SAVED_BLOGS_KEY = 'touchmark:saved-blogs';
 
 const ROOT_ROUTES = new Set([
@@ -524,8 +524,10 @@ function setupArticleSubscription(pathname: string): Cleanup | undefined {
     nextButton.disabled = true;
     submitButton.setAttribute('aria-busy', 'true');
     try {
+      const token = await getRecaptchaToken('subscribe');
       const encoded = new URLSearchParams();
       new FormData(form).forEach((value, key) => encoded.append(key, String(value)));
+      if (token) encoded.append('g-token', token);
       const response = await fetch(SUBSCRIBE_ENDPOINT, {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' },

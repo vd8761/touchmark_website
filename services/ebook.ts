@@ -4,6 +4,7 @@ export interface EbookSubmissionData {
   ebook_lname: string;
   ebook_email: string;
   ebook_comname: string;
+  website_url?: string;
   'g-token'?: string;
 }
 
