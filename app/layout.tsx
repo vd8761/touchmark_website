@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import LegacyScripts from "@/components/LegacyScripts";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import SubsidiaryUX from "@/components/SubsidiaryUX";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Touchmark Descience",
@@ -38,6 +39,10 @@ export default function RootLayout({
 
         <GoogleAnalytics />
         <LegacyScripts />
+        <Script
+          src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || '6Ld50TwrAAAAAGUQ6i0U8_b3fd54WWov1dcpqJPr'}`}
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
