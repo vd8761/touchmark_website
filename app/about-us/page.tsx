@@ -290,7 +290,6 @@ export default function Page() {
                         {[
                             { name: "Arumugam Murugan", role: "VP - IT Delivery Head", image: "/images/about/team/Arumugam.webp" },
                             { name: "Mohanraaj Govindasamy", role: "Director & Chief - Software Production", image: "/images/about/team/Mohanraaj.webp", imageClass: "scale-[2.6] origin-[50%_28%]" },
-                            { name: "Seshan Babu", role: "VP - Tech Architect", image: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" },
                             { name: "Karthikeyan", role: "VP - Operations OriginBI", image: "/images/about/team/Karthikeyan.webp" },
                             { name: "Sujith", role: "VP - AI Reinvention initiative,\nTouchmark Nano GCC", image: "/images/about/team/Sujith.webp" },
                             { name: "Monishwar Rajasekaran", role: "Visual Designer", image: "/images/about/team/Monishwar.webp" },
