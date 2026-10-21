@@ -18,6 +18,9 @@ export const CMS_CACHE_TAG = 'cms';
 /** Backstop for a webhook that never arrives. The webhook is the fast path. */
 const DEFAULT_REVALIDATE_SECONDS = 3600;
 
+/** Timeout for delivery reads so slow cold-starts or network hangs never freeze Next.js builds. */
+const CMS_FETCH_TIMEOUT_MS = 5000;
+
 export interface CmsEntry<TData> {
   id: string;
   type: string;
@@ -110,6 +113,7 @@ async function delivery<T>(path: string, revalidate = DEFAULT_REVALIDATE_SECONDS
     response = await fetch(`${CMS_URL}${path}`, {
       headers: { Authorization: `Bearer ${CMS_KEY}` },
       next: { revalidate, tags: [CMS_CACHE_TAG] },
+      signal: AbortSignal.timeout(CMS_FETCH_TIMEOUT_MS),
     });
   } catch (cause) {
     // DNS failure, connection refused, TLS error, timeout — the CMS is not answering.
