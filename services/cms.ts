@@ -7,6 +7,7 @@
  */
 
 import { resolveMediaUrl } from '@/utils/media';
+import { estimateReadTime } from '@/utils/readTime';
 
 const CMS_URL = process.env.CMS_API_URL;
 const CMS_KEY = process.env.CMS_API_KEY;
@@ -15,7 +16,7 @@ const CMS_KEY = process.env.CMS_API_KEY;
 export const CMS_CACHE_TAG = 'cms';
 
 /** Backstop for a webhook that never arrives. The webhook is the fast path. */
-const DEFAULT_REVALIDATE_SECONDS = 300;
+const DEFAULT_REVALIDATE_SECONDS = 3600;
 
 export interface CmsEntry<TData> {
   id: string;
@@ -197,12 +198,31 @@ async function withImages<T extends CmsEntry<BlogPostData>>(
   }));
 }
 
-/** Published posts, newest first. */
+/** Published posts, newest first, with stable sorting and lightweight card payloads. */
 export async function listBlogPosts(limit = 100): Promise<BlogPost[]> {
   const body = await delivery<ListResponse<CmsEntry<BlogPostData>>>(
     `/v1/content/blog_post?limit=${limit}&sort=-published_at`,
   );
-  return withImages(body.data);
+  const posts = await withImages(body.data);
+
+  // Stable secondary sort: when published_at matches, tie-break by slug/id for deterministic ordering
+  posts.sort((a, b) => {
+    const timeA = a.published_at ? new Date(a.published_at).getTime() : 0;
+    const timeB = b.published_at ? new Date(b.published_at).getTime() : 0;
+    if (timeB !== timeA) return timeB - timeA;
+    return (a.slug ?? a.id).localeCompare(b.slug ?? b.id);
+  });
+
+  // Optimize payload: ensure read_time is estimated and strip heavy body HTML from listings.
+  // Full article body is only needed on /blog/articles/[slug] which calls getBlogPost().
+  return posts.map((post) => ({
+    ...post,
+    data: {
+      ...post.data,
+      read_time: post.data.read_time || estimateReadTime(post.data.body),
+      body: undefined,
+    },
+  }));
 }
 
 /**
